@@ -1,0 +1,64 @@
+{
+  "schema": "chemqa-q065e-pilot-failures-v1",
+  "annotation_quality": "AI draft; domain review pending",
+  "candidate_pool": "restricted 20-document pilot",
+  "failures": [
+    {
+      "question_id": "D08",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": 0.5,
+      "anchor_coverage_at_10": {
+        "e1": 1.0,
+        "e2": 0.0
+      },
+      "annotated_document_recall_at_10": 1.0,
+      "note": "Known source-span misses in the restricted pilot, not a scientific-answer judgment or negative label for unjudged hits."
+    },
+    {
+      "question_id": "D10",
+      "category": "mechanism",
+      "complete_anchor_recall_at_10": 0.0,
+      "anchor_coverage_at_10": {
+        "e1": 0.0
+      },
+      "annotated_document_recall_at_10": 1.0,
+      "note": "Known source-span misses in the restricted pilot, not a scientific-answer judgment or negative label for unjudged hits."
+    },
+    {
+      "question_id": "D11",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": 0.0,
+      "anchor_coverage_at_10": {
+        "e1": 0.0
+      },
+      "annotated_document_recall_at_10": 1.0,
+      "note": "Known source-span misses in the restricted pilot, not a scientific-answer judgment or negative label for unjudged hits."
+    },
+    {
+      "question_id": "D16",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": 0.3333333333333333,
+      "anchor_coverage_at_10": {
+        "e1": 0.0,
+        "e2": 0.0,
+        "e3": 1.0
+      },
+      "annotated_document_recall_at_10": 0.5,
+      "note": "Known source-span misses in the restricted pilot, not a scientific-answer judgment or negative label for unjudged hits."
+    },
+    {
+      "question_id": "D18",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": 0.0,
+      "anchor_coverage_at_10": {
+        "e1": 0.0,
+        "e2": 0.0,
+        "e3": 0.0,
+        "e4": 0.0
+      },
+      "annotated_document_recall_at_10": 0.5,
+      "note": "Known source-span misses in the restricted pilot, not a scientific-answer judgment or negative label for unjudged hits."
+    }
+  ],
+  "next_check": "Reassess these and other misses on full-corpus rankings; do not tune on reserve questions."
+}

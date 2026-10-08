@@ -1,0 +1,36 @@
+{
+  "schema": "chemqa-q065e-run-notes-v1",
+  "attempts": [
+    {
+      "log": "output/q065e_work/build.log",
+      "status": "interrupted_before_publication",
+      "reason": "Observed variable full-run throughput, with 256-chunk intervals growing from about 38s to 134s; stopped own candidate build to add explicit per-batch cache release and allocator sampling. This does not establish the cause of host slowdown.",
+      "last_logged_chunks": 1600,
+      "planned_chunks": 6960,
+      "last_logged_encoding_seconds": 405.4,
+      "mps_stack_observation": "CPU-to-host transfer waits for Metal command buffer completion; not evidence of a deadlock.",
+      "baseline_hashes_after_stop": {
+        "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+        "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+      },
+      "published_index": false
+    }
+  ],
+  "followup": "Release unused MPS cache after each 64-input outer batch; abort if sampled driver allocation remains above 6 GiB after release; preserve fixed token inputs, model profile and chunking.",
+  "successful_rerun": {
+    "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b",
+    "status": "ready",
+    "chunks": 6960,
+    "timings_seconds": {
+      "encoding": 1370.3623739999603,
+      "query_encoding": 0.5320261670276523,
+      "total_before_publication": 1417.7943947089952
+    },
+    "rss_high_water_bytes": 1991671808,
+    "mps_memory_samples": {
+      "mps_driver_max_sampled_bytes": 2332753920,
+      "mps_driver_max_after_cache_clear_bytes": 1217069056
+    },
+    "replay_passed": true
+  }
+}

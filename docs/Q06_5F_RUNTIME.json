@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "backend": "numpy-float32-sqlite",
+  "candidate_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T050945-4456434906334000aac1efefcb869097",
+  "active_torch_cpu_computation_passed": true,
+  "actual_encoder_device": "mps:0",
+  "actual_parameter_dtype": "torch.float16",
+  "question_id": "D01",
+  "public_top10_equal_to_E": true,
+  "query_reencoding_count": 1,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0,
+  "baseline_unchanged": true
+}

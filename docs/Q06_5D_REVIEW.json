@@ -1,0 +1,74 @@
+{
+  "schema": "chemqa-q065d-review-v1",
+  "reviewer": "assistant_visual_inspection",
+  "researcher_review_status": "pending",
+  "runtime_report": "docs/Q06_5D_RUNTIME.json",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q065d_parsing/20261007T015339-5f90396319f64334b588a05e740d9674",
+  "decision": "retain_pymupdf",
+  "next_stage_parser": "pymupdf_get_text_text_sort_false",
+  "native_conversion_successes": 10,
+  "native_table_count": 3,
+  "native_text_items": 76,
+  "native_exact_unique_raw_text_items": 14,
+  "native_invalid_page_or_bbox": 0,
+  "limitations": [
+    "Purposive 10-page pilot, not parser accuracy or QA evaluation",
+    "Exact-unique alignment measures direct compatibility, not text correctness",
+    "BBox bounds do not validate text-to-region correctness",
+    "No word-level multi-span source alignment implemented",
+    "No researcher domain sign-off"
+  ],
+  "observed_failures": [
+    {
+      "sample_id": "paper-4-p2",
+      "kind": "interrupted_conditions",
+      "observation": "Inserted table separates acetonitrile (7 mL) from TFE (0.7 mL) continuation; both exports need layout-aware interpretation."
+    },
+    {
+      "sample_id": "paper-35-p2",
+      "kind": "footnote_attachment",
+      "observation": "Docling merges table reaction-condition footnote into a left-column narrative item."
+    },
+    {
+      "sample_id": "paper-144-p4",
+      "kind": "graphical_table_not_structured",
+      "observation": "Substrate structure/yield graphic is a picture, not table cells; native PyMuPDF also lacks full structure-yield pairs."
+    },
+    {
+      "sample_id": "paper-166-p2",
+      "kind": "formula_spacing_and_watermark",
+      "observation": "Docling changes Ni2P@Ni12P5 spacing and retains download-watermark text."
+    },
+    {
+      "sample_id": "synthetic-scan-control",
+      "kind": "ocr_content_errors",
+      "observation": "Full-host Vision OCR recovers text but changes row 5 to S, misses several row IDs and the LiOMe row residual-substrate value 2, and corrupts table-header footnote characters."
+    }
+  ],
+  "environment_control": {
+    "restricted_host_artifact": "output/q065d_parsing/20261007T015223-afd55bb2797149edbab41e810419e6aa",
+    "restricted_ocr_status": "conversion_success_but_no_text_or_table_cell_text",
+    "full_host_ocr_status": "text_recovered_with_content_errors",
+    "inference": "Native macOS Vision behavior depends on execution permissions here; zero-text run is not evidence that Docling cannot OCR."
+  },
+  "visual_pages_checked": [
+    "paper-4-p2",
+    "paper-24-p2",
+    "paper-25-p5",
+    "paper-35-p2",
+    "paper-37-p3",
+    "paper-40-p2",
+    "paper-144-p4",
+    "paper-147-p2",
+    "paper-159-p2",
+    "paper-166-p2"
+  ],
+  "timing_observation": {
+    "native_pymupdf_text_seconds_total": 0.10925604106159881,
+    "native_docling_seconds_total": 6.991084083914757,
+    "native_docling_first_page_seconds": 3.0544783750083297,
+    "native_docling_other_pages_median_seconds": 0.32578608399489895,
+    "synthetic_ocr_seconds": 27.56002625002293,
+    "note": "One local run, excludes environment startup; Docling includes initialization on first page and exports/alignment, PyMuPDF measures get_text only. Not a speed benchmark."
+  }
+}

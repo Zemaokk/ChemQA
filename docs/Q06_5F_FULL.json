@@ -1,0 +1,180 @@
+{
+  "schema": "chemqa-q065f-storage-v1",
+  "status": "passed",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T050945-4456434906334000aac1efefcb869097",
+  "source_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b",
+  "source_files_sha256": {
+    "run.json": "c26768fa719506f839fcab412ecd253021b57e86944827467b74922d2c54aae0",
+    "vector_index.json": "aa81fa11b7ff913280eb20354f4e840e247c4b339e7da32adff70d8914e86e5f",
+    "processed_chunks.json": "7364ab0d7e0b7bacd492d3916ff02a3239e4ab58f0716e45ee164683d1673375",
+    "query_vectors.npy": "b2df365d69c5b00a5f903604bfcf8614b6b2d1c82e9a45f14820246989f51e01",
+    "retrieval.json": "70e9db1e1de8834cc12dd6159377c51cf867b627c9c4a14b0eb6418dcce01739",
+    "evaluation.json": "4ad46210debfd58b70ca98a22034e0192823a7c92e7d9b1fd60e073f5a658286"
+  },
+  "backend": "numpy-float32-sqlite",
+  "rows": 6960,
+  "dimension": 1024,
+  "embedding": {
+    "schema": "chemqa-embedding-profile-v1",
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "dimension": 1024,
+    "max_sequence_tokens": 512,
+    "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+    "document_prompt": "",
+    "normalize_embeddings": true,
+    "padding_side": "left",
+    "precision_policy": "mps-fp16-cpu-fp32-v1",
+    "token_count_includes_prompt_and_special_tokens": true
+  },
+  "chunking": {
+    "name": "qwen-window512-overlap64",
+    "strategy": "page-window",
+    "target_tokens": 512,
+    "overlap_tokens": 64
+  },
+  "source_validation_inherited": {
+    "rows": 6960,
+    "located": 6960,
+    "verified_spans": 6960,
+    "verified_pdf_contents": 180,
+    "unavailable_by_source": {},
+    "text_ids_vectors_preserved_against_baseline": null,
+    "over_limit_chunks": 0,
+    "actual_encoder_token_ids_match_untruncated_inputs": true,
+    "unit_normalized_vectors": true,
+    "source_nonwhitespace_fully_covered": true,
+    "max_document_input_tokens": 512,
+    "embedding": {
+      "schema": "chemqa-embedding-profile-v1",
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "dimension": 1024,
+      "max_sequence_tokens": 512,
+      "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+      "document_prompt": "",
+      "normalize_embeddings": true,
+      "padding_side": "left",
+      "precision_policy": "mps-fp16-cpu-fp32-v1",
+      "token_count_includes_prompt_and_special_tokens": true
+    }
+  },
+  "documents_equal": true,
+  "float32_vectors_bitwise_equal": true,
+  "documents_sha256": "c86b3b1ba4d5b90012360fd899ee5c75a5f58ab1c0897d573ce48aa2d09f7425",
+  "float32_vectors_sha256": "d50f9883ee6f8277f129a97df2f3cbed429915caaae5e0e713380b46aa5085ae",
+  "published_checksums_verified": true,
+  "retrieval": {
+    "query_count": 20,
+    "top10_ids_and_order_equal": true,
+    "per_question_and_aggregate_metrics_equal": true,
+    "max_top10_score_absolute_error": 0.0,
+    "score_absolute_tolerance": 2e-06,
+    "summary": {
+      "scored_questions": 18,
+      "rr_first_annotated_doc": 0.8379629629629629,
+      "rr_first_complete_anchor": 0.3746031746031746,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 0.7777777777777778,
+          "annotated_doc_recall": 0.7222222222222222,
+          "all_annotated_docs_hit": 0.6666666666666666,
+          "mean_anchor_character_coverage": 0.18518518518518517,
+          "complete_anchor_recall": 0.18518518518518517,
+          "all_anchors_complete": 0.16666666666666666,
+          "annotated_point_evidence_complete": 0.19444444444444445
+        },
+        "5": {
+          "annotated_doc_hit": 0.9444444444444444,
+          "annotated_doc_recall": 0.8888888888888888,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.49074074074074076,
+          "complete_anchor_recall": 0.49074074074074076,
+          "all_anchors_complete": 0.4444444444444444,
+          "annotated_point_evidence_complete": 0.5
+        },
+        "10": {
+          "annotated_doc_hit": 0.9444444444444444,
+          "annotated_doc_recall": 0.8888888888888888,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.6203703703703703,
+          "complete_anchor_recall": 0.6203703703703703,
+          "all_anchors_complete": 0.5555555555555556,
+          "annotated_point_evidence_complete": 0.6296296296296297
+        }
+      }
+    },
+    "reserve_queries_executed": 0,
+    "generation_requests": 0
+  },
+  "reloaded_retrieval": {
+    "query_count": 20,
+    "top10_ids_and_order_equal": true,
+    "per_question_and_aggregate_metrics_equal": true,
+    "max_top10_score_absolute_error": 0.0,
+    "score_absolute_tolerance": 2e-06,
+    "summary": {
+      "scored_questions": 18,
+      "rr_first_annotated_doc": 0.8379629629629629,
+      "rr_first_complete_anchor": 0.3746031746031746,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 0.7777777777777778,
+          "annotated_doc_recall": 0.7222222222222222,
+          "all_annotated_docs_hit": 0.6666666666666666,
+          "mean_anchor_character_coverage": 0.18518518518518517,
+          "complete_anchor_recall": 0.18518518518518517,
+          "all_anchors_complete": 0.16666666666666666,
+          "annotated_point_evidence_complete": 0.19444444444444445
+        },
+        "5": {
+          "annotated_doc_hit": 0.9444444444444444,
+          "annotated_doc_recall": 0.8888888888888888,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.49074074074074076,
+          "complete_anchor_recall": 0.49074074074074076,
+          "all_anchors_complete": 0.4444444444444444,
+          "annotated_point_evidence_complete": 0.5
+        },
+        "10": {
+          "annotated_doc_hit": 0.9444444444444444,
+          "annotated_doc_recall": 0.8888888888888888,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.6203703703703703,
+          "complete_anchor_recall": 0.6203703703703703,
+          "all_anchors_complete": 0.5555555555555556,
+          "annotated_point_evidence_complete": 0.6296296296296297
+        }
+      }
+    },
+    "reserve_queries_executed": 0,
+    "generation_requests": 0
+  },
+  "rollback_json_loaded_exactly": true,
+  "rollback_top10_ids_equal": true,
+  "source_unchanged": true,
+  "baseline_before": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "baseline_after": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "migration_write_seconds": 0.5532777080079541,
+  "source_index_bytes": 232333984,
+  "binary_files_bytes": {
+    "storage.json": 2130,
+    "vectors.npy": 28508288,
+    "metadata.sqlite3": 35725312
+  },
+  "versions": {
+    "numpy": "2.5.3"
+  },
+  "sqlite_version": "3.53.1",
+  "default_switched": false,
+  "query_reencoding_count": 0,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0,
+  "annotation_quality": "AI draft; domain review pending"
+}

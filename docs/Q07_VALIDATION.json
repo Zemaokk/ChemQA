@@ -1,0 +1,352 @@
+{
+  "schema": "chemqa-q07-validation-v1",
+  "real_retrieved_chunk_ids": [
+    "chunk_99179fe8c7dae54b494bbe45b457b589594f9b10db60488eabdd618c0f369fef",
+    "chunk_adfbae62fbb86357e4de9ec73f0b0c69325125406e48753a00dfc6799c94a37a",
+    "chunk_59210299c84f67263ba454163c6a922921680af69d920b8b8b2f204d9587385d",
+    "chunk_5445e55a222dacc02597bcd2003b391bb6798634cdcc25b31f7bece15721d708",
+    "chunk_79f37a179e334791f3671c4e91ca4fd74694992cdfb515b628d9e0a2b6c7c018",
+    "chunk_f58e1eca1dcd848c44d507551645f5d492ddc8af509c155025673e3ffda70e25",
+    "chunk_157d6a69cff78e690025d4d7660c13948af5d10020efb89673553257d4395b99",
+    "chunk_1bcce945caddee8542e5208a1a79b688083ff4a813a1e3e7b547a20eb6dc9e2f",
+    "chunk_dc97415473b12c6782f541e639877e27a4e51e7f221cc16374456009b4b9cb52",
+    "chunk_38db360f52b584b98b0232ed84376ec841660ce91b5ae669779ac6353d9f92d5"
+  ],
+  "synthetic_api_responses": true,
+  "external_api_requests": 0,
+  "runs": [
+    {
+      "case": "success",
+      "status": "success",
+      "generation_result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "deepseek-reasoner",
+        "returned_model": "mock-model-not-a-live-result",
+        "response_id": "q07-offline-fixture",
+        "usage": {
+          "prompt_tokens": 100,
+          "completion_tokens": 20,
+          "total_tokens": 120
+        },
+        "elapsed_seconds": 5.24159986525774e-05,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 20,
+              "total_tokens": 120
+            }
+          }
+        ],
+        "partial_content": null
+      },
+      "mocked_http_requests": 1,
+      "failure_excluded_from_answer": false
+    },
+    {
+      "case": "authentication",
+      "status": "failed",
+      "generation_result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "failed",
+        "error_code": "http",
+        "error_message": "API returned HTTP 401.",
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 401,
+        "finish_reason": null,
+        "requested_model": "deepseek-reasoner",
+        "returned_model": null,
+        "response_id": null,
+        "usage": {},
+        "elapsed_seconds": 1.5375029761344194e-05,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "failed",
+            "error_code": "http",
+            "http_status": 401,
+            "finish_reason": null,
+            "usage": {}
+          }
+        ],
+        "partial_content": null
+      },
+      "mocked_http_requests": 1,
+      "failure_excluded_from_answer": true
+    },
+    {
+      "case": "truncated",
+      "status": "truncated",
+      "generation_result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "truncated",
+        "error_code": "length",
+        "error_message": "API generation did not complete normally (length).",
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "length",
+        "requested_model": "deepseek-reasoner",
+        "returned_model": "mock-model-not-a-live-result",
+        "response_id": "q07-offline-fixture",
+        "usage": {
+          "prompt_tokens": 100,
+          "completion_tokens": 20,
+          "total_tokens": 120
+        },
+        "elapsed_seconds": 2.4290988221764565e-05,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "truncated",
+            "error_code": "length",
+            "http_status": 200,
+            "finish_reason": "length",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 20,
+              "total_tokens": 120
+            }
+          }
+        ],
+        "partial_content": "Synthetic response for plumbing validation [Ref chunk_99179fe8c7dae54b494bbe45b457b589594f9b10db60488eabdd618c0f369fef]"
+      },
+      "mocked_http_requests": 1,
+      "failure_excluded_from_answer": true
+    },
+    {
+      "case": "timeout_exhausted",
+      "status": "failed",
+      "generation_result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "failed",
+        "error_code": "timeout",
+        "error_message": "API request timed out.",
+        "retryable": true,
+        "request_sent": true,
+        "attempts": 3,
+        "http_status": null,
+        "finish_reason": null,
+        "requested_model": "deepseek-reasoner",
+        "returned_model": null,
+        "response_id": null,
+        "usage": {},
+        "elapsed_seconds": 0.00025949999690055847,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "failed",
+            "error_code": "timeout",
+            "http_status": null,
+            "finish_reason": null,
+            "usage": {}
+          },
+          {
+            "attempt": 2,
+            "status": "failed",
+            "error_code": "timeout",
+            "http_status": null,
+            "finish_reason": null,
+            "usage": {}
+          },
+          {
+            "attempt": 3,
+            "status": "failed",
+            "error_code": "timeout",
+            "http_status": null,
+            "finish_reason": null,
+            "usage": {}
+          }
+        ],
+        "partial_content": null
+      },
+      "mocked_http_requests": 3,
+      "failure_excluded_from_answer": true
+    },
+    {
+      "case": "rate_limit_recovered",
+      "status": "success",
+      "generation_result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 2,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "deepseek-reasoner",
+        "returned_model": "mock-model-not-a-live-result",
+        "response_id": "q07-offline-fixture",
+        "usage": {
+          "prompt_tokens": 100,
+          "completion_tokens": 20,
+          "total_tokens": 120
+        },
+        "elapsed_seconds": 0.00015833397628739476,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "failed",
+            "error_code": "rate_limit",
+            "http_status": 429,
+            "finish_reason": null,
+            "usage": {}
+          },
+          {
+            "attempt": 2,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 20,
+              "total_tokens": 120
+            }
+          }
+        ],
+        "partial_content": null
+      },
+      "mocked_http_requests": 2,
+      "failure_excluded_from_answer": false
+    },
+    {
+      "case": "server_exhausted",
+      "status": "failed",
+      "generation_result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "failed",
+        "error_code": "http",
+        "error_message": "API returned HTTP 503.",
+        "retryable": true,
+        "request_sent": true,
+        "attempts": 3,
+        "http_status": 503,
+        "finish_reason": null,
+        "requested_model": "deepseek-reasoner",
+        "returned_model": null,
+        "response_id": null,
+        "usage": {},
+        "elapsed_seconds": 0.0002412910107523203,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "failed",
+            "error_code": "http",
+            "http_status": 503,
+            "finish_reason": null,
+            "usage": {}
+          },
+          {
+            "attempt": 2,
+            "status": "failed",
+            "error_code": "http",
+            "http_status": 503,
+            "finish_reason": null,
+            "usage": {}
+          },
+          {
+            "attempt": 3,
+            "status": "failed",
+            "error_code": "http",
+            "http_status": 503,
+            "finish_reason": null,
+            "usage": {}
+          }
+        ],
+        "partial_content": null
+      },
+      "mocked_http_requests": 3,
+      "failure_excluded_from_answer": true
+    },
+    {
+      "case": "empty_completion",
+      "status": "failed",
+      "generation_result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "failed",
+        "error_code": "invalid_response",
+        "error_message": "API returned an invalid or empty completion.",
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "deepseek-reasoner",
+        "returned_model": "mock-model-not-a-live-result",
+        "response_id": "q07-offline-fixture",
+        "usage": {
+          "prompt_tokens": 100,
+          "completion_tokens": 20,
+          "total_tokens": 120
+        },
+        "elapsed_seconds": 1.858297036960721e-05,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "failed",
+            "error_code": "invalid_response",
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 20,
+              "total_tokens": 120
+            }
+          }
+        ],
+        "partial_content": null
+      },
+      "mocked_http_requests": 1,
+      "failure_excluded_from_answer": true
+    },
+    {
+      "case": "no_evidence",
+      "status": "no_evidence",
+      "generation_result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "no_evidence",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": false,
+        "attempts": 0,
+        "http_status": null,
+        "finish_reason": null,
+        "requested_model": null,
+        "returned_model": null,
+        "response_id": null,
+        "usage": {},
+        "elapsed_seconds": 0.0,
+        "attempt_history": [],
+        "partial_content": null
+      },
+      "mocked_http_requests": 0,
+      "failure_excluded_from_answer": false
+    }
+  ],
+  "data_files_unchanged": true,
+  "sha256": {
+    "vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "limitation": "API execution states and citation plumbing only; no live model or scientific-support evaluation."
+}

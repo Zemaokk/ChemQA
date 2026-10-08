@@ -1,0 +1,57 @@
+{
+  "schema": "chemqa-q10a-validation-v1",
+  "validated_utc": "2026-10-07T01:23:14.712008+00:00",
+  "status": "engineering_preparation_passed_domain_review_pending",
+  "source_validation": {
+    "status": "passed",
+    "version": "q10a-v1",
+    "split_counts": {
+      "dev": 20,
+      "reserve": 6
+    },
+    "source_pdfs_verified": 17,
+    "exact_evidence_intervals": 36,
+    "article_groups": {
+      "dev": 11,
+      "reserve": 6
+    },
+    "article_group_overlap": 0,
+    "domain_review_states": {
+      "pending": 26
+    },
+    "source_verification_enabled": true,
+    "reserve_ranked_or_generated": false
+  },
+  "visual_source_check": {
+    "rendered_pages": 7,
+    "papers_checked": 7,
+    "scope": "Selected numerical, condition and system-boundary pages; not full visual review of every PDF",
+    "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q10a_source_checks/20261007T011409-af3049d5f98e466184ebaf4fe4170b3d"
+  },
+  "regression_tests": {
+    "runner": "python -m unittest discover -s tests -q",
+    "passed": 119
+  },
+  "ruff_check": "passed",
+  "ruff_format": "passed",
+  "baseline_report": "docs/Q10A_BASELINE.json",
+  "baseline_artifact": "/Users/zemaochen/projects/ChemQA/output/q10a_baselines/20261007T011838-6e25de9537304d5fbb0031e2966f1416",
+  "replay_report": "docs/Q10A_REPLAY.json",
+  "replay_artifact": "/Users/zemaochen/projects/ChemQA/output/q10a_replays/20261007T012213-8c2de97027bd49088d1929dc69d416e5",
+  "full_rankings_scores_prompts_and_metrics_replayed_identically": true,
+  "live_api_calls": 0,
+  "reserve_queries_executed": 0,
+  "answer_quality_measured": false,
+  "human_domain_review_required": true,
+  "preserved_inputs": {
+    "data/vector_db/vector_index.json": {
+      "sha256": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+      "unchanged": true
+    },
+    "data/processed/processed_chunks.json": {
+      "sha256": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5",
+      "unchanged": true
+    }
+  },
+  "next_task": "Q06.5-B"
+}

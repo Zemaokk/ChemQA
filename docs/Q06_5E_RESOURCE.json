@@ -1,0 +1,32 @@
+{
+  "schema": "chemqa-q065e-resource-v1",
+  "actual_device": "mps:0",
+  "dtype": "torch.float16",
+  "sample_count": 64,
+  "input_token_range": [
+    512,
+    512
+  ],
+  "records": [
+    {
+      "batch_size": 8,
+      "seconds_for_64_long_inputs": 7.014397834020201,
+      "rss_high_water_bytes": 2395193344,
+      "mps_allocated_bytes": 1199702528,
+      "mps_driver_allocated_bytes": 2391474176
+    },
+    {
+      "batch_size": 16,
+      "seconds_for_64_long_inputs": 7.099219708004966,
+      "rss_high_water_bytes": 2395193344,
+      "mps_allocated_bytes": 1199702528,
+      "mps_driver_allocated_bytes": 3465216000
+    }
+  ],
+  "batch_vectors_allclose_atol_rtol_1e3": true,
+  "max_absolute_batch_difference": 0.0,
+  "selected_batch_size": 8,
+  "selection_rule": "16 only if faster, vectors allclose(1e-3), and driver allocation below 6 GiB; otherwise 8",
+  "memory_note": "RSS is process high-water; MPS figures are sampled allocator values, not measured peaks. One local probe is not a speed benchmark.",
+  "generation_requests": 0
+}

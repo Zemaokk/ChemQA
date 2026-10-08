@@ -1,0 +1,449 @@
+{
+  "schema": "chemqa-q10b-operational-summary-v1",
+  "arms": {
+    "hybrid_rerank_diverse": {
+      "records": 18,
+      "statuses": {
+        "success": 18
+      },
+      "sent_requests": 18,
+      "usage": {
+        "prompt_tokens": {
+          "reported_sum": 123558,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "completion_tokens": {
+          "reported_sum": 31284,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "total_tokens": {
+          "reported_sum": 154842,
+          "reported_requests": 18,
+          "missing_requests": 0
+        }
+      },
+      "api_elapsed_seconds_median": 12.795054833521135,
+      "api_elapsed_seconds_total": 270.418718290166,
+      "full_end_to_end_seconds": null,
+      "structural_marker_occurrences": 277,
+      "structural_marker_resolution_rate": 1.0,
+      "context_chunk_utilization_mean": 0.6111111111111112,
+      "citation_statistics_records": 18,
+      "successful_answer_uniqueness_by_question": {
+        "R06": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R02": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R05": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R01": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R04": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R03": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        }
+      },
+      "scientific_quality_scores": null,
+      "cost": null
+    },
+    "hybrid_rerank": {
+      "records": 18,
+      "statuses": {
+        "success": 18
+      },
+      "sent_requests": 18,
+      "usage": {
+        "prompt_tokens": {
+          "reported_sum": 126600,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "completion_tokens": {
+          "reported_sum": 30329,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "total_tokens": {
+          "reported_sum": 156929,
+          "reported_requests": 18,
+          "missing_requests": 0
+        }
+      },
+      "api_elapsed_seconds_median": 13.806654937507119,
+      "api_elapsed_seconds_total": 295.0010467490647,
+      "full_end_to_end_seconds": null,
+      "structural_marker_occurrences": 268,
+      "structural_marker_resolution_rate": 1.0,
+      "context_chunk_utilization_mean": 0.6333333333333333,
+      "citation_statistics_records": 18,
+      "successful_answer_uniqueness_by_question": {
+        "R05": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R02": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R03": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R01": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R04": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R06": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        }
+      },
+      "scientific_quality_scores": null,
+      "cost": null
+    },
+    "bm25": {
+      "records": 18,
+      "statuses": {
+        "success": 18
+      },
+      "sent_requests": 18,
+      "usage": {
+        "prompt_tokens": {
+          "reported_sum": 123036,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "completion_tokens": {
+          "reported_sum": 24152,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "total_tokens": {
+          "reported_sum": 147188,
+          "reported_requests": 18,
+          "missing_requests": 0
+        }
+      },
+      "api_elapsed_seconds_median": 12.115950958017493,
+      "api_elapsed_seconds_total": 233.16873508290155,
+      "full_end_to_end_seconds": null,
+      "structural_marker_occurrences": 183,
+      "structural_marker_resolution_rate": 1.0,
+      "context_chunk_utilization_mean": 0.5316358024691358,
+      "citation_statistics_records": 18,
+      "successful_answer_uniqueness_by_question": {
+        "R06": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R02": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R01": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R05": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R04": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R03": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        }
+      },
+      "scientific_quality_scores": null,
+      "cost": null
+    },
+    "direct": {
+      "records": 18,
+      "statuses": {
+        "success": 18
+      },
+      "sent_requests": 18,
+      "usage": {
+        "prompt_tokens": {
+          "reported_sum": 2040,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "completion_tokens": {
+          "reported_sum": 11289,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "total_tokens": {
+          "reported_sum": 13329,
+          "reported_requests": 18,
+          "missing_requests": 0
+        }
+      },
+      "api_elapsed_seconds_median": 8.364319708489347,
+      "api_elapsed_seconds_total": 203.33788325218484,
+      "full_end_to_end_seconds": null,
+      "structural_marker_occurrences": null,
+      "structural_marker_resolution_rate": null,
+      "context_chunk_utilization_mean": null,
+      "citation_statistics_records": 0,
+      "successful_answer_uniqueness_by_question": {
+        "R01": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R06": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R04": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R03": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R02": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R05": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        }
+      },
+      "scientific_quality_scores": null,
+      "cost": null
+    },
+    "dense": {
+      "records": 18,
+      "statuses": {
+        "success": 18
+      },
+      "sent_requests": 18,
+      "usage": {
+        "prompt_tokens": {
+          "reported_sum": 126207,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "completion_tokens": {
+          "reported_sum": 30016,
+          "reported_requests": 18,
+          "missing_requests": 0
+        },
+        "total_tokens": {
+          "reported_sum": 156223,
+          "reported_requests": 18,
+          "missing_requests": 0
+        }
+      },
+      "api_elapsed_seconds_median": 14.002951353992103,
+      "api_elapsed_seconds_total": 248.0280920820078,
+      "full_end_to_end_seconds": null,
+      "structural_marker_occurrences": 276,
+      "structural_marker_resolution_rate": 1.0,
+      "context_chunk_utilization_mean": 0.578395061728395,
+      "citation_statistics_records": 18,
+      "successful_answer_uniqueness_by_question": {
+        "R04": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R06": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R01": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R02": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R05": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        },
+        "R03": {
+          "successful_repetitions": 3,
+          "distinct_exact_answers": 3
+        }
+      },
+      "scientific_quality_scores": null,
+      "cost": null
+    }
+  },
+  "scientific_review_status": "pending_human_review",
+  "cost_status": "price_unverified",
+  "timing_scope": "API only; retrieval not timed in the frozen preview",
+  "production_default_switched": false,
+  "retrieval_metrics_from_frozen_preview": {
+    "bm25": {
+      "scored_questions": 6,
+      "rr_first_annotated_doc": 0.8333333333333334,
+      "rr_first_complete_anchor": 0.5833333333333334,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 0.8333333333333334,
+          "annotated_doc_recall": 0.8333333333333334,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.5,
+          "complete_anchor_recall": 0.5,
+          "all_anchors_complete": 0.5,
+          "annotated_point_evidence_complete": 0.5
+        },
+        "5": {
+          "annotated_doc_hit": 0.8333333333333334,
+          "annotated_doc_recall": 0.8333333333333334,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.6666666666666666,
+          "complete_anchor_recall": 0.6666666666666666,
+          "all_anchors_complete": 0.6666666666666666,
+          "annotated_point_evidence_complete": 0.6666666666666666
+        },
+        "10": {
+          "annotated_doc_hit": 0.8333333333333334,
+          "annotated_doc_recall": 0.8333333333333334,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.6666666666666666,
+          "complete_anchor_recall": 0.6666666666666666,
+          "all_anchors_complete": 0.6666666666666666,
+          "annotated_point_evidence_complete": 0.6666666666666666
+        }
+      }
+    },
+    "dense": {
+      "scored_questions": 6,
+      "rr_first_annotated_doc": 1.0,
+      "rr_first_complete_anchor": 0.575,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 0.3333333333333333,
+          "complete_anchor_recall": 0.3333333333333333,
+          "all_anchors_complete": 0.3333333333333333,
+          "annotated_point_evidence_complete": 0.3333333333333333
+        },
+        "5": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 1.0,
+          "complete_anchor_recall": 1.0,
+          "all_anchors_complete": 1.0,
+          "annotated_point_evidence_complete": 1.0
+        },
+        "10": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 1.0,
+          "complete_anchor_recall": 1.0,
+          "all_anchors_complete": 1.0,
+          "annotated_point_evidence_complete": 1.0
+        }
+      }
+    },
+    "hybrid_rerank": {
+      "scored_questions": 6,
+      "rr_first_annotated_doc": 1.0,
+      "rr_first_complete_anchor": 0.8055555555555556,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 0.6666666666666666,
+          "complete_anchor_recall": 0.6666666666666666,
+          "all_anchors_complete": 0.6666666666666666,
+          "annotated_point_evidence_complete": 0.6666666666666666
+        },
+        "5": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 1.0,
+          "complete_anchor_recall": 1.0,
+          "all_anchors_complete": 1.0,
+          "annotated_point_evidence_complete": 1.0
+        },
+        "10": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 1.0,
+          "complete_anchor_recall": 1.0,
+          "all_anchors_complete": 1.0,
+          "annotated_point_evidence_complete": 1.0
+        }
+      }
+    },
+    "hybrid_rerank_diverse": {
+      "scored_questions": 6,
+      "rr_first_annotated_doc": 1.0,
+      "rr_first_complete_anchor": 0.8055555555555556,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 0.6666666666666666,
+          "complete_anchor_recall": 0.6666666666666666,
+          "all_anchors_complete": 0.6666666666666666,
+          "annotated_point_evidence_complete": 0.6666666666666666
+        },
+        "5": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 1.0,
+          "complete_anchor_recall": 1.0,
+          "all_anchors_complete": 1.0,
+          "annotated_point_evidence_complete": 1.0
+        },
+        "10": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 1.0,
+          "complete_anchor_recall": 1.0,
+          "all_anchors_complete": 1.0,
+          "annotated_point_evidence_complete": 1.0
+        }
+      }
+    }
+  },
+  "all_90_inputs_match_approved_preview": true,
+  "status": "generation_complete_human_review_pending",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f",
+  "generation_requests": 90,
+  "reserve_questions": 6,
+  "repetitions": 3,
+  "human_review_directory": "/Users/zemaochen/projects/ChemQA/output/q10b_review/20261008T005418-d96a748a50b54e2caa1be4115837a83b"
+}

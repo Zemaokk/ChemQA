@@ -1,0 +1,46 @@
+{
+  "schema": "chemqa-git-hygiene-validation-v1",
+  "created_utc": "2026-10-08T09:42:35.458988+00:00",
+  "status": "passed",
+  "stopped_tracking": {
+    "entries": 245,
+    "local_files": 244,
+    "model_gitlinks": 1,
+    "file_bytes": 1278420781,
+    "groups": {
+      "data": 183,
+      "example_answers": 30,
+      "heatmap_visualization": 1,
+      "models": 1,
+      "qa_testing": 30
+    }
+  },
+  "checks": {
+    "local_files_sha256_unchanged": 244,
+    "local_model_directory_retained": true,
+    "tracked_ignored_paths": 0,
+    "ignore_boundary_cases": 20,
+    "runtime_profiles": [
+      "legacy",
+      "hybrid_rerank",
+      "hybrid_rerank_diverse"
+    ],
+    "staged_secret_pattern_audit": "passed",
+    "working_tree_secret_pattern_audit": "passed",
+    "git_diff_check": "passed",
+    "git_cached_diff_check": "passed"
+  },
+  "scope": {
+    "source_or_runtime_implementation_changed": false,
+    "data_deleted_locally": false,
+    "history_rewritten": false,
+    "committed": false,
+    "uploaded": false
+  },
+  "limitations": [
+    "Existing Git history retains previous data and credentials; use the established history-free source release path for public distribution.",
+    "Tracked documentation/evaluation can contain excerpts and local paths; tracking is not publication clearance.",
+    "File removals are staged by git rm --cached; ignore and documentation edits still need staging before a user commit."
+  ],
+  "rules_sha256": "f92a196056fd25b57edeca5c3ac55692bf919f116b735827677da1e4d61f932e"
+}

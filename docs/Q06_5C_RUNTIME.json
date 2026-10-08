@@ -1,0 +1,153 @@
+{
+  "schema": "chemqa-q065c-runtime-v1",
+  "passed": true,
+  "versions": {
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.19.0",
+    "torch": "2.14.1",
+    "huggingface-hub": "1.33.0",
+    "httpx": "0.28.1",
+    "socksio": "1.0.0",
+    "numpy": "2.5.3"
+  },
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "mps_built": true,
+  "mps_available": true,
+  "torch_threads": 1,
+  "models": [
+    {
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "kind": "embedding",
+      "load_seconds": 1.4638329580193385,
+      "model_max_sequence_tokens": 32768,
+      "probe_sequence_limit": 512,
+      "full_input_token_counts": [
+        30,
+        16,
+        10
+      ],
+      "output_shape": [
+        3,
+        1024
+      ],
+      "cpu_dtype": "float32",
+      "cpu_batch_sizes_checked": [
+        1,
+        2
+      ],
+      "cpu_elapsed_seconds_batch2": 0.3710442910087295,
+      "cpu_batch_max_absolute_difference": 2.6798807084560394e-07,
+      "cpu_output": null,
+      "synthetic_relevance_scores": [
+        0.7977579832077026,
+        0.22651323676109314
+      ],
+      "synthetic_related_scores_higher": true,
+      "cpu_batch_consistent": true,
+      "selected_device": "mps",
+      "device_selection_fallback": null,
+      "accelerator_trials": [
+        {
+          "requested_device": "mps",
+          "actual_device": "mps",
+          "dtype": "torch.float32",
+          "elapsed_seconds": 0.28888258297229186,
+          "max_abs_difference_from_cpu_fp32": 3.241002559661865e-07,
+          "fallback_reason": null,
+          "all_finite": true,
+          "mps_allocated_bytes": 2399404544,
+          "mps_driver_allocated_bytes": 2836070400
+        },
+        {
+          "requested_device": "mps",
+          "actual_device": "mps",
+          "dtype": "torch.float16",
+          "elapsed_seconds": 0.05544683296466246,
+          "max_abs_difference_from_cpu_fp32": 0.00026185065507888794,
+          "fallback_reason": null,
+          "all_finite": true,
+          "mps_allocated_bytes": 1199702528,
+          "mps_driver_allocated_bytes": 3406495744
+        }
+      ],
+      "rss_high_water_bytes": 2953003008,
+      "modules": [
+        "Transformer",
+        "Pooling",
+        "Normalize"
+      ],
+      "generation_requests": 0,
+      "passed": true
+    },
+    {
+      "model": "Qwen/Qwen3-Reranker-0.6B",
+      "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "kind": "reranker",
+      "load_seconds": 0.996467458026018,
+      "model_max_sequence_tokens": 40960,
+      "probe_sequence_limit": 512,
+      "full_input_token_counts": [
+        96,
+        90
+      ],
+      "output_shape": [
+        2
+      ],
+      "cpu_dtype": "float32",
+      "cpu_batch_sizes_checked": [
+        1,
+        2
+      ],
+      "cpu_elapsed_seconds_batch2": 0.27225925005041063,
+      "cpu_batch_max_absolute_difference": 3.814697265625e-05,
+      "cpu_output": [
+        8.993245124816895,
+        -11.121867179870605
+      ],
+      "synthetic_relevance_scores": [
+        8.993245124816895,
+        -11.121867179870605
+      ],
+      "synthetic_related_scores_higher": true,
+      "cpu_batch_consistent": true,
+      "selected_device": "mps",
+      "device_selection_fallback": null,
+      "accelerator_trials": [
+        {
+          "requested_device": "mps",
+          "actual_device": "mps",
+          "dtype": "torch.float32",
+          "elapsed_seconds": 0.46366708300774917,
+          "max_abs_difference_from_cpu_fp32": 3.147125244140625e-05,
+          "fallback_reason": null,
+          "all_finite": true,
+          "mps_allocated_bytes": 2399404544,
+          "mps_driver_allocated_bytes": 2878013440
+        },
+        {
+          "requested_device": "mps",
+          "actual_device": "mps",
+          "dtype": "torch.float16",
+          "elapsed_seconds": 0.4441054580383934,
+          "max_abs_difference_from_cpu_fp32": 0.004679679870605469,
+          "fallback_reason": null,
+          "all_finite": true,
+          "mps_allocated_bytes": 1200488960,
+          "mps_driver_allocated_bytes": 3450109952
+        }
+      ],
+      "rss_high_water_bytes": 4108976128,
+      "modules": [
+        "Transformer",
+        "LogitScore"
+      ],
+      "generation_requests": 0,
+      "passed": true
+    }
+  ],
+  "generation_requests": 0,
+  "quality_benchmark": false,
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q065c_runtime/20261007T014250-1f7e572b45304f499dc0af390ad556d5"
+}

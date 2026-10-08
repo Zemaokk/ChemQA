@@ -1,0 +1,170 @@
+{
+  "metric": "cosine",
+  "rows": 26025,
+  "dimensions": 384,
+  "document_vector_norm_percentiles": [
+    2.2470823549123833,
+    3.175629271564669,
+    3.586239865825764,
+    6.160524342065242
+  ],
+  "maximum_score_difference_from_independent_formula": 4.440892098500626e-16,
+  "retrieval_and_heatmap_scores_match": true,
+  "single_query_rank_matches": true,
+  "multi_query_selection": "mean_cosine",
+  "query_encoding_calls": 21,
+  "document_encoding_calls": 0,
+  "data_files_unchanged": true,
+  "sha256": {
+    "vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "queries": [
+    {
+      "query": "mechanism of CO2 electroreduction on Cu single-atom catalysts",
+      "top_10_chunk_ids": [
+        "chunk_51035595df6103b4d9da8a3369dc2541eab81fdb23850427d8d1e48e41634ea5",
+        "chunk_2f40fcacea596616a64cfd87d128a4c880847c93c18c2c03a0daea949ae7d605",
+        "chunk_dfd233a685a204a42d8fdfe04c7dc3a0f3517127d1e314c878e53f5c54c8ca18",
+        "chunk_af2ef2620f9b86b633de95f81f5c312367673a91f00b3e10a416b586e0fe5fd3",
+        "chunk_465c08b5067f8fe158fde3a18a671004f248940b14c7498abc96ce19b7041611",
+        "chunk_48f47d7f1f53e2ed1d353fe7b4702706217734d9927b91fba09be1d703cd4d4a",
+        "chunk_fde776ed2ef2d57ce1a8712d2cc724e23295b4f8485e97796108f075875cbd1c",
+        "chunk_2e8fb8ff1b67d8a63fe8a3c5bb287e888b685087fb9c7141043b9c29ffd9175e",
+        "chunk_74940f9f13982e16e7777fdda92d1889e4ae8cc50e90d0ed09df48f90956d0df",
+        "chunk_c5c521c8bc536938183a31561993b98cd59eba739b4746a00c6c4c2889fc6c91"
+      ],
+      "top_10_cosine_scores": [
+        0.8412223789978494,
+        0.8351494224705769,
+        0.8314733656336117,
+        0.8268775302521326,
+        0.820490636318956,
+        0.8131734846493002,
+        0.8091849549542232,
+        0.807598384507461,
+        0.8001823790657211,
+        0.799612117422128
+      ],
+      "top_10_overlap_with_old_dot_product": 4,
+      "chunks_at_default_cosine_threshold": 6074
+    },
+    {
+      "query": "electrochemical oxidation of alcohols to aldehydes",
+      "top_10_chunk_ids": [
+        "chunk_99179fe8c7dae54b494bbe45b457b589594f9b10db60488eabdd618c0f369fef",
+        "chunk_adfbae62fbb86357e4de9ec73f0b0c69325125406e48753a00dfc6799c94a37a",
+        "chunk_59210299c84f67263ba454163c6a922921680af69d920b8b8b2f204d9587385d",
+        "chunk_5445e55a222dacc02597bcd2003b391bb6798634cdcc25b31f7bece15721d708",
+        "chunk_79f37a179e334791f3671c4e91ca4fd74694992cdfb515b628d9e0a2b6c7c018",
+        "chunk_f58e1eca1dcd848c44d507551645f5d492ddc8af509c155025673e3ffda70e25",
+        "chunk_157d6a69cff78e690025d4d7660c13948af5d10020efb89673553257d4395b99",
+        "chunk_1bcce945caddee8542e5208a1a79b688083ff4a813a1e3e7b547a20eb6dc9e2f",
+        "chunk_dc97415473b12c6782f541e639877e27a4e51e7f221cc16374456009b4b9cb52",
+        "chunk_38db360f52b584b98b0232ed84376ec841660ce91b5ae669779ac6353d9f92d5"
+      ],
+      "top_10_cosine_scores": [
+        0.7767802784450849,
+        0.7727022199214054,
+        0.7445094683802501,
+        0.7365814725907853,
+        0.7338677593597985,
+        0.7322358079026722,
+        0.731903698511117,
+        0.7274986463312401,
+        0.7201995265418146,
+        0.7177231203019041
+      ],
+      "top_10_overlap_with_old_dot_product": 5,
+      "chunks_at_default_cosine_threshold": 1558
+    },
+    {
+      "query": "electrochemical C-H functionalization of arenes",
+      "top_10_chunk_ids": [
+        "chunk_0e766397137fda9750078b1aa5786b076ede94a12cc04f7493bc60bfdeee4eb3",
+        "chunk_f85daf65ce618aef9ecc820cb3d5240e65eac1c886e7994b49dd720c37af3650",
+        "chunk_d25d433cdb1c47f02ac559c1ceb117bc29266edd3d5be6416d9a1eca384113b6",
+        "chunk_2162fc7f29d259bdac6d25c99ee97180b6b8b6648509cec3cc54700b8e10a719",
+        "chunk_495b6da6fc2e63f2546bea1c83d19a229d2782b5e5c7ea6085bbd847ec63b58d",
+        "chunk_60110c89d91e890cca6aec8df8acefc87bbf9d00174eadb5c317374edc2d33b6",
+        "chunk_daabe10ccd8c7cae2d916a1f387677acd058790071a6d669d107e10f40e1fd42",
+        "chunk_25f937a5deec058d6c47308dc97da0d52f4aa33d1727821cd45aac1b0b4454d6",
+        "chunk_57ca14038031b86b518b1074535e163300052513c2d25f8ee2036d42b75c0928",
+        "chunk_659fb057e4f3c24eb1b5d124fa98c979043d91765ba4b1d33c26dae2e1e5e90c"
+      ],
+      "top_10_cosine_scores": [
+        0.6944235557918916,
+        0.6872518965925936,
+        0.675924317390066,
+        0.6749090762032787,
+        0.6692775702519821,
+        0.6678192828083821,
+        0.6677595510247671,
+        0.6642542314248069,
+        0.6641076352679794,
+        0.6616477076361683
+      ],
+      "top_10_overlap_with_old_dot_product": 2,
+      "chunks_at_default_cosine_threshold": 3576
+    },
+    {
+      "query": "electrochemical synthesis of heterocyclic compounds",
+      "top_10_chunk_ids": [
+        "chunk_6c9546212a6c11599f500d52e070b6983939fabe38288e3a8f57a221ff4d178a",
+        "chunk_1f535224d85d40bf904f934bd3eec60b74551af9aaead0873624afa244906029",
+        "chunk_25f937a5deec058d6c47308dc97da0d52f4aa33d1727821cd45aac1b0b4454d6",
+        "chunk_64c8541e02747280c80d31c8bc053fdcb66d60c8cd87d60d6a89df2761efd831",
+        "chunk_6871fdbc6bf66701a6de71ffcbb45494a8aaa2b8a021bdafecf60bbdc468def8",
+        "chunk_fe885fd539fc017c481d31d09bcc7579fc75a1ef8b58d221299506538463a6bb",
+        "chunk_8d2e494bc9b9f9b8f42d1cc0584c282ace43f25c72d3ab893df52aadc9b3fe78",
+        "chunk_8e2bd81fc835e559cc724b74ede2cbac843da442090ba9802e40a8894e1b805c",
+        "chunk_3208d0ff3e0e28f94e45e972c17d5bf8964e8ee9d276e4280ea65e49ef63245e",
+        "chunk_75b80ed9ddc10dcc6c621820634024dc16f5f60eea2efd3161a15acc71d20cd2"
+      ],
+      "top_10_cosine_scores": [
+        0.7295765890092218,
+        0.7030947324558168,
+        0.6958936404459447,
+        0.6952641664743829,
+        0.6949724011339319,
+        0.689615632994688,
+        0.6820728801826988,
+        0.6812283764020888,
+        0.680587974314851,
+        0.6805464030635741
+      ],
+      "top_10_overlap_with_old_dot_product": 1,
+      "chunks_at_default_cosine_threshold": 3305
+    },
+    {
+      "query": "electrochemical reduction of carbonyl compounds",
+      "top_10_chunk_ids": [
+        "chunk_b9074b1f04281a15783a9d10c1044061a2d70fb55ff3cec7071c0cccb495e3df",
+        "chunk_55a1452a95680d3bce4cebaa746cdd4511fa09bfaee04e422d88336a6ff8636d",
+        "chunk_772bda7b4414d86f5844f82d9bfd73d5e891d5e84cfccb5c74b7ab3f93ebc40c",
+        "chunk_ee613803aec320e491049756e4e389125f05cbbe8fd44a63f0e6fee9edc7422a",
+        "chunk_413e0ae6e2cacba5cbe2c8cda8616e75a723a634396fe59ec8886d7b81679a80",
+        "chunk_e3e635f9107b707c4b950b569c86d3e98b3871c2154372e9962cab42bb8e326f",
+        "chunk_25b05eeb9e1acaa7cb8c7ba6ef083946a5d8c1f761cd98d85e22c6759c36362c",
+        "chunk_8e9519ec0809d94916ea0a6f46d143da2f72aa26a1f987490daf7ad28837f0a4",
+        "chunk_f40a7936ff3d8c53b98656e9b5d6782b9d26ff94d478c09efad8302fa41c785f",
+        "chunk_03bf6712e43d286240fe060578929a24d148a7ff916e63091a6e2a285417de7d"
+      ],
+      "top_10_cosine_scores": [
+        0.789167131312862,
+        0.7605991103451668,
+        0.7597615017178454,
+        0.7547201608391673,
+        0.753381170622873,
+        0.7507331163518643,
+        0.7488917608369783,
+        0.7479949801675491,
+        0.7461753206908355,
+        0.7458410003973908
+      ],
+      "top_10_overlap_with_old_dot_product": 2,
+      "chunks_at_default_cosine_threshold": 4761
+    }
+  ],
+  "quality_evaluation": "Not evaluated; score agreement does not establish retrieval quality."
+}

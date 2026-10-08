@@ -1,0 +1,17 @@
+{
+  "original_rows": 3200,
+  "migrated_rows": 3187,
+  "unique_pdf_byte_contents": 180,
+  "all_retained_text_and_vector_values_exactly_preserved": true,
+  "processed_and_index_chunk_ids_aligned": true,
+  "original_index_sha256": "9c39957e625b562b74ce352294bdec1b653e94f2f1c6acc0f6c48a428ff2e414",
+  "original_chunks_sha256": "18e1190039c0ff28ebc4c27c91d88b88c027c8cced1ec42f76b92d5c9f870cc0",
+  "migrated_index_sha256": "36b46185f1f4bd4d47cf7e867d4a8aaf0d12aca212c20d4a42a6a756da189435",
+  "migrated_chunks_sha256": "c778c1048a4cfe5a0c5e016a0686e38e5da1323632116f2459b2d99abe0747ee",
+  "source_alias_groups": [
+    [
+      "/Users/zemao/ChemQA/data/raw_papers/Du 等 - 2025 - Highly selective oxygen electroreduction to hydrogen peroxide on sulfur‐doped mesoporous carbon.pdf",
+      "/Users/zemao/ChemQA/data/raw_papers/Fan 等 - 2025 - Doping Mo triggers charge distribution optimization and P vacancy of Ni2 P@Ni12 P5 heterojunction for industrial electrocatalytic production of adipic acid and H2_1.pdf"
+    ]
+  ]
+}

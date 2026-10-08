@@ -1,0 +1,28 @@
+{
+  "schema": "chemqa-artifact-run-v1",
+  "kind": "source_releases",
+  "status": "prepared",
+  "created_utc": "2026-10-08T10:19:57.878247+00:00",
+  "config": {
+    "raw_papers_dir": "/Users/zemaochen/projects/ChemQA/data/raw_papers",
+    "index_dir": "/Users/zemaochen/projects/ChemQA/data/vector_db",
+    "processed_dir": "/Users/zemaochen/projects/ChemQA/data/processed",
+    "output_dir": "/Users/zemaochen/projects/ChemQA/output",
+    "model_dir": "/Users/zemaochen/projects/ChemQA/models",
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "embedding_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "embedding_profile": null,
+    "retrieval_top_k": 10,
+    "chunk_overlap_tokens": 16,
+    "api_model": "DeepSeek-V4-Flash",
+    "api_temperature": 0.3,
+    "max_output_tokens": 4096,
+    "api_thinking": "disabled",
+    "api_connect_timeout": 10.0,
+    "api_read_timeout": 120.0,
+    "api_max_attempts": 3,
+    "uv_lock_sha256": "4112cda076860e3a53d10a52b7f07119db62311a1dc5fef30a8bb38929296e88"
+  },
+  "file_count": 239,
+  "key_pattern_matches": 0
+}

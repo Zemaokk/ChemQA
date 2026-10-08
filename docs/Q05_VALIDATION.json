@@ -1,0 +1,68 @@
+{
+  "runs": [
+    {
+      "question": "electrochemical oxidation of alcohols to aldehydes",
+      "evidence_count": 10,
+      "allowed_chunk_ids": [
+        "chunk_99179fe8c7dae54b494bbe45b457b589594f9b10db60488eabdd618c0f369fef",
+        "chunk_adfbae62fbb86357e4de9ec73f0b0c69325125406e48753a00dfc6799c94a37a",
+        "chunk_59210299c84f67263ba454163c6a922921680af69d920b8b8b2f204d9587385d",
+        "chunk_5445e55a222dacc02597bcd2003b391bb6798634cdcc25b31f7bece15721d708",
+        "chunk_79f37a179e334791f3671c4e91ca4fd74694992cdfb515b628d9e0a2b6c7c018",
+        "chunk_f58e1eca1dcd848c44d507551645f5d492ddc8af509c155025673e3ffda70e25",
+        "chunk_157d6a69cff78e690025d4d7660c13948af5d10020efb89673553257d4395b99",
+        "chunk_1bcce945caddee8542e5208a1a79b688083ff4a813a1e3e7b547a20eb6dc9e2f",
+        "chunk_dc97415473b12c6782f541e639877e27a4e51e7f221cc16374456009b4b9cb52",
+        "chunk_38db360f52b584b98b0232ed84376ec841660ce91b5ae669779ac6353d9f92d5"
+      ],
+      "context_version": "chemqa-evidence-v1",
+      "prompt_version": "chemqa-evidence-prompt-v1",
+      "template_sha256": "0244b556fd086b2e29519dcf166d95f940446e0d4328a8fd68bfb7449867d121",
+      "prompt_sha256": "e8b21689594fbf7a50d6a2e29758c0e75239a61aa24ac592252201620e97b19f",
+      "prompt_characters": 10727,
+      "cited_chunk_id": "chunk_99179fe8c7dae54b494bbe45b457b589594f9b10db60488eabdd618c0f369fef",
+      "unresolved_reasons": [
+        "noncanonical",
+        "noncanonical",
+        "unknown"
+      ],
+      "payload_and_sidecar_match": true
+    },
+    {
+      "question": "electrochemical reduction of carbonyl compounds",
+      "evidence_count": 10,
+      "allowed_chunk_ids": [
+        "chunk_b9074b1f04281a15783a9d10c1044061a2d70fb55ff3cec7071c0cccb495e3df",
+        "chunk_55a1452a95680d3bce4cebaa746cdd4511fa09bfaee04e422d88336a6ff8636d",
+        "chunk_772bda7b4414d86f5844f82d9bfd73d5e891d5e84cfccb5c74b7ab3f93ebc40c",
+        "chunk_ee613803aec320e491049756e4e389125f05cbbe8fd44a63f0e6fee9edc7422a",
+        "chunk_413e0ae6e2cacba5cbe2c8cda8616e75a723a634396fe59ec8886d7b81679a80",
+        "chunk_e3e635f9107b707c4b950b569c86d3e98b3871c2154372e9962cab42bb8e326f",
+        "chunk_25b05eeb9e1acaa7cb8c7ba6ef083946a5d8c1f761cd98d85e22c6759c36362c",
+        "chunk_8e9519ec0809d94916ea0a6f46d143da2f72aa26a1f987490daf7ad28837f0a4",
+        "chunk_f40a7936ff3d8c53b98656e9b5d6782b9d26ff94d478c09efad8302fa41c785f",
+        "chunk_03bf6712e43d286240fe060578929a24d148a7ff916e63091a6e2a285417de7d"
+      ],
+      "context_version": "chemqa-evidence-v1",
+      "prompt_version": "chemqa-evidence-prompt-v1",
+      "template_sha256": "0244b556fd086b2e29519dcf166d95f940446e0d4328a8fd68bfb7449867d121",
+      "prompt_sha256": "d16a64c05e133c5ccc9b128bb89b661934607fabf2590870bce864ee1da07998",
+      "prompt_characters": 10192,
+      "cited_chunk_id": "chunk_b9074b1f04281a15783a9d10c1044061a2d70fb55ff3cec7071c0cccb495e3df",
+      "unresolved_reasons": [
+        "unknown",
+        "noncanonical",
+        "unknown"
+      ],
+      "payload_and_sidecar_match": true
+    }
+  ],
+  "mocked_http_requests": 2,
+  "external_api_requests": 0,
+  "data_files_unchanged": true,
+  "sha256": {
+    "vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "scope": "Real retrieval and actual API-payload serialization; synthetic answers only, no model quality evaluation."
+}

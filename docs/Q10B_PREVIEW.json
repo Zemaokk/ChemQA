@@ -1,0 +1,18 @@
+{
+  "schema": "chemqa-q10b-send-scope-v1",
+  "status": "authorized_generation_complete_human_review_pending",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q10b_previews/20261008T003102-7049b4e82a524fcabd2ff19c61501b35",
+  "preview_run_sha256": "0bf8e1385eecadfa8f5849ae03c2605ed0e3a9f133b4498b79537884a40209ef",
+  "unique_inputs": 30,
+  "queries": 6,
+  "repetitions": 3,
+  "maximum_requests": 90,
+  "maximum_output_tokens": 368640,
+  "unique_pdf_count": 35,
+  "generation_requests": 90,
+  "human_scientific_review": "pending",
+  "exact_provider_input_tokens": null,
+  "price_or_total_cost": null,
+  "endpoint": "https://llmapi.paratera.com/v1/chat/completions",
+  "authorization": "Human user explicitly replied 批准 to the frozen 6-question/35-PDF/90-request scope."
+}

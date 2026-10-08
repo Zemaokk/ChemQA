@@ -1,0 +1,55 @@
+{
+  "schema": "chemqa-q065j-validation-v1",
+  "status": "engineering_passed_assistant_review_complete_default_retained",
+  "date": "2026-10-08",
+  "runtime_manifest_sha256": "33fde98378163c369ec8c3654559ed46fb57a1d67e8a8377a508825c027ebb19",
+  "tests": {
+    "passed": 245,
+    "new_runtime_tests": 6,
+    "command": "HF_HUB_OFFLINE=1 HF_HOME=models/huggingface MPLCONFIGDIR=/private/tmp/chemqa-matplotlib MPLBACKEND=Agg .venv/bin/python -m unittest discover -s tests",
+    "note": "Q10-B campaign tests use mocked transport; no live generation requests."
+  },
+  "checks": {
+    "ruff_check": "passed",
+    "ruff_format_check": "passed; 87 files",
+    "uv_sync_locked_offline": "passed",
+    "git_diff_check": "passed",
+    "profiles": {
+      "legacy": {
+        "status": "sha256_verified_offline",
+        "profile_artifact_count": 2
+      },
+      "hybrid_rerank": {
+        "status": "sha256_verified_offline",
+        "profile_artifact_count": 15
+      },
+      "hybrid_rerank_diverse": {
+        "status": "sha256_verified_offline",
+        "profile_artifact_count": 16
+      }
+    },
+    "shared_frozen_files": 49
+  },
+  "legacy_offline_smoke": {
+    "status": "passed",
+    "device": "cpu",
+    "loaded_documents": 26025,
+    "embedding_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "generation_body_equals_q10b_protocol": true,
+    "generation_requests": 0
+  },
+  "production_default_switched": false,
+  "scientific_winner": null,
+  "human_reviews": "Not performed; user requested AI assistant expert review instead. No independent human approval.",
+  "new_reserve_queries": 0,
+  "live_api_requests": 0,
+  "committed": false,
+  "initial_runtime_manifest_sha256": "227e6190106662ea7329734f9c0d238a995ee4c2e56e8a983ed15594c3ce1ed7",
+  "assistant_review_update": {
+    "validation": "docs/Q10B_EXPERT_VALIDATION.json",
+    "results": "docs/Q10B_EXPERT_RESULTS.json",
+    "implementation_changed": false,
+    "tests_passed": 245,
+    "new_api_requests": 0
+  }
+}

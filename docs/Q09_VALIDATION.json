@@ -1,0 +1,67 @@
+{
+  "schema": "chemqa-q09-validation-v1",
+  "status": "passed",
+  "date": "2026-10-07",
+  "current_working_tree_pattern_clean": true,
+  "git_index_pattern_clean": true,
+  "history_pattern_clean": false,
+  "historical_distinct_key_patterns": 1,
+  "historical_affected_blobs": 4,
+  "historical_revocation": {
+    "status": "user_confirmed_revoked_or_deleted",
+    "independently_verified": false,
+    "old_key_reused_for_probe": false
+  },
+  "history_strategy": "Keep existing development history; prepare a separate source snapshot without .git for future publication.",
+  "provider_check": {
+    "provider": "Paratera",
+    "base_url": "https://llmapi.paratera.com/v1",
+    "model": "DeepSeek-V3.2-Instruct",
+    "method": "GET",
+    "endpoint": "/v1/models",
+    "generation_requests": 0,
+    "key_present": true,
+    "http_status": 200,
+    "model_list_verified": true,
+    "selected_model_listed": true,
+    "listed_model_count": 96,
+    "unauthenticated_http_status": 401,
+    "credential_access_verified": true
+  },
+  "local_env": {
+    "git_ignored": true,
+    "git_tracked": false,
+    "posix_mode": "0o600",
+    "key_recorded_in_report": false,
+    "current_key_matches_historical_exposure": false
+  },
+  "source_snapshot": {
+    "directory": "/Users/zemaochen/projects/ChemQA/output/source_releases/q09-20261007T010705-ebfa8b667a774df29b2bb4be3ab7d5b9",
+    "contains_git_history": false,
+    "contains_local_env": false,
+    "contains_literature_or_vectors": false,
+    "copied_bytes_pattern_matches": 0
+  },
+  "unit_tests": {
+    "total": 103,
+    "new_q09": 8,
+    "status": "passed"
+  },
+  "active_data_sha256": {
+    "/Users/zemaochen/projects/ChemQA/data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "/Users/zemaochen/projects/ChemQA/data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "active_data_unchanged_from_q08": true,
+  "repository_head": "5dc64c8926ed1cc4d51c248a568fcc832d5f3ff1",
+  "repository_commit_created": false,
+  "history_rewritten": false,
+  "pushed_or_published": false,
+  "limitations": [
+    "Pattern audit only; other credential formats are not covered.",
+    "Binary/unknown-extension files and ignored local files are excluded.",
+    "History checks local --all refs, not remote-only refs, reflogs, unreachable objects, clones or caches.",
+    "Historical text blobs above the declared size limit are listed but not scanned.",
+    "Account-side revocation is not verified by this script.",
+    "Model-list access is verified; generation compatibility, costs and model quality are not."
+  ]
+}

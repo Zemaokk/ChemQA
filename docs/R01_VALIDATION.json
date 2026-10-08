@@ -1,0 +1,74 @@
+{
+  "schema": "chemqa-r01-validation-v1",
+  "created_utc": "2026-10-08T09:07:40.428009+00:00",
+  "status": "engineering_verified_scientific_validation_pending",
+  "parent_checkout": "6df5c64",
+  "policy": "chemqa-conservative-answer-r01-v1",
+  "prompt_sha256": "d7d387af35ca88046f210e3bd09f6be5cd191810308d3cf7ab520e361948e561",
+  "runtime_manifest_sha256": "d04e9844158e6912db4454821e707a4b5db3f143f368bc9503b901bbee65e008",
+  "checks": {
+    "unittest": {
+      "passed": 263,
+      "new_synthetic_cases": 18,
+      "elapsed_seconds": 22.056,
+      "transport": "mocked; no live generation"
+    },
+    "ruff_check": "passed",
+    "ruff_format_check": "passed; 91 files",
+    "git_diff_check": "passed",
+    "runtime_profiles_verified": [
+      "legacy",
+      "hybrid_rerank",
+      "hybrid_rerank_diverse"
+    ],
+    "old_runtime_implementation_drift_detected": true,
+    "q10b_protocol": "passed",
+    "original_raw_answer_hashes_verified": 90,
+    "historical_files_unchanged_from_HEAD": [
+      "config/q065j_runtime.json",
+      "config/prompts.py",
+      "config/q10b_protocol.json",
+      "docs/Q11_VALIDATION.json",
+      "docs/Q06_5J_CLOSEOUT.json",
+      "docs/Q10B_EXPERT_ANSWERS.json",
+      "docs/Q10B_EXPERT_RESULTS.json",
+      "evaluation/q10b/reserve.json",
+      "evaluation/q10b/dev.json",
+      "evaluation/q10b/documents.json",
+      "evaluation/q10b/manifest.json"
+    ],
+    "relative_document_links_verified": 90,
+    "current_secret_pattern_audit": "passed"
+  },
+  "files_sha256": {
+    "README.md": "f5557e8d34c0ae8b7beaaa2d66ca34dae8e124a74f391cb4f7afc8e9e0176a8e",
+    "docs/RUNBOOK.md": "38f6ceed18b9098c62383be0d38bd44630570ef6a0d7aa848eefd675bbf794c7",
+    "docs/EVALUATION_GUIDE.md": "156d4a57d78da40769a90ab01c997c852e713eccc03327af55c8449ed77a9c8c",
+    "docs/TECHNICAL_REPORT.md": "04408ce81ea4819b607abc3b8257b808dcea486dd92938349ed4f59afd945e43",
+    "docs/REFACTOR_PLAN.md": "0a7e02ed125b518b82ed9810508a4291635bbbd78a1bdfbfbbfdf5f35a779dae",
+    "docs/R01_ANSWER_RELIABILITY.md": "bb7dadcd1238b3ede2c33014137cc4d16a79f743976bd4d8ddb224fa01aab087",
+    "config/answer_policy.py": "6b5d9b37a1438b2eaf373e0c8ae8dade25d256707aa8ee374da9c212640cb41e",
+    "src/api_integration/guarded_generator.py": "bf19ea73198c72cab890ef11db76b4e72976f419200142a8f1610db30fca8d04",
+    "src/qa_system/answer_validation.py": "298f20e0dbfe2c013d80cabdf79818519c85c09f2f771cb9f152060309890ff3",
+    "src/api_integration/prompt_builder.py": "fe83946e8320565acbb6db50d52dd093ca6635c89272b158a798975a9aa77322",
+    "src/qa_system/expert_system.py": "2053b80003045f1724407d3dbe4ecf9a12ef95a439298c63e13c1886d7cc32f0",
+    "src/qa_system/runtime_profile.py": "5c86afe980eff2dae92418647837ac941bd234ce17a116bd6cf22727a7ec643e",
+    "tests/test_r01_answer_validation.py": "52be17fd2ff94605f40d9facba5323f119e5a56d9e80fe89e7b215a13045144d",
+    "tests/test_q01_identity.py": "3fbae2d0f8e43231fff9088213eef180406f668c97e12ad7192b34a07af38e7b",
+    "tests/test_q02_location.py": "40d49bf4bf4ab4d7e6e819e28bad93d50bc95d9ee95aba0994cda31715e14047"
+  },
+  "new_api_requests": 0,
+  "new_reserve_rankings": 0,
+  "new_models_or_index_rebuilds": 0,
+  "retrieval_default_switched": false,
+  "scientific_support_verified": false,
+  "independent_domain_acceptance": false,
+  "committed": false,
+  "limitations": [
+    "Synthetic contract checks do not measure scientific accuracy or semantic condition-to-result binding.",
+    "Limited numeric/formula/absence expressions can miss violations or block acceptable answers.",
+    "Source extraction damage is not repaired; literal formula match does not verify the PDF original.",
+    "The new prompt may change selected context under the existing budget; Q10-B scores apply only to the old version.",
+    "Historical generator/evaluation paths retain original behavior; guards cover ChemicalQAExpert only."
+  ]
+}

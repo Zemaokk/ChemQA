@@ -1,0 +1,91 @@
+{
+  "schema": "chemqa-q065i-validation-v1",
+  "status": "passed",
+  "regression": {
+    "passed": 228,
+    "new_tests": 16,
+    "seconds": 22.788
+  },
+  "ruff_check": "passed",
+  "ruff_format_check": {
+    "status": "passed",
+    "python_files": 81
+  },
+  "git_diff_check": "passed",
+  "locked_offline_environment_sync": "passed",
+  "dependencies_defaults_prompt_and_retrieval_files_unchanged": {
+    "pyproject.toml": true,
+    "uv.lock": true,
+    "requirements.txt": true,
+    "config/settings.py": true,
+    "config/prompts.py": true,
+    "src/knowledge_base/reranker.py": true,
+    "src/knowledge_base/reranked_search.py": true,
+    "src/knowledge_base/hybrid_search.py": true,
+    "src/knowledge_base/lexical_index.py": true,
+    "config/q065h_reranker.json": true
+  },
+  "fixed_source_inputs_verified": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/run.json": "ad51a22eabd94ad30dda856706cc8d3b70f8bc1c675c9baff48148f92d2ed2f3",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/storage.json": "e0191d136b1d23c8e8e8ea493963643a64d3cc047a2256180265695a78c0b363",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/vectors.npy": "5ad771af5ce6e5dd1a734835795811cd5e343a4cc9abff199fbfe94ae609f1e6",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/metadata.sqlite3": "e1060d5ea2e3f7ac401f09120aa98bd9e0bfbfb196f8a3101297d051b90d171c",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/query_vectors.npy": "b2df365d69c5b00a5f903604bfcf8614b6b2d1c82e9a45f14820246989f51e01",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/retrieval.json": "70e9db1e1de8834cc12dd6159377c51cf867b627c9c4a14b0eb6418dcce01739",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/evaluation.json": "4ad46210debfd58b70ca98a22034e0192823a7c92e7d9b1fd60e073f5a658286",
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/run.json": "ea6ea58587752c714f62bceff75a2c1ffea4b96f23cdc6db7d8bdfec181a8ffc",
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/rankings.json": "db427a6deca74c9e63aff0d57dd9e814ddc3a393c06f4c86da571ea25fd00ef6",
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/retrieval_profile.json": "35f5c8b5afd84441da2aee1e9a4981575c57cc9da0a7ceb8bbb26a139fce948d",
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/benchmark.json": "2459b9fa8d6ecbac8a89fd960f9456ee49946858a4d25088e42dfafc8f4af64b",
+    "config/q065h_reranker.json": "f33fb41692090a15276fd9f3e49cae1bb85249a43334aafe75aca9cfc607076d",
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/run.json": "fd21f00ca1a852a1f09e64bde177da81f9d4d86b999e3e0bd12c78a9e0c0d283",
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/rankings.json": "28fc539825be04bb2b91bb4b2fe0f99a80663bfc1f3345e9f981d1eb46e5bd26",
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/reranker_profile.json": "9ad32ef965ea791ea4e33cef8c9ec4b85383864bdc62279ef6f85ada124ac332",
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/model_profile.json": "b900c62a504f26776cd3a3e27e42ec7b26ce8d70fd9caec03a7947b5d600f6bd",
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/scores.npy": "c8f534986d2cf4c80b9e7a1f6778ed744a29985eda8c5f918d96f40b722c1595",
+    "config/q065i_context.json": "6f8d802e26c6b73db8d4b0b649e0ad8cd11bcd072fa03089f04c419fd6a068fc"
+  },
+  "published_artifact_checksums_verified": {
+    "output/context_runs/20261008T001055-cfdb8360e22c4f99a07c2b093fa8f099/preview.json": true,
+    "output/context_runs/20261008T001055-cfdb8360e22c4f99a07c2b093fa8f099/requests.json": true
+  },
+  "generated_artifacts_ignored": {
+    "output/context_runs/20261008T001055-cfdb8360e22c4f99a07c2b093fa8f099/requests.json": true,
+    "output/context_runs/20261008T001055-cfdb8360e22c4f99a07c2b093fa8f099/run.json": true,
+    "output/context_runs/20261008T001055-cfdb8360e22c4f99a07c2b093fa8f099/preview.json": true
+  },
+  "all_20_complete_requests_budget_verified": true,
+  "whole_chunk_text_identity_and_location_preserved": true,
+  "selection_counts_at_most_10_and_6_per_doc": true,
+  "canonical_citation_mapping_passed": true,
+  "frozen_H_top10_baseline_metrics_equal": true,
+  "offline_replay": {
+    "status": "passed",
+    "artifact_directory": "output/context_runs/20261008T001055-cfdb8360e22c4f99a07c2b093fa8f099",
+    "requests_selections_metrics_exact": true,
+    "generation_requests": 0,
+    "reserve_queries_executed": 0
+  },
+  "mock_transport_payload_matches_snapshot": true,
+  "request_parameter_message_drift_blocked": true,
+  "legacy_B_frozen_prompts_regression_passed": true,
+  "source_code_sha256": {
+    "src/qa_system/context_selection.py": "4c3b3fb384eeacc255fa1bb821a1614feaa597f490bdbc31d71b1eac57d38dab",
+    "src/qa_system/expert_system.py": "93ba627f80cc1c58ee02da5dec79f7ea6f0b17e5017ab58cb0314f57554e089d",
+    "src/api_integration/prompt_builder.py": "276c19f4c795d1d70f684e3713895e7fabd444027d2f2a67343962cbb38e71c1",
+    "src/api_integration/api_generator.py": "2ce0526be32f922f26b1cd5d52de7a33b94ebf405e8e0a5d7be1c8f071008fd8",
+    "src/api_integration/api_handler.py": "26af0817fa3f5f6df68036f691b2b86432aea1f54eca3d08371e74505324d896",
+    "scripts/validate_q065i.py": "c9a58225117d4fc1144b513d0d3993e94f169a9560640be874694cfdc725478c",
+    "tests/test_q065i_context.py": "a00f39c282e0cea7212f73ac34baab27702907bcd6b83ee0d3c6d6668ad7c019"
+  },
+  "current_secret_pattern_audit_clean": true,
+  "exact_provider_token_budget_verified": false,
+  "provider_exact_input_tokens": null,
+  "policy_adoption_status": "experimental_pending_Q10B_due_to_D08_regression",
+  "production_default_switched": false,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0,
+  "annotation_quality": "AI draft; domain review pending"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "mode": "hybrid",
+  "candidate_directory": "/Users/zemaochen/projects/ChemQA/output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c",
+  "actual_encoder_device": "mps:0",
+  "actual_parameter_dtype": "torch.float16",
+  "queries": [
+    {
+      "question_id": "D01",
+      "top10_equal": true,
+      "score_kinds": [
+        "rrf"
+      ]
+    },
+    {
+      "question_id": "D03",
+      "top10_equal": true,
+      "score_kinds": [
+        "rrf"
+      ]
+    }
+  ],
+  "query_reencoding_count": 2,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0,
+  "immutable_inputs_unchanged": true
+}

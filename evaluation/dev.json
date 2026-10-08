@@ -1,0 +1,1030 @@
+{
+  "schema": "chemqa-eval-questions-v1",
+  "version": "q10a-v1",
+  "split": "dev",
+  "status": "ai_draft_pending_domain_review",
+  "questions": [
+    {
+      "question_id": "D01",
+      "split": "dev",
+      "category": "single_fact",
+      "question": "Kawajiri（2025）的苄醇电氧化中，TFE 扮演什么角色，主要帮助处理哪类底物？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "4",
+          "doc_id": "doc_be2030d33fdb022e74c60b8e4edc369a3eb37ea2cacf34e1acc47058ea98db2d",
+          "page_number": 1,
+          "char_start": 390,
+          "char_end": 595,
+          "quote": "We found that trifluoroethanol plays a role as a hydrogen atom transfer (HAT)\nmediator, enabling the oxidation of electron-deficient substrates that are difficult\nto directly oxidize on electrode surfaces."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "TFE 是氢原子转移（HAT）介体。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "帮助氧化难以在电极表面直接氧化的缺电子底物。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把 TFE 仅称为惰性溶剂，也不能将本文转写为苯甲醇加氢。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D02",
+      "split": "dev",
+      "category": "conditions",
+      "question": "Kawajiri（2025）氧化 4-甲氧基苄醇的标准电解条件是什么？列出电极、电流、溶剂和主要添加物用量。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "4",
+          "doc_id": "doc_be2030d33fdb022e74c60b8e4edc369a3eb37ea2cacf34e1acc47058ea98db2d",
+          "page_number": 2,
+          "char_start": 251,
+          "char_end": 788,
+          "quote": "4-Methoxybenzyl\nalcohol (1a) was used as the model substrate on a 0.5 mmol\nscale. The standard conditions are as follows: 1a and n-Bu4N·\nBF4 (0.1 equiv) and NaOMe (0.5 equiv, 28% in MeOH\nsolution) were added to a cosolvent of acetonitrile (7 mL) and\nTFE (0.7 mL). Electrolysis of this mixture was conducted at a\nconstant current of 20 mA at room temperature. An undivided\ncell setup was used with a glassy carbon (GC) anode and a\nplatinum plate (Pt) cathode. As a result, 4-methoxybenzalde-\nhyde (2a) was obtained in 93% yield (entry 1)."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "0.5 mmol 底物；n-Bu4N·BF4 0.1 equiv；NaOMe 0.5 equiv（28% MeOH 溶液）。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "MeCN 7 mL 与 TFE 0.7 mL；室温、恒电流 20 mA。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p3",
+          "text": "不分隔电解池；GC 阳极和 Pt 片阴极；该条件下报告 93% 收率。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "20 mA 是电流，不得改写为 20 mA cm−2。",
+        "不能把 93% 收率称为法拉第效率。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D03",
+      "split": "dev",
+      "category": "single_fact",
+      "question": "In Lu (2025), which reagent supplies the primary alkyl radicals, and are additional oxidants or supporting electrolytes required?",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "35",
+          "doc_id": "doc_65feb6db11fe64b44ad5f30eb6c9f00e3f3822f679dab0837ca1c6ad0f671a2e",
+          "page_number": 1,
+          "char_start": 438,
+          "char_end": 589,
+          "quote": "The reaction employs quaternary\nammonium carboxylates as the source of alkyl radicals\nand does not require additional oxidizing agents or\nelectrolytes."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "季铵羧酸盐提供烷基自由基。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "该体系不需要额外氧化剂或电解质。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不需要额外电解质不等于体系不存在离子。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D04",
+      "split": "dev",
+      "category": "mechanism",
+      "question": "Lu（2025）的烯烃脱羧烷基-烷氧基化中，羧酸根和烯烃哪一个先发生阳极氧化，之后怎样形成自由基？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "35",
+          "doc_id": "doc_65feb6db11fe64b44ad5f30eb6c9f00e3f3822f679dab0837ca1c6ad0f671a2e",
+          "page_number": 1,
+          "char_start": 1054,
+          "char_end": 1367,
+          "quote": "Preliminary mechanis-\ntic studies have demonstrated that the reaction is enabled\nby the lower oxidation potential of the carboxylate anion\ncompared to that of the oleﬁn. The anodic oxidation of\nthe carboxylate anion occurs prior to the oxidation of\nthe oleﬁn, followed by decarboxylation to obtain alkyl\nradicals."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "作者的初步机理研究认为羧酸根氧化电位低于烯烃，先被阳极氧化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "随后脱羧形成烷基自由基；应保留初步机理研究的证据层级。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不得称为已直接观测了所有机理中间体。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D05",
+      "split": "dev",
+      "category": "mechanism",
+      "question": "How does Song (2025) promote Ni-H formation, and what roles does the proton source play in the proposed selectivity control?",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "144",
+          "doc_id": "doc_262a2764085d09f2eaaf83df2b78a64d2df10707c9f0ff6a7c7a8e7f6a9d4b2b",
+          "page_number": 1,
+          "char_start": 877,
+          "char_end": 1007,
+          "quote": "Here, we\npursued an alternative approach by designing a bifunctional ligand\nwith a pendant amine moiety to promote Ni−H formation."
+        },
+        {
+          "evidence_id": "e2",
+          "document_key": "144",
+          "doc_id": "doc_262a2764085d09f2eaaf83df2b78a64d2df10707c9f0ff6a7c7a8e7f6a9d4b2b",
+          "page_number": 1,
+          "char_start": 1495,
+          "char_end": 1729,
+          "quote": "Computational studies revealed the crucial,\nnoninnocent role of the proton source in modulating metal hydride selectivity, either through hydrogen bonding, direct protonation\nof the pendant amine, or facilitation of protodemetalation."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "采用带悬挂胺基的双功能配体促进 Ni-H 形成。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "计算研究提出质子源可通过氢键、直接质子化悬挂胺或促进质子脱金属过程调控选择性。",
+          "evidence_ids": [
+            "e2"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把计算提出的作用一律说成直接实验观测，也不能把策略说成避免 Ni-H 形成。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D06",
+      "split": "dev",
+      "category": "single_fact",
+      "question": "Which starting-material classes and heterocycle are involved in Huang (2025) cathodic oxygen-reduction-enabled Rh-catalyzed (5+1) annulation?",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "37",
+          "doc_id": "doc_1f8e705e70f86338f2bfdbbddc8fa0d3b44ade71e8209bdeda44d7518738e7bb",
+          "page_number": 1,
+          "char_start": 452,
+          "char_end": 658,
+          "quote": "In this study, we report a cathodic oxygen\nreduction-enabled rhodium catalyzed (5 + 1) annulation reaction between\nreadily available alkenylphenols and alkenes, yielding valuable 2-substituted\n2H-chromenes."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "烯基苯酚与烯烃反应。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "生成有价值的 2-取代 2H-色烯；Rh 催化形式 (5+1) 环化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能用引言中常见的炔烃环化代替本文烯烃体系。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D07",
+      "split": "dev",
+      "category": "system_boundary",
+      "question": "Huang（2025）的 Rh 环化是否通过阳极直接氧化催化剂完成再生？分别说明阳极和阴极的作用。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "37",
+          "doc_id": "doc_1f8e705e70f86338f2bfdbbddc8fa0d3b44ade71e8209bdeda44d7518738e7bb",
+          "page_number": 1,
+          "char_start": 659,
+          "char_end": 916,
+          "quote": "Unlike existing methods that involve direct oxidation of cata-\nlysts at the anode, our protocol uses a sacriﬁcial anode to protect the substrate\nfrom overoxidation, while the cathode reduces oxygen, coupling with the RhI.\nto regenerate the rhodium catalyst."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "使用牺牲阳极以保护底物避免过氧化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "阴极还原氧，与 Rh(I) 再生过程耦合；区别于阳极直接氧化催化剂的路线。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能将阴极氧还原混同为阴极有机底物加氢。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D08",
+      "split": "dev",
+      "category": "numeric",
+      "question": "Liu（2025）的 NiFe-sc-PBA 在 500 和 1000 mA cm−2 下分别需要多少电位？说明参比标尺，勿与整槽电压混用。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "40",
+          "doc_id": "doc_80963372590821018661803e88b9d231addeeda36cf404aa02f93aa98e05a2c8",
+          "page_number": 2,
+          "char_start": 4015,
+          "char_end": 4137,
+          "quote": "achieving low applied potentials of 1.484 and 1.625 V to reach current\ndensities (j) of 500 and 1000 mA cm−2,respectively,"
+        },
+        {
+          "evidence_id": "e2",
+          "document_key": "40",
+          "doc_id": "doc_80963372590821018661803e88b9d231addeeda36cf404aa02f93aa98e05a2c8",
+          "page_number": 1,
+          "char_start": 1998,
+          "char_end": 2096,
+          "quote": "1.23 V versus reversible hydrogen electrode, vs.\nRHE; all potentials are vs. RHE if not mentioned)"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "500 mA cm−2 对应 1.484 V；1000 mA cm−2 对应 1.625 V。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "文中默认电位相对 RHE；这些是电极电位，不是整槽电压。",
+          "evidence_ids": [
+            "e2",
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能交换两组数值，也不能将 RHE 改为 Ag/AgCl。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D09",
+      "split": "dev",
+      "category": "numeric",
+      "question": "For Liu (2025) NiFe-sc-PBA coupled flow electrolysis, what switching current densities and continuous operating duration are reported?",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "40",
+          "doc_id": "doc_80963372590821018661803e88b9d231addeeda36cf404aa02f93aa98e05a2c8",
+          "page_number": 1,
+          "char_start": 1596,
+          "char_end": 1765,
+          "quote": "The coupled system can continuously\noperate at stepwise ampere-level current densities (switchable 1.0 or\n1.5 A cm−2) for over 500 hours without performance degradation."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "耦合流动体系在可切换的 1.0 或 1.5 A cm−2 下运行。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "报告连续超过 500 h 无性能衰减；这是本文给定体系和条件下的结果。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能用独立电极 50 h 结果替代耦合系统 500 h，也不能外推为任意电流下永久稳定。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D10",
+      "split": "dev",
+      "category": "mechanism",
+      "question": "Liu（2025）如何解释乙二醇抑制 NiFe-sc-PBA 重构？区分结构表征和分子动力学各支持什么。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "40",
+          "doc_id": "doc_80963372590821018661803e88b9d231addeeda36cf404aa02f93aa98e05a2c8",
+          "page_number": 1,
+          "char_start": 1054,
+          "char_end": 1344,
+          "quote": "Our in situ/operando characterizations demonstrate\nthe robustness of Ni(II) sites during EG electrooxidation. Molecular dynamics\nsimulations further illustrate that EG molecule tends to accumulate on the\nNiFe-sc-PBA surface, preventing hydroxyl-induced reconstruction in alkaline\nsolutions."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "原位/操作中表征支持 EG 氧化期间 Ni(II) 位点稳定。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "MD 显示 EG 倾向聚集于表面，作者据此解释对 OH 诱导重构的抑制。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "MD 的表面富集不能直接当作真实质子转移、完整电子转移路径或任意底物下稳定性的证明。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D11",
+      "split": "dev",
+      "category": "numeric",
+      "question": "Mi（2025）的甲苯电氧化中，低电流与流动体系分别报告了什么苯甲醛法拉第效率和电流密度？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "177",
+          "doc_id": "doc_2566ed8596697da32a9f39d8a5a37b60312f60d03668a3b10c0569bce5221be2",
+          "page_number": 1,
+          "char_start": 854,
+          "char_end": 1258,
+          "quote": "Our\nstrategy is demonstrated through the selective oxidation of toluene to ben-\nzaldehyde with high Faradaic efﬁciency of 86( ±1)% at 25 mA/cm2, a factor of >3\ntimes higher than the bare electrocatalyst. The electrocatalyst:mediator\nassembly is operated stably for 100 h, with minimal decline in performance.\nWhen translated into a ﬂow system, a Faradaic efﬁciency of 60( ±4)% at\n200 mA/cm2 was achieved."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "25 mA cm−2 下苯甲醛 FE 为 86 ± 1%。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "流动体系在 200 mA cm−2 下 FE 为 60 ± 4%。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把 86% 和 200 mA cm−2 拼成同一工况；需保留不确定度。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D12",
+      "split": "dev",
+      "category": "numeric",
+      "question": "In Lin (2025), what propylene oxide production rate and stability duration are reported for the Ag/V liquid-free MEA?",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "147",
+          "doc_id": "doc_35644eca83cab5433d7a0fa225757214df3f8df0249f8fe06709ce79b9b33cf6",
+          "page_number": 1,
+          "char_start": 1088,
+          "char_end": 1234,
+          "quote": "The MEA reactor, integrated with\nthe developed Ag/V catalyst, can maintain a stable production rate of PO at 227\nμmol/h over a period of 78 hours."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Ag/V 集成 MEA 的 PO 产率为 227 μmol h−1。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "该产率维持 78 h；此数值未按电极面积归一化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不得把 μmol h−1 改为 μmol cm−2 h−1。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D13",
+      "split": "dev",
+      "category": "numeric",
+      "question": "Han（2025）用 LM-PdCu 脉冲电催化升级 PET 制乙醇酸，报告了哪些 FE、面产率和循环稳定性指标？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "159",
+          "doc_id": "doc_5fc033537a4fb3ec30464c9233c150b13ddec205cf714488d0034693523a6503",
+          "page_number": 1,
+          "char_start": 1126,
+          "char_end": 1334,
+          "quote": "This strategy thus delivers GA Faraday efﬁciency of >92% in wide potential\nwindows, yield rate of reaching 0.475 mmol cm–2 h–1, and cycling stability of\nexceeding 20 cycles for electrocatalytic PET upcycling."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "GA FE >92%，适用文中报告的宽电位窗口。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "面产率达 0.475 mmol cm−2 h−1；循环稳定性超过 20 次。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "超过 20 次循环不能改写为连续超过 20 h；FE 与产率分开报告。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D14",
+      "split": "dev",
+      "category": "numeric",
+      "question": "Fan（2025）Mo-Ni2P@Ni12P5 双电极流动槽的电流密度、己二酸收率及 H2 法拉第效率各是多少？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "166",
+          "doc_id": "doc_b18ea891956bd9b5498829b39c3d049b52eda06ee45bcdedb655d8ebfba6491a",
+          "page_number": 1,
+          "char_start": 1434,
+          "char_end": 1593,
+          "quote": "Consequently,\na two-electrode ﬂow electrolyzer achieves industrial current density (>230 mA\ncm−2) with 85.7% AA yield, 100% Faradaic eﬃciency of H2 production."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "双电极流动槽电流密度 >230 mA cm−2。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "己二酸收率 85.7%；H2 FE 100%，二者是不同指标。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "85.7% 不得改为己二酸 FE；100% 不能套用为己二酸收率。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D15",
+      "split": "dev",
+      "category": "system_boundary",
+      "question": "Li（2025）配对 CO2 还原和甲醛脱氢的甲酸盐 FE 约 190%，它对应哪两个半反应，能否当成单一阴极 FE？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "25",
+          "doc_id": "doc_ecb77d8eb6737eea34048461a9ce95f8c957463fa874062205308478d4b9efdc",
+          "page_number": 5,
+          "char_start": 1977,
+          "char_end": 2349,
+          "quote": "We are thus motivated to design a reaction system by pairing\nCO2RR with FOR that driven by the EOD mechanism (CO2RR//FOR),\nanticipating a dual production of HCOO−at both poles of the elec-\ntrolyzer with high current densities under low cell voltages (Fig. 4a).\nCO2RR//FOR was performed in an MEA cell by using CuAg/CF as the\nanode and the Rh/In2O3 catalyst as the cathode."
+        },
+        {
+          "evidence_id": "e2",
+          "document_key": "25",
+          "doc_id": "doc_ecb77d8eb6737eea34048461a9ce95f8c957463fa874062205308478d4b9efdc",
+          "page_number": 5,
+          "char_start": 3141,
+          "char_end": 3456,
+          "quote": "On the other hand, the CO2RR//FOR\nsystem can achieve HCOO−FEs of ~190% at cell voltages ranging from\n2.1 to 2.5 V (Fig. 4c and Supplementary Fig. 27). A peak HCOO−for-\nmation rate is ramped up to 52.0 mmol h−1 cm−2 (Fig. 4d), along with\npure H2 simultaneously produced at the anode with a rate of\n17.9 mmol h−1 cm−2"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "MEA 中阴极为 Rh/In2O3 上 CO2 还原，阳极为 CuAg/CF 上甲醛氧化脱氢，两极协同产甲酸盐。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "约 190% 是配对/双极甲酸盐指标，报告电压区间 2.1–2.5 V；不是单一阴极超过 100% 的 FE。",
+          "evidence_ids": [
+            "e2",
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不得把配对指标当成单电极 FE，也不能把阳极产氢误写到阴极。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D16",
+      "split": "dev",
+      "category": "comparison",
+      "question": "比较 Jiang（2025）的 NiOOH 乙二醇氧化与 Liu（2025）的 Ni(II) PBA 路线：各自如何讨论析氧与重构？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "24",
+          "doc_id": "doc_d603f8d1a337dc579741ed02e051fb70b613f38cce0852e9587622e0510a3ae6",
+          "page_number": 1,
+          "char_start": 731,
+          "char_end": 926,
+          "quote": "Herein, we examined the oxidation of ethylene glycol (EG), one of\nthe simplest polyols, as a model reaction on a series of nickel\noxyhydroxide model catalysts (β-NiMxOOH, M = Ni, Co, Fe, and\nCu)."
+        },
+        {
+          "evidence_id": "e2",
+          "document_key": "24",
+          "doc_id": "doc_d603f8d1a337dc579741ed02e051fb70b613f38cce0852e9587622e0510a3ae6",
+          "page_number": 1,
+          "char_start": 1123,
+          "char_end": 1329,
+          "quote": "we obtained the potential-resolved and quantitative\ninformation on various side reactions comprising the OER,\noveroxidation to CO/CO2, catalyst dissolution, and CO2 evolution from electrolyte decarbonation."
+        },
+        {
+          "evidence_id": "e3",
+          "document_key": "40",
+          "doc_id": "doc_80963372590821018661803e88b9d231addeeda36cf404aa02f93aa98e05a2c8",
+          "page_number": 1,
+          "char_start": 810,
+          "char_end": 1344,
+          "quote": "Here, we present unique Ni(II) sites in Prussian blue ana-\nlogue (NiFe-sc-PBA) that serve as stable, efﬁcient and selective active sites for\nethylene glycol (EG) electrooxidation to formic acid, particularly at ampere-\nlevel current densities. Our in situ/operando characterizations demonstrate\nthe robustness of Ni(II) sites during EG electrooxidation. Molecular dynamics\nsimulations further illustrate that EG molecule tends to accumulate on the\nNiFe-sc-PBA surface, preventing hydroxyl-induced reconstruction in alkaline\nsolutions."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Jiang 研究 β-NiMxOOH（M=Ni,Co,Fe,Cu），原位方法定量跟踪 OER 等副反应。",
+          "evidence_ids": [
+            "e1",
+            "e2"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "Liu 研究保持稳定 Ni(II) 的 NiFe-sc-PBA，并以表征及 MD 讨论抑制重构。",
+          "evidence_ids": [
+            "e3"
+          ]
+        },
+        {
+          "point_id": "p3",
+          "text": "不同催化剂状态与工况不能仅据摘要数值直接排名优劣。",
+          "evidence_ids": [
+            "e1",
+            "e3"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能将两篇统一描述为必须先重构为 NiOOH 才能活化。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D17",
+      "split": "dev",
+      "category": "comparison",
+      "question": "Compare the HAT mediators and organic feedstocks in Kawajiri (2025) benzyl-alcohol oxidation and Mi (2025) benzylic C-H oxidation.",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "4",
+          "doc_id": "doc_be2030d33fdb022e74c60b8e4edc369a3eb37ea2cacf34e1acc47058ea98db2d",
+          "page_number": 1,
+          "char_start": 390,
+          "char_end": 595,
+          "quote": "We found that trifluoroethanol plays a role as a hydrogen atom transfer (HAT)\nmediator, enabling the oxidation of electron-deficient substrates that are difficult\nto directly oxidize on electrode surfaces."
+        },
+        {
+          "evidence_id": "e2",
+          "document_key": "177",
+          "doc_id": "doc_2566ed8596697da32a9f39d8a5a37b60312f60d03668a3b10c0569bce5221be2",
+          "page_number": 1,
+          "char_start": 498,
+          "char_end": 719,
+          "quote": "Here, we introduce an electrocatalyst:mediator assembly\nin which CoOx clusters-decorated IrO2 electrocatalyst activates NO3\n- mediator\nto a highly reactive radical capable of abstracting a hydrogen atom from\nbenzylic C-H."
+        },
+        {
+          "evidence_id": "e3",
+          "document_key": "177",
+          "doc_id": "doc_2566ed8596697da32a9f39d8a5a37b60312f60d03668a3b10c0569bce5221be2",
+          "page_number": 1,
+          "char_start": 854,
+          "char_end": 997,
+          "quote": "Our\nstrategy is demonstrated through the selective oxidation of toluene to ben-\nzaldehyde with high Faradaic efﬁciency of 86( ±1)% at 25 mA/cm2"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Kawajiri 以 TFE 为 HAT 介体，处理苄醇氧化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "Mi 由 CoOx/IrO2 活化 NO3− 产生自由基以抽取苄位 C-H 的氢，示范甲苯到苯甲醛。",
+          "evidence_ids": [
+            "e2",
+            "e3"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "两篇目标均可为醛，不代表其起始底物、介体或反应体系相同。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D18",
+      "split": "dev",
+      "category": "comparison",
+      "question": "Han（2025）的 PET 升级与 Fan（2025）的环己醇氧化分别生成什么酸？请说明为何不能直接比较两篇百分数。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "159",
+          "doc_id": "doc_5fc033537a4fb3ec30464c9233c150b13ddec205cf714488d0034693523a6503",
+          "page_number": 1,
+          "char_start": 520,
+          "char_end": 814,
+          "quote": "In\nthis work, pulsed electrocatalysis is employed to engineer chemisorption\nproperties on a lamellar mesoporous PdCu (LM-PdCu) catalyst, which delivers\nhigh activity and stability for selective electrosynthesis of high value-added\nglycolic acid (GA) from PET upcycling under ambient conditions."
+        },
+        {
+          "evidence_id": "e2",
+          "document_key": "159",
+          "doc_id": "doc_5fc033537a4fb3ec30464c9233c150b13ddec205cf714488d0034693523a6503",
+          "page_number": 1,
+          "char_start": 1126,
+          "char_end": 1334,
+          "quote": "This strategy thus delivers GA Faraday efﬁciency of >92% in wide potential\nwindows, yield rate of reaching 0.475 mmol cm–2 h–1, and cycling stability of\nexceeding 20 cycles for electrocatalytic PET upcycling."
+        },
+        {
+          "evidence_id": "e3",
+          "document_key": "166",
+          "doc_id": "doc_b18ea891956bd9b5498829b39c3d049b52eda06ee45bcdedb655d8ebfba6491a",
+          "page_number": 1,
+          "char_start": 519,
+          "char_end": 758,
+          "quote": "Herein, a robust Mo-doped Ni2P@Ni12P5 heterojunction with\nmore P vacancies on Ni foam is proposed for accomplishing simultaneous\nelectrooxidation of cyclohexanol (CHAOR) to AA and hydrogen evolution\nreaction (HER) at large current density."
+        },
+        {
+          "evidence_id": "e4",
+          "document_key": "166",
+          "doc_id": "doc_b18ea891956bd9b5498829b39c3d049b52eda06ee45bcdedb655d8ebfba6491a",
+          "page_number": 1,
+          "char_start": 1434,
+          "char_end": 1593,
+          "quote": "Consequently,\na two-electrode ﬂow electrolyzer achieves industrial current density (>230 mA\ncm−2) with 85.7% AA yield, 100% Faradaic eﬃciency of H2 production."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Han：LM-PdCu 脉冲电催化 PET 来源体系制 GA（乙醇酸），报告 FE >92%。",
+          "evidence_ids": [
+            "e1",
+            "e2"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "Fan：Mo 掺杂 Ni2P@Ni12P5 将环己醇氧化为 AA（己二酸），85.7% 为 AA 收率，100% 为 H2 FE。",
+          "evidence_ids": [
+            "e3",
+            "e4"
+          ]
+        },
+        {
+          "point_id": "p3",
+          "text": "不同原料、产物和指标定义，不能据百分数直接比较催化选择性。",
+          "evidence_ids": [
+            "e2",
+            "e4"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能将 GA 与 AA 混用，也不能把 yield 当 FE。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "D19",
+      "split": "dev",
+      "category": "insufficient_evidence",
+      "question": "仅根据 Jiang（2025）论文摘要，能否给出其每吨产品的分离成本、所用电价及完整经济性模型？",
+      "answerability": "scoped_insufficient",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "24",
+          "doc_id": "doc_d603f8d1a337dc579741ed02e051fb70b613f38cce0852e9587622e0510a3ae6",
+          "page_number": 1,
+          "char_start": 1728,
+          "char_end": 1979,
+          "quote": "Importantly, paired\nelectrolysis can easily suffer from higher energy consumption than the conventional counterpart, provided side reactions are\nunregulated. Yet the modulated one consumed 21.1% less energy even when product separation was considered."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "摘要只提供受控配对体系能耗降低 21.1%（考虑分离）的相对结论。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "所限定的摘要不足以给出吨产品分离成本、电价和完整经济模型；需查正文/SI及相应参数，不能猜数值。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不得把相对能耗降低转写为同等成本下降或虚构电价；不声称整个语料没有经济分析。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      },
+      "evidence_scope": "仅限 Jiang 论文 PDF 第 1 页摘要；不作全文或全语料缺失断言。"
+    },
+    {
+      "question_id": "D20",
+      "split": "dev",
+      "category": "insufficient_evidence",
+      "question": "仅依据 Lin（2025）论文摘要，能否量化其 liquid-free MEA 出口环氧丙烷的纯度及水含量？",
+      "answerability": "scoped_insufficient",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "147",
+          "doc_id": "doc_35644eca83cab5433d7a0fa225757214df3f8df0249f8fe06709ce79b9b33cf6",
+          "page_number": 1,
+          "char_start": 1088,
+          "char_end": 1234,
+          "quote": "The MEA reactor, integrated with\nthe developed Ag/V catalyst, can maintain a stable production rate of PO at 227\nμmol/h over a period of 78 hours."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "摘要给出 227 μmol h−1 和 78 h 稳定性。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "这些指标不是出口 PO 纯度或含水量；给定摘要不足以量化两者，需另查分析数据。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不得把 liquid-free 理解为测得零水含量或 100% PO 纯度；不将摘要范围外信息说成全库不存在。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      },
+      "evidence_scope": "仅限 Lin 论文 PDF 第 1 页摘要；不作全文或全语料缺失断言。"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "chemqa-q065j-closeout-v1",
+  "date": "2026-10-08",
+  "status": "passed_default_retained",
+  "profiles_verified": {
+    "legacy": {
+      "profile": "legacy",
+      "manifest_sha256": "33fde98378163c369ec8c3654559ed46fb57a1d67e8a8377a508825c027ebb19",
+      "adoption_status": "engineering_frozen_assistant_review_complete_default_retained"
+    },
+    "hybrid_rerank": {
+      "profile": "hybrid_rerank",
+      "manifest_sha256": "33fde98378163c369ec8c3654559ed46fb57a1d67e8a8377a508825c027ebb19",
+      "adoption_status": "engineering_frozen_assistant_review_complete_default_retained"
+    },
+    "hybrid_rerank_diverse": {
+      "profile": "hybrid_rerank_diverse",
+      "manifest_sha256": "33fde98378163c369ec8c3654559ed46fb57a1d67e8a8377a508825c027ebb19",
+      "adoption_status": "engineering_frozen_assistant_review_complete_default_retained"
+    }
+  },
+  "legacy_offline_startup": {
+    "device": "cpu",
+    "loaded_documents": 26025,
+    "smoke_search_results": 3,
+    "generation_body_matches_q10b": true,
+    "network_guard_enabled": true
+  },
+  "new_api_requests": 0,
+  "new_reserve_queries": 0,
+  "runtime_manifest_sha256": "33fde98378163c369ec8c3654559ed46fb57a1d67e8a8377a508825c027ebb19",
+  "independent_human_approval": false,
+  "default_switched": false,
+  "scientific_winner": null,
+  "decision_evidence": "docs/Q10B_EXPERT_RESULTS.json"
+}

@@ -1,0 +1,278 @@
+{
+  "schema": "chemqa-eval-questions-v1",
+  "version": "q10a-v1",
+  "split": "reserve",
+  "status": "ai_draft_pending_domain_review",
+  "questions": [
+    {
+      "question_id": "R01",
+      "split": "reserve",
+      "category": "numeric",
+      "question": "Kawakatsu（2025）的 BDD 葡萄糖电氧化中，摘要报告的较优稀有糖生成电位及其参比标尺是什么？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "41",
+          "doc_id": "doc_d33c4632ff7d361df8d607f36155fa5d33b5ad83880b21d30873f0416aa1824f",
+          "page_number": 1,
+          "char_start": 1438,
+          "char_end": 1647,
+          "quote": "The applied potential significantly influenced the product distribution, with optimal rare sugar production observed\nat 2.5 V vs Ag/AgCl, reflecting a balance between glucose oxidation and product degradation."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "报告较优稀有糖生成电位为 2.5 V vs Ag/AgCl。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "该判断是平衡葡萄糖氧化与产物降解，不等于最高电位必然最好。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能将 Ag/AgCl 改为 RHE，或混用 10 mA 恒电流条件。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "R02",
+      "split": "reserve",
+      "category": "mechanism",
+      "question": "How does Beeler (2025) initiate aryl-halide reduction through oxidation, and what is the reducing intermediate?",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "142",
+          "doc_id": "doc_99562bb563f02358e2e09300dbcec80f53bb71ebae0b8586b069d6115a968258",
+          "page_number": 1,
+          "char_start": 956,
+          "char_end": 1340,
+          "quote": "Specifically, electrochemical\noxidation of an outer-sphere redox mediator, 1,1-dimethylferrocene,\nin dry N,N-dimethylformamide (DMF) containing oxalate (C2O4\n2−),\nresults in the homogeneous one-electron oxidation of C2O4\n2−. The\nresulting C2O4\n•−decomposes in ∼1 μs to release the carbon dioxide radical anion (CO2\n•−), a potent reductant that is oxidized to\nCO2 at −2.68 V vs Fc/Fc+."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "在干 DMF 中氧化 1,1-二甲基二茂铁介体，引发草酸根的一电子氧化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "生成草酸根自由基随后分解为 CO2 自由基阴离子，后者是强还原剂。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不属于阴极直接 CO2 电还原；不要把 CO2 自由基阴离子写成中性 CO2。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "R03",
+      "split": "reserve",
+      "category": "system_boundary",
+      "question": "Sheng（2025）的苄位 C-H 硫酸酯化与传统 O-磺酰化相比，对原料羟基的要求有何区别？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "150",
+          "doc_id": "doc_2c3e6acfb8a77f5584a0f1796fe9b04f6223e05de824612ac2e094fc660a7b35",
+          "page_number": 1,
+          "char_start": 510,
+          "char_end": 768,
+          "quote": "Current methods for producing\norganosulfates primarily rely on O-sulfonation, which\nlimits their applicability to hydroxyl-containing com-\npounds. Herein, we report a practical and cost-efﬁcient\nmethod for the electrochemical sulfation of benzylic\nC─H bonds."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "传统 O-磺酰化限制于含羟基化合物。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "本文直接苄位 C-H 硫酸酯化，不能把它改述为仅修饰预先存在的羟基。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不得把 C-H 官能化与 O-磺酰化的反应位点混同。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "R04",
+      "split": "reserve",
+      "category": "single_fact",
+      "question": "In Kim (2025), how do halohydrins connect electrochemical CO2 capture to cyclic-carbonate formation, and what coproduct is generated?",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "170",
+          "doc_id": "doc_27287a458d0222364d174e314e3a7aa4d42b46921043503864582f1306edfbed",
+          "page_number": 1,
+          "char_start": 900,
+          "char_end": 1120,
+          "quote": "This method involves the\nelectrochemical deprotonation of halohydrin molecules, which generate\nhydrogen and halo-alkoxides that capture CO2 and spontaneously undergo\nintramolecular cyclization to yield cyclic carbonates."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "电化学去质子化卤代醇生成氢气和卤代烷氧负离子。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "后者捕获 CO2 并自发分子内环化为环状碳酸酯。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不得将 CO2 捕集/环化写成传统 CO2 电还原到甲酸或 CO。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "R05",
+      "split": "reserve",
+      "category": "mechanism",
+      "question": "Chen（2025）在 GDY/NiPd/GDY 界面报告了哪两种原子结构变化？这些证据来自什么表征？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "146",
+          "doc_id": "doc_9d5348adfcfcac7e4ec97efad63b3b1effd792a55c95835ff4ef7569e8107b8b",
+          "page_number": 1,
+          "char_start": 1265,
+          "char_end": 1518,
+          "quote": "The results of atomic-resolution electron microscopy characterization revealed two unique interfacial phenomena: i)\nGDY-induced massive dislocation formation within NiPd nanoalloys and ii) rearrangement of surface metal atoms\nfrom (111) to (200) facets."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "原子分辨电子显微表征显示 GDY 诱导 NiPd 纳米合金中大量位错。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "报告表面金属原子由 (111) 到 (200) 晶面的重排。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不得把观测描述替代为计算直接证明全部动态路径。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    },
+    {
+      "question_id": "R06",
+      "split": "reserve",
+      "category": "numeric",
+      "question": "For Shi (2025) Au-catalyzed ethylene-glycol/methanol cross-coupling to lactic acid, report the current density, productivity and FE.",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "172",
+          "doc_id": "doc_8cb9cc642b939bc5d4a3dd69c06e9918bd80f485142dab4e3385d94ddccab903",
+          "page_number": 1,
+          "char_start": 1214,
+          "char_end": 1343,
+          "quote": "achieving a\nhigh LA productivity of 268.1 μmol cm−2 h−1 with a Faradaic efficiency of 28.7% at a constant current of 100 mA cm−2."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "100 mA cm−2 下 LA 面产率 268.1 μmol cm−2 h−1。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "LA FE 为 28.7%；不是收率或 PET 瓶实验的累计面产量。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把 224.5 μmol cm−2 的两小时累计产量写成同工况的每小时面产率。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_source_checked",
+        "human_annotator": null,
+        "human_reviewer": null,
+        "review_status": "pending",
+        "disagreements": []
+      }
+    }
+  ]
+}

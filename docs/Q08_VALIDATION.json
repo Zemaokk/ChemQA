@@ -1,0 +1,64 @@
+{
+  "schema": "chemqa-q08-validation-v1",
+  "status": "passed",
+  "artifact_root": "/Users/zemaochen/projects/ChemQA/output/q08_validation/20261007T005727-04efec5a935e4e1b955deff3028609b3",
+  "candidate": "/Users/zemaochen/projects/ChemQA/output/q08_validation/20261007T005727-04efec5a935e4e1b955deff3028609b3/candidate",
+  "candidate_validation": {
+    "rows": 1,
+    "located": 1,
+    "verified_spans": 2,
+    "cross_page": 1,
+    "verified_pdf_contents": 1,
+    "unavailable_by_source": {},
+    "text_ids_vectors_preserved_against_baseline": null,
+    "embedding": {
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "max_sequence_tokens": 128,
+      "special_tokens": 2,
+      "token_count_includes_special_tokens": true
+    },
+    "max_embedding_token_count": 32,
+    "embedding_token_percentiles": [
+      32.0,
+      32.0,
+      32.0,
+      32.0
+    ],
+    "over_limit_chunks": 0,
+    "actual_encoder_token_ids_match_untruncated_inputs": true,
+    "source_nonwhitespace_characters_covered": 101,
+    "pdf_contents_fully_covered": 1
+  },
+  "cases": [
+    {
+      "case": "first",
+      "status": "success",
+      "directory": "/Users/zemaochen/projects/ChemQA/output/q08_validation/20261007T005727-04efec5a935e4e1b955deff3028609b3/runs/qa/20261007T005730-a70a4d8797ba409bbbb0211b4fb9ff7d"
+    },
+    {
+      "case": "repeat",
+      "status": "success",
+      "directory": "/Users/zemaochen/projects/ChemQA/output/q08_validation/20261007T005727-04efec5a935e4e1b955deff3028609b3/runs/qa/20261007T005730-2df66bb8e6984679a6e52801fd4b6a70"
+    },
+    {
+      "case": "failure",
+      "status": "failed",
+      "directory": "/Users/zemaochen/projects/ChemQA/output/q08_validation/20261007T005727-04efec5a935e4e1b955deff3028609b3/runs/qa/20261007T005730-a9cefadc9b0f4be499d517d2aaa0669b"
+    }
+  ],
+  "outside_root_cli": {
+    "exit_code": 1,
+    "status": "failed",
+    "error_code": "configuration",
+    "request_sent": false,
+    "help_entry_points": 4
+  },
+  "active_files_unchanged": true,
+  "active_files_sha256": {
+    "/Users/zemaochen/projects/ChemQA/data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "/Users/zemaochen/projects/ChemQA/data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "live_api_calls": 0,
+  "scope": "Synthetic two-page PDF; real local embedding and retrieval; mocked generation. No quality evaluation or full-corpus rebuild."
+}

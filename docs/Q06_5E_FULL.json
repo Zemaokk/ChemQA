@@ -1,0 +1,207 @@
+{
+  "schema": "chemqa-q065e-full-v1",
+  "profile_sha256": "97a760b7a5e3fbf459df695395bdc28f7ab48d8d683e2e29db13c523d74fc5a5",
+  "protocol_sha256": "15d1b2ef9733f34d39ce5d209a9321a2c1c46605385b130256432d72cb18c205",
+  "dataset_manifest_sha256": "70984a7abeaf98ab30888492b5c1f09d181ec9e310b20a9cc7b35ff51e3ede6f",
+  "source_code_sha256": {
+    "scripts/validate_q065e.py": "2acc0848b480b3cd0baf0f3cca4fb99802a06e6b85019afce3519d91532fa357",
+    "src/knowledge_base/embedding.py": "10a3b1825ebd441f6ed04d86d46748b3706ae89408d0589764fe474f72542f5e",
+    "src/knowledge_base/paragraph_processor.py": "5feca87623b7742a7beebcc1d958d48c326dbfef2a8f2cc7da7147ba10bdb99c",
+    "src/knowledge_base/vector_store.py": "6baeecc1f85e3925f8d86b6689aae65bafc08e0465e307d7091bf8a0c8c3f906",
+    "src/evaluation/metrics.py": "29df3e8d9b5946ab2cb55c872ad3019b3ab9c94676d11bc51a948f60124fe952"
+  },
+  "embedding": {
+    "schema": "chemqa-embedding-profile-v1",
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "dimension": 1024,
+    "max_sequence_tokens": 512,
+    "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+    "document_prompt": "",
+    "normalize_embeddings": true,
+    "padding_side": "left",
+    "precision_policy": "mps-fp16-cpu-fp32-v1",
+    "token_count_includes_prompt_and_special_tokens": true
+  },
+  "chunking": {
+    "name": "qwen-window512-overlap64",
+    "strategy": "page-window",
+    "target_tokens": 512,
+    "overlap_tokens": 64
+  },
+  "corpus_sha256": "8413befad4547003fd83b96b09e25251426574505ec2e5f5505c82c5f71dbc9c",
+  "full_corpus_documents": 180,
+  "chunks": 6960,
+  "summary": {
+    "scored_questions": 18,
+    "rr_first_annotated_doc": 0.8379629629629629,
+    "rr_first_complete_anchor": 0.3746031746031746,
+    "at_k": {
+      "1": {
+        "annotated_doc_hit": 0.7777777777777778,
+        "annotated_doc_recall": 0.7222222222222222,
+        "all_annotated_docs_hit": 0.6666666666666666,
+        "mean_anchor_character_coverage": 0.18518518518518517,
+        "complete_anchor_recall": 0.18518518518518517,
+        "all_anchors_complete": 0.16666666666666666,
+        "annotated_point_evidence_complete": 0.19444444444444445
+      },
+      "5": {
+        "annotated_doc_hit": 0.9444444444444444,
+        "annotated_doc_recall": 0.8888888888888888,
+        "all_annotated_docs_hit": 0.8333333333333334,
+        "mean_anchor_character_coverage": 0.49074074074074076,
+        "complete_anchor_recall": 0.49074074074074076,
+        "all_anchors_complete": 0.4444444444444444,
+        "annotated_point_evidence_complete": 0.5
+      },
+      "10": {
+        "annotated_doc_hit": 0.9444444444444444,
+        "annotated_doc_recall": 0.8888888888888888,
+        "all_annotated_docs_hit": 0.8333333333333334,
+        "mean_anchor_character_coverage": 0.6203703703703703,
+        "complete_anchor_recall": 0.6203703703703703,
+        "all_anchors_complete": 0.5555555555555556,
+        "annotated_point_evidence_complete": 0.6296296296296297
+      }
+    }
+  },
+  "legacy_full_corpus_summary": {
+    "scored_questions": 18,
+    "rr_first_annotated_doc": 0.4802469135802469,
+    "rr_first_complete_anchor": 0.009259259259259259,
+    "at_k": {
+      "1": {
+        "annotated_doc_hit": 0.3888888888888889,
+        "annotated_doc_recall": 0.3611111111111111,
+        "all_annotated_docs_hit": 0.3333333333333333,
+        "mean_anchor_character_coverage": 0.0,
+        "complete_anchor_recall": 0.0,
+        "all_anchors_complete": 0.0,
+        "annotated_point_evidence_complete": 0.0
+      },
+      "5": {
+        "annotated_doc_hit": 0.6111111111111112,
+        "annotated_doc_recall": 0.5833333333333334,
+        "all_annotated_docs_hit": 0.5555555555555556,
+        "mean_anchor_character_coverage": 0.050169072135696886,
+        "complete_anchor_recall": 0.0,
+        "all_anchors_complete": 0.0,
+        "annotated_point_evidence_complete": 0.0
+      },
+      "10": {
+        "annotated_doc_hit": 0.7777777777777778,
+        "annotated_doc_recall": 0.7222222222222222,
+        "all_annotated_docs_hit": 0.6666666666666666,
+        "mean_anchor_character_coverage": 0.10572462769125245,
+        "complete_anchor_recall": 0.05555555555555555,
+        "all_anchors_complete": 0.05555555555555555,
+        "annotated_point_evidence_complete": 0.05555555555555555
+      }
+    }
+  },
+  "source_validation": {
+    "status": "passed",
+    "version": "q10a-v1",
+    "split_counts": {
+      "dev": 20,
+      "reserve": 6
+    },
+    "source_pdfs_verified": 17,
+    "exact_evidence_intervals": 36,
+    "article_groups": {
+      "dev": 11,
+      "reserve": 6
+    },
+    "article_group_overlap": 0,
+    "domain_review_states": {
+      "pending": 26
+    },
+    "source_verification_enabled": true,
+    "reserve_ranked_or_generated": false
+  },
+  "validation": {
+    "rows": 6960,
+    "located": 6960,
+    "verified_spans": 6960,
+    "verified_pdf_contents": 180,
+    "unavailable_by_source": {},
+    "text_ids_vectors_preserved_against_baseline": null,
+    "over_limit_chunks": 0,
+    "actual_encoder_token_ids_match_untruncated_inputs": true,
+    "unit_normalized_vectors": true,
+    "source_nonwhitespace_fully_covered": true,
+    "max_document_input_tokens": 512,
+    "embedding": {
+      "schema": "chemqa-embedding-profile-v1",
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "dimension": 1024,
+      "max_sequence_tokens": 512,
+      "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+      "document_prompt": "",
+      "normalize_embeddings": true,
+      "padding_side": "left",
+      "precision_policy": "mps-fp16-cpu-fp32-v1",
+      "token_count_includes_prompt_and_special_tokens": true
+    }
+  },
+  "timings_seconds": {
+    "encoding": 1370.3623739999603,
+    "query_encoding": 0.5320261670276523,
+    "total_before_publication": 1417.7943947089952
+  },
+  "rss_high_water_bytes": 1991671808,
+  "mps_cache_release_after_each_outer_batch": true,
+  "mps_memory_samples": {
+    "mps_driver_max_sampled_bytes": 2332753920,
+    "mps_driver_max_after_cache_clear_bytes": 1217069056
+  },
+  "actual_device": "mps:0",
+  "actual_parameter_dtype": "torch.float16",
+  "batch_size": 8,
+  "query_token_counts_including_prompt": [
+    53,
+    58,
+    49,
+    60,
+    49,
+    57,
+    52,
+    69,
+    49,
+    53,
+    53,
+    48,
+    59,
+    64,
+    65,
+    65,
+    60,
+    61,
+    50,
+    52
+  ],
+  "total_document_input_tokens": 3130784,
+  "versions": {
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.19.0",
+    "torch": "2.14.1",
+    "numpy": "2.5.3",
+    "pymupdf": "1.28.2"
+  },
+  "baseline_before": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "baseline_after": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "default_switched": false,
+  "reserve_queries_executed": 0,
+  "generation_requests": 0,
+  "annotation_quality": "AI draft; domain review pending",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b",
+  "vector_index_bytes": 232333984
+}

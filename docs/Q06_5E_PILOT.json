@@ -1,0 +1,298 @@
+{
+  "schema": "chemqa-q065e-pilot-v1",
+  "pilot_doc_ids": [
+    "doc_01bf8b442fcfe0f3173889b856373d48eadb7a1c54c80e01503bda2ec5d01a90",
+    "doc_0335df5c99526411f993e497113e65ab437b7fb178dd503daa931050e2b43592",
+    "doc_05f27a2f5b506d663591e684b48a0aec5dd5fd4247ac2f8452e08f7ab5c8e5c1",
+    "doc_0ac949645c9710fa7403aec8b1c7d38b47e0c58225e9b8d76febdd560edbe3dc",
+    "doc_0ace9ef7f5f125a0ec09b988aa2c543039be8b91a32ef54106ee48626c827c82",
+    "doc_0bcaa701978b1fd1d0dd2c1cf85f07aea3c53372efdc3e92b0ec3c9de84d6906",
+    "doc_0ccce9ae4f7a377deb654e53ccd047828474c100be2d945346bdddc84ce1420b",
+    "doc_0f1be588bb891a4e955e5133731295120818a84f00a3750e22cf8504d81f1819",
+    "doc_0f2e41e85e4ec10399a8eef684d3596c24283a6887e2797836d900b6dff9abfe",
+    "doc_1f8e705e70f86338f2bfdbbddc8fa0d3b44ade71e8209bdeda44d7518738e7bb",
+    "doc_2566ed8596697da32a9f39d8a5a37b60312f60d03668a3b10c0569bce5221be2",
+    "doc_262a2764085d09f2eaaf83df2b78a64d2df10707c9f0ff6a7c7a8e7f6a9d4b2b",
+    "doc_35644eca83cab5433d7a0fa225757214df3f8df0249f8fe06709ce79b9b33cf6",
+    "doc_5fc033537a4fb3ec30464c9233c150b13ddec205cf714488d0034693523a6503",
+    "doc_65feb6db11fe64b44ad5f30eb6c9f00e3f3822f679dab0837ca1c6ad0f671a2e",
+    "doc_80963372590821018661803e88b9d231addeeda36cf404aa02f93aa98e05a2c8",
+    "doc_b18ea891956bd9b5498829b39c3d049b52eda06ee45bcdedb655d8ebfba6491a",
+    "doc_be2030d33fdb022e74c60b8e4edc369a3eb37ea2cacf34e1acc47058ea98db2d",
+    "doc_d603f8d1a337dc579741ed02e051fb70b613f38cce0852e9587622e0510a3ae6",
+    "doc_ecb77d8eb6737eea34048461a9ce95f8c957463fa874062205308478d4b9efdc"
+  ],
+  "pilot_document_count": 20,
+  "restricted_candidate_pool": true,
+  "not_comparable_to_full_corpus_baseline": true,
+  "annotation_quality": "AI draft; domain review pending",
+  "profile": {
+    "schema": "chemqa-embedding-profile-v1",
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "dimension": 1024,
+    "max_sequence_tokens": 512,
+    "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+    "document_prompt": "",
+    "normalize_embeddings": true,
+    "padding_side": "left",
+    "precision_policy": "mps-fp16-cpu-fp32-v1",
+    "token_count_includes_prompt_and_special_tokens": true
+  },
+  "profile_sha256": "97a760b7a5e3fbf459df695395bdc28f7ab48d8d683e2e29db13c523d74fc5a5",
+  "protocol_sha256": "15d1b2ef9733f34d39ce5d209a9321a2c1c46605385b130256432d72cb18c205",
+  "corpus_sha256": "8413befad4547003fd83b96b09e25251426574505ec2e5f5505c82c5f71dbc9c",
+  "selected_variant": {
+    "name": "qwen-window512-overlap64",
+    "strategy": "page-window",
+    "target_tokens": 512,
+    "overlap_tokens": 64
+  },
+  "query_encoding_seconds": 0.9400693339994177,
+  "actual_device": "mps:0",
+  "actual_parameter_dtype": "torch.float16",
+  "query_token_counts_including_prompt": [
+    53,
+    58,
+    49,
+    60,
+    49,
+    57,
+    52,
+    69,
+    49,
+    53,
+    53,
+    48,
+    59,
+    64,
+    65,
+    65,
+    60,
+    61,
+    50,
+    52
+  ],
+  "results": {
+    "minilm-old-chunks": {
+      "summary": {
+        "scored_questions": 18,
+        "rr_first_annotated_doc": 0.7052469135802469,
+        "rr_first_complete_anchor": 0.009259259259259259,
+        "at_k": {
+          "1": {
+            "annotated_doc_hit": 0.5555555555555556,
+            "annotated_doc_recall": 0.5,
+            "all_annotated_docs_hit": 0.4444444444444444,
+            "mean_anchor_character_coverage": 0.0,
+            "complete_anchor_recall": 0.0,
+            "all_anchors_complete": 0.0,
+            "annotated_point_evidence_complete": 0.0
+          },
+          "5": {
+            "annotated_doc_hit": 0.8888888888888888,
+            "annotated_doc_recall": 0.8055555555555556,
+            "all_annotated_docs_hit": 0.7222222222222222,
+            "mean_anchor_character_coverage": 0.050169072135696886,
+            "complete_anchor_recall": 0.0,
+            "all_anchors_complete": 0.0,
+            "annotated_point_evidence_complete": 0.0
+          },
+          "10": {
+            "annotated_doc_hit": 0.9444444444444444,
+            "annotated_doc_recall": 0.8888888888888888,
+            "all_annotated_docs_hit": 0.8333333333333334,
+            "mean_anchor_character_coverage": 0.10572462769125245,
+            "complete_anchor_recall": 0.05555555555555555,
+            "all_anchors_complete": 0.05555555555555555,
+            "annotated_point_evidence_complete": 0.05555555555555555
+          }
+        }
+      },
+      "min_score": null,
+      "reserve_queries_executed": 0,
+      "generation_requests": 0,
+      "chunk_count": 3024,
+      "vectors_reused_from_q10a": true
+    },
+    "qwen-old-chunks": {
+      "summary": {
+        "scored_questions": 18,
+        "rr_first_annotated_doc": 0.8611111111111112,
+        "rr_first_complete_anchor": 0.07592592592592592,
+        "at_k": {
+          "1": {
+            "annotated_doc_hit": 0.7777777777777778,
+            "annotated_doc_recall": 0.7222222222222222,
+            "all_annotated_docs_hit": 0.6666666666666666,
+            "mean_anchor_character_coverage": 0.0,
+            "complete_anchor_recall": 0.0,
+            "all_anchors_complete": 0.0,
+            "annotated_point_evidence_complete": 0.0
+          },
+          "5": {
+            "annotated_doc_hit": 1.0,
+            "annotated_doc_recall": 0.9166666666666666,
+            "all_annotated_docs_hit": 0.8333333333333334,
+            "mean_anchor_character_coverage": 0.2983026850370455,
+            "complete_anchor_recall": 0.1574074074074074,
+            "all_anchors_complete": 0.1111111111111111,
+            "annotated_point_evidence_complete": 0.16666666666666666
+          },
+          "10": {
+            "annotated_doc_hit": 1.0,
+            "annotated_doc_recall": 0.9722222222222222,
+            "all_annotated_docs_hit": 0.9444444444444444,
+            "mean_anchor_character_coverage": 0.3877956744286927,
+            "complete_anchor_recall": 0.1574074074074074,
+            "all_anchors_complete": 0.1111111111111111,
+            "annotated_point_evidence_complete": 0.16666666666666666
+          }
+        }
+      },
+      "min_score": null,
+      "reserve_queries_executed": 0,
+      "generation_requests": 0,
+      "chunk_count": 3024,
+      "encoding_seconds": 101.22931858303491,
+      "max_input_tokens": 451
+    },
+    "qwen-window512-overlap64": {
+      "summary": {
+        "scored_questions": 18,
+        "rr_first_annotated_doc": 0.9351851851851852,
+        "rr_first_complete_anchor": 0.4171957671957672,
+        "at_k": {
+          "1": {
+            "annotated_doc_hit": 0.8888888888888888,
+            "annotated_doc_recall": 0.8333333333333334,
+            "all_annotated_docs_hit": 0.7777777777777778,
+            "mean_anchor_character_coverage": 0.18518518518518517,
+            "complete_anchor_recall": 0.18518518518518517,
+            "all_anchors_complete": 0.16666666666666666,
+            "annotated_point_evidence_complete": 0.19444444444444445
+          },
+          "5": {
+            "annotated_doc_hit": 1.0,
+            "annotated_doc_recall": 0.9166666666666666,
+            "all_annotated_docs_hit": 0.8333333333333334,
+            "mean_anchor_character_coverage": 0.537037037037037,
+            "complete_anchor_recall": 0.537037037037037,
+            "all_anchors_complete": 0.4444444444444444,
+            "annotated_point_evidence_complete": 0.5185185185185185
+          },
+          "10": {
+            "annotated_doc_hit": 1.0,
+            "annotated_doc_recall": 0.9444444444444444,
+            "all_annotated_docs_hit": 0.8888888888888888,
+            "mean_anchor_character_coverage": 0.7685185185185185,
+            "complete_anchor_recall": 0.7685185185185185,
+            "all_anchors_complete": 0.7222222222222222,
+            "annotated_point_evidence_complete": 0.7685185185185185
+          }
+        }
+      },
+      "min_score": null,
+      "reserve_queries_executed": 0,
+      "generation_requests": 0,
+      "chunk_count": 817,
+      "encoding_seconds": 94.76316991599742,
+      "max_input_tokens": 512
+    },
+    "qwen-block256-overlap32": {
+      "summary": {
+        "scored_questions": 18,
+        "rr_first_annotated_doc": 0.9166666666666666,
+        "rr_first_complete_anchor": 0.27314814814814814,
+        "at_k": {
+          "1": {
+            "annotated_doc_hit": 0.8888888888888888,
+            "annotated_doc_recall": 0.8333333333333334,
+            "all_annotated_docs_hit": 0.7777777777777778,
+            "mean_anchor_character_coverage": 0.12962962962962962,
+            "complete_anchor_recall": 0.12962962962962962,
+            "all_anchors_complete": 0.1111111111111111,
+            "annotated_point_evidence_complete": 0.1388888888888889
+          },
+          "5": {
+            "annotated_doc_hit": 0.9444444444444444,
+            "annotated_doc_recall": 0.8611111111111112,
+            "all_annotated_docs_hit": 0.7777777777777778,
+            "mean_anchor_character_coverage": 0.39814814814814814,
+            "complete_anchor_recall": 0.39814814814814814,
+            "all_anchors_complete": 0.3333333333333333,
+            "annotated_point_evidence_complete": 0.4074074074074074
+          },
+          "10": {
+            "annotated_doc_hit": 1.0,
+            "annotated_doc_recall": 0.9444444444444444,
+            "all_annotated_docs_hit": 0.8888888888888888,
+            "mean_anchor_character_coverage": 0.48148148148148145,
+            "complete_anchor_recall": 0.48148148148148145,
+            "all_anchors_complete": 0.4444444444444444,
+            "annotated_point_evidence_complete": 0.49074074074074076
+          }
+        }
+      },
+      "min_score": null,
+      "reserve_queries_executed": 0,
+      "generation_requests": 0,
+      "chunk_count": 1829,
+      "encoding_seconds": 118.86353083298309,
+      "max_input_tokens": 256
+    },
+    "qwen-block512-overlap64": {
+      "summary": {
+        "scored_questions": 18,
+        "rr_first_annotated_doc": 0.9277777777777778,
+        "rr_first_complete_anchor": 0.3162037037037037,
+        "at_k": {
+          "1": {
+            "annotated_doc_hit": 0.8888888888888888,
+            "annotated_doc_recall": 0.8333333333333334,
+            "all_annotated_docs_hit": 0.7777777777777778,
+            "mean_anchor_character_coverage": 0.12962962962962962,
+            "complete_anchor_recall": 0.12962962962962962,
+            "all_anchors_complete": 0.1111111111111111,
+            "annotated_point_evidence_complete": 0.1388888888888889
+          },
+          "5": {
+            "annotated_doc_hit": 1.0,
+            "annotated_doc_recall": 0.9166666666666666,
+            "all_annotated_docs_hit": 0.8333333333333334,
+            "mean_anchor_character_coverage": 0.48148148148148145,
+            "complete_anchor_recall": 0.48148148148148145,
+            "all_anchors_complete": 0.4444444444444444,
+            "annotated_point_evidence_complete": 0.49074074074074076
+          },
+          "10": {
+            "annotated_doc_hit": 1.0,
+            "annotated_doc_recall": 0.9166666666666666,
+            "all_annotated_docs_hit": 0.8333333333333334,
+            "mean_anchor_character_coverage": 0.5925925925925926,
+            "complete_anchor_recall": 0.5925925925925926,
+            "all_anchors_complete": 0.5555555555555556,
+            "annotated_point_evidence_complete": 0.6018518518518519
+          }
+        }
+      },
+      "min_score": null,
+      "reserve_queries_executed": 0,
+      "generation_requests": 0,
+      "chunk_count": 1003,
+      "encoding_seconds": 132.00905170897022,
+      "max_input_tokens": 512
+    }
+  },
+  "baseline_before": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "baseline_after": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "reserve_queries_executed": 0,
+  "generation_requests": 0,
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q065e_pilot/20261007T035935-d115df34fe874dc396ee232fc9252f40"
+}

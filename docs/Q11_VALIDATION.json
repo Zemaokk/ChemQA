@@ -1,0 +1,163 @@
+{
+  "schema": "chemqa-q11-validation-v1",
+  "date": "2026-10-08",
+  "status": "passed",
+  "checks": {
+    "main_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "builder_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "batch_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "direct_batch_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "heatmap_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "embedding_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "storage_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "q10b_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "source_release_help": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "source_check": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "preview_replay": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "legacy_freeze": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "hybrid_rerank_freeze": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "hybrid_rerank_diverse_freeze": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "worktree_secret_audit": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "staged_secret_audit": {
+      "exit_code": 0,
+      "status": "passed"
+    },
+    "relative_links": {
+      "status": "passed",
+      "links_verified": 126,
+      "scope": "current delivery documents; Q11_VALIDATION is created after this check"
+    },
+    "review_records": {
+      "status": "passed",
+      "raw_answer_hashes_verified": 90
+    },
+    "requirements_export": {
+      "status": "passed",
+      "header_ignored": true
+    },
+    "snapshot_selection": {
+      "status": "passed",
+      "contains_pdf_or_index_files": false,
+      "contains_documentary_excerpts_and_local_paths": true,
+      "new_snapshot_created": false,
+      "published": false
+    },
+    "demo_excerpt_and_original_hash": {
+      "status": "passed",
+      "verbatim_answer_lines": 3,
+      "original_record_sha256": "29d82e81d6831c77e525712aaa43ddfc1f1cef8d9bec08379ade4cc8ca217d7a"
+    },
+    "locked_environment": {
+      "status": "passed",
+      "uv_sync_locked_offline": true,
+      "runtime_dependencies_changed": false
+    },
+    "ruff_check": "passed",
+    "ruff_format_check": "passed; 87 files",
+    "git_diff_check": "passed"
+  },
+  "tests": {
+    "passed": 245,
+    "elapsed_seconds": 22.596,
+    "command": "HF_HUB_OFFLINE=1 HF_HOME=models/huggingface MPLBACKEND=Agg MPLCONFIGDIR=/private/tmp/chemqa-matplotlib .venv/bin/python -m unittest discover -s tests",
+    "transport": "mocked for API campaign tests; no live generation"
+  },
+  "source_validation": {
+    "status": "passed",
+    "version": "q10b-v1",
+    "split_counts": {
+      "dev": 34,
+      "reserve": 6
+    },
+    "source_pdfs_verified": 17,
+    "exact_evidence_intervals": 51,
+    "article_groups": {
+      "dev": 11,
+      "reserve": 6
+    },
+    "article_group_overlap": 0,
+    "domain_review_states": {
+      "pending": 40
+    },
+    "source_verification_enabled": true,
+    "reserve_ranked_or_generated": false
+  },
+  "local_corpus": {
+    "pdf_files": 181,
+    "unique_pdf_byte_identities": 180
+  },
+  "j_closeout": "docs/Q06_5J_CLOSEOUT.json",
+  "runtime_manifest_sha256": "33fde98378163c369ec8c3654559ed46fb57a1d67e8a8377a508825c027ebb19",
+  "delivery_files_sha256": {
+    "README.md": "99fa0ecb0f6b7b5f7b4a38fa04c5ed4dc723fa6caa7493786369472d654ba037",
+    "docs/RUNBOOK.md": "27ef05f7aae77044f15d404605330a6ef2b0cd2db68d02b4e1a7a83cc79b7e12",
+    "docs/EVALUATION_GUIDE.md": "3e64aac63f0a647c06b36f52c952d1163b5df587ed69ea0c264233dae094e124",
+    "docs/TECHNICAL_REPORT.md": "664ac0590f07c1d817d1161d0092a508bf99cf02bf539b983dc32c006d4807a3",
+    "docs/DEMO.md": "5624ca87ad8ccda76b7f8c0371f37bba0dfd0228393efef74936b18297a43b78",
+    "docs/Q11_DOCUMENTATION.md": "ce618b67fd5b7ee4da488f051f7cfd93006e1a7529fd492db843887c0c6bebe7",
+    "docs/Q06_5J_FREEZE.md": "a2e54429cdaead348c23559ceeac87793ac920d863238dd830ccf2b80a1943a9",
+    "docs/Q06_5J_CLOSEOUT.json": "c5268dd80dce668dfc41aa0cfa1d93e297a885c5a2875c16ecae5d5b5fe9e5de",
+    "docs/REFACTOR_PLAN.md": "a0a7b4b9f01433e4eca6d7118339d432b0a2e0f2c218264d4d29e138176d1fd3",
+    "docs/Q06_5_MODERNIZATION_PLAN.md": "e8a436948415cfbfa2249cde7fc50cf5c0c23c870e83a2bbcb6715379456a367",
+    "qa_testing/README_qa_testing.md": "d0c2620fdb9b30ad7bdcc32674d21e5569aba292d2b83df2a02f3e5f5302db85"
+  },
+  "new_api_requests": 0,
+  "new_reserve_rankings": 0,
+  "new_models_or_full_corpus_rebuilds": 0,
+  "runtime_implementation_changed": false,
+  "default_switched": false,
+  "independent_human_approval": false,
+  "source_release_created_or_published": false,
+  "committed": false,
+  "limitations": [
+    "Verified on the existing macOS ARM64 workspace and model/data cache; not a fresh machine installation test.",
+    "Ignored original experiment/model artifacts must be retained separately; source snapshot is not a full reproduction archive.",
+    "Known scientific answer defects, six-question sample limits and single-assistant review bias remain.",
+    "No new speed benchmark, provider pricing verification or third-party model revision proof."
+  ]
+}

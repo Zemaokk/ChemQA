@@ -1,0 +1,15 @@
+{
+  "schema": "chemqa-context-selection-v1",
+  "candidate_window": 50,
+  "max_chunks": 10,
+  "max_chunks_per_document": 10,
+  "maximum_existing_span_overlap": 1.0,
+  "input_estimate_limit": 32000,
+  "output_token_limit": 4096,
+  "protocol_token_reserve": 1024,
+  "total_estimate_limit": 40000,
+  "counter": "complete-payload-utf8-bytes-v1",
+  "selection_order": "frozen_retrieval_rank",
+  "neighbor_expansion": false,
+  "production_default_switch": "Q06.5-J only"
+}

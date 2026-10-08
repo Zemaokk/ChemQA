@@ -1,0 +1,407 @@
+{
+  "schema": "chemqa-domain-review-v1",
+  "status": "pending_human_review",
+  "reviewer": null,
+  "questions": [
+    {
+      "question_id": "D01",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D02",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D03",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D04",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D05",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D06",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D07",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D08",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D09",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D10",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D11",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D12",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D13",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D14",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D15",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D16",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D17",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D18",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D19",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D20",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D21",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D22",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D23",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D24",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D25",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D26",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D27",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D28",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D29",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D30",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D31",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D32",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D33",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "D34",
+      "split": "dev",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "R01",
+      "split": "reserve",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "R02",
+      "split": "reserve",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "R03",
+      "split": "reserve",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "R04",
+      "split": "reserve",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "R05",
+      "split": "reserve",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    },
+    {
+      "question_id": "R06",
+      "split": "reserve",
+      "annotation_approved": null,
+      "source_quote_correct": null,
+      "answer_points_correct": null,
+      "boundary_notes_correct": null,
+      "reviewer": null,
+      "disagreements": []
+    }
+  ]
+}

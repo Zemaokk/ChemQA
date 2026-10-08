@@ -1,0 +1,62 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python bytecode, tool caches and coverage
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Packaging outputs (keep pyproject.toml, uv.lock and requirements.txt)
+/build/
+/dist/
+*.egg-info/
+.eggs/
+
+# Local configuration and credentials (track only explicit templates)
+.env
+.env.*
+!.env.example
+
+# Editors and operating system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.ipynb_checkpoints/
+
+# Private corpus, extracted text and generated indexes; retain directory guide.
+/data/*
+!/data/README.md
+
+# Downloaded models and caches
+/models/
+
+# Generated QA sessions, experiments, logs and plots
+# Custom output destinations outside these paths need their own ignore rules.
+/output/
+/test_output/
+/enhanced_api_output/
+/example_answers/
+/qa_testing/test_output/
+/qa_testing/direct_api_output/
+/heatmap_visualization/organic_electrocatalysis_heatmap.png
+/organic_electrocatalysis_heatmap.png
+*.log
+
+# Intentionally tracked: source/tests/scripts, dependency locks, .env.example,
+# config/, evaluation/, docs/ audit records and authored doc/report.pdf.
+# Avoid blanket *.json / *.pdf / *.png rules: reviewed assets can be source.

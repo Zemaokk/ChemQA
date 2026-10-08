@@ -1,0 +1,15 @@
+{
+  "schema": "chemqa-reranker-profile-v1",
+  "model": "Qwen/Qwen3-Reranker-0.6B",
+  "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "instruction": "Given a web search query, retrieve relevant passages that answer the query",
+  "max_sequence_tokens": 1024,
+  "batch_size": 4,
+  "precision_policy": "mps-fp16-cpu-fp32-v1",
+  "score_kind": "yes_minus_no_logit",
+  "candidate_window": 50,
+  "tie_break": "original_candidate_rank",
+  "selection_rule": "Enable only if complete_anchor_recall@10 strictly improves, character_coverage@5 and annotated_doc_recall@10 do not regress, and median incremental rerank latency per 50 candidates is at most 15 seconds. Otherwise retain G order. No parameter sweep.",
+  "maximum_median_rerank_seconds": 15,
+  "production_default_switch": "Q06.5-J only"
+}

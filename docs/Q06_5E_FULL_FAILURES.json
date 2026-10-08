@@ -1,0 +1,91 @@
+{
+  "schema": "chemqa-q065e-full-failures-v1",
+  "annotation_quality": "AI draft; domain review pending",
+  "candidate_pool": "full 180-document corpus",
+  "failure_question_count": 8,
+  "failures": [
+    {
+      "question_id": "D03",
+      "category": "single_fact",
+      "complete_anchor_recall_at_10": 0.0,
+      "anchor_coverage_at_10": {
+        "e1": 0.0
+      },
+      "annotated_document_recall_at_10": 1.0
+    },
+    {
+      "question_id": "D08",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": 0.5,
+      "anchor_coverage_at_10": {
+        "e1": 1.0,
+        "e2": 0.0
+      },
+      "annotated_document_recall_at_10": 1.0
+    },
+    {
+      "question_id": "D10",
+      "category": "mechanism",
+      "complete_anchor_recall_at_10": 0.0,
+      "anchor_coverage_at_10": {
+        "e1": 0.0
+      },
+      "annotated_document_recall_at_10": 1.0
+    },
+    {
+      "question_id": "D11",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": 0.0,
+      "anchor_coverage_at_10": {
+        "e1": 0.0
+      },
+      "annotated_document_recall_at_10": 1.0
+    },
+    {
+      "question_id": "D15",
+      "category": "system_boundary",
+      "complete_anchor_recall_at_10": 0.0,
+      "anchor_coverage_at_10": {
+        "e1": 0.0,
+        "e2": 0.0
+      },
+      "annotated_document_recall_at_10": 1.0
+    },
+    {
+      "question_id": "D16",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": 0.3333333333333333,
+      "anchor_coverage_at_10": {
+        "e1": 0.0,
+        "e2": 0.0,
+        "e3": 1.0
+      },
+      "annotated_document_recall_at_10": 0.5
+    },
+    {
+      "question_id": "D17",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": 0.3333333333333333,
+      "anchor_coverage_at_10": {
+        "e1": 1.0,
+        "e2": 0.0,
+        "e3": 0.0
+      },
+      "annotated_document_recall_at_10": 0.5
+    },
+    {
+      "question_id": "D18",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": 0.0,
+      "anchor_coverage_at_10": {
+        "e1": 0.0,
+        "e2": 0.0,
+        "e3": 0.0,
+        "e4": 0.0
+      },
+      "annotated_document_recall_at_10": 0.0
+    }
+  ],
+  "interpretation": "Known annotated span misses; unjudged retrieved evidence is not labeled irrelevant. No scientific-answer assessment.",
+  "next_check": "Researcher label review; hybrid recall and reranking experiments in G/H. Reserve questions remain unexecuted."
+}

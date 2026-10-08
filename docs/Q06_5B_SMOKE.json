@@ -1,0 +1,257 @@
+{
+  "schema": "chemqa-q065b-live-smoke-v1",
+  "passed": true,
+  "results": [
+    {
+      "thinking": "disabled",
+      "max_tokens": 512,
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "54e07f29-4f31-4b62-b496-97986a73a94d",
+        "usage": {
+          "completion_tokens": 80,
+          "prompt_tokens": 42,
+          "total_tokens": 122,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 512,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 1.4816274579497986,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 80,
+              "prompt_tokens": 42,
+              "total_tokens": 122,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 1.481620957958512,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "54e07f29-4f31-4b62-b496-97986a73a94d",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "answer": "Let's go step by step.\n\n- Start: 17 red + 23 blue = 40 balls.\n- Remove 5 red: red = 17 − 5 = 12, blue = 23, total = 35.\n- Double the remaining red balls: red = 12 × 2 = 24, blue = 23, total = 47.\n\n**47**"
+    },
+    {
+      "thinking": "enabled",
+      "max_tokens": 512,
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "ce54ea72-32dc-4198-ab2b-3d4f72a9e4d9",
+        "usage": {
+          "completion_tokens": 110,
+          "prompt_tokens": 68,
+          "total_tokens": 178,
+          "completion_tokens_details": {
+            "reasoning_tokens": 108
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "enabled"
+            },
+            "max_tokens": 512,
+            "stream": false
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": true,
+        "reasoning_characters": 397,
+        "elapsed_seconds": 18.047705874952953,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 110,
+              "prompt_tokens": 68,
+              "total_tokens": 178,
+              "completion_tokens_details": {
+                "reasoning_tokens": 108
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 18.047696500027087,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "ce54ea72-32dc-4198-ab2b-3d4f72a9e4d9",
+            "reasoning_content_present": true,
+            "reasoning_characters": 397
+          }
+        ],
+        "partial_content": null
+      },
+      "answer": "47"
+    },
+    {
+      "thinking": "disabled",
+      "max_tokens": 1,
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "truncated",
+        "error_code": "length",
+        "error_message": "API generation did not complete normally (length).",
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "length",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "d0965a3a-abee-4a68-af83-825fa8c8e774",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 42,
+          "total_tokens": 43,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 1,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 3.1815974580240436,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "truncated",
+            "error_code": "length",
+            "http_status": 200,
+            "finish_reason": "length",
+            "usage": {
+              "completion_tokens": 1,
+              "prompt_tokens": 42,
+              "total_tokens": 43,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 3.1815907080308534,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "d0965a3a-abee-4a68-af83-825fa8c8e774",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": "Let"
+      },
+      "answer": null
+    }
+  ],
+  "empty_evidence_control": {
+    "schema": "chemqa-generation-result-v1",
+    "status": "no_evidence",
+    "error_code": null,
+    "error_message": null,
+    "retryable": false,
+    "request_sent": false,
+    "attempts": 0,
+    "http_status": null,
+    "finish_reason": null,
+    "requested_model": null,
+    "returned_model": null,
+    "response_id": null,
+    "usage": {},
+    "request_parameters": {},
+    "reasoning_content_present": false,
+    "reasoning_characters": 0,
+    "elapsed_seconds": 0.0,
+    "attempt_history": [],
+    "partial_content": null
+  },
+  "generation_requests": 3,
+  "cost": null,
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q065b_smoke/20261007T012725-6d9f3759db5e49d9b9e6959c7caaa65f"
+}

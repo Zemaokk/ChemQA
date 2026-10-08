@@ -1,0 +1,110 @@
+{
+  "schema": "chemqa-q065h-validation-v1",
+  "status": "passed",
+  "regression": {
+    "passed": 212,
+    "new_tests": 13,
+    "seconds": 21.65
+  },
+  "ruff_check": "passed",
+  "ruff_format_check": {
+    "status": "passed",
+    "python_files": 78
+  },
+  "git_diff_check": "passed",
+  "locked_offline_environment_sync": "passed",
+  "dependency_default_and_G_source_files_unchanged": {
+    "pyproject.toml": true,
+    "uv.lock": true,
+    "requirements.txt": true,
+    "config/settings.py": true,
+    "config/q065g_experiment.json": true,
+    "src/knowledge_base/hybrid_search.py": true,
+    "src/knowledge_base/lexical_index.py": true,
+    "scripts/validate_q065g.py": true
+  },
+  "fixed_source_inputs_verified": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/run.json": "ad51a22eabd94ad30dda856706cc8d3b70f8bc1c675c9baff48148f92d2ed2f3",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/storage.json": "e0191d136b1d23c8e8e8ea493963643a64d3cc047a2256180265695a78c0b363",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/vectors.npy": "5ad771af5ce6e5dd1a734835795811cd5e343a4cc9abff199fbfe94ae609f1e6",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/metadata.sqlite3": "e1060d5ea2e3f7ac401f09120aa98bd9e0bfbfb196f8a3101297d051b90d171c",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/query_vectors.npy": "b2df365d69c5b00a5f903604bfcf8614b6b2d1c82e9a45f14820246989f51e01",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/retrieval.json": "70e9db1e1de8834cc12dd6159377c51cf867b627c9c4a14b0eb6418dcce01739",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/evaluation.json": "4ad46210debfd58b70ca98a22034e0192823a7c92e7d9b1fd60e073f5a658286",
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/run.json": "ea6ea58587752c714f62bceff75a2c1ffea4b96f23cdc6db7d8bdfec181a8ffc",
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/rankings.json": "db427a6deca74c9e63aff0d57dd9e814ddc3a393c06f4c86da571ea25fd00ef6",
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/retrieval_profile.json": "35f5c8b5afd84441da2aee1e9a4981575c57cc9da0a7ceb8bbb26a139fce948d",
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/benchmark.json": "2459b9fa8d6ecbac8a89fd960f9456ee49946858a4d25088e42dfafc8f4af64b",
+    "config/q065h_reranker.json": "f33fb41692090a15276fd9f3e49cae1bb85249a43334aafe75aca9cfc607076d"
+  },
+  "published_artifact_checksums_verified": {
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/scores.npy": true,
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/rankings.json": true,
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/model_profile.json": true,
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/reranker_profile.json": true
+  },
+  "generated_artifacts_ignored": {
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/model_profile.json": true,
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/rankings.json": true,
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/scores.npy": true,
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/reranker_profile.json": true,
+    "output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/run.json": true
+  },
+  "scores_shape": [
+    20,
+    50
+  ],
+  "scores_dtype": "float32",
+  "all_scores_finite": true,
+  "fixed_candidate_id_sets_equal": true,
+  "stable_logit_ranking_verified": true,
+  "actual_full_template_ids_verified_for_all_1000_pairs": true,
+  "full_template_token_range": [
+    174,
+    632
+  ],
+  "over_limit_inputs": 0,
+  "selected_enabled_matches_frozen_gate": true,
+  "frozen_replay": {
+    "status": "passed",
+    "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9",
+    "all_scores_rankings_metrics_equal": true,
+    "candidate_ids_and_order_preserved": true,
+    "immutable_inputs_unchanged": true,
+    "model_inference_repeated": false,
+    "reserve_queries_executed": 0,
+    "generation_requests": 0
+  },
+  "real_model_runtime": {
+    "status": "passed",
+    "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9",
+    "question_id": "D01",
+    "candidate_profile_enabled": true,
+    "public_retriever_top10_equal": true,
+    "repeated_real_model_top10_max_logit_difference": 0.0,
+    "context_threshold_blocked": true,
+    "source_candidate_window": 50,
+    "immutable_inputs_unchanged": true,
+    "frozen_query_embeddings_used": true,
+    "generation_requests": 0,
+    "reserve_queries_executed": 0
+  },
+  "source_code_sha256": {
+    "src/knowledge_base/reranker.py": "419f0e7ccde9e7d43ab4cbe1e9853d7f9ce060d3810ac86d31181da2af7804c8",
+    "src/knowledge_base/reranked_search.py": "db9f0787b26abc40586a1812729343e3d5ba114619ec96a1f80748ac8582035c",
+    "src/knowledge_base/retriever.py": "e5ca7c1b026ed3b0c916ccc90058cf0aa8d5486d9d08d1d8f65b35f584636bcb",
+    "scripts/validate_q065h.py": "8f45c16cc03311f0825dde076708efc97c45b22305c101ba258746ad8e6aa855",
+    "tests/test_q065h_reranking.py": "8ba3b6122ab5c4f9d7fe2b8f5ceceba2db76163c6790fc8fc0a55c5246b3d750"
+  },
+  "current_secret_pattern_audit_clean": true,
+  "production_default_switched": false,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0,
+  "annotation_quality": "AI draft; domain review pending",
+  "focused_regression_after_nonfinite_score_test_strengthened": {
+    "passed": 13,
+    "seconds": 0.005
+  }
+}

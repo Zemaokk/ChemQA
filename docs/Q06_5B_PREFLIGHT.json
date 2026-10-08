@@ -1,0 +1,61 @@
+{
+  "endpoint": "https://llmapi.paratera.com/v1",
+  "models": {
+    "http_status": 200,
+    "count": 96,
+    "candidate_ids": [
+      "DeepSeek-V3.2-Instruct",
+      "DeepSeek-V4-Flash",
+      "DeepSeek-V4-Pro"
+    ]
+  },
+  "probes": [
+    {
+      "model": "DeepSeek-V4-Flash",
+      "thinking": "disabled",
+      "max_tokens": 512,
+      "http_status": 200,
+      "returned_model": "DeepSeek-V4-Flash",
+      "usage": {
+        "completion_tokens": 80,
+        "prompt_tokens": 42,
+        "total_tokens": 122,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "content": "Let's go step by step.\n\n- Start: 17 red + 23 blue = 40 balls total.\n- Remove 5 red: 17 - 5 = 12 red remain. Blue still 23.\n- Double the remaining red: 12 × 2 = 24 red.\n- Now total = 24 red + 23 blue = 47 balls.\n\n**47**",
+      "reasoning_content_present": false,
+      "reasoning_characters": 0,
+      "elapsed_seconds": 3.37733579199994
+    },
+    {
+      "model": "DeepSeek-V4-Flash",
+      "thinking": "enabled",
+      "max_tokens": 512,
+      "http_status": 200,
+      "returned_model": "DeepSeek-V4-Flash",
+      "usage": {
+        "completion_tokens": 105,
+        "prompt_tokens": 68,
+        "total_tokens": 173,
+        "completion_tokens_details": {
+          "reasoning_tokens": 103
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "content": "47",
+      "reasoning_content_present": true,
+      "reasoning_characters": 396,
+      "elapsed_seconds": 8.087904915970284
+    }
+  ],
+  "note": "Two preliminary non-literature probes; separate from the three structured handler smoke requests and development baseline. Returned alias does not attest underlying weights."
+}

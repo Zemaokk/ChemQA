@@ -1,0 +1,20 @@
+{
+  "schema": "chemqa-eval-manifest-v1",
+  "version": "q10b-v1",
+  "frozen_utc": "2026-10-08T00:28:47.431628+00:00",
+  "files_sha256": {
+    "dev.json": "34f6ad67c9f4d89aec5bfe933216278451462ab4a35c3a17271991cbfbac80cb",
+    "reserve.json": "8010b63320a15a84d994014d477f7186131bd0c61f27770029b019400d2f372f",
+    "documents.json": "889917f7397a1377a30f068beb313c3154e11f74dd8b180378fec411c79003da",
+    "RUBRIC.md": "073fd72614baf68d0a2b4bffe0174928d7aa70a63ce656bbc43fb368a7fe62f6"
+  },
+  "split_counts": {
+    "dev": 34,
+    "reserve": 6
+  },
+  "split_policy": "Disjoint annotated DOI/article groups; reserve never ranked/generated in Q10-A. Author-visible reserve candidates, not a blinded test.",
+  "annotation_status": "AI draft; source offsets checked; domain review pending",
+  "baseline_index_sha256": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+  "manual_review_required": true,
+  "expansion_note": "14 source-grounded focused dev diagnostics; no new independent paper groups; original 6 reserve questions unchanged."
+}

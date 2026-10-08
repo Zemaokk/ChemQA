@@ -1,0 +1,301 @@
+{
+  "schema": "chemqa-q065g-evaluation-v1",
+  "status": "passed",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c",
+  "retrieval_profile": "/Users/zemaochen/projects/ChemQA/output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/retrieval_profile.json",
+  "lexical_directory": "/Users/zemaochen/projects/ChemQA/output/lexical_indexes/20261007T145201-bd5a8cf7b6b94e999d02f1b47d5c88e9",
+  "source_dense_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T050945-4456434906334000aac1efefcb869097",
+  "protocol": {
+    "schema": "chemqa-hybrid-experiment-v1",
+    "analyzer_version": "scientific-nfkc-latin-cjk-v1",
+    "bm25": {
+      "k1": 1.2,
+      "b": 0.75,
+      "query_term_frequency": "binary"
+    },
+    "route_window": 50,
+    "rrf_constant": 60,
+    "rrf_weights": "equal",
+    "deduplication": "chunk_id_first_occurrence_per_route",
+    "tie_break": "source_row_ascending",
+    "cutoffs": [
+      1,
+      5,
+      10
+    ],
+    "selection_rule": "Enable hybrid in the candidate workflow only if complete_anchor_recall@10 strictly improves over Dense and mean_anchor_character_coverage@5 and annotated_doc_recall@10 do not regress; otherwise retain Dense. No parameter sweep.",
+    "reserve_queries_executed": 0,
+    "generation_requests": 0,
+    "production_default_switch": "Q06.5-J only"
+  },
+  "protocol_sha256": "cdb762e6bac6cd18949a0e49286f8408f8d35cdb9d561dbfd3d2de7e0deeb88f",
+  "dataset_manifest_sha256": "70984a7abeaf98ab30888492b5c1f09d181ec9e310b20a9cc7b35ff51e3ede6f",
+  "rows": 6960,
+  "lexical_statistics": {
+    "schema": "chemqa-bm25-v1",
+    "analyzer_version": "scientific-nfkc-latin-cjk-v1",
+    "analyzer_sha256": "8d8f2807bcc35ff9cc0c677eeb942a2df5c456a0a1006385e774d20b9308cceb",
+    "unicode_version": "15.0.0",
+    "k1": 1.2,
+    "b": 0.75,
+    "query_term_frequency": "binary",
+    "row_count": 6960,
+    "vocabulary_size": 64307,
+    "posting_count": 1005089,
+    "average_length": 219.54683908045976,
+    "binding": {
+      "storage_sha256": "e0191d136b1d23c8e8e8ea493963643a64d3cc047a2256180265695a78c0b363",
+      "documents_sha256": "c86b3b1ba4d5b90012360fd899ee5c75a5f58ab1c0897d573ce48aa2d09f7425",
+      "row_count": 6960,
+      "embedding": {
+        "schema": "chemqa-embedding-profile-v1",
+        "model": "Qwen/Qwen3-Embedding-0.6B",
+        "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+        "dimension": 1024,
+        "max_sequence_tokens": 512,
+        "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+        "document_prompt": "",
+        "normalize_embeddings": true,
+        "padding_side": "left",
+        "precision_policy": "mps-fp16-cpu-fp32-v1",
+        "token_count_includes_prompt_and_special_tokens": true
+      }
+    }
+  },
+  "lexical_build_and_validation_seconds": 1.8064589999848977,
+  "lexical_files_bytes": {
+    "lexical.json": 1172,
+    "vocabulary.json": 987976,
+    "postings.npz": 2155430
+  },
+  "summary_top10": {
+    "dense": {
+      "scored_questions": 18,
+      "rr_first_annotated_doc": 0.8379629629629629,
+      "rr_first_complete_anchor": 0.3746031746031746,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 0.7777777777777778,
+          "annotated_doc_recall": 0.7222222222222222,
+          "all_annotated_docs_hit": 0.6666666666666666,
+          "mean_anchor_character_coverage": 0.18518518518518517,
+          "complete_anchor_recall": 0.18518518518518517,
+          "all_anchors_complete": 0.16666666666666666,
+          "annotated_point_evidence_complete": 0.19444444444444445
+        },
+        "5": {
+          "annotated_doc_hit": 0.9444444444444444,
+          "annotated_doc_recall": 0.8888888888888888,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.49074074074074076,
+          "complete_anchor_recall": 0.49074074074074076,
+          "all_anchors_complete": 0.4444444444444444,
+          "annotated_point_evidence_complete": 0.5
+        },
+        "10": {
+          "annotated_doc_hit": 0.9444444444444444,
+          "annotated_doc_recall": 0.8888888888888888,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.6203703703703703,
+          "complete_anchor_recall": 0.6203703703703703,
+          "all_anchors_complete": 0.5555555555555556,
+          "annotated_point_evidence_complete": 0.6296296296296297
+        }
+      }
+    },
+    "bm25": {
+      "scored_questions": 18,
+      "rr_first_annotated_doc": 0.8333333333333334,
+      "rr_first_complete_anchor": 0.37083333333333335,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 0.7777777777777778,
+          "annotated_doc_recall": 0.6944444444444444,
+          "all_annotated_docs_hit": 0.6111111111111112,
+          "mean_anchor_character_coverage": 0.25,
+          "complete_anchor_recall": 0.25,
+          "all_anchors_complete": 0.2222222222222222,
+          "annotated_point_evidence_complete": 0.24074074074074073
+        },
+        "5": {
+          "annotated_doc_hit": 0.8888888888888888,
+          "annotated_doc_recall": 0.8333333333333334,
+          "all_annotated_docs_hit": 0.7777777777777778,
+          "mean_anchor_character_coverage": 0.4074074074074074,
+          "complete_anchor_recall": 0.4074074074074074,
+          "all_anchors_complete": 0.3333333333333333,
+          "annotated_point_evidence_complete": 0.4074074074074074
+        },
+        "10": {
+          "annotated_doc_hit": 0.8888888888888888,
+          "annotated_doc_recall": 0.8333333333333334,
+          "all_annotated_docs_hit": 0.7777777777777778,
+          "mean_anchor_character_coverage": 0.5092592592592593,
+          "complete_anchor_recall": 0.5092592592592593,
+          "all_anchors_complete": 0.4444444444444444,
+          "annotated_point_evidence_complete": 0.5092592592592593
+        }
+      }
+    },
+    "hybrid": {
+      "scored_questions": 18,
+      "rr_first_annotated_doc": 0.8888888888888888,
+      "rr_first_complete_anchor": 0.4567901234567901,
+      "at_k": {
+        "1": {
+          "annotated_doc_hit": 0.8333333333333334,
+          "annotated_doc_recall": 0.7777777777777778,
+          "all_annotated_docs_hit": 0.7222222222222222,
+          "mean_anchor_character_coverage": 0.2685185185185185,
+          "complete_anchor_recall": 0.2685185185185185,
+          "all_anchors_complete": 0.2222222222222222,
+          "annotated_point_evidence_complete": 0.2777777777777778
+        },
+        "5": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 0.9166666666666666,
+          "all_annotated_docs_hit": 0.8333333333333334,
+          "mean_anchor_character_coverage": 0.5185185185185185,
+          "complete_anchor_recall": 0.5185185185185185,
+          "all_anchors_complete": 0.4444444444444444,
+          "annotated_point_evidence_complete": 0.5185185185185185
+        },
+        "10": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 0.9444444444444444,
+          "all_annotated_docs_hit": 0.8888888888888888,
+          "mean_anchor_character_coverage": 0.7037037037037037,
+          "complete_anchor_recall": 0.7037037037037037,
+          "all_anchors_complete": 0.6111111111111112,
+          "annotated_point_evidence_complete": 0.7037037037037037
+        }
+      }
+    }
+  },
+  "summary_candidate_pool_at_50": {
+    "dense": {
+      "scored_questions": 18,
+      "rr_first_annotated_doc": 0.8412309368191722,
+      "rr_first_complete_anchor": 0.3818861255703361,
+      "at_k": {
+        "50": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 0.9722222222222222,
+          "all_annotated_docs_hit": 0.9444444444444444,
+          "mean_anchor_character_coverage": 0.8240740740740741,
+          "complete_anchor_recall": 0.8240740740740741,
+          "all_anchors_complete": 0.7777777777777778,
+          "annotated_point_evidence_complete": 0.8240740740740741
+        }
+      }
+    },
+    "bm25": {
+      "scored_questions": 18,
+      "rr_first_annotated_doc": 0.8378945447910965,
+      "rr_first_complete_anchor": 0.38021903205726737,
+      "at_k": {
+        "50": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 0.9722222222222222,
+          "all_annotated_docs_hit": 0.9444444444444444,
+          "mean_anchor_character_coverage": 0.7129629629629629,
+          "complete_anchor_recall": 0.7129629629629629,
+          "all_anchors_complete": 0.6666666666666666,
+          "annotated_point_evidence_complete": 0.7037037037037037
+        }
+      }
+    },
+    "hybrid": {
+      "scored_questions": 18,
+      "rr_first_annotated_doc": 0.8888888888888888,
+      "rr_first_complete_anchor": 0.4608252111760884,
+      "at_k": {
+        "50": {
+          "annotated_doc_hit": 1.0,
+          "annotated_doc_recall": 1.0,
+          "all_annotated_docs_hit": 1.0,
+          "mean_anchor_character_coverage": 0.8518518518518519,
+          "complete_anchor_recall": 0.8518518518518519,
+          "all_anchors_complete": 0.7777777777777778,
+          "annotated_point_evidence_complete": 0.8148148148148148
+        }
+      }
+    }
+  },
+  "selected_mode": "hybrid",
+  "candidate_hybrid_enabled": true,
+  "production_default_switched": false,
+  "timings": {
+    "per_mode": {
+      "dense": {
+        "samples": 100,
+        "median_ms": 1.4999999839346856,
+        "p95_ms": 1.537445854046382
+      },
+      "bm25": {
+        "samples": 100,
+        "median_ms": 0.723604520317167,
+        "p95_ms": 0.932686883606948
+      },
+      "hybrid": {
+        "samples": 100,
+        "median_ms": 2.298105013323948,
+        "p95_ms": 2.517595942481421
+      }
+    },
+    "fusion_median_ms": 0.06233350723050535,
+    "query_encoding_included": false,
+    "method": "5 cycles of 20 frozen dev queries, same loaded indexes, each route fetches up to 50 metadata records; hybrid time is measured serial dense+BM25+fusion sum. BLAS threads controlled by caller. Single-machine warm observations, no end-to-end claim."
+  },
+  "duplicate_diagnostics_at_10": {
+    "dense": {
+      "unique_papers": 4.05,
+      "additional_chunks_from_already_hit_papers": 5.95,
+      "largest_paper_fraction": 0.635,
+      "source_overlap_pairs": 1.75
+    },
+    "bm25": {
+      "unique_papers": 4.05,
+      "additional_chunks_from_already_hit_papers": 5.95,
+      "largest_paper_fraction": 0.675,
+      "source_overlap_pairs": 1.9
+    },
+    "hybrid": {
+      "unique_papers": 3.95,
+      "additional_chunks_from_already_hit_papers": 6.05,
+      "largest_paper_fraction": 0.675,
+      "source_overlap_pairs": 1.75
+    }
+  },
+  "chinese_query_diagnostics": {
+    "queries_with_cjk_terms": 14,
+    "queries_with_no_matched_cjk_terms": 14
+  },
+  "annotation_quality": "AI draft; domain review pending",
+  "rss_high_water_bytes": 446545920,
+  "input_fingerprints_before": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/run.json": "ad51a22eabd94ad30dda856706cc8d3b70f8bc1c675c9baff48148f92d2ed2f3",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/storage.json": "e0191d136b1d23c8e8e8ea493963643a64d3cc047a2256180265695a78c0b363",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/vectors.npy": "5ad771af5ce6e5dd1a734835795811cd5e343a4cc9abff199fbfe94ae609f1e6",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/metadata.sqlite3": "e1060d5ea2e3f7ac401f09120aa98bd9e0bfbfb196f8a3101297d051b90d171c",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/query_vectors.npy": "b2df365d69c5b00a5f903604bfcf8614b6b2d1c82e9a45f14820246989f51e01",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/retrieval.json": "70e9db1e1de8834cc12dd6159377c51cf867b627c9c4a14b0eb6418dcce01739",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/evaluation.json": "4ad46210debfd58b70ca98a22034e0192823a7c92e7d9b1fd60e073f5a658286"
+  },
+  "input_fingerprints_after": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/run.json": "ad51a22eabd94ad30dda856706cc8d3b70f8bc1c675c9baff48148f92d2ed2f3",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/storage.json": "e0191d136b1d23c8e8e8ea493963643a64d3cc047a2256180265695a78c0b363",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/vectors.npy": "5ad771af5ce6e5dd1a734835795811cd5e343a4cc9abff199fbfe94ae609f1e6",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/metadata.sqlite3": "e1060d5ea2e3f7ac401f09120aa98bd9e0bfbfb196f8a3101297d051b90d171c",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/query_vectors.npy": "b2df365d69c5b00a5f903604bfcf8614b6b2d1c82e9a45f14820246989f51e01",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/retrieval.json": "70e9db1e1de8834cc12dd6159377c51cf867b627c9c4a14b0eb6418dcce01739",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/evaluation.json": "4ad46210debfd58b70ca98a22034e0192823a7c92e7d9b1fd60e073f5a658286"
+  },
+  "generation_requests": 0,
+  "query_reencoding_count": 0,
+  "reserve_queries_executed": 0
+}

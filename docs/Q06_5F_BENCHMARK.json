@@ -1,0 +1,89 @@
+{
+  "schema": "chemqa-q065f-benchmark-v1",
+  "records": [
+    {
+      "backend": "json",
+      "load_seconds": 2.5185047919512726,
+      "rss_high_water_bytes": 1748467712,
+      "query_samples": 100,
+      "query_median_ms": 8.008291479200125,
+      "query_p95_ms": 8.729445192147978,
+      "blas_threads": 1,
+      "query_encoding_included": false,
+      "filesystem_cache": "warm or uncontrolled; not cold disk benchmark"
+    },
+    {
+      "backend": "binary",
+      "load_seconds": 0.3741389579954557,
+      "rss_high_water_bytes": 335020032,
+      "query_samples": 100,
+      "query_median_ms": 1.1179170105606318,
+      "query_p95_ms": 1.2331204634392634,
+      "blas_threads": 1,
+      "query_encoding_included": false,
+      "filesystem_cache": "warm or uncontrolled; not cold disk benchmark"
+    },
+    {
+      "backend": "json",
+      "load_seconds": 1.8965814170078374,
+      "rss_high_water_bytes": 2349006848,
+      "query_samples": 100,
+      "query_median_ms": 8.241436997195706,
+      "query_p95_ms": 8.822212161612697,
+      "blas_threads": 1,
+      "query_encoding_included": false,
+      "filesystem_cache": "warm or uncontrolled; not cold disk benchmark"
+    },
+    {
+      "backend": "binary",
+      "load_seconds": 0.3746045409934595,
+      "rss_high_water_bytes": 334807040,
+      "query_samples": 100,
+      "query_median_ms": 1.123833004385233,
+      "query_p95_ms": 1.2507961771916598,
+      "blas_threads": 1,
+      "query_encoding_included": false,
+      "filesystem_cache": "warm or uncontrolled; not cold disk benchmark"
+    },
+    {
+      "backend": "json",
+      "load_seconds": 2.0674865000182763,
+      "rss_high_water_bytes": 2185854976,
+      "query_samples": 100,
+      "query_median_ms": 8.108208508929238,
+      "query_p95_ms": 8.908987487666309,
+      "blas_threads": 1,
+      "query_encoding_included": false,
+      "filesystem_cache": "warm or uncontrolled; not cold disk benchmark"
+    },
+    {
+      "backend": "binary",
+      "load_seconds": 0.37276704201940447,
+      "rss_high_water_bytes": 334839808,
+      "query_samples": 100,
+      "query_median_ms": 1.1533955112099648,
+      "query_p95_ms": 1.3401041593169793,
+      "blas_threads": 1,
+      "query_encoding_included": false,
+      "filesystem_cache": "warm or uncontrolled; not cold disk benchmark"
+    }
+  ],
+  "median_of_three_processes": {
+    "json": {
+      "load_seconds": 2.0674865000182763,
+      "rss_high_water_bytes": 2185854976,
+      "query_median_ms": 8.108208508929238,
+      "query_p95_ms": 8.822212161612697
+    },
+    "binary": {
+      "load_seconds": 0.3741389579954557,
+      "rss_high_water_bytes": 334839808,
+      "query_median_ms": 1.123833004385233,
+      "query_p95_ms": 1.2507961771916598
+    }
+  },
+  "source_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b",
+  "candidate_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T050945-4456434906334000aac1efefcb869097",
+  "method": "3 fresh processes per backend; all integrity/profile checks included in load, model loading and query encoding excluded; 3 warmup then 5 x 20 single-query searches; BLAS threads fixed at 1. Filesystem cache uncontrolled; single-machine observations, not a general speed claim.",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q065f_benchmarks/20261007T050954-86a5d7f847304899b35a2e9836233df4"
+}

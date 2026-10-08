@@ -1,0 +1,15 @@
+{
+  "schema": "chemqa-hybrid-experiment-v1",
+  "analyzer_version": "scientific-nfkc-latin-cjk-v1",
+  "bm25": {"k1": 1.2, "b": 0.75, "query_term_frequency": "binary"},
+  "route_window": 50,
+  "rrf_constant": 60,
+  "rrf_weights": "equal",
+  "deduplication": "chunk_id_first_occurrence_per_route",
+  "tie_break": "source_row_ascending",
+  "cutoffs": [1, 5, 10],
+  "selection_rule": "Enable hybrid in the candidate workflow only if complete_anchor_recall@10 strictly improves over Dense and mean_anchor_character_coverage@5 and annotated_doc_recall@10 do not regress; otherwise retain Dense. No parameter sweep.",
+  "reserve_queries_executed": 0,
+  "generation_requests": 0,
+  "production_default_switch": "Q06.5-J only"
+}

@@ -1,0 +1,42 @@
+{
+  "rows": 26025,
+  "located": 26025,
+  "verified_spans": 28016,
+  "cross_page": 1991,
+  "verified_pdf_contents": 180,
+  "unavailable_by_source": {},
+  "text_ids_vectors_preserved_against_baseline": null,
+  "embedding": {
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "max_sequence_tokens": 128,
+    "special_tokens": 2,
+    "token_count_includes_special_tokens": true
+  },
+  "max_embedding_token_count": 128,
+  "embedding_token_percentiles": [
+    23.0,
+    127.0,
+    128.0,
+    128.0
+  ],
+  "over_limit_chunks": 0,
+  "actual_encoder_token_ids_match_untruncated_inputs": true,
+  "source_nonwhitespace_characters_covered": 7812098,
+  "pdf_contents_fully_covered": 180,
+  "index_sha256": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+  "chunks_sha256": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5",
+  "baseline": {
+    "index_sha256": "9e7973b5f8a8e6f4aa5cee2cdc75b0fc85b454a5541b2602745300286e5a143a",
+    "rows": 3187,
+    "over_limit_chunks": 3168,
+    "token_percentiles": [
+      8.0,
+      904.0,
+      1166.4,
+      1420.0
+    ],
+    "total_embedding_tokens": 2941422,
+    "pdf_document_ids_preserved": true
+  }
+}

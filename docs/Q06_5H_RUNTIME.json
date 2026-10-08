@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9",
+  "question_id": "D01",
+  "candidate_profile_enabled": true,
+  "public_retriever_top10_equal": true,
+  "repeated_real_model_top10_max_logit_difference": 0.0,
+  "context_threshold_blocked": true,
+  "source_candidate_window": 50,
+  "immutable_inputs_unchanged": true,
+  "frozen_query_embeddings_used": true,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0
+}

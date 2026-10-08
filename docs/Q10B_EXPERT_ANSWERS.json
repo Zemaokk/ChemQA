@@ -1,0 +1,3333 @@
+{
+  "schema": "chemqa-q10b-assistant-answer-overlay-v1",
+  "reviewer": {
+    "id": "Codex (AI assistant)",
+    "kind": "ai_assistant_expert_review",
+    "date": "2026-10-08",
+    "independent_human_review": false,
+    "blind_review": false,
+    "authorization": "用户明确要求：对于Q10-B，你作为专家进行一下评审即可。",
+    "method": "助手逐份阅读冻结回答、所引证据与原文锚点，人工式判断后记录；计算仅作汇总，不使用关键词判分或另一个远程 judge。"
+  },
+  "rubric_sha256": "073fd72614baf68d0a2b4bffe0174928d7aa70a63ce656bbc43fb368a7fe62f6",
+  "raw_generation_directory": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f",
+  "scoring_notes": [
+    "沿用冻结0/1/2要点和分维度评分，不合成总科学分。",
+    "点分只评冻结要点；扩展错误单列，不能被核心要点正确抵消。",
+    "NA不记零；Direct不具备外部证据支持/引用维度分母。",
+    "部分完成核心回答但额外公式错误记证据/边界部分分；不将结构映射率当支持率。",
+    "R05严格摘要口径与正文替代正确描述存在歧义，报告排除R05敏感性。",
+    "不足判断仅R03 BM25的上下文有界拒答适用，不汇为整体不足识别能力。",
+    "审查者知晓方案，且此前参与题目/实现，不是独立盲评；不穷举所有背景主张，不报告claim精度。"
+  ],
+  "evidence_integrity": {
+    "source_pdfs_verified": 35,
+    "unique_chunks_verified": 121,
+    "exact_source_spans_verified": 121
+  },
+  "source_aliases_by_question": {
+    "R01": {
+      "chunk_0d0462777133efb94e6924a4ff1033c8b1c288d55760e220ef84e743c1564695": "S01",
+      "chunk_1754f9c2f8b0de48acc3b944da042e287ed8a0be3e998f22b6837914bd633e20": "S02",
+      "chunk_2183f7606e31b0214da86ef58dbf6985df876cc8a8975369ea7c38306f49975a": "S03",
+      "chunk_239ca0bf00521864a0720d818171cf522540e7f2a420a99333c5d22000aaf768": "S04",
+      "chunk_2d49fdf8ed773a555587131a9455f0318b6a849f1cce93627b9d39e01377f53a": "S05",
+      "chunk_3f3db661e62bb8ad46f2a6a180379d372112590eb305454546b138192593c24c": "S06",
+      "chunk_412eebbdadd1e7c51c0fd79bc1e9d0d4f20493d5037d703f78cad205de38edf0": "S07",
+      "chunk_4b37af92e2fbfba256d8ddc4d84af35c8cc613ff7fc96a33d8710629a45b90a3": "S08",
+      "chunk_58c5c28a44a409c0ac61ad97a57d6643cd1dd519162ccf81accfe37e30a1ff1b": "S09",
+      "chunk_7a0835ce29dac859d8e812a052460dbd0e998ff12a3c756ee91d3a82f10cbf12": "S10",
+      "chunk_7cbfd3f2ed46591dca23dc58c8d9de2f63de61b91e792d30eb3276256d4ea3a9": "S11",
+      "chunk_7eee7dbb467c2bb8c43761e676984dfcb927d9b6b45a33df6450801c47fe4231": "S12",
+      "chunk_849f14bf2fb77779b887b3678b5960f53c45bce15e40a172ddac7f88213668e6": "S13",
+      "chunk_968c5941805a86394f07bca968eab09cde0a85a95d37e9453b640285d349baf6": "S14",
+      "chunk_9cca5d7525b99468582ba54a01d1e8cbfa0f39d8dce550ef2cfa7aaa35bb7f78": "S15",
+      "chunk_b052746d144ba137eb0a6718bf4d23551c0f58c757fcbe232a92944beffe9149": "S16",
+      "chunk_b82f614bffea1a7b55196c0f805f5ce969304af4fe5227b8eb704d9791504129": "S17",
+      "chunk_c21bed541dafec5cd6d997e883adb84d9730e60562a8640358da223b6593b8af": "S18",
+      "chunk_e4ffad4a9d0abdd3a49861e2f93527b880af65674bceb1d015ed5db3d3b6abd9": "S19",
+      "chunk_f21460a186ba85c6aa37cafcd5d21f409cb7075847c2f3cccff269c9d61f1e1e": "S20",
+      "chunk_fb9c56479a93beb99b999bdc7a16a1e312fef02728d4708643597839ff2dea91": "S21"
+    },
+    "R02": {
+      "chunk_0abecc03498cdbb9a5f22fa9e6ffe3dc3fb38719c527bbe00358ce563f012ffb": "S01",
+      "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4": "S02",
+      "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2": "S03",
+      "chunk_32071b8f384c197d0750aa7ee0489f77c4c7a51314b501ee14357238b89463de": "S04",
+      "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77": "S05",
+      "chunk_436879ead1039f727c59ba7561cfd83cd012f960bc93029b737f6d1ab82cb7c4": "S06",
+      "chunk_49e5ac4d02882b633cc915ccf4c0879b4b3016c38a4046d389521fa7bf31dd85": "S07",
+      "chunk_4c202df82c474e621bf95215a0785fdff976e176125b66e53c01b40b8f5f0e29": "S08",
+      "chunk_68c547eb1bdcb46ea0f1f91807323db69a84a799af409ccd695e4d2b648fed13": "S09",
+      "chunk_7a559c5e18321f72a2e84dcb99c3913af5cc9ed007deb7046b1977c533fa8402": "S10",
+      "chunk_8027e3269d98df7acdf8a029283150a765621b3d0789b7941edff4cfd823f578": "S11",
+      "chunk_86d90efcd0fccd490d73f799afdc8105b9a7f5870326ca6269c9aec291b66177": "S12",
+      "chunk_9142a2ea4f412e1a77363ffc38d60b6c47823ebd736dde47cd33d87ca4b69b52": "S13",
+      "chunk_9b73d3a0d5032412acd849f8434ac0a38b92d903d49725ba61a63addbfa1503b": "S14",
+      "chunk_ac5b4912ded6f38133b5d0ef689ff2b70c4e06fae277950d1b757f2974427dc8": "S15",
+      "chunk_b872a24e9e261d550dd684f6802df17b29b6a8b6d2a22f8d5f91c35d3113e076": "S16",
+      "chunk_bd72c3e5c4330924489fb0356adc51409ebe6ec0b160d93ac4257afc0d0a6925": "S17",
+      "chunk_f490565ded388557a197b40c919c1da6c88e057d5c39b044bd619f74a7921c81": "S18",
+      "chunk_f57fa5259707ea728a4272e892f263365a17909d8575758463064810a3160102": "S19"
+    },
+    "R03": {
+      "chunk_061f60336b5baaa99958c903e87efd11a81efadfa4666b5b64dfbab5438bfd1e": "S01",
+      "chunk_07e04131afaa9f5911b4ee70cc68acca788bfbf5e42cd28d143925b06ef10bfa": "S02",
+      "chunk_099e97251309e9c6f32cc847faa228fc9e4944f2a1201bc0c1ddf9e9cabf0ff9": "S03",
+      "chunk_0bc677ac186f5c5a6847ec51afa83c362320618a7c5d84ecd252cd04b2a7ca22": "S04",
+      "chunk_0ce68cdf3cc393b87065c01dc1b2509b6d21e27863aeb6a4f8f11f112da2ca84": "S05",
+      "chunk_0f0139418c10d1f3f79682cb3e004353ee903283284106b9859c5f5839dbd2c8": "S06",
+      "chunk_22c2a5341721fdc9b8416039ca38c0592279df113631095357dddc63efd3b938": "S07",
+      "chunk_2d75303e13c3d0de3033e13d09d9bb5b33bc5e3ab9fc81282ff83b780a3245d7": "S08",
+      "chunk_32b8c2641203aa9cc2faee548c5d3477ff8f0b2d8a48c095e13c81d497a32de9": "S09",
+      "chunk_32b976d730f503d7818f3fda045d06dca5018cd09779cef3f43641c7ba6fa578": "S10",
+      "chunk_37c1b748cbdfa0cd97b2770048a010978ee6eb311b0d0bbc649593397c20ddc0": "S11",
+      "chunk_3df7e2c528c25cf189e2987b13d3a965e61656a33863411e7971f6bd7c778b9d": "S12",
+      "chunk_45738529ac78ba96ae0bdaaf2d98faa2e4540dafa265ee6a6aa89f02494d9ff1": "S13",
+      "chunk_5f1294b8615586ab9496abb3a747edc543a645b9f8b4a9ad5e534b94b861ddf6": "S14",
+      "chunk_86554735271dd394294d532e4118ed140221d8c2365edb77aba5ddee73f791e8": "S15",
+      "chunk_8a17a771b5c5150d060b33cc86797caeba281aaaba039af005f97e838ccebb93": "S16",
+      "chunk_8ed45015e47dc535006cff17afdd3138e661aa90661b5a7c3ac8e6e275464c6c": "S17",
+      "chunk_985f0bf6b6067d10f9641a089a729b253593fc468dc820db54244560dcfb5880": "S18",
+      "chunk_ad83f27965a8cadcf8f218f9fcc9c96db8232abe2f85ec039c9b737e3785b285": "S19",
+      "chunk_b14c054113348d3494885ca4cdf13eb2c5f73e168c443908640277e3aaaba0e5": "S20",
+      "chunk_bb49ee85bce37b968d9e683e835ff381047e2c238a58babe639ab8f7054da80c": "S21",
+      "chunk_be214a43a3139c5e3180f77bf3c2da845edff5cbfd981d9bf1778a6314f2ea9f": "S22",
+      "chunk_d7096812b293acb78c3ea53a4f0071d53ef2880757b433bb8189a4a2417c094b": "S23",
+      "chunk_d76990f606c3a6c5376c32695269ca574c7e59282d78e1b391723501a7aff15d": "S24",
+      "chunk_daa73816a0b77db26ef358ba144d5e54936b464df704e3945997e21d32b52b3c": "S25",
+      "chunk_efbb194ea2fb9b393342025bbead33b2205be76e9ee2a2a758837e3b33f6f023": "S26"
+    },
+    "R04": {
+      "chunk_004abe7d61ea371d5ed9cf18fc2d0113f68a894262cebf3f4a427e73ecacd248": "S01",
+      "chunk_01a7706bcc573af52bc6d9efb8335b03738f566743aef6e129369f5d20c25ddb": "S02",
+      "chunk_1efb7af81fa7e567a7bbd97cef0a376b3f6a2cc0002249ad54065c2bcfeca224": "S03",
+      "chunk_239b0f98c57e59a3da77f1f260cff08be8ccfcc7e18f10f8638b238a8ba5534c": "S04",
+      "chunk_29b5db798e8cdb3a9aae58b0d2f223615f8a01f4ccff395e0071e61fec3a1930": "S05",
+      "chunk_466a1e2d24b06b3279693c20b4ec0615042573d202ccd2de26e7f80431d64e58": "S06",
+      "chunk_50642a7ca41150f10558e23069ac86bc3df2ceb58ad56c9c05a3309a63e23867": "S07",
+      "chunk_5a1367824673437d248ecfc0dbac3ab3e767b2428b199c81f18ab8b361076db3": "S08",
+      "chunk_5b788fbe342d3497d7497f6199ec3888ff3c41b835f008318bbc3d6889c9bbb3": "S09",
+      "chunk_9e3cc6e8ead3332266d53d47bbed75b0ab610180baff26dda6c3df8f74019466": "S10",
+      "chunk_a6455b395633df0de9f9a6089986a15a5a1f6f36d74885cab2a8e3777da531a9": "S11",
+      "chunk_a72e276c63f32436c342da15f14f4457fa79d551b72eed19179720929506ca11": "S12",
+      "chunk_b353c5976773e3fe2fbac60a9dc5d07f6a39ce5a7f8cf2a2d4fa2ba2b4fb5053": "S13",
+      "chunk_c5082236bd8f026364710330ce52a7e5c10877ba28fdea6a70ffd988dc14a56a": "S14",
+      "chunk_caf8086e5af04ce5971226879618215e67c6581789fe2c0ed9724bffbbcb8d82": "S15",
+      "chunk_e3de9e81b83c8e2852641304d6592c2186fa744e469bf208f165196cb7231dbc": "S16",
+      "chunk_e740a9e18ce6125673c5b4ddc592a908ea17fc839a5e2a73a9e89940cfd2ee22": "S17",
+      "chunk_fe4b56c2f6f3d0c54622e10d5348d0c34e464178ac333556e42b80325a4054eb": "S18"
+    },
+    "R05": {
+      "chunk_0711496b8f07dfd3958fb1cb2db180a899e99e64713793dd274173bbdbdc7fa7": "S01",
+      "chunk_0fb3c53973a0e4eb63902cdbf12bdf103b97b60514c710cf3185cc1c2b972dc5": "S02",
+      "chunk_2bf273c3448dac4538c71eb6d4bcd6705e5f55e7edc369d8898e1cf03603b634": "S03",
+      "chunk_30c680f4a349c4591e539069d49be7bd590d2ed2e52372192d28fd17ba9f56e0": "S04",
+      "chunk_31ee724000e24001d647de2a8b81deef9ab66045bd6fd2f2a70ecc45f04cb3a0": "S05",
+      "chunk_3b9960fc7637f0cea7c3e9cf847cd279f558d8ab8704a9f2a3bdaee50a9e9993": "S06",
+      "chunk_7fb7ea5ce279442ef990068d446a7804f797e14a01bda84748e20d3a2ec220d6": "S07",
+      "chunk_8708e065afd95d07c5d2eb396bbfbe7afd611d71a8069bb6bc78169fe8cf6201": "S08",
+      "chunk_953ee36d9c33c95a7cdaa02cfec09806cc560765be8ea23bf1b1bc25ec3d0fa4": "S09",
+      "chunk_9cde4d2e3e2609ad6961a49751cd2e2e51a827fe4539b3658588aca98435450f": "S10",
+      "chunk_9f9f1756f422ed6c406564a2ee17cf763303bad0480dbb64f9960401335b7f12": "S11",
+      "chunk_aed4c770e57525560759f3b3c1263af22cc371887392d5356a48486d082c5e4a": "S12",
+      "chunk_bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6": "S13",
+      "chunk_cd790d3aec7d605e200a9761dbb7d618d6d7747a33f926b61c9490b9158bd1cd": "S14",
+      "chunk_d097d48f953ce0d43cc2931307857fceb329a5ea0e9b0c3a18ddbdf92706cad0": "S15",
+      "chunk_d2cfebff0990c74570eead41eab129a4c758c98edc85f9151b0afd22231bff48": "S16",
+      "chunk_eaaf7dcd6c37a6c68f47fb07453ccf172f052e29222a038a8527d28aeaac618c": "S17"
+    },
+    "R06": {
+      "chunk_0a2cd732a289881b12ff215b70bafd6c5b23f99f7dc5bf925398b0f22d332be8": "S01",
+      "chunk_0d7ab2d1d611e63fdaccad7862b07525400aa727f335af7c6dd5f53c38782948": "S02",
+      "chunk_12f91b8a0170b3241089532c9661e53c755f827b806d87d471e86a3416139311": "S03",
+      "chunk_350183d47145ae2c5b56faa3a60324e29006a114962f6add4162fde94b07f0be": "S04",
+      "chunk_35e86f1754fc7df3b0723a76db36c6f4a93365a7a34468e0f43e344b19de9f9a": "S05",
+      "chunk_3a9377aaeaf2151fd46db00b30a503a87bfd1218fb9107f7149c1a02088550e1": "S06",
+      "chunk_3e5641458f7d75539e6f26fae9e8b420a49cfebd539da09729b489461e182cef": "S07",
+      "chunk_67115021feb2f7da39dd1b24e9de49dc19ad22ce63d9ef97a814ad288bc98472": "S08",
+      "chunk_67d4992fbe229f0e7aef7e1165023484f89be1fd5d62a325fd931200a504ea96": "S09",
+      "chunk_985f0bf6b6067d10f9641a089a729b253593fc468dc820db54244560dcfb5880": "S10",
+      "chunk_98f17175290fd335a3b1ca98dbdd044920038122c35f8232077dbb22b07aa324": "S11",
+      "chunk_a773f8d32cce778085fd22e3ed795474f54e02d31ad8508c5b6ad10a6574e9ad": "S12",
+      "chunk_b2d79811c5825bd4af17544b058448ffe2e84b02ddf3995b3a285c01099b7362": "S13",
+      "chunk_c732d1ef46e6e0bc59132543b0e3c4dae5e704cb3c7e9ed77c743454a1aad33c": "S14",
+      "chunk_cf3586f53ffe64221b9ff471dccaf77fba8e251e817d31cce38093e30fb14358": "S15",
+      "chunk_d7a52b99c16ae4445bc1949c07d69c9f0ce1084cfd23994ea4a62fa5328afcaf": "S16",
+      "chunk_db8a64bd3c5aabc40db0a457682ddec5b6ee8103af35407fd0fabd8ba23a2f01": "S17",
+      "chunk_e199bcadb1e3e3cae8c9cef3c12078d2baeee8ab17ed4b7df3cbbda071282e1f": "S18",
+      "chunk_eb3fe62c6a636712c03e4d34bfec57e69a2ec37fef826dc9c2948cb11f3deca5": "S19",
+      "chunk_eeb8e9ddf43593108f3dfef70832c33118f663e207bf2c9452126afddb7d075b": "S20",
+      "chunk_f376c950054e46e5719cd159563e06c6027c7b2b07489396de0d21313d49c273": "S21"
+    }
+  },
+  "answers": [
+    {
+      "question_id": "R01",
+      "arm": "bm25",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-bm25-r1.json",
+      "raw_record_sha256": "aa6299b40e963ee28aa3ac1de2fd95eba0cee8d1e4e906c525c4787f07ca6b79",
+      "answer_sha256": "46c64dcb3aa8a2080b40b28fa0766e7f8d74a98ffbcb98f042349fe21954361f",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "condition_conflation",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "把摘要最大浓度 0.126/0.0544/0.148 mmol L−1 与 2.5 V 直接绑定；原文恒电位该点浓度不同。",
+          "answer_excerpt": "a16a1e312fef02728d4708643597839ff2dea91]。\n- 该条件下 BDD 实现 95.9% D-葡萄糖降解，生成 D-阿拉伯糖（0.126 mmol/L）、D-赤藓糖（0.0544 mmol/L）、D-甘油醛与 L-甘油醛（合计 0.148 mmol/L）[Ref chunk_fb9c56479a93beb99b999bdc7a16a1e312fef02728d4708643597839ff2dea91]。\n\n**关于“较优”的限定：**\n- 摘要将 2.5 V 描述为“optima",
+          "source_chunk_ids": []
+        },
+        {
+          "kind": "unit_conflation",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "10 mA 与 10 mA cm−2 在不同叙述中混同；总电流和电流密度不可直接等同。",
+          "answer_excerpt": " L⁻¹ Na₂SO₄（中性）\n- 反应器：两室（阳极 10 mL、阴极 10 mL），电极面积 18 mm × 18 mm，阴极 Pt\n- 操作模式：恒电流 10 mA（10 mA cm⁻²）或恒电位 1.5–3.0 V vs Ag/AgCl\n- 初始葡萄糖浓度：10 mmol L⁻¹\n\n**证据适用性判断：直接支持。**\n\n摘要片段明确报告了“optimal rare sugar production observed at 2.5 V vs Ag/AgCl”，即较优稀有糖生成电位为 **2.5 V**，参比标",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "bm25",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-bm25-r2.json",
+      "raw_record_sha256": "f8235695002795295e03b75165e1ecccee96fa52dbe8e72d4e17bceb41192902",
+      "answer_sha256": "cb8970830b6bc521fa97069726bcdc04173b0f9c8d25d72e9f6790b73774a167",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "bm25",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-bm25-r3.json",
+      "raw_record_sha256": "c6a2930a0146910ccd0a6b595b2facdc928c0a4cccf5528a8f84509e090678c8",
+      "answer_sha256": "39417bf4ab11125a98f203325b21e91b35898d506f8fbaf62a7c711bee85537f",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "dense",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-dense-r1.json",
+      "raw_record_sha256": "2c326c14b094c4bf50c37b1bfddddf3828461fc0bee0a24773d695fc466cd6b1",
+      "answer_sha256": "215eaef1c6c1456c0e5d380e7cdbc1ad3cd2c5bda350ab7cac6102aafd214ea8",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "condition_conflation",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "把摘要最大浓度 0.126/0.0544/0.148 mmol L−1 与 2.5 V 直接绑定；原文恒电位该点浓度不同。",
+          "answer_excerpt": "3beb99b999bdc7a16a1e312fef02728d4708643597839ff2dea91]\n- 同一摘要给出该电位下的产物浓度：D-阿拉伯糖 0.126 mmol/L、D-赤藓糖 0.0544 mmol/L、D-甘油醛与 L-甘油醛合计 0.148 mmol/L；并报告 BDD 在 6 h 内实现 95.9% D-葡萄糖降解，而 Pt 对照仅 10.2%。[Ref chunk_fb9c56479a93beb99b999bdc7a16a1e312fef02728d4708643597839ff2de",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "dense",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-dense-r2.json",
+      "raw_record_sha256": "b9c82851f8fa4ab85901e2b51230618aee69f8e5246091b7c32e059342c9bbc6",
+      "answer_sha256": "aa39850e1fa98f9faa71d285fad1d2b3e9db147bb89f4878683bc504d6b1f17a",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "dense",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-dense-r3.json",
+      "raw_record_sha256": "cd05320d43a3cc95f3417a6db887d0d9687da39d761024192c7841928bb4a1a1",
+      "answer_sha256": "22513cfb525fd70cc512794a7376f97ceca266f326c88f7affcaa3e804657f60",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "direct",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-direct-r1.json",
+      "raw_record_sha256": "6594defc8931bd0574311d9414a115947494b4e8df9d4f5824a3cadf44a459b5",
+      "answer_sha256": "392999e441ec55efe86753e25731144facbe3972bc6a6e7dc22f5daffdc1d1b5",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "direct",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-direct-r2.json",
+      "raw_record_sha256": "dbeac45dc6e194a7330db0f4f99229c15da8305b594b3f4fed99902bc8a28365",
+      "answer_sha256": "bbe15d9f9738bb392e8ab075c8e7c3284d9d102b9f856aba512dcbb356ef2635",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "direct",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-direct-r3.json",
+      "raw_record_sha256": "2a19d3668e1d5308c2dbfb77f32d16be05ff92aebb4b50bb19554ed9de32f8af",
+      "answer_sha256": "4c61f43261ef4810fe8774e1aeb95b0e92e0f7536da8b67dbbf2752c6692f753",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "hybrid_rerank",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-hybrid_rerank-r1.json",
+      "raw_record_sha256": "823533d248bbf6ee88c7b2a3f090a8a51de558faae821e02dd98aadc55ffe6f8",
+      "answer_sha256": "987f2d171095dfc1c58d8881c1fa5f18486f8aed79e2f44a65a12d10babdbfeb",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "hybrid_rerank",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-hybrid_rerank-r2.json",
+      "raw_record_sha256": "4693335aa3d3ed4b2058b1e0f6c9490517b4217efc73440cde6068a9f287233b",
+      "answer_sha256": "1827ee07a15418bcdc9c0229049d8740a4c977ee69a3126eceeb8f493fdefb5b",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "condition_conflation",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "把摘要最大浓度 0.126/0.0544/0.148 mmol L−1 与 2.5 V 直接绑定；原文恒电位该点浓度不同。",
+          "answer_excerpt": "64a0720d818171cf522540e7f2a420a99333c5d22000aaf768]\n\n- 摘要同时报告了该电位下的稀有糖浓度：D-阿拉伯糖 0.126 mmol/L、D-赤藓糖 0.0544 mmol/L、D-和 L-甘油醛合计 0.148 mmol/L。[Ref chunk_fb9c56479a93beb99b999bdc7a16a1e312fef02728d4708643597839ff2dea91]\n\n**说明：** 上述“最优”为作者在 1.5–3.0 V vs Ag/AgCl 范围内实",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "hybrid_rerank",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-hybrid_rerank-r3.json",
+      "raw_record_sha256": "4a65567cae3a8d3054beb03543ef46582c6339bec1be146e5a5fefd50d853132",
+      "answer_sha256": "b8979f11aba5576f10b526905e1c1f8eb79be8b91af4a7b36f63a3d79cbeb8b3",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-hybrid_rerank_diverse-r1.json",
+      "raw_record_sha256": "2ac1c00631c64a85cf11a2fbf045a251bbbffa92aafe3f8b472b4946932c222b",
+      "answer_sha256": "2fb78c2ac2015a57b6d7aec8b70b9401bd40703d6ba7a0ebc03b7d201186fb56",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-hybrid_rerank_diverse-r2.json",
+      "raw_record_sha256": "315c2d169335a1c21217b33bcb369a47cf40c22dc5f94af6b51c09aeae4ecc46",
+      "answer_sha256": "2b82a9cf2a818bae5b7fd7736d0cdc4534e9136cfc4239063a567eaca645de20",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R01",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R01-hybrid_rerank_diverse-r3.json",
+      "raw_record_sha256": "2ead4eb2a7bf6ec53043604cfd8272d00912c3c99eb23ef16d8ca5d45e9032e4",
+      "answer_sha256": "a6a7369db671b3cecde80b5245f056203848930b75bfae2b7586f2b2d97f648e",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "bm25",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-bm25-r1.json",
+      "raw_record_sha256": "c5c0df80b8e1a3068c97de2261e2ff7801eb52228fa1b4fa1d3da393521bfb48",
+      "answer_sha256": "0c0acaee704e4ee2b3ea0f0fb3d245f6df7e0ca71fb62b718659fb3926b5b34e",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "bm25",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-bm25-r2.json",
+      "raw_record_sha256": "823c6a3abe5796b3ff53e40e1a98f3b0eec1872ed9b6fb390b9866dad773ef7e",
+      "answer_sha256": "0b9110f3b401b58c13db1853e7d50d4786a537d32387d49527e0c76ca37999c3",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "bm25",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-bm25-r3.json",
+      "raw_record_sha256": "921973288897a06619aaff81ff0d12f8ff9e7d49dca6015305ea42703bbcf6d4",
+      "answer_sha256": "ba3106ffdc76296e6cbc2b924839b413dc84224f9f17c2196f5b25cd169acfd7",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "dense",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-dense-r1.json",
+      "raw_record_sha256": "5a4fa028dd94187290a77febf8e874b555b93beb86dbe3b00672dd47d1c39a5e",
+      "answer_sha256": "d5a00995003acc0b1af2a1aff32fc536288300e937b201a1c502aa7ae28be1b3",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "formula_reconstruction_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外机理将 Ar• 的单电子还原错误补成 Ar–CO2 中间体/与 CO2 加成。原页 eq3: Ar•+CO2•−→Ar−+CO2；eq4: Ar−+H+→ArH。抽取丢符号不允许自行补式。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4",
+            "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2",
+            "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77"
+          ]
+        },
+        {
+          "kind": "lost_potential_sign",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外列出的草酸根自由基/草酸根对标准电位丢失负号。PDF 原页为 −0.41 V；属于抽取损坏传播。",
+          "answer_excerpt": "89f77c4c7a51314b501ee14357238b89463de]。该过程被描述为 ECE 机理：C₂O₄²⁻ − e⁻ → C₂O₄•⁻（E⁰ = 0.41 V vs Fc/Fc⁺），C₂O₄•⁻ → CO₂ + CO₂•⁻（k_f = 5.5 × 10⁵ s⁻¹），CO₂•⁻ ⇌ CO₂ + e⁻（E⁰ = −2.68 V vs Fc/Fc⁺）[Ref chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77]。\n\n#",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "dense",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-dense-r2.json",
+      "raw_record_sha256": "7a59e0f0c13e7d633556f0d53908b7ab3d6e333d841e990ff5386c713b51f00e",
+      "answer_sha256": "a29f4e620f86da064569ffd5641182b30c25c23b13a103c7d354bcbddbe5fca4",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "formula_reconstruction_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外机理将 Ar• 的单电子还原错误补成 Ar–CO2 中间体/与 CO2 加成。原页 eq3: Ar•+CO2•−→Ar−+CO2；eq4: Ar−+H+→ArH。抽取丢符号不允许自行补式。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4",
+            "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2",
+            "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77"
+          ]
+        },
+        {
+          "kind": "lost_potential_sign",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外列出的草酸根自由基/草酸根对标准电位丢失负号。PDF 原页为 −0.41 V；属于抽取损坏传播。",
+          "answer_excerpt": null,
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "dense",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-dense-r3.json",
+      "raw_record_sha256": "4becdc22535e0b9c2238f25f045ad03b502c790bea62c450edd0680b1e1970c3",
+      "answer_sha256": "ed779c1cade89b9140ce628c8215deea40394171f1655c56de0ebc1ebfe98ab0",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "formula_reconstruction_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外机理将 Ar• 的单电子还原错误补成 Ar–CO2 中间体/与 CO2 加成。原页 eq3: Ar•+CO2•−→Ar−+CO2；eq4: Ar−+H+→ArH。抽取丢符号不允许自行补式。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4",
+            "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2",
+            "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77"
+          ]
+        },
+        {
+          "kind": "lost_potential_sign",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外列出的草酸根自由基/草酸根对标准电位丢失负号。PDF 原页为 −0.41 V；属于抽取损坏传播。",
+          "answer_excerpt": "f77c4c7a51314b501ee14357238b89463de]。\n\n另一片段给出草酸盐氧化生成 CO₂•⁻ 的分步方程：C₂O₄²⁻ 氧化（E⁰ = 0.41 V vs Fc/Fc⁺）→ C₂O₄•⁻ 分解（k_f = 5.5×10⁵ s⁻¹）→ CO₂•⁻/CO₂ 电对（E⁰ = −2.68 V vs Fc/Fc⁺）[Ref chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77]。\n\n**（3）CO₂•⁻ 与芳基卤化",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "direct",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-direct-r1.json",
+      "raw_record_sha256": "799956d6f1d37418281cdc36b23d2addb602f344dd965028c941fd5f4d8ad4ae",
+      "answer_sha256": "d8da66a3f96366372e6e8a916b99816f28ed981bd4b5370937e50eadfbd6bd39",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "direct",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-direct-r2.json",
+      "raw_record_sha256": "d07af6bcc592633051e831ec83a4ae30fb6fb6645d2ad9606a2d44ea3113f436",
+      "answer_sha256": "a5ab49bc220b4f6a29a1594daed04216e69b0606a578b3925fcecde506bbd89f",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "direct",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-direct-r3.json",
+      "raw_record_sha256": "3c3df2fd40a0fa6469be3726bfb670ae5408360119a724ecde3c23f0e005e335",
+      "answer_sha256": "e44589848cfe1b30e913638a73c17659bea91bc4a4c169df49335295e16901d8",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "hybrid_rerank",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-hybrid_rerank-r1.json",
+      "raw_record_sha256": "a4a150ef75e8849f81abe12211dfac59c26df3a779032f4fbd054839143387ed",
+      "answer_sha256": "05bed19a6fe163244e4af707d362a7d194581a390b94cdb6874690b4307ae760",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "formula_reconstruction_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外机理将 Ar• 的单电子还原错误补成 Ar–CO2 中间体/与 CO2 加成。原页 eq3: Ar•+CO2•−→Ar−+CO2；eq4: Ar−+H+→ArH。抽取丢符号不允许自行补式。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4",
+            "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2",
+            "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77"
+          ]
+        },
+        {
+          "kind": "lost_potential_sign",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外列出的草酸根自由基/草酸根对标准电位丢失负号。PDF 原页为 −0.41 V；属于抽取损坏传播。",
+          "answer_excerpt": "95c884aaf01503ea359896a02178e728029e8477fdba4fb77]：\n- C₂O₄²⁻ − e⁻ → C₂O₄•⁻，E⁰ = 0.41 V vs Fc/Fc⁺（式5）\n- C₂O₄•⁻ → CO₂ + CO₂•⁻，k_f = 5.5 × 10⁵ s⁻¹（式6）\n- CO₂•⁻ − e⁻ → CO₂，E⁰ = −2.68 V vs Fc/Fc⁺（式7）\n\n**（5）热力学条件**\n\n片段指出，底物 E⁰ 需正于 CO₂•⁻/CO₂ 的 E⁰ 以保证 SET 热力学允许；产物 E⁰ 需",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "hybrid_rerank",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-hybrid_rerank-r2.json",
+      "raw_record_sha256": "d9afa94c17407c93f9e9f1284719edd72cf30a29219f52385f28372d6ee33339",
+      "answer_sha256": "603731d4e810e43bdfc6244c43910feb1ff3ffc29172eac87a23abde248ab761",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "formula_reconstruction_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外机理将 Ar• 的单电子还原错误补成 Ar–CO2 中间体/与 CO2 加成。原页 eq3: Ar•+CO2•−→Ar−+CO2；eq4: Ar−+H+→ArH。抽取丢符号不允许自行补式。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4",
+            "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2",
+            "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "hybrid_rerank",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-hybrid_rerank-r3.json",
+      "raw_record_sha256": "a5931f6c2809c9b4f381112683b065c01e84563dbcbd06d17ab9687ac29b4a84",
+      "answer_sha256": "7259be33f946b51fa770c75386ec89a164ab3dc8b089282cdb88dbc6c0a606bb",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "formula_reconstruction_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外机理将 Ar• 的单电子还原错误补成 Ar–CO2 中间体/与 CO2 加成。原页 eq3: Ar•+CO2•−→Ar−+CO2；eq4: Ar−+H+→ArH。抽取丢符号不允许自行补式。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4",
+            "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2",
+            "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-hybrid_rerank_diverse-r1.json",
+      "raw_record_sha256": "ec019304f105e6c860a61055517fab8fa56b2cbd72ea2bb192c11ae09814a38b",
+      "answer_sha256": "de255a00af8e5a4283ecaf441e2d22662c5dfe92a349b3369fa8d0ffed26c5f9",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "formula_reconstruction_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外机理将 Ar• 的单电子还原错误补成 Ar–CO2 中间体/与 CO2 加成。原页 eq3: Ar•+CO2•−→Ar−+CO2；eq4: Ar−+H+→ArH。抽取丢符号不允许自行补式。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4",
+            "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2",
+            "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77"
+          ]
+        },
+        {
+          "kind": "lost_potential_sign",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外列出的草酸根自由基/草酸根对标准电位丢失负号。PDF 原页为 −0.41 V；属于抽取损坏传播。",
+          "answer_excerpt": "路径（氧化侧）。**\n\n电化学氧化 C₂O₄²⁻ 在玻碳电极上经 ECE 机理生成 2 CO₂（式5–7）：C₂O₄²⁻ − e⁻ → C₂O₄•⁻（E⁰ = 0.41 V vs Fc/Fc⁺）；C₂O₄•⁻ → CO₂ + CO₂•⁻（k_f = 5.5 × 10⁵ s⁻¹）；CO₂•⁻ − e⁻ → CO₂（E⁰ = −2.68 V vs Fc/Fc⁺）[Ref chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77]。在干燥",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-hybrid_rerank_diverse-r2.json",
+      "raw_record_sha256": "56a3a17f14797b7bb279729cce0330fcf171d87ee3ec1d384e7ea04ef6f376a9",
+      "answer_sha256": "835677c18d3ed6955dba14cbe55a363b67b9914efc815e7fcbccbaf838606bb1",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R02",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R02-hybrid_rerank_diverse-r3.json",
+      "raw_record_sha256": "20e758561ff1d8be90136fce9566422b62ef070fb8646be7f17b821310ab2ccb",
+      "answer_sha256": "7ed7105881e33c47282404cb4f3ced9c4a4e198f85b7126c8aefdaa1a128d58f",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "formula_reconstruction_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外机理将 Ar• 的单电子还原错误补成 Ar–CO2 中间体/与 CO2 加成。原页 eq3: Ar•+CO2•−→Ar−+CO2；eq4: Ar−+H+→ArH。抽取丢符号不允许自行补式。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_16664ada160573820e1a88909aa2024a8321824433114aa73dea85b16817faa4",
+            "chunk_202df03089891cdb42cf0fad9681377cdb65f68127c8b970aa4414929ae5fbd2",
+            "chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77"
+          ]
+        },
+        {
+          "kind": "lost_potential_sign",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "额外列出的草酸根自由基/草酸根对标准电位丢失负号。PDF 原页为 −0.41 V；属于抽取损坏传播。",
+          "answer_excerpt": "]。\n\n**（3）CO₂•⁻ 的生成路径**\n\n片段给出 C₂O₄²⁻ 在 GC 电极上经 ECE 机理氧化：E 步 C₂O₄²⁻ → C₂O₄•⁻ + e⁻（0.41 V vs Fc/Fc⁺）；C 步 C₂O₄•⁻ → CO₂ + CO₂•⁻（k_f = 5.5 × 10⁵ s⁻¹）；E 步 CO₂•⁻ → CO₂ + e⁻（−2.68 V vs Fc/Fc⁺）[Ref chunk_3680066a45c350495c884aaf01503ea359896a02178e728029e8477fdba4fb77]。",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "bm25",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-bm25-r1.json",
+      "raw_record_sha256": "bc876ca0beec5d21b0f945e15996170208b5d77d1e3b65eb6110609cd8e46be6",
+      "answer_sha256": "939fee2363820354c562cff6a6d75c305e849e31ee4dd04f53e768d55f1ed45f",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": null,
+        "insufficiency_score": 2
+      },
+      "point_score_reason": "目标文献检索失败，两项要点均未回答；有界拒答独立记录。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "citation_correspondence": "有界拒答未给需要映射的目标事实引用。"
+      },
+      "insufficiency_scope": "该份检索上下文缺少目标原文；非语料/全文不可回答。",
+      "observations": [
+        {
+          "kind": "retrieval_failure",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "无目标 Sheng 文献证据而有界拒答；不是幻觉，但任务要点未完成。拒答质量单独记2，不当成答对。",
+          "answer_excerpt": null,
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "bm25",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-bm25-r2.json",
+      "raw_record_sha256": "3a1fe577ee537ff828da876296129c23675775a31c6d5fd6c21017b8bea169a4",
+      "answer_sha256": "f7d374cc67589cf67f7c42e287fba2dc9fcfd32df3261f025a76610fe58a31a8",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": null,
+        "insufficiency_score": 2
+      },
+      "point_score_reason": "目标文献检索失败，两项要点均未回答；有界拒答独立记录。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "citation_correspondence": "有界拒答未给需要映射的目标事实引用。"
+      },
+      "insufficiency_scope": "该份检索上下文缺少目标原文；非语料/全文不可回答。",
+      "observations": [
+        {
+          "kind": "retrieval_failure",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "无目标 Sheng 文献证据而有界拒答；不是幻觉，但任务要点未完成。拒答质量单独记2，不当成答对。",
+          "answer_excerpt": null,
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "bm25",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-bm25-r3.json",
+      "raw_record_sha256": "08fd8ca25c414e9f70c3d681c1e271e647ff0f14c9d9d7d1edfd0ff8f8ad3965",
+      "answer_sha256": "86e47efe489eeef85ec8f12a950168d86ed67d9b45878c2b1d64880fbed57dad",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": 2
+      },
+      "point_score_reason": "目标文献检索失败，两项要点均未回答；有界拒答独立记录。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。"
+      },
+      "insufficiency_scope": "该份检索上下文缺少目标原文；非语料/全文不可回答。",
+      "observations": [
+        {
+          "kind": "retrieval_failure",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "无目标 Sheng 文献证据而有界拒答；不是幻觉，但任务要点未完成。拒答质量单独记2，不当成答对。",
+          "answer_excerpt": null,
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "dense",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-dense-r1.json",
+      "raw_record_sha256": "caf57171f6dfe1598ffeacaf62d4ec1e6e87a7296ade5f433970e3259d92c3ea",
+      "answer_sha256": "b32c7b914ae6a157df0c39c7214bea2f6d1e31421abf623985bdfb78571acb00",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "dense",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-dense-r2.json",
+      "raw_record_sha256": "6f1c49224ec46b4461fe3e15f3864c913327847d435eee26c459f5fc0f117e00",
+      "answer_sha256": "335569bf29d08414d69947fbde53225fd7562824bbbd7062f450fe5ef5c45057",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "dense",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-dense-r3.json",
+      "raw_record_sha256": "37af230c6ec0bbefa995255f3b6cacf8c23a471b11d02b8297e5dcf20d5b9d86",
+      "answer_sha256": "97aa9484e5bc9da244418d4ae7e84638e8260e484322b57ca30aaf1eb3fe870b",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "overgeneralization",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "把针对复杂底物保持特定羟基的保护策略泛化成传统 O-sulfonation 普遍需要保护羟基；原文没有这一普遍结论。",
+          "answer_excerpt": "58c903e87efd11a81efadfa4666b5b64dfbab5438bfd1e]\n\n同时，该方法对羟基具有正交反应性，含羟基的底物可直接反应，无需保护基策略：\n\n> “Importantly, hydroxyl groups (38–43) are well-tolerated in electrochemical C–H sulfation, exhibiting orthogonal reactivity with O-sulfonation. This compatibility would b",
+          "source_chunk_ids": [
+            "chunk_32b976d730f503d7818f3fda045d06dca5018cd09779cef3f43641c7ba6fa578"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "direct",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-direct-r1.json",
+      "raw_record_sha256": "2017c514b07e408fdc7c2caed5bc3c4c66fdd790307af57706e9ee9b86c485c5",
+      "answer_sha256": "ba912125516d81f867b72783a25edf197ce550662871e36d052fa22f47683cda",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": null,
+        "system_boundary": 1,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "terminology_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "把该文 organosulfate 与 R–OSO2R 型 organosulfonate 混淆；OH 要点可得分，但体系术语不完整。",
+          "answer_excerpt": "衍生物、乙苯衍生物或更一般的 Ar–CH(R)–H 底物。  \n   - 原料不必预先安装羟基；羟基是在反应中通过 C–H 官能化与硫酸酯化试剂结合后，以 O–SO3R 或 O–SO2OR 形式引入。  \n   - 对芳环上取代基的要求取决于具体催化体系：可能容忍烷基、卤素、醚、酯、氰基等，但强配位基团、易氧化基团、酸性质子或某些杂环可能干扰。  \n   - 区域选择性通常由苄位 C–H 的键能、位阻和电子效应决定；若分子有多个苄位，可能得到混合物。  \n   - 硫酸酯化试剂、氧化剂/电解质、电流/电位、溶剂和温",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "direct",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-direct-r2.json",
+      "raw_record_sha256": "a05ceb6e7e1eb8ac43959e27c7d0db888bbc619097c5dfee14cf8caf7b20688c",
+      "answer_sha256": "5e9c0d27e7f345ad82a32c1ecc257102b73c244305e7c4de09307ff8986841b5",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 1
+        },
+        "point_score_normalized": 0.75,
+        "conditions_units": null,
+        "system_boundary": 1,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "传统 OH 要求完成；无需 OH 的准入要求未明确完成/仅条件式推断，区别于兼容 OH。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "partial_answer",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "对无需羟基只给一般逻辑且明确无法确认 Sheng；按 p2 部分分。",
+          "answer_excerpt": null,
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "direct",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-direct-r3.json",
+      "raw_record_sha256": "83262a457d50d579f0ac36d1fef67a4c6eb9e67f41cef1f7eaf94593bb22030a",
+      "answer_sha256": "a8b2242ee64c8a0486d7b4c4821d85a27ff156f8f28831198ee7babef6f370ab",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": null,
+        "system_boundary": 1,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "terminology_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "把该文 organosulfate 与 R–OSO2R 型 organosulfonate 混淆；OH 要点可得分，但体系术语不完整。",
+          "answer_excerpt": "5）的苄位 C-H 硫酸酯化  \n   - 从反应类型名称看，这是通过电催化或化学氧化/氢原子转移等方式，直接对苄位 C–H 键进行官能团化，引入硫酸酯基（–OSO₂R 或类似硫酸酯片段）。  \n   - 因此，原料不必预先含有羟基；羟基是在反应过程中由 C–H 键转化后形成的 C–O 键，或通过硫酸酯化试剂直接捕获苄基中间体。  \n   - 对原料的要求更侧重于：存在可被选择性活化的苄位 C–H 键，例如苄基、二芳基甲基、烷基芳烃的苄位等；芳环上其他取代基需与电催化条件兼容。  \n   - 条件通常涉及电化学氧化",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "hybrid_rerank",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-hybrid_rerank-r1.json",
+      "raw_record_sha256": "1a9d1d8f2a9d9dfe0970c5d772a3581bcaf999a152113b098410ac049c47e735",
+      "answer_sha256": "56235192530e6ce986b08503e88b1ee4c599a72e40021bbfcfd0f891df6c4124",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "condition_conflation",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "10 mol% DDQ/2 equiv 碱/2 h 是 Fig2b KIE 实验条件，不应称为通用标准条件（Table2 为5 mol%/1 equiv/285 min）。",
+          "answer_excerpt": "- 电极：C plate（阳极）、Pt（阴极）（见 chunk_d7096812… 标准条件）\n- 电解液：DCE/HFIP 混合溶剂，Na2HPO4，DDQ 10 mol%，3 Å MS，10 mA，室温，2 h（见 chunk_d7096812…）\n- 反应器构型：未在片段中明确说明（未说明）\n- 电位基准：未说明（仅给恒电流 10 mA）\n\n**证据适用性判断**：\n- 对“Sheng（2025）电化学苄位 C–H 硫酸酯化与传统 O-磺酰化对原料羟基要求的区别”这一主张，**直接支持**。多个片段明确对比了",
+          "source_chunk_ids": [
+            "chunk_3df7e2c528c25cf189e2987b13d3a965e61656a33863411e7971f6bd7c778b9d",
+            "chunk_d7096812b293acb78c3ea53a4f0071d53ef2880757b433bb8189a4a2417c094b"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "hybrid_rerank",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-hybrid_rerank-r2.json",
+      "raw_record_sha256": "87352bc3d706856884c25fa30368c8eca89d5ff4007d291fcde4ce0d6cf46d47",
+      "answer_sha256": "b418eeea1d7cac5593238812fc759eed5557bc178c5dbe4c9f6e4517b6ad5445",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "condition_conflation",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "10 mol% DDQ/2 equiv 碱/2 h 是 Fig2b KIE 实验条件，不应称为通用标准条件（Table2 为5 mol%/1 equiv/285 min）。",
+          "answer_excerpt": " chunk_22c2a5341721fdc9b8416039ca38c0592279df113631095357dddc63efd3b938]。\n- 催化剂：10 mol% DDQ（标准条件）[Ref chunk_d7096812b293acb78c3ea53a4f0071d53ef2880757b433bb8189a4a2417c094b]。\n- 电解液/溶剂：DCE 5.5 mL + HFIP 0.5 mL（标准条件）[Ref chunk_d7096812b293acb78c3ea53a4f0071d53ef",
+          "source_chunk_ids": [
+            "chunk_3df7e2c528c25cf189e2987b13d3a965e61656a33863411e7971f6bd7c778b9d",
+            "chunk_d7096812b293acb78c3ea53a4f0071d53ef2880757b433bb8189a4a2417c094b"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "hybrid_rerank",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-hybrid_rerank-r3.json",
+      "raw_record_sha256": "159515027428d6b9eb3794d8216cac3aad3a0458b9cbbbdad81395fd4b1a4c1a",
+      "answer_sha256": "e00a2aed42d33a313415c2fb15fb81c46f2d8ae4eed7d50cfd433850efaeb6e4",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "condition_conflation",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "10 mol% DDQ/2 equiv 碱/2 h 是 Fig2b KIE 实验条件，不应称为通用标准条件（Table2 为5 mol%/1 equiv/285 min）。",
+          "answer_excerpt": "22c2a5341721fdc9b8416039ca38c0592279df113631095357dddc63efd3b938]。\n- 催化剂/介体：DDQ（10 mol%）出现在标准条件中 [Ref chunk_d7096812b293acb78c3ea53a4f0071d53ef2880757b433bb8189a4a2417c094b]。\n- 电极：C plate（阳极），Pt（阴极）[Ref chunk_d7096812b293acb78c3ea53a4f0071d53ef2880757b433bb818",
+          "source_chunk_ids": [
+            "chunk_3df7e2c528c25cf189e2987b13d3a965e61656a33863411e7971f6bd7c778b9d",
+            "chunk_d7096812b293acb78c3ea53a4f0071d53ef2880757b433bb8189a4a2417c094b"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-hybrid_rerank_diverse-r1.json",
+      "raw_record_sha256": "b0b6d70162d650ca53f442d1d66c61e05ed9ae5499955f9c9ff5692a8921d0b6",
+      "answer_sha256": "be8565241706cac31466577d42bff978710263866799cd30d71461b8d7502cc1",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "overgeneralization",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "把针对复杂底物保持特定羟基的保护策略泛化成传统 O-sulfonation 普遍需要保护羟基；原文没有这一普遍结论。",
+          "answer_excerpt": "938]。\n- 目标产物：有机硫酸酯（organosulfates，–OSO₃⁻）。\n\n**证据适用性判断**：\n- 对“该反应对含羟基底物具有正交反应性、无需保护基策略”这一主张：**直接支持**（多个片段明确陈述）。\n- 对“传统 O-磺酰化仅限于含羟基底物”这一主张：**直接支持**（摘要和正文明确陈述）。\n- 对具体反应条件、电位基准、电解液浓度、反应器构型等：**当前证据不足**（片段未完整报告）。\n\n## 2. 可支持的结论\n\n**（1）传统 O-磺酰化对原料的要求：必须含羟基**\n\n片段明确指出，当前",
+          "source_chunk_ids": [
+            "chunk_32b976d730f503d7818f3fda045d06dca5018cd09779cef3f43641c7ba6fa578"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-hybrid_rerank_diverse-r2.json",
+      "raw_record_sha256": "377091c364e7e77763b639594c2d500c4fab625e16da5a6bd505476ee37ebed9",
+      "answer_sha256": "534fa3351f402c8efc63774c389418ce9a27d22b9bf24c09108239054fe868d7",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R03",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R03-hybrid_rerank_diverse-r3.json",
+      "raw_record_sha256": "b2b72e02be7c45c24643a28b5ed67bdb1a0ceb6778445c78b243ddc72673db41",
+      "answer_sha256": "0a29c0f5584ad073a16fb715e07aa747213ce52aad3f71bb673f6d2345f9f963",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 1,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "overgeneralization",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "把针对复杂底物保持特定羟基的保护策略泛化成传统 O-sulfonation 普遍需要保护羟基；原文没有这一普遍结论。",
+          "answer_excerpt": "ca84]）\n\n即：传统 O-磺酰化要求原料预先带有羟基，适用范围受限于含羟基化合物。\n\n**（2）本工作电化学苄位 C–H 硫酸酯化可直接转化含羟基原料，无需保护基策略。**\n\n> “orthogonal reactivity with O-sulfonation, enabling the direct sulfation of feedstock chemicals containing hydroxyl groups without resorting to complicated protection g",
+          "source_chunk_ids": [
+            "chunk_32b976d730f503d7818f3fda045d06dca5018cd09779cef3f43641c7ba6fa578"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "bm25",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-bm25-r1.json",
+      "raw_record_sha256": "05fff6020c1cd5668d9ff9168cf1353c88c81a26b3ab9f719501650d5a6159ff",
+      "answer_sha256": "41ee331caa442c017ced3453511199e2df38316ea1fef35e433f2026c500944d",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "bm25",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-bm25-r2.json",
+      "raw_record_sha256": "2ed8fcd363cf21229e9ee1cbb2cd69589991842711a239495d23a961df8db3b0",
+      "answer_sha256": "02a3ee84eaafeeff132fca52a2592911f37ee669397039fbd327a9b642613f65",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "bm25",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-bm25-r3.json",
+      "raw_record_sha256": "6bf8d43664c95b2178703666eebdb8a3fa7f6f5982be1057b2d845c5298d418b",
+      "answer_sha256": "41ba984dd296b2a99a1529473ccbf95bf4300e122cf43b0197d54d3832e8e934",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "dense",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-dense-r1.json",
+      "raw_record_sha256": "9c14d16f04df21aa4ecfb297ced9454c91ab567b5029aae381bd6ca18842d51b",
+      "answer_sha256": "3da7ccddbd7eee4aec68afe254047b774ee283425431f3ba10f4c2b5f2fad530",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "dense",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-dense-r2.json",
+      "raw_record_sha256": "7815519d78900b89eb217b4fef6cd4d2fd17e537acdf5b39f8bf8493ca2b18b9",
+      "answer_sha256": "bdbe2685d74a62354af8058bb1442c89f76ed42adef62a2db4c1aba3f1b6a7f6",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "evidence_inventory_error",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "证据清单把全部片段称作 Kim 原文加一份其他论文，与实际证据来源数不符；核心反应回答正确。",
+          "answer_excerpt": " (2025) 中，卤代醇（halohydrins）如何把电化学 CO₂ 捕获与环状碳酸酯生成连接起来，以及生成什么共产物。\n\n**证据覆盖情况**：检索到的 10 个片段全部来自 Kim 等 2025（*Nature Communications*）这一篇文献（doc_id `doc_27287a458d0222364d174e314e3a7aa4d42b46921043503864582f1306edfbed`），另有 1 个片段来自 Zhang 等 2025（doc_id `doc_a19c5229bd59e",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "dense",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-dense-r3.json",
+      "raw_record_sha256": "6da815c6bd0d185299dbe0a07972baa17bf1a53bb7a2e25faa1cc121b460a62e",
+      "answer_sha256": "97a0167952e30b7f397b3ee2c2efc6dcbe4eab2f5383cd937bba83ead3e67ce0",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "direct",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-direct-r1.json",
+      "raw_record_sha256": "fb925b1ddaefcf0b6376c498a91c63da0522c999fd22597a01abee2cd85296f0",
+      "answer_sha256": "07ee009a5417bdd4c2d10a623ff6056fcd8616469548ffca8c2b0b641eb1b2ba",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "direct",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-direct-r2.json",
+      "raw_record_sha256": "ab7bef200bae6955dcc46f767cdae734540bbef18d6e3c04045fe1043ec94b35",
+      "answer_sha256": "9c4fe600cc59be27f442a4b40bb935b098c8541b9d63e986df24b980a92e0020",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "direct",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-direct-r3.json",
+      "raw_record_sha256": "0d2b4422ae0ecfc8a8524d553be64d973bd8de0fb2b9c1a69406621259c90726",
+      "answer_sha256": "9aef3e3ee705fce986526d433d64807ce61e8d3039ffd34cb0045c5980f6d81a",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "hybrid_rerank",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-hybrid_rerank-r1.json",
+      "raw_record_sha256": "9d278631c9fd019177a0a0e559cbf32d1b40ad97fc374472abeaba1fa87e6d43",
+      "answer_sha256": "361ee3dbc9bb064853d043c6722e15ee16894a3395f9f151f171eb8c1bc0679d",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "hybrid_rerank",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-hybrid_rerank-r2.json",
+      "raw_record_sha256": "27cba9101a5cfa9843cf941efb77ca1b0325a4288111d223d9ab2b2b11b6e14f",
+      "answer_sha256": "4c44957f2d26b98b72d8e78c5d2aead14b153c2b3df1e1a2f313ad5c83ae23df",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "hybrid_rerank",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-hybrid_rerank-r3.json",
+      "raw_record_sha256": "62d63fc2e6adea1b851feeeec33539fdc0101c3e422b0a1c17bb4907edba17ba",
+      "answer_sha256": "64cc583ae691e83bada3f2660b0cc54395a81eec70c5987f3d3fd449b1f90d71",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-hybrid_rerank_diverse-r1.json",
+      "raw_record_sha256": "339fd05995bce810477d49da1164f3e6fd4ff21cb86351d50b3b0cbca5508e7d",
+      "answer_sha256": "3c45ff3779f2954c9ffd667838a63682330b2eaac1b370bd843ebc7184543fe3",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-hybrid_rerank_diverse-r2.json",
+      "raw_record_sha256": "e772f844c031993f591680fc002179b19f6d0db816537210716dab7317d7a55d",
+      "answer_sha256": "c29328f091f1a079b268ff0de9a65fb3a95768f26a34fe1aeb95db3c74536058",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R04",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R04-hybrid_rerank_diverse-r3.json",
+      "raw_record_sha256": "c1dd6ab9973162130c6ad0e93dd73efb54e60e478cbb6a375954b3929dfa6a57",
+      "answer_sha256": "8bcc7c8721d44bdf415f3634efb28c3255889a89f40aa5aa257ae66dc770db15",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "bm25",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-bm25-r1.json",
+      "raw_record_sha256": "a9e1695662bfb7347693404c3be6fcaa4b1c8d926a02ab2e902bb02296b196b1",
+      "answer_sha256": "4965c4283062d9edc903a9edfb822be6df27409109d2bfbd6ffba2f1d4b61d44",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 2
+        },
+        "point_score_normalized": 0.5,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "正文替代描述有支持，但冻结摘要位错要点遗漏/部分提及；见题目歧义敏感性分析。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "point_omission",
+          "impact": "frozen_answer_point",
+          "review_note": "按冻结摘要要点，未完整说 GDY 诱导大量位错；但六方→四方与晶面重排均在正文有支持，属于题目可接受答案范围歧义，不能当作幻觉。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_953ee36d9c33c95a7cdaa02cfec09806cc560765be8ea23bf1b1bc25ec3d0fa4",
+            "chunk_bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "bm25",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-bm25-r2.json",
+      "raw_record_sha256": "247e6d72ff5be2d2da574a6486492c8cc39ef714b8fb9563f43045986eaf5ab1",
+      "answer_sha256": "508a93e5bd2db0b6f5f103d61dfbe6767ac8ff9ebd12919d8a666f644888fcf1",
+      "scores": {
+        "answer_points": {
+          "p1": 1,
+          "p2": 2
+        },
+        "point_score_normalized": 0.75,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "正文替代描述有支持，但冻结摘要位错要点遗漏/部分提及；见题目歧义敏感性分析。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "point_omission",
+          "impact": "frozen_answer_point",
+          "review_note": "按冻结摘要要点，未完整说 GDY 诱导大量位错；但六方→四方与晶面重排均在正文有支持，属于题目可接受答案范围歧义，不能当作幻觉。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_953ee36d9c33c95a7cdaa02cfec09806cc560765be8ea23bf1b1bc25ec3d0fa4",
+            "chunk_bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6"
+          ]
+        },
+        {
+          "kind": "overstated_evidence_absence",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "声称缺少无 GDY 对照/对照证据过强：当前片段已有纯 NiPd 与异质结构比较。可以说尚不能排除所有因果解释，不能说对照不存在。",
+          "answer_excerpt": "\n**关于“驱动因素”的表述边界**：片段将上述结构变化归因于“GDY 与 NiPd 之间的强相互作用”，这是**作者的解释**；检索证据未提供可排除其他因素的对照实验，故不能视为已证实的因果机制。\n\n## 3. 未确定项与下一步核查\n\n- **反应器构型、电极基底、温度/压力等操作条件**：当前片段未说明，无法据此复现或外推。\n- **“强相互作用驱动重构”的因果性**：现有证据为结构观测 + 作者归因，缺少对照（如无 GDY 或弱相互作用界面的对比、原位/变温观测）来确立因果。建议核查是否有对照样品或原位表征。",
+          "source_chunk_ids": [
+            "chunk_953ee36d9c33c95a7cdaa02cfec09806cc560765be8ea23bf1b1bc25ec3d0fa4",
+            "chunk_bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "bm25",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-bm25-r3.json",
+      "raw_record_sha256": "4807219b2e3812c8c092b7418dad8b573cec85584c9061cc479c9505f7544e4d",
+      "answer_sha256": "1f87ac153f8f8e8c785055c4f59af08c631b20cdf6b70228ada61152369a1c1e",
+      "scores": {
+        "answer_points": {
+          "p1": 1,
+          "p2": 2
+        },
+        "point_score_normalized": 0.75,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "正文替代描述有支持，但冻结摘要位错要点遗漏/部分提及；见题目歧义敏感性分析。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "point_omission",
+          "impact": "frozen_answer_point",
+          "review_note": "按冻结摘要要点，未完整说 GDY 诱导大量位错；但六方→四方与晶面重排均在正文有支持，属于题目可接受答案范围歧义，不能当作幻觉。",
+          "answer_excerpt": null,
+          "source_chunk_ids": [
+            "chunk_953ee36d9c33c95a7cdaa02cfec09806cc560765be8ea23bf1b1bc25ec3d0fa4",
+            "chunk_bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "dense",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-dense-r1.json",
+      "raw_record_sha256": "a7b67feb974cee18fcf593d63ed806cffb8a72384663637f311427e0968a493e",
+      "answer_sha256": "647009c7f663393e66e2c83efa585328bd079b96bbb738e05a02ad484c5c0238",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "dense",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-dense-r2.json",
+      "raw_record_sha256": "dfbb1eee6e4d613cbb5a16edb575a719f6fee00c4f44abdc8bdb1381a269d0c9",
+      "answer_sha256": "cecc696e53f49843ce21083dcc7687f570f68931e7a716e42177114e75ab8287",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "unflagged_source_anomaly",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "原论文确实印有 chemo-selectivity (−100%)；回答照录但没有充分提示其物理含义异常。不是模型虚构或引用错源。",
+          "answer_excerpt": "]。\n\n**性能数据（背景，非问题所问）：** GDY/NiPd/GDY 在 −1.8 V（vs. SCE）下 4 h 转化率最高 72.6%，8 h 内实现 100% 转化；TOF 6.8 s⁻¹，稳定性 >5 循环，化学选择性 −100%[Ref chunk_0fb3c53973a0e4eb63902cdbf12bdf103b97b60514c710cf3185cc1c2b972dc5][Ref chunk_9cde4d2e3e2609ad6961a49751cd2e2e51a827fe4539b3658588",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "dense",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-dense-r3.json",
+      "raw_record_sha256": "ad8d1658bcc74bb1f8f7510d4d709868cbf82ad6f9bf154062964474e6a9ee19",
+      "answer_sha256": "5ef6f05dd390171dc33786c9c536ebf71d1ff542cbd81ebf7156dc087ff1b9e4",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "overstated_evidence_absence",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "声称缺少无 GDY 对照/对照证据过强：当前片段已有纯 NiPd 与异质结构比较。可以说尚不能排除所有因果解释，不能说对照不存在。",
+          "answer_excerpt": "bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6]，但检索片段未提供无 GDY 对照或变量分离实验来证明该因果，属作者解释而非已证机制。\n- **两种变化与催化性能的关联**：片段报告了 GDY/NiPd/GDY 的活性（TOF 6.8 s⁻¹）、稳定性（>5 循环）与化学选择性 [Ref chunk_9cde4d2e3e2609ad6961a49751cd2e2e51a827fe4539b3658588aca98435450f]，以及",
+          "source_chunk_ids": [
+            "chunk_953ee36d9c33c95a7cdaa02cfec09806cc560765be8ea23bf1b1bc25ec3d0fa4",
+            "chunk_bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "direct",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-direct-r1.json",
+      "raw_record_sha256": "7e425d44359417013dc40bca291e8fdbeca0cc98bda6bb1b7df40c2c50183a65",
+      "answer_sha256": "3ac3e10797b9270865a7548401aba608c3ca462d64aa11a29d5cf8beb8f83421",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "direct",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-direct-r2.json",
+      "raw_record_sha256": "13501df0d1f375fbdd23430060f4f0e24d87d595a416959f3db011bdec0b2d94",
+      "answer_sha256": "acd4bd7f7519e8bac7389924b32067c4cfb1cd3911a065d5ed72961bcea6817b",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "direct",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-direct-r3.json",
+      "raw_record_sha256": "be0ca9044adb25c49b27c44b72f33266f03d852d7e9e2da734372857318678b2",
+      "answer_sha256": "dbf55083b11287b4d216ed4fd2de9480f392caba9295e7b47b54753428211a98",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "hybrid_rerank",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-hybrid_rerank-r1.json",
+      "raw_record_sha256": "4e5238a3556126fe8a26522214ba1508c74ef5ce37d9e9f109db9309db293038",
+      "answer_sha256": "1235657c547aa1fbae36e49680d43b477be7afbb0693a1b470ea82a0abf42d1a",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "hybrid_rerank",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-hybrid_rerank-r2.json",
+      "raw_record_sha256": "faadce6bf8ebf855990753ec4aa037100223822588a40c56633c75967116dadd",
+      "answer_sha256": "dfa09306e23f225a9871a587d8600d47cb629bb276a94d3f1fad8413f5bc40a7",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "hybrid_rerank",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-hybrid_rerank-r3.json",
+      "raw_record_sha256": "69b031088df8b0ffe2bc2683587fb64283541034a563de802e91dd29762cf657",
+      "answer_sha256": "bb7f1b2da9432ca9b6b19e66fdb6229fcb7f097c153592f20acd337a9a474b20",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "overstated_evidence_absence",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "声称缺少无 GDY 对照/对照证据过强：当前片段已有纯 NiPd 与异质结构比较。可以说尚不能排除所有因果解释，不能说对照不存在。",
+          "answer_excerpt": "ad6961a49751cd2e2e51a827fe4539b3658588aca98435450f]。这属于作者对观测结果的解释，片段中未提供排除其他可能性的对照实验。\n\n---\n\n## 3. 未确定项与下一步核查\n\n- 片段未说明两种结构变化各自的定量比例或空间分布范围（例如位错密度、 (200) 晶面所占面积分数），仅给出定性描述。\n- 片段未提供“无 GDY 时 NiPd 是否也会发生类似重排”的对照实验数据，因此不能将重排唯一归因于 GDY 界面作用。\n- 片段未说明原子重排与催化性能之间的直接因果证据（",
+          "source_chunk_ids": [
+            "chunk_953ee36d9c33c95a7cdaa02cfec09806cc560765be8ea23bf1b1bc25ec3d0fa4",
+            "chunk_bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-hybrid_rerank_diverse-r1.json",
+      "raw_record_sha256": "cae8187d53ecb29355f777ea0570812b102f1e8ae7d6071ca180e724b70aae72",
+      "answer_sha256": "d17a0a1f1a4309bc37788de93510cd2c84e517d652185d37cac631dbc5e5f0f5",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "source_anomaly_handled",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "发现原文负百分比并明确提示异常待核实；该项不扣分。",
+          "answer_excerpt": "9751cd2e2e51a827fe4539b3658588aca98435450f]\n- 性能指标：TOF 6.8 s⁻¹，稳定性 >5 循环，化学选择性 −100%（原文如此）[Ref chunk_9cde4d2e3e2609ad6961a49751cd2e2e51a827fe4539b3658588aca98435450f]\n\n**未说明的条件**：具体烯烃底物、电解液组成与 pH、电位基准（vs. RHE/Ag/AgCl 等）、反应器构型、电流密度或电位操作条件，片段中均未给出。\n\n**证据适用性判断**：",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-hybrid_rerank_diverse-r2.json",
+      "raw_record_sha256": "ca6c68f36adc0cdd9229373aeb4bf9c60cd6ffbb86d99de958bceb34f3d020fa",
+      "answer_sha256": "6b0c7d0990e7bc8994c924f1016e6a3b6c3df4da2d34e8c3ec6044572e7548d6",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "unflagged_source_anomaly",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "原论文确实印有 chemo-selectivity (−100%)；回答照录但没有充分提示其物理含义异常。不是模型虚构或引用错源。",
+          "answer_excerpt": "51a827fe4539b3658588aca98435450f]\n- 性能指标（摘要给出）：TOF 6.8 s⁻¹、稳定性 >5 cycles、化学选择性 −100% [Ref chunk_9cde4d2e3e2609ad6961a49751cd2e2e51a827fe4539b3658588aca98435450f]\n\n**用户问题中未给出、片段中也未说明的条件：** 具体烯烃底物、电解液组成/pH、电位基准（vs. RHE 等）、反应器构型、电流密度/电位操作条件——均标为**未说明**。\n\n**证据适用性判",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R05",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R05-hybrid_rerank_diverse-r3.json",
+      "raw_record_sha256": "f61a444e1146cc1da58c53707b142075b4c468db6b2e16c9e3ed9a72f91931d5",
+      "answer_sha256": "d19dbfe589509bce7c28b4bba42f48b6566001dffcd297e62c1091fc81f98311",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "unflagged_source_anomaly",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "原论文确实印有 chemo-selectivity (−100%)；回答照录但没有充分提示其物理含义异常。不是模型虚构或引用错源。",
+          "answer_excerpt": "2e51a827fe4539b3658588aca98435450f]\n- 性能指标（摘要）：TOF 6.8 s⁻¹、稳定性 >5 cycles、化学选择性 −100%（原文如此）[Ref chunk_9cde4d2e3e2609ad6961a49751cd2e2e51a827fe4539b3658588aca98435450f]\n\n**未说明的条件：** 具体烯烃底物、电解液组成/pH、电位基准（vs. RHE 等）、反应器构型、电流密度等，片段中均未给出，标为“未说明”。\n\n**证据适用性判断：** 针对“两种",
+          "source_chunk_ids": []
+        },
+        {
+          "kind": "overstated_evidence_absence",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "声称缺少无 GDY 对照/对照证据过强：当前片段已有纯 NiPd 与异质结构比较。可以说尚不能排除所有因果解释，不能说对照不存在。",
+          "answer_excerpt": "d095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6]，但这是作者解释；当前片段未提供对照实验（如无 GDY 时是否发生同样重构）来独立验证因果。\n- **结构变化与催化性能的定量关联：** 摘要给出 TOF 6.8 s⁻¹ 等性能数据 [Ref chunk_9cde4d2e3e2609ad6961a49751cd2e2e51a827fe4539b3658588aca98435450f]，但片段未展示结构变化程度与活性之间的定量关系。\n- *",
+          "source_chunk_ids": [
+            "chunk_953ee36d9c33c95a7cdaa02cfec09806cc560765be8ea23bf1b1bc25ec3d0fa4",
+            "chunk_bd095b59479d1388981ea2e4c7686215f55bf685e62a8899f68254c4920a9ad6"
+          ]
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "bm25",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-bm25-r1.json",
+      "raw_record_sha256": "3f779424e73d057f8589a3f3b215679f8cdfb49734b145fac7319a81cf4a8ea3",
+      "answer_sha256": "631026575c94483e5b025d0c8eb8d720b6dcdaf265c15f3385bc2538985b8ebe",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "bm25",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-bm25-r2.json",
+      "raw_record_sha256": "4d7c7542a0323846b8ba9b406639e0738ea1ce6a616d52d378fcf4e6439d2941",
+      "answer_sha256": "602cfbcc7e39204a92f39fe594f4bb664184d474d8617b75290a6c8895246331",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "bm25",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-bm25-r3.json",
+      "raw_record_sha256": "016ce7c64596f0fa45f2daa00f8dea80bed01a99cc234d523de1932d736238fd",
+      "answer_sha256": "2db52d8893bf62a6a59058b347a1882cfd8765090771d54443c44d63ab361f5b",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "dense",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-dense-r1.json",
+      "raw_record_sha256": "c1b8032cff2790dd6c741e6551e5378ed712af209b37a5206982f1d14b6821a1",
+      "answer_sha256": "e92f75614984fe6ae7b9f95d13da240923f333a19d3ca65e89e8686e77f1c69f",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "dense",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-dense-r2.json",
+      "raw_record_sha256": "18e63ff251744cefd04af9e6e35e4f0fde78ac059b1dcef514df4260ebba5ba2",
+      "answer_sha256": "5e09a91349d2e9bae3d43047dbac30abf25027f361135c589a708297c9cdee12",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "dense",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-dense-r3.json",
+      "raw_record_sha256": "c3ac13a211731992b874cc45fb1cb670db0c53ceb8bfca7988ec441850f46f32",
+      "answer_sha256": "a3edeba7fe1b1e0ddb9f8537c28fe63331fb4d725df4b135dd168d4dee208a70",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "direct",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-direct-r1.json",
+      "raw_record_sha256": "fc3717249a5050e492f38ebf7cd8b4b8e2c1d922e4f8f8df0c0987a519cd5ecc",
+      "answer_sha256": "b3ec5a65fe0543740ec56b35bfca6dacac2ce973016e700e785b750e3cada7c2",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "direct",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-direct-r2.json",
+      "raw_record_sha256": "f932d56ab8a9e991dace721ce4e5268a9ae906c3fc2120640a07ef52d3754153",
+      "answer_sha256": "ef73ac2687b26f214fdffaee1a9288b721ad29072c12ab993eddad29125ee7a2",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "direct",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-direct-r3.json",
+      "raw_record_sha256": "2429cf87227d1f817c994935bd8b582e59fa7dc81af4f68cedddf00ab71e34b9",
+      "answer_sha256": "cfcba90a1db2b19f4e45f2cd6528daa5572257cc8dcfaf09ca156d90399615c8",
+      "scores": {
+        "answer_points": {
+          "p1": 0,
+          "p2": 0
+        },
+        "point_score_normalized": 0.0,
+        "conditions_units": null,
+        "system_boundary": 2,
+        "evidence_support": null,
+        "citation_correspondence": null,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "明确缺少目标文献证据而拒答；未提供两项任务事实，不将谨慎表述记作任务完成。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "conditions_units": "无目标结果/条件可评分。",
+        "evidence_support": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "citation_correspondence": "Direct 无外部引用，证据/引用支持不适用；事实要点仍评分。",
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "hybrid_rerank",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-hybrid_rerank-r1.json",
+      "raw_record_sha256": "34063732411cb0e7455589b96776e3c403f70f5e33933590209a893b6fd94dd7",
+      "answer_sha256": "3d4671861160ac5ef66a18e05be9ddf6d8ee693169b569bf47c4b9113b109ef5",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 1,
+        "citation_correspondence": 1,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "condition_conflation",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "将25°C/2h中间优化条件贴到268.1最终性能；最终升温实验见PDF第7页（60°C）。",
+          "answer_excerpt": "**证据中明确的体系要素：**\n- 催化剂：Au foil（金箔）[Ref chunk_cf3586f53ffe64221b9ff471dccaf77fba8e251e817d31cce38093e30fb14358]\n- 电解液：碱性 KOH 溶液（含 MeOH/EG）[Ref chunk_350183d47145ae2c5b56faa3a60324e29006a114962f6add4162fde94b07f0be]\n- 反应器构型：单室电解池（single-chamber electrolytic cell）",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "hybrid_rerank",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-hybrid_rerank-r2.json",
+      "raw_record_sha256": "8b7acd0ed3d9fa8b27b3a8a4a5f88c8941742b84b782dcee3420d58f6d04022f",
+      "answer_sha256": "4436f0ff9a8dfab25216f636e48025d24344813385031bed573ad5f4116ff0f9",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "hybrid_rerank",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-hybrid_rerank-r3.json",
+      "raw_record_sha256": "ff3a594476f43651c75f07738233f1a255936abe30cb26af35c5e927538c5a60",
+      "answer_sha256": "ab281ee461612ad091854ae98ddaacce639bb745e1a9e5028d91e42131710271",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 1,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [
+        {
+          "kind": "ambiguous_condition_scope",
+          "impact": "conditions_or_extra_claim",
+          "review_note": "开头条件表列25°C，后文虽区分优化中间值但最终条件归属仍容易误读；条件维度部分分，未将所引证据整体判错。",
+          "answer_excerpt": "**证据中明确给出的条件：**\n- 催化剂：Au foil（金箔）[Ref chunk_cf3586f53ffe64221b9ff471dccaf77fba8e251e817d31cce38093e30fb14358]\n- 反应物：EG + MeOH（C1 醇）[Ref chunk_cf3586f53ffe64221b9ff471dccaf77fba8e251e817d31cce38093e30fb14358]\n- 产物：乳酸（LA）[Ref chunk_cf3586f53ffe64221b9ff471dccaf7",
+          "source_chunk_ids": []
+        }
+      ],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 1,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-hybrid_rerank_diverse-r1.json",
+      "raw_record_sha256": "29d82e81d6831c77e525712aaa43ddfc1f1cef8d9bec08379ade4cc8ca217d7a",
+      "answer_sha256": "cb453b6bfdf7af3b8fd262ca27f01b1440c52dd6aa5e6d5a44ff6d988a1c127f",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 2,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-hybrid_rerank_diverse-r2.json",
+      "raw_record_sha256": "9e659f799780401fb98befd8523f7c25853c04fefea87bb64bf8d87723d28f22",
+      "answer_sha256": "6acde994485a1ffeb959241ea704f8845f53eb22b9f58a5f34d952a09221295c",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    },
+    {
+      "question_id": "R06",
+      "arm": "hybrid_rerank_diverse",
+      "repetition": 3,
+      "reviewer_id": "Codex (AI assistant)",
+      "raw_record": "output/q10b_generation/20261008T003314-1d25d4f7565e4fd7b1fab1a7512ae66f/R06-hybrid_rerank_diverse-r3.json",
+      "raw_record_sha256": "ceec6eac584329f1c736ad56c764f00a82d803526b4149ca69b1048e851cadbf",
+      "answer_sha256": "ba0d2c175abcec25242e38b66d0bdee99aa43aaccc2ee76cb9930f6fab05b49c",
+      "scores": {
+        "answer_points": {
+          "p1": 2,
+          "p2": 2
+        },
+        "point_score_normalized": 1.0,
+        "conditions_units": 2,
+        "system_boundary": 2,
+        "evidence_support": 2,
+        "citation_correspondence": 2,
+        "insufficiency_score": null
+      },
+      "point_score_reason": "回答与冻结要点一致；评价为原文报告，非独立复现。",
+      "dimension_reason": "以核实原文与本份实际证据快照为准；扣分依据见 observations。无已记录缺陷的适用维度记2分；不是全主张穷举认证。",
+      "not_applicable_reasons": {
+        "insufficiency_score": "六题均可回答；本份不做专门的限定证据不足测试。"
+      },
+      "insufficiency_scope": null,
+      "observations": [],
+      "claim_support_precision": null,
+      "claim_citation_recall": null
+    }
+  ]
+}

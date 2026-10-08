@@ -1,0 +1,101 @@
+{
+  "schema": "chemqa-q065c-validation-v1",
+  "status": "passed",
+  "validated_utc": "2026-10-07T01:44:50.275461+00:00",
+  "adopted_versions": {
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.19.0",
+    "torch": "2.14.1",
+    "huggingface-hub": "1.33.0",
+    "httpx": "0.28.1",
+    "socksio": "1.0.0",
+    "numpy": "2.5.3"
+  },
+  "candidate_environment": "output/q065c_candidate/.venv",
+  "candidate_configuration_matches_adopted_project": true,
+  "candidate_regression_tests_passed": 139,
+  "adopted_environment_regression_tests_passed": 139,
+  "new_runtime_guard_tests": 6,
+  "ruff_check": "passed",
+  "ruff_format": "passed",
+  "legacy_query_embeddings_max_abs_difference": 0.0,
+  "legacy_all_20_top10_rankings_equal": true,
+  "runtime_report": "docs/Q06_5C_RUNTIME.json",
+  "legacy_report": "docs/Q06_5C_LEGACY.json",
+  "default_embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "default_embedding_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "original_data_sha256_unchanged": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "generation_requests": 0,
+  "reserve_queries_executed": 0,
+  "full_corpus_encoding_performed": false,
+  "dependency_sha256": {
+    "pyproject.toml": "a10dd50699d68ae40373e7322af4079aca866c98e93add77e3b9fbaa5107d81c",
+    "uv.lock": "4112cda076860e3a53d10a52b7f07119db62311a1dc5fef30a8bb38929296e88",
+    "requirements.txt": "9bea081eda12db00d4a6f6a9e4923063641806be1efcbd5919b81a8ef8beae71"
+  },
+  "prior_dependency_sha256": {
+    "pyproject.toml": "eb1d2f1b982f51e84c1d06093daf0601cab110edcb7426f93cd5c97cebffd55a",
+    "uv.lock": "80d48ad287532955fa5fc4035fb0d8d87b973149b61c7c4d7630a1ec95c6b082",
+    "requirements.txt": "b5cd050e541ca3091afd067242136554bb217371e0c2b5f77532c254029066cf"
+  },
+  "model_assets": [
+    {
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "snapshot_path": "/Users/zemaochen/projects/ChemQA/models/huggingface/hub/models--Qwen--Qwen3-Embedding-0.6B/snapshots/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "downloaded_bytes": 1207487471,
+      "files_sha256": {
+        "model.safetensors": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+        "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+        "config.json": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+        "config_sentence_transformers.json": "10667c72ddb772627bf1780cb7f86af8e2ae0032b8c243c731172064105c6961",
+        "tokenizer.json": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+        "generation_config.json": "28396d421a2108acce96383f6a7de78008f7f1b17f807958f3c14c51dbfb65fb",
+        "README.md": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+        "1_Pooling/config.json": "37bf193fa101f19101bfad9c31d3eb0f786e247b7b1e5cb7f007d730eed1ddbd"
+      }
+    },
+    {
+      "model": "Qwen/Qwen3-Reranker-0.6B",
+      "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "snapshot_path": "/Users/zemaochen/projects/ChemQA/models/huggingface/hub/models--Qwen--Qwen3-Reranker-0.6B/snapshots/e61197ed45024b0ed8a2d74b80b4d909f1255473",
+      "downloaded_bytes": 1207486774,
+      "files_sha256": {
+        "model.safetensors": "27cd75a405b9c1b46b59abfd88aaa209e6fed2a1972cde9b70e7659537c5e65b",
+        "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+        "config.json": "d479c427a9ca5295218063d4f9aca4f297ab4ac27487cca7af42c84643d51ef0",
+        "config_sentence_transformers.json": "6a153d6696f78fd588c1c728967f0b773ea869d3c6028f151ce71ebe49140762",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "generation_config.json": "81051cd3f6e77013827148d0b8a6ead93f8ac390d5ab805f849199f0af6a08db",
+        "README.md": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "sentence_bert_config.json": "3234ebd224d492cbe8d55d5ec80a3f408451c4db3005bafb64fe1c51c763e01e",
+        "chat_template.jinja": "6f682162495ec5b39fd9005c01b6aa2a74669379fe967039f1e2cbbe8752369d",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "modules.json": "6f13b6b4a89e577b591b2077bca40c67c26541a6740a8809267cb474f90806a9",
+        "1_LogitScore/config.json": "73e3156450564d8a98b7e47bcf5aace0f29600828b51937da545571e84db3ff3"
+      }
+    }
+  ],
+  "resolved_issues": [
+    "HTTPX SOCKS support required socksio under the existing proxy.",
+    "Public embedding Xet transfer failed with infrastructure 401; standard HTTPS transport completed.",
+    "Initial download filter omitted reranker Jinja template; full official template restored and query/document input verified."
+  ],
+  "limitations": [
+    "Synthetic inputs only; does not establish domain retrieval or reranking quality.",
+    "MPS tested on actual macOS arm64 host; restricted process reported unavailable.",
+    "CPU FP32 batch 1/2; MPS batch 2 FP32/FP16; no long-sequence or large-batch resource claim.",
+    "Device runtime-error fallback verified with unit tests; actual MPS probes did not require fallback."
+  ],
+  "next_task": "Q06.5-D",
+  "current_source_secret_audit": "passed",
+  "runtime_probe_sha256": "d06073b3e09adc1f32cd2097a6eacfced8e1d1f9bf9def7de597bc5d86f3eeae",
+  "candidate_manifest_sha256": "68dd5a31fe75e7218209037170da23d541f5a84fffe9d66c4291b44f3ac7acbf"
+}

@@ -1,0 +1,19 @@
+{
+  "rows": 3187,
+  "located": 3123,
+  "verified_spans": 5005,
+  "cross_page": 1746,
+  "unavailable": 64,
+  "verified_pdf_contents": 180,
+  "unavailable_by_source": {
+    "/Users/zemao/ChemQA/data/raw_papers/Chu 等 - 2025 - Data-driven discovery of single-atom catalysts for CO2 reduction considering the pH-dependency at the reversible hydrogen electrode scale.pdf": 5,
+    "/Users/zemao/ChemQA/data/raw_papers/Li 等 - 2025 - Breaking structural instability and orbital symmetry mismatch in p -block metal monochalcogenides for CO2 electroreduction via noninvasive van der waals doping.pdf": 15,
+    "/Users/zemao/ChemQA/data/raw_papers/Liu 等 - 2025 - Stable Ni(II) sites in prussian blue analogue for selective, ampere-level ethylene glycol electrooxidation.pdf": 24,
+    "/Users/zemao/ChemQA/data/raw_papers/Kuai 等 - 2025 - Dissolved fe species enable a cooperative solid–molecular mechanism for the oxygen evolution reaction on NiFe-based catalysts.pdf": 8,
+    "/Users/zemao/ChemQA/data/raw_papers/Xu 等 - 2025 - Optimizing the selectivity of CH4 electrosynthesis from CO2 over cuprates through Cu─O bond length descriptor.pdf": 12
+  },
+  "text_ids_vectors_preserved_against_baseline": true,
+  "index_sha256": "9e7973b5f8a8e6f4aa5cee2cdc75b0fc85b454a5541b2602745300286e5a143a",
+  "chunks_sha256": "5d6a160a84a29aee9e85a10496735efeaba1947944fda28c273b9c3e4ca66ebe",
+  "baseline_index_sha256": "36b46185f1f4bd4d47cf7e867d4a8aaf0d12aca212c20d4a42a6a756da189435"
+}

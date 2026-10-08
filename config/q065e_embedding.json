@@ -1,0 +1,12 @@
+{
+  "schema": "chemqa-embedding-profile-v1",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "dimension": 1024,
+  "max_sequence_tokens": 512,
+  "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+  "document_prompt": "",
+  "normalize_embeddings": true,
+  "padding_side": "left",
+  "precision_policy": "mps-fp16-cpu-fp32-v1"
+}

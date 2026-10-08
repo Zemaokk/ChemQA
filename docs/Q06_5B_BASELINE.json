@@ -1,0 +1,1614 @@
+{
+  "schema": "chemqa-q065b-generation-baseline-v1",
+  "dataset_version": "q10a-v1",
+  "source_validation": {
+    "status": "passed",
+    "version": "q10a-v1",
+    "split_counts": {
+      "dev": 20,
+      "reserve": 6
+    },
+    "source_pdfs_verified": 17,
+    "exact_evidence_intervals": 36,
+    "article_groups": {
+      "dev": 11,
+      "reserve": 6
+    },
+    "article_group_overlap": 0,
+    "domain_review_states": {
+      "pending": 26
+    },
+    "source_verification_enabled": true,
+    "reserve_ranked_or_generated": false
+  },
+  "request_parameters": {
+    "protocol": "chat_completions",
+    "body": {
+      "model": "DeepSeek-V4-Flash",
+      "thinking": {
+        "type": "disabled"
+      },
+      "max_tokens": 4096,
+      "stream": false,
+      "temperature": 0.3
+    },
+    "connect_timeout_seconds": 10.0,
+    "read_timeout_seconds": 120.0,
+    "max_attempts": 1,
+    "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+  },
+  "execution_counts": {
+    "success": 20,
+    "failed": 0,
+    "truncated": 0,
+    "no_evidence": 0
+  },
+  "generation_requests": 20,
+  "reserve_queries_executed": 0,
+  "empty_evidence_control": {
+    "schema": "chemqa-generation-result-v1",
+    "status": "no_evidence",
+    "error_code": null,
+    "error_message": null,
+    "retryable": false,
+    "request_sent": false,
+    "attempts": 0,
+    "http_status": null,
+    "finish_reason": null,
+    "requested_model": null,
+    "returned_model": null,
+    "response_id": null,
+    "usage": {},
+    "request_parameters": {},
+    "reasoning_content_present": false,
+    "reasoning_characters": 0,
+    "elapsed_seconds": 0.0,
+    "attempt_history": [],
+    "partial_content": null
+  },
+  "quality_scores": null,
+  "cost": null,
+  "results": [
+    {
+      "question_id": "D01",
+      "prompt_sha256": "ed476c0e1d68f5385e5b78c7ca3fe96a72846d057001e7983e1310f8943a93b3",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "a5cc013d-c112-4600-a578-9449ec49f27f",
+        "usage": {
+          "completion_tokens": 1841,
+          "prompt_tokens": 4045,
+          "total_tokens": 5886,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 17.56154162500752,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1841,
+              "prompt_tokens": 4045,
+              "total_tokens": 5886,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 17.561533458007034,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "a5cc013d-c112-4600-a578-9449ec49f27f",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D02",
+      "prompt_sha256": "aca0dd436fe2494700d0eba99b8ef85ffa6602424317bf9bfb02fb83c15f6919",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "a14e033e-686b-459d-9a98-a7b78b2ac994",
+        "usage": {
+          "completion_tokens": 832,
+          "prompt_tokens": 4042,
+          "total_tokens": 4874,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 9.001795958029106,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 832,
+              "prompt_tokens": 4042,
+              "total_tokens": 4874,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 9.001788749999832,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "a14e033e-686b-459d-9a98-a7b78b2ac994",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D03",
+      "prompt_sha256": "02ea878b06c7d904aae1b2b94a4468ebc590ca864033ff816b38c78e722f6ac9",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "ef6a0936-055f-40d9-88ee-e2b53d384e6d",
+        "usage": {
+          "completion_tokens": 1150,
+          "prompt_tokens": 4000,
+          "total_tokens": 5150,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 6.775683582993224,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1150,
+              "prompt_tokens": 4000,
+              "total_tokens": 5150,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 6.775677750003524,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "ef6a0936-055f-40d9-88ee-e2b53d384e6d",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D04",
+      "prompt_sha256": "685e3e3b9a019e6ddb8d5fbb5d5ec3445d8ee77dca1704150486fbdfb3bfbd8b",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "dd7a8475-487e-45dc-bd04-49411664d476",
+        "usage": {
+          "completion_tokens": 694,
+          "prompt_tokens": 3991,
+          "total_tokens": 4685,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 5.147735624981578,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 694,
+              "prompt_tokens": 3991,
+              "total_tokens": 4685,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 5.147730832977686,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "dd7a8475-487e-45dc-bd04-49411664d476",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D05",
+      "prompt_sha256": "577cdb914e86700b7b8b702730882f3725e544f560401ff842e70716c76ed771",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "88c3635f-e187-4377-9a49-1abdcbbfaf4e",
+        "usage": {
+          "completion_tokens": 1335,
+          "prompt_tokens": 3942,
+          "total_tokens": 5277,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 16.38153016701108,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1335,
+              "prompt_tokens": 3942,
+              "total_tokens": 5277,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 16.38152308401186,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "88c3635f-e187-4377-9a49-1abdcbbfaf4e",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D06",
+      "prompt_sha256": "8ac729abc96249a0db1c74158c6d580af0653b68fb938339213ad11176da07cf",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "d44f9147-ecb4-4d52-a846-5a022b5da757",
+        "usage": {
+          "completion_tokens": 1500,
+          "prompt_tokens": 4072,
+          "total_tokens": 5572,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 17.86819441698026,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1500,
+              "prompt_tokens": 4072,
+              "total_tokens": 5572,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 17.86819166695932,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "d44f9147-ecb4-4d52-a846-5a022b5da757",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D07",
+      "prompt_sha256": "84693e7b819359c7644c3cdd952fd0a0aaa893f96398be85ebdefce84b498b84",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "2adb8e9d-e686-470c-9710-da33f2a4181a",
+        "usage": {
+          "completion_tokens": 1728,
+          "prompt_tokens": 4072,
+          "total_tokens": 5800,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 39.93471220799256,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1728,
+              "prompt_tokens": 4072,
+              "total_tokens": 5800,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 39.93470687500667,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "2adb8e9d-e686-470c-9710-da33f2a4181a",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D08",
+      "prompt_sha256": "ea9183e85c228d08b565e68aa00fdbbb8a24d4c90a967d4c78f4fc1b2874f2d4",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "26b0bb3c-8339-459c-ac3e-e3ca88421587",
+        "usage": {
+          "completion_tokens": 1228,
+          "prompt_tokens": 4249,
+          "total_tokens": 5477,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 13.677917374996468,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1228,
+              "prompt_tokens": 4249,
+              "total_tokens": 5477,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 13.677910834026989,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "26b0bb3c-8339-459c-ac3e-e3ca88421587",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D09",
+      "prompt_sha256": "f6c3f7bb69ef6a27bf499abd5b6b83abbaeb4151b521463a55621b581bb5c9c3",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "49f8fcd3-1a45-47b5-85c6-56c9e260480a",
+        "usage": {
+          "completion_tokens": 658,
+          "prompt_tokens": 4118,
+          "total_tokens": 4776,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 12.004017792001832,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 658,
+              "prompt_tokens": 4118,
+              "total_tokens": 4776,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 12.004012000048533,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "49f8fcd3-1a45-47b5-85c6-56c9e260480a",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D10",
+      "prompt_sha256": "81e3670b6e67f0e7e66831838fe316833059cc6ce958f7ca8cf08c343e4dfdeb",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "d214b0c1-8453-4289-a61c-3b2507270d69",
+        "usage": {
+          "completion_tokens": 1536,
+          "prompt_tokens": 3949,
+          "total_tokens": 5485,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 15.093071457988117,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1536,
+              "prompt_tokens": 3949,
+              "total_tokens": 5485,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 15.093067792011425,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "d214b0c1-8453-4289-a61c-3b2507270d69",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D11",
+      "prompt_sha256": "48a84df63634fde78e5c88af4cbcc404578bd5c7e538e8032c1c5a0e1a7f3db7",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "6556bd50-ee6c-4e64-a824-02435bfd9bce",
+        "usage": {
+          "completion_tokens": 1079,
+          "prompt_tokens": 4008,
+          "total_tokens": 5087,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 6.6155564590008,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1079,
+              "prompt_tokens": 4008,
+              "total_tokens": 5087,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 6.615550457965583,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "6556bd50-ee6c-4e64-a824-02435bfd9bce",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D12",
+      "prompt_sha256": "3957474978732d237de6ade891a846f06c2bac546e3d012c9626d04b13b7c500",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "18a1c582-bc63-4646-92c6-047f5a17c7da",
+        "usage": {
+          "completion_tokens": 924,
+          "prompt_tokens": 4066,
+          "total_tokens": 4990,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 7.874808458960615,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 924,
+              "prompt_tokens": 4066,
+              "total_tokens": 4990,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 7.874803165963385,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "18a1c582-bc63-4646-92c6-047f5a17c7da",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D13",
+      "prompt_sha256": "f9ab6bd7e0d84d0bd1b5c6cfac8aa676ec1c7cc492f3b7fcdc8f6b22a8d74bb2",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "b1bdc9e6-fcc2-4c44-93d8-b37219efbd30",
+        "usage": {
+          "completion_tokens": 1557,
+          "prompt_tokens": 4088,
+          "total_tokens": 5645,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 8.572707499959506,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1557,
+              "prompt_tokens": 4088,
+              "total_tokens": 5645,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 8.572700791002717,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "b1bdc9e6-fcc2-4c44-93d8-b37219efbd30",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D14",
+      "prompt_sha256": "dec2bc6f0d6d694763761b2b7fecd9583ef2bec2a32d536c6b34e2e33b8415a0",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "e88e6436-94d6-4de7-9e86-a29eb15d890b",
+        "usage": {
+          "completion_tokens": 1008,
+          "prompt_tokens": 4184,
+          "total_tokens": 5192,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 17.758964208012912,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1008,
+              "prompt_tokens": 4184,
+              "total_tokens": 5192,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 17.75896141596604,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "e88e6436-94d6-4de7-9e86-a29eb15d890b",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D15",
+      "prompt_sha256": "5143fdd6730a267b44fc3b2f1d3850b2b17b2c543743b9209e0d56bbe04cf4d9",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "5035fdab-3ced-4308-a277-bba0ddcb4cb0",
+        "usage": {
+          "completion_tokens": 1247,
+          "prompt_tokens": 4118,
+          "total_tokens": 5365,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 10.68184208398452,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1247,
+              "prompt_tokens": 4118,
+              "total_tokens": 5365,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 10.681837624986656,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "5035fdab-3ced-4308-a277-bba0ddcb4cb0",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D16",
+      "prompt_sha256": "e1ebd0f8cde72ff9eb3e4cfcb93942df90210bc4aabfa61bfe7acbed3dfc732d",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "9e4bc657-51a8-4467-aae0-6fa5d1603a1f",
+        "usage": {
+          "completion_tokens": 968,
+          "prompt_tokens": 4013,
+          "total_tokens": 4981,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 7.818966208957136,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 968,
+              "prompt_tokens": 4013,
+              "total_tokens": 4981,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 7.8189593750284985,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "9e4bc657-51a8-4467-aae0-6fa5d1603a1f",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D17",
+      "prompt_sha256": "85e7c02425456534c99c9b270500c8f17a3ee4e7ccf5ae3419d9359cd645c4d4",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "6300689b-87b1-495d-9dc1-f8a2c9ddee45",
+        "usage": {
+          "completion_tokens": 1597,
+          "prompt_tokens": 4046,
+          "total_tokens": 5643,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 12.820380083983764,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1597,
+              "prompt_tokens": 4046,
+              "total_tokens": 5643,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 12.820376583957113,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "6300689b-87b1-495d-9dc1-f8a2c9ddee45",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D18",
+      "prompt_sha256": "bf3f95b796f1d4169d4c73b1557ab349a17cddd9f8312d88f907849c39b200af",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "b1507843-8dfc-4642-8fff-7564dabd05e3",
+        "usage": {
+          "completion_tokens": 1628,
+          "prompt_tokens": 4064,
+          "total_tokens": 5692,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 25.569905292009935,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 1628,
+              "prompt_tokens": 4064,
+              "total_tokens": 5692,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 25.569902000017464,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "b1507843-8dfc-4642-8fff-7564dabd05e3",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D19",
+      "prompt_sha256": "3e0cb03cfe40da5764d06640d89a9ed9f0846d21659721b292815d8381c7e5be",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "224ec953-1a14-43e3-b0f2-e7ac3198291f",
+        "usage": {
+          "completion_tokens": 896,
+          "prompt_tokens": 4067,
+          "total_tokens": 4963,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 18.444218999997247,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 896,
+              "prompt_tokens": 4067,
+              "total_tokens": 4963,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 18.444215541996527,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "224ec953-1a14-43e3-b0f2-e7ac3198291f",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    },
+    {
+      "question_id": "D20",
+      "prompt_sha256": "4ac063b7bf12159be5c5239fd1e70040e07e254b3d16e8a9e0eaa7e1e3394b0c",
+      "result": {
+        "schema": "chemqa-generation-result-v1",
+        "status": "success",
+        "error_code": null,
+        "error_message": null,
+        "retryable": false,
+        "request_sent": true,
+        "attempts": 1,
+        "http_status": 200,
+        "finish_reason": "stop",
+        "requested_model": "DeepSeek-V4-Flash",
+        "returned_model": "DeepSeek-V4-Flash",
+        "response_id": "89cd3e24-84c1-40f2-9afc-4ba1aa0a0706",
+        "usage": {
+          "completion_tokens": 846,
+          "prompt_tokens": 3986,
+          "total_tokens": 4832,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "request_parameters": {
+          "protocol": "chat_completions",
+          "body": {
+            "model": "DeepSeek-V4-Flash",
+            "thinking": {
+              "type": "disabled"
+            },
+            "max_tokens": 4096,
+            "stream": false,
+            "temperature": 0.3
+          },
+          "connect_timeout_seconds": 10.0,
+          "read_timeout_seconds": 120.0,
+          "max_attempts": 1,
+          "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+        },
+        "reasoning_content_present": false,
+        "reasoning_characters": 0,
+        "elapsed_seconds": 5.6401218340033665,
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "status": "success",
+            "error_code": null,
+            "http_status": 200,
+            "finish_reason": "stop",
+            "usage": {
+              "completion_tokens": 846,
+              "prompt_tokens": 3986,
+              "total_tokens": 4832,
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              }
+            },
+            "elapsed_seconds": 5.640118707960937,
+            "requested_model": "DeepSeek-V4-Flash",
+            "returned_model": "DeepSeek-V4-Flash",
+            "response_id": "89cd3e24-84c1-40f2-9afc-4ba1aa0a0706",
+            "reasoning_content_present": false,
+            "reasoning_characters": 0
+          }
+        ],
+        "partial_content": null
+      },
+      "quality_scores": null,
+      "cost": null
+    }
+  ],
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q065b_generation/20261007T012936-a687bf4db8644c9f9ab47883b4e00f0a"
+}

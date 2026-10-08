@@ -1,0 +1,68 @@
+{
+  "schema": "chemqa-q065e-validation-v1",
+  "status": "passed",
+  "regression": {
+    "passed": 162,
+    "new_tests": 18,
+    "seconds": 74.545,
+    "log": "output/q065e_work/regression-complete.log"
+  },
+  "ruff_check": "passed",
+  "ruff_format_check": {
+    "status": "passed",
+    "python_files": 67
+  },
+  "git_diff_check": "passed",
+  "candidate_status": "ready",
+  "candidate_files_verified": {
+    "vector_index.json": true,
+    "processed_chunks.json": true,
+    "query_vectors.npy": true,
+    "retrieval.json": true,
+    "evaluation.json": true
+  },
+  "candidate_validation": {
+    "rows": 6960,
+    "located": 6960,
+    "verified_spans": 6960,
+    "verified_pdf_contents": 180,
+    "unavailable_by_source": {},
+    "text_ids_vectors_preserved_against_baseline": null,
+    "over_limit_chunks": 0,
+    "actual_encoder_token_ids_match_untruncated_inputs": true,
+    "unit_normalized_vectors": true,
+    "source_nonwhitespace_fully_covered": true,
+    "max_document_input_tokens": 512,
+    "embedding": {
+      "schema": "chemqa-embedding-profile-v1",
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "dimension": 1024,
+      "max_sequence_tokens": 512,
+      "query_prompt": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+      "document_prompt": "",
+      "normalize_embeddings": true,
+      "padding_side": "left",
+      "precision_policy": "mps-fp16-cpu-fp32-v1",
+      "token_count_includes_prompt_and_special_tokens": true
+    }
+  },
+  "candidate_reencoded_replay_passed": true,
+  "public_vector_store_smoke_equal": true,
+  "legacy_raw_context_rankings_and_metrics_equal": true,
+  "baseline_fingerprints_verified": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "source_code_fingerprints_verified": true,
+  "dependency_files_unchanged": {
+    "pyproject.toml": true,
+    "uv.lock": true,
+    "requirements.txt": true
+  },
+  "current_secret_pattern_audit_clean": true,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0,
+  "default_switched": false,
+  "annotation_quality": "AI draft; domain review pending"
+}

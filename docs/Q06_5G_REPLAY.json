@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c",
+  "mode": "hybrid",
+  "all_route_scores_rankings_metrics_exactly_equal": true,
+  "public_selected_profile_top10_equal_using_frozen_vectors": true,
+  "immutable_inputs_unchanged": true,
+  "query_reencoding_count": 0,
+  "reserve_queries_executed": 0,
+  "generation_requests": 0
+}

@@ -1,0 +1,338 @@
+{
+  "local_bundle": "output/q065a_reference_20261007",
+  "schema": "chemqa-q065a-reference-v1",
+  "created_utc": "2026-10-07T00:26:23.780059+00:00",
+  "git_head": "9de5c2eee3296749dd7cd385af80e4f6b1f88289",
+  "git_status_at_capture": "?? scripts/validate_q065a.py\n?? tests/test_q065a_reference.py\n",
+  "config": {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "embedding_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "retrieval_top_k": 10,
+    "context_min_score": 0.5,
+    "chunk_overlap_tokens": 16,
+    "max_output_tokens": 30000,
+    "api_model": "deepseek-reasoner",
+    "api_base_url": "https://api.deepseek.com",
+    "api_temperature": 0.3,
+    "api_key_configured": false,
+    "pdf_engine": "pymupdf"
+  },
+  "resources": {
+    "python": "3.12.13",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "architecture": "arm64",
+    "logical_cpus": 10,
+    "hardware": {
+      "machine_model": "Mac17,3",
+      "chip_type": "Apple M5",
+      "physical_memory": "16 GB",
+      "number_processors": "proc 10:4:0:6"
+    },
+    "disk_free_bytes": 129843200000,
+    "cpu_tensor_smoke": true,
+    "mps_built": true,
+    "mps_available_in_this_process": false,
+    "cuda_available": false,
+    "packages": {
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.4",
+      "PyYAML": "6.0.3",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.2",
+      "cloudpickle": "3.1.2",
+      "contourpy": "1.4.0",
+      "cycler": "0.12.1",
+      "filelock": "4.0.12",
+      "fonttools": "4.66.1",
+      "fsspec": "2026.9.0",
+      "hf-xet": "1.6.0",
+      "huggingface_hub": "0.36.2",
+      "idna": "3.20",
+      "joblib": "1.6.0",
+      "kiwisolver": "1.5.1",
+      "matplotlib": "3.11.2",
+      "mpmath": "1.3.0",
+      "narwhals": "2.26.0",
+      "networkx": "3.7",
+      "numpy": "2.5.3",
+      "packaging": "26.3",
+      "pandas": "3.0.6",
+      "pillow": "12.3.0",
+      "pymupdf": "1.28.2",
+      "pyparsing": "3.3.3",
+      "python-dateutil": "2.9.0.post0",
+      "python-dotenv": "1.2.4",
+      "regex": "2026.9.29",
+      "requests": "2.34.2",
+      "ruff": "0.16.10",
+      "safetensors": "0.8.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "seaborn": "0.13.2",
+      "sentence-transformers": "4.1.0",
+      "setuptools": "84.0.0",
+      "six": "1.17.0",
+      "sympy": "1.14.0",
+      "threadpoolctl": "3.7.0",
+      "tokenizers": "0.22.2",
+      "torch": "2.14.1",
+      "tqdm": "4.70.1",
+      "transformers": "4.57.6",
+      "typing_extensions": "4.16.0",
+      "urllib3": "2.8.0"
+    }
+  },
+  "embedding_manifest": {
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "max_sequence_tokens": 128,
+    "special_tokens": 2,
+    "token_count_includes_special_tokens": true
+  },
+  "index": {
+    "documents": 26025,
+    "unique_pdfs": 180,
+    "vector_shape": [
+      26025,
+      384
+    ],
+    "sha256": {
+      "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+      "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+    }
+  },
+  "replay": {
+    "device": "cpu",
+    "auto_selected_device": "cpu",
+    "torch_threads": 1,
+    "score_atol": 1e-12,
+    "query_vector_atol": 1e-07
+  },
+  "queries": [
+    {
+      "query": "mechanism of CO2 electroreduction on Cu single-atom catalysts",
+      "top_ids": [
+        "chunk_51035595df6103b4d9da8a3369dc2541eab81fdb23850427d8d1e48e41634ea5",
+        "chunk_2f40fcacea596616a64cfd87d128a4c880847c93c18c2c03a0daea949ae7d605",
+        "chunk_dfd233a685a204a42d8fdfe04c7dc3a0f3517127d1e314c878e53f5c54c8ca18",
+        "chunk_af2ef2620f9b86b633de95f81f5c312367673a91f00b3e10a416b586e0fe5fd3",
+        "chunk_465c08b5067f8fe158fde3a18a671004f248940b14c7498abc96ce19b7041611",
+        "chunk_48f47d7f1f53e2ed1d353fe7b4702706217734d9927b91fba09be1d703cd4d4a",
+        "chunk_fde776ed2ef2d57ce1a8712d2cc724e23295b4f8485e97796108f075875cbd1c",
+        "chunk_2e8fb8ff1b67d8a63fe8a3c5bb287e888b685087fb9c7141043b9c29ffd9175e",
+        "chunk_74940f9f13982e16e7777fdda92d1889e4ae8cc50e90d0ed09df48f90956d0df",
+        "chunk_c5c521c8bc536938183a31561993b98cd59eba739b4746a00c6c4c2889fc6c91"
+      ],
+      "accepted_count": 10
+    },
+    {
+      "query": "electrochemical oxidation of alcohols to aldehydes",
+      "top_ids": [
+        "chunk_99179fe8c7dae54b494bbe45b457b589594f9b10db60488eabdd618c0f369fef",
+        "chunk_adfbae62fbb86357e4de9ec73f0b0c69325125406e48753a00dfc6799c94a37a",
+        "chunk_59210299c84f67263ba454163c6a922921680af69d920b8b8b2f204d9587385d",
+        "chunk_5445e55a222dacc02597bcd2003b391bb6798634cdcc25b31f7bece15721d708",
+        "chunk_79f37a179e334791f3671c4e91ca4fd74694992cdfb515b628d9e0a2b6c7c018",
+        "chunk_f58e1eca1dcd848c44d507551645f5d492ddc8af509c155025673e3ffda70e25",
+        "chunk_157d6a69cff78e690025d4d7660c13948af5d10020efb89673553257d4395b99",
+        "chunk_1bcce945caddee8542e5208a1a79b688083ff4a813a1e3e7b547a20eb6dc9e2f",
+        "chunk_dc97415473b12c6782f541e639877e27a4e51e7f221cc16374456009b4b9cb52",
+        "chunk_38db360f52b584b98b0232ed84376ec841660ce91b5ae669779ac6353d9f92d5"
+      ],
+      "accepted_count": 10
+    },
+    {
+      "query": "electrochemical C-H functionalization of arenes",
+      "top_ids": [
+        "chunk_0e766397137fda9750078b1aa5786b076ede94a12cc04f7493bc60bfdeee4eb3",
+        "chunk_f85daf65ce618aef9ecc820cb3d5240e65eac1c886e7994b49dd720c37af3650",
+        "chunk_d25d433cdb1c47f02ac559c1ceb117bc29266edd3d5be6416d9a1eca384113b6",
+        "chunk_2162fc7f29d259bdac6d25c99ee97180b6b8b6648509cec3cc54700b8e10a719",
+        "chunk_495b6da6fc2e63f2546bea1c83d19a229d2782b5e5c7ea6085bbd847ec63b58d",
+        "chunk_60110c89d91e890cca6aec8df8acefc87bbf9d00174eadb5c317374edc2d33b6",
+        "chunk_daabe10ccd8c7cae2d916a1f387677acd058790071a6d669d107e10f40e1fd42",
+        "chunk_25f937a5deec058d6c47308dc97da0d52f4aa33d1727821cd45aac1b0b4454d6",
+        "chunk_57ca14038031b86b518b1074535e163300052513c2d25f8ee2036d42b75c0928",
+        "chunk_659fb057e4f3c24eb1b5d124fa98c979043d91765ba4b1d33c26dae2e1e5e90c"
+      ],
+      "accepted_count": 10
+    },
+    {
+      "query": "electrochemical synthesis of heterocyclic compounds",
+      "top_ids": [
+        "chunk_6c9546212a6c11599f500d52e070b6983939fabe38288e3a8f57a221ff4d178a",
+        "chunk_1f535224d85d40bf904f934bd3eec60b74551af9aaead0873624afa244906029",
+        "chunk_25f937a5deec058d6c47308dc97da0d52f4aa33d1727821cd45aac1b0b4454d6",
+        "chunk_64c8541e02747280c80d31c8bc053fdcb66d60c8cd87d60d6a89df2761efd831",
+        "chunk_6871fdbc6bf66701a6de71ffcbb45494a8aaa2b8a021bdafecf60bbdc468def8",
+        "chunk_fe885fd539fc017c481d31d09bcc7579fc75a1ef8b58d221299506538463a6bb",
+        "chunk_8d2e494bc9b9f9b8f42d1cc0584c282ace43f25c72d3ab893df52aadc9b3fe78",
+        "chunk_8e2bd81fc835e559cc724b74ede2cbac843da442090ba9802e40a8894e1b805c",
+        "chunk_3208d0ff3e0e28f94e45e972c17d5bf8964e8ee9d276e4280ea65e49ef63245e",
+        "chunk_75b80ed9ddc10dcc6c621820634024dc16f5f60eea2efd3161a15acc71d20cd2"
+      ],
+      "accepted_count": 10
+    },
+    {
+      "query": "electrochemical reduction of carbonyl compounds",
+      "top_ids": [
+        "chunk_b9074b1f04281a15783a9d10c1044061a2d70fb55ff3cec7071c0cccb495e3df",
+        "chunk_55a1452a95680d3bce4cebaa746cdd4511fa09bfaee04e422d88336a6ff8636d",
+        "chunk_772bda7b4414d86f5844f82d9bfd73d5e891d5e84cfccb5c74b7ab3f93ebc40c",
+        "chunk_ee613803aec320e491049756e4e389125f05cbbe8fd44a63f0e6fee9edc7422a",
+        "chunk_413e0ae6e2cacba5cbe2c8cda8616e75a723a634396fe59ec8886d7b81679a80",
+        "chunk_e3e635f9107b707c4b950b569c86d3e98b3871c2154372e9962cab42bb8e326f",
+        "chunk_25b05eeb9e1acaa7cb8c7ba6ef083946a5d8c1f761cd98d85e22c6759c36362c",
+        "chunk_8e9519ec0809d94916ea0a6f46d143da2f72aa26a1f987490daf7ad28837f0a4",
+        "chunk_f40a7936ff3d8c53b98656e9b5d6782b9d26ff94d478c09efad8302fa41c785f",
+        "chunk_03bf6712e43d286240fe060578929a24d148a7ff916e63091a6e2a285417de7d"
+      ],
+      "accepted_count": 10
+    },
+    {
+      "query": "醇电氧化为醛的电解液与反应条件是什么？",
+      "top_ids": [
+        "chunk_e9ec95d728e3e29fc1055b8bb1b572620bd85a93fd846815df1766e486c47dc7",
+        "chunk_b36aaab6052e3639a66f7ae19634095c23b0f057fa8430380be1baa4ac7150e7",
+        "chunk_ce3e37c603dd8c75588d74b2fcc8b323f6ebaec7517421005ddae137ba37b0c0",
+        "chunk_793289d21810465b1e3224b03ef70c82bffb2507680d9a3623eab1a2f420158c",
+        "chunk_2fdb7210147ad1acf2e8cbf1f8f41bbb292d5dbf8750e4b88a1914beb736396f",
+        "chunk_60d9714e5b11e9e5da15d3cffcbf01f1ae8fe0f0c6ea2b5cabfb73938b09c993",
+        "chunk_62fe11b936dac410d44eee619c6293b5c3d9b92f7046c03e068b412702fbee0c",
+        "chunk_2b19f8a3e01bb94042a40326e3065644771b8e956c0f15b0bc07aedb09360a5f",
+        "chunk_0a7d6c3351dbe51a1943f53c09669f484a8ee72d93233929f4af41d33ccb56d1",
+        "chunk_e4a1a3de156b9156c252aaaa4694b9d3cb0859ffe554a467bb37a0976e320898"
+      ],
+      "accepted_count": 10
+    },
+    {
+      "query": "What electrolyte and potential were used for carbonyl electroreduction?",
+      "top_ids": [
+        "chunk_44406015408bd10123555bf18affe455c79b26680dcd1468dc1fad84969f38ee",
+        "chunk_0331590780c2e5ff9bf38e1a6d3f78ec6945a70e8c52e2f50f983d51b69032e8",
+        "chunk_5578d761cd758920db4ea5466785fa3a1d0d073b5a8bbad8366d82ee02d54d31",
+        "chunk_c1af7d632abbbef2ba5abd178bb2ca082eaa7b50cbda83913c8d96d15569bf8c",
+        "chunk_de574ae465639482fbee50d1f95edfea1e8402d2a7fd709d384028473e609bdc",
+        "chunk_ae39dde3eb8c828ed176375892e5e1eb20f3ad1db789de9496e2e450cd4bd90b",
+        "chunk_02358a7b6fc922e6f520c3938f2323d5a2866a2489e9d53b1a19c66812f1d7f7",
+        "chunk_772bda7b4414d86f5844f82d9bfd73d5e891d5e84cfccb5c74b7ab3f93ebc40c",
+        "chunk_64fa52c554d10f92c47d8cf65474e4ecbeb7c58f48f9238280846eb329b544a2",
+        "chunk_7d2df62c758df21a81b3ba2cdc14bf9b3aedced4f202ce95fc45bad7b5c811fa"
+      ],
+      "accepted_count": 10
+    }
+  ],
+  "validations": [
+    {
+      "name": "unittest",
+      "exit_code": 0
+    },
+    {
+      "name": "ruff_check",
+      "exit_code": 0
+    },
+    {
+      "name": "ruff_format",
+      "exit_code": 0
+    },
+    {
+      "name": "q06",
+      "exit_code": 0
+    }
+  ],
+  "files": {
+    "config.json": {
+      "sha256": "057688b8895e3c8e23473207ef5385cc1e89bc6c41de3c27453fa2a2634c2277",
+      "bytes": 434
+    },
+    "data/processed/processed_chunks.json": {
+      "sha256": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5",
+      "bytes": 62268580
+    },
+    "data/vector_db/vector_index.json": {
+      "sha256": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+      "bytes": 336390337
+    },
+    "model/1_Pooling/config.json": {
+      "sha256": "a19c83805e1ce4174f3fbfec4ac8d3b8dbae0c958f8fd51b80937eb33e0c5335",
+      "bytes": 296
+    },
+    "model/README.md": {
+      "sha256": "1e98ea05b0de579fcaad3d625b62ea55647142ed674d5f5ebf1440e4bbbb6f23",
+      "bytes": 3888
+    },
+    "model/config.json": {
+      "sha256": "376a54b28d37e8502389a87d6c8ff59247fc361cd8d980a47b36b6cae876de5e",
+      "bytes": 613
+    },
+    "model/config_sentence_transformers.json": {
+      "sha256": "4e2079a8e003b25664b6fa1a9d572a82d63b6fbbdb534a09e6808b4da37f2543",
+      "bytes": 200
+    },
+    "model/model.safetensors": {
+      "sha256": "7f4f89d628f87ade0e0b57c40affb6402cd77abc8110584d8d35dc86da514ee8",
+      "bytes": 470637416
+    },
+    "model/modules.json": {
+      "sha256": "8f4b264b80206c830bebbdcae377e137925650a433b689343a63bdc9b3145460",
+      "bytes": 229
+    },
+    "model/sentence_bert_config.json": {
+      "sha256": "70f4448f31320443fe3557cacea5abf2dcc4915dda8c80646bec9f3bb0aa5a1f",
+      "bytes": 53
+    },
+    "model/special_tokens_map.json": {
+      "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+      "bytes": 964
+    },
+    "model/tokenizer.json": {
+      "sha256": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20",
+      "bytes": 17082734
+    },
+    "model/tokenizer_config.json": {
+      "sha256": "f469534f4662884f6a1f5ff2a5fe70cbc6dc4a8c34c1fa765d2f022ea9a0ac12",
+      "bytes": 1457
+    },
+    "q06.json": {
+      "sha256": "f0d54be963aacc4fc76ced4829de41232d0b168cc6c3e61904696949685c899c",
+      "bytes": 6178
+    },
+    "q06.log.json": {
+      "sha256": "f2842516b4527888b82825c915ce806e0dbad3b9f1007e8f3a1a49e7c05c16bc",
+      "bytes": 12475
+    },
+    "query_vectors.npy": {
+      "sha256": "65eb12f9c55973192894a8623bbf3e40d3845426e9bc88e1f7603f02596be8b1",
+      "bytes": 10880
+    },
+    "retrieval.json": {
+      "sha256": "d1a675c328bff44541bc5127ae45c010c0775b2b3539ebb7bc72db67de6263b0",
+      "bytes": 188563
+    },
+    "ruff_check.log.json": {
+      "sha256": "49affdcb4e971b2ef6a1a4bd2a9f3c61614b3f2298fb31aa4ac192e4a63f4340",
+      "bytes": 229
+    },
+    "ruff_format.log.json": {
+      "sha256": "dcaf3ae7dc6004d49fd16e5d18dca59cd6749471c8d526580cc39d5331f5cd3b",
+      "bytes": 253
+    },
+    "source.zip": {
+      "sha256": "57f843ad522f8c2b678ddb9872a96dc434b654c8efd3a5d7b4e1ef7fbaafacf3",
+      "bytes": 121694
+    },
+    "unittest.log.json": {
+      "sha256": "90a13c43473cb753fa6cbdd6efd49f58803df28e9337b81e65db1125d11f14bb",
+      "bytes": 22552
+    }
+  },
+  "active_data_unchanged": true,
+  "external_api_requests": 0,
+  "limitations": [
+    "Execution reference only; questions have no relevance labels.",
+    "No live LLM baseline or scientific-support evaluation.",
+    "MPS availability describes this process, not all host environments.",
+    "Raw PDFs are not copied; retrieval replay needs only captured index/model/source.",
+    "Installed packages are inventoried; wheels and Python runtime are not archived."
+  ]
+}

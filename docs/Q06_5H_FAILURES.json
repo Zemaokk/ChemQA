@@ -1,0 +1,291 @@
+{
+  "selected_reranker_enabled": true,
+  "annotation_quality": "AI draft; domain review pending",
+  "improved": [
+    {
+      "question_id": "D08",
+      "category": "numeric",
+      "off_complete_anchor_recall_at_10": 0.5,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.5,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0
+      }
+    },
+    {
+      "question_id": "D10",
+      "category": "mechanism",
+      "off_complete_anchor_recall_at_10": 0.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 1.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D15",
+      "category": "system_boundary",
+      "off_complete_anchor_recall_at_10": 0.0,
+      "on_complete_anchor_recall_at_10": 0.5,
+      "difference": 0.5,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 1.0
+      }
+    },
+    {
+      "question_id": "D17",
+      "category": "comparison",
+      "off_complete_anchor_recall_at_10": 0.3333333333333333,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.6666666666666667,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0,
+        "e3": 1.0
+      }
+    }
+  ],
+  "regressed": [],
+  "selected_incomplete": [
+    {
+      "question_id": "D11",
+      "category": "numeric",
+      "off_complete_anchor_recall_at_10": 0.0,
+      "on_complete_anchor_recall_at_10": 0.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0
+      }
+    },
+    {
+      "question_id": "D15",
+      "category": "system_boundary",
+      "off_complete_anchor_recall_at_10": 0.0,
+      "on_complete_anchor_recall_at_10": 0.5,
+      "difference": 0.5,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 1.0
+      }
+    },
+    {
+      "question_id": "D16",
+      "category": "comparison",
+      "off_complete_anchor_recall_at_10": 0.3333333333333333,
+      "on_complete_anchor_recall_at_10": 0.3333333333333333,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 0.0,
+        "e3": 1.0
+      }
+    },
+    {
+      "question_id": "D18",
+      "category": "comparison",
+      "off_complete_anchor_recall_at_10": 0.5,
+      "on_complete_anchor_recall_at_10": 0.5,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0,
+        "e3": 0.0,
+        "e4": 0.0
+      }
+    }
+  ],
+  "all_comparisons": [
+    {
+      "question_id": "D01",
+      "category": "single_fact",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D02",
+      "category": "conditions",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D03",
+      "category": "single_fact",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D04",
+      "category": "mechanism",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D05",
+      "category": "mechanism",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0
+      }
+    },
+    {
+      "question_id": "D06",
+      "category": "single_fact",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D07",
+      "category": "system_boundary",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D08",
+      "category": "numeric",
+      "off_complete_anchor_recall_at_10": 0.5,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.5,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0
+      }
+    },
+    {
+      "question_id": "D09",
+      "category": "numeric",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D10",
+      "category": "mechanism",
+      "off_complete_anchor_recall_at_10": 0.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 1.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D11",
+      "category": "numeric",
+      "off_complete_anchor_recall_at_10": 0.0,
+      "on_complete_anchor_recall_at_10": 0.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0
+      }
+    },
+    {
+      "question_id": "D12",
+      "category": "numeric",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D13",
+      "category": "numeric",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D14",
+      "category": "numeric",
+      "off_complete_anchor_recall_at_10": 1.0,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      }
+    },
+    {
+      "question_id": "D15",
+      "category": "system_boundary",
+      "off_complete_anchor_recall_at_10": 0.0,
+      "on_complete_anchor_recall_at_10": 0.5,
+      "difference": 0.5,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 1.0
+      }
+    },
+    {
+      "question_id": "D16",
+      "category": "comparison",
+      "off_complete_anchor_recall_at_10": 0.3333333333333333,
+      "on_complete_anchor_recall_at_10": 0.3333333333333333,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 0.0,
+        "e3": 1.0
+      }
+    },
+    {
+      "question_id": "D17",
+      "category": "comparison",
+      "off_complete_anchor_recall_at_10": 0.3333333333333333,
+      "on_complete_anchor_recall_at_10": 1.0,
+      "difference": 0.6666666666666667,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0,
+        "e3": 1.0
+      }
+    },
+    {
+      "question_id": "D18",
+      "category": "comparison",
+      "off_complete_anchor_recall_at_10": 0.5,
+      "on_complete_anchor_recall_at_10": 0.5,
+      "difference": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0,
+        "e3": 0.0,
+        "e4": 0.0
+      }
+    }
+  ]
+}

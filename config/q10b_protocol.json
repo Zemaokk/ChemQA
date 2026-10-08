@@ -1,0 +1,73 @@
+{
+  "schema": "chemqa-q10b-protocol-v1",
+  "dataset_manifest_sha256": "6e0f3d96fbb3e26f4948f962f1976ffd860c440b93d53efa01a3bd2e6cf22c38",
+  "source_H_profile": "/Users/zemaochen/projects/ChemQA/output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9/reranker_profile.json",
+  "source_H_run_sha256": "fd21f00ca1a852a1f09e64bde177da81f9d4d86b999e3e0bd12c78a9e0c0d283",
+  "source_F_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T050945-4456434906334000aac1efefcb869097",
+  "source_F_run_sha256": "ad51a22eabd94ad30dda856706cc8d3b70f8bc1c675c9baff48148f92d2ed2f3",
+  "fixed_files_sha256": {
+    "config/q065e_embedding.json": "97a760b7a5e3fbf459df695395bdc28f7ab48d8d683e2e29db13c523d74fc5a5",
+    "config/q065h_reranker.json": "f33fb41692090a15276fd9f3e49cae1bb85249a43334aafe75aca9cfc607076d",
+    "config/q065i_context.json": "6f8d802e26c6b73db8d4b0b649e0ad8cd11bcd072fa03089f04c419fd6a068fc",
+    "config/prompts.py": "24da4ae47c583a26b4339752d6770b1cb0c336a9b7efff1329b1b64496ed88e5",
+    "evaluation/RUBRIC.md": "073fd72614baf68d0a2b4bffe0174928d7aa70a63ce656bbc43fb368a7fe62f6"
+  },
+  "request_body": {
+    "model": "DeepSeek-V4-Flash",
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "stream": false,
+    "temperature": 0.3
+  },
+  "domain": "organic electrocatalysis",
+  "arms": [
+    "direct",
+    "bm25",
+    "dense",
+    "hybrid_rerank",
+    "hybrid_rerank_diverse"
+  ],
+  "common_context_policy": {
+    "schema": "chemqa-context-selection-v1",
+    "candidate_window": 50,
+    "max_chunks": 10,
+    "max_chunks_per_document": 10,
+    "maximum_existing_span_overlap": 1.0,
+    "input_estimate_limit": 32000,
+    "output_token_limit": 4096,
+    "protocol_token_reserve": 1024,
+    "total_estimate_limit": 40000,
+    "counter": "complete-payload-utf8-bytes-v1",
+    "selection_order": "frozen_retrieval_rank",
+    "neighbor_expansion": false,
+    "production_default_switch": "Q06.5-J only"
+  },
+  "diverse_context_policy": {
+    "schema": "chemqa-context-selection-v1",
+    "candidate_window": 50,
+    "max_chunks": 10,
+    "max_chunks_per_document": 6,
+    "maximum_existing_span_overlap": 0.5,
+    "input_estimate_limit": 32000,
+    "output_token_limit": 4096,
+    "protocol_token_reserve": 1024,
+    "total_estimate_limit": 40000,
+    "counter": "complete-payload-utf8-bytes-v1",
+    "selection_order": "frozen_retrieval_rank",
+    "neighbor_expansion": false,
+    "production_default_switch": "Q06.5-J only"
+  },
+  "direct_prompt_template": "你是一位有机电催化研究助手，研究领域为 {domain}。请仅依据自身已有知识回答问题，明确区分已知事实与不确定信息，核对反应体系、条件、单位和证据层级。没有提供外部文献，不得捏造文献、DOI、页码或 [Ref ...] 引用；不确定时明确说明。\n用户问题：{question}\n请分别写出结论、条件与限制。",
+  "rag_prompt_sha256": "dd3eb210ca3889f87bad7dc2c91eb65ff2be91ec83cb4c97fb041d606067d2f1",
+  "evaluation_split": "reserve",
+  "repetitions": 3,
+  "max_attempts": 1,
+  "request_cap": 90,
+  "output_token_cap": 368640,
+  "reserve_policy": "One frozen preview and one generation campaign; no tuning on reserve results. Six author-visible article-disjoint questions are not a blinded or statistically sufficient test.",
+  "human_annotation_review": "pending; no scientific scores or adoption until reviewed",
+  "price_per_token": null,
+  "development_expansion": "34 development diagnostics, 14 derived probes; retrieval/generation on the 14 new probes not yet executed."
+}

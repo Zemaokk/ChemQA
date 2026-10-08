@@ -1,0 +1,77 @@
+{
+  "schema": "chemqa-q065f-validation-v1",
+  "status": "passed",
+  "regression": {
+    "passed": 178,
+    "new_tests": 16,
+    "seconds": 24.591
+  },
+  "ruff_check": "passed",
+  "ruff_format_check": {
+    "status": "passed",
+    "python_files": 70
+  },
+  "git_diff_check": "passed",
+  "locked_offline_environment_sync": "passed",
+  "dependency_files_unchanged": {
+    "pyproject.toml": true,
+    "uv.lock": true,
+    "requirements.txt": true
+  },
+  "faiss_runtime_dependency_present": false,
+  "source_E_files_unchanged": true,
+  "legacy_baseline_fingerprints_verified": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "published_candidate_checksums_verified": {
+    "storage.json": true,
+    "vectors.npy": true,
+    "metadata.sqlite3": true
+  },
+  "candidate_outputs_ignored": {
+    "vectors.npy": true,
+    "metadata.sqlite3": true,
+    "storage.json": true,
+    "run.json": true
+  },
+  "complete_metadata_equal": true,
+  "float32_vectors_bitwise_equal": true,
+  "frozen_query_replay": {
+    "queries": 20,
+    "top10_ids_equal": true,
+    "scores_exactly_equal": true,
+    "metrics_equal": true,
+    "public_vector_store_equal": true
+  },
+  "real_model_runtime_smoke": {
+    "status": "passed",
+    "backend": "numpy-float32-sqlite",
+    "candidate_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T050945-4456434906334000aac1efefcb869097",
+    "active_torch_cpu_computation_passed": true,
+    "actual_encoder_device": "mps:0",
+    "actual_parameter_dtype": "torch.float16",
+    "question_id": "D01",
+    "public_top10_equal_to_E": true,
+    "query_reencoding_count": 1,
+    "generation_requests": 0,
+    "reserve_queries_executed": 0,
+    "baseline_unchanged": true
+  },
+  "json_rollback_passed": true,
+  "current_secret_pattern_audit_clean": true,
+  "source_code_sha256": {
+    "src/knowledge_base/binary_index.py": "5c2cef63ac180acb80c634bf066a4d229fbf08938d55e72bc9513a83c4ff0963",
+    "src/knowledge_base/vector_store.py": "065bf0f73e9a632dd5e0ecb9c2498ba13e3c1b3b7e22f48a1757dd30e4cefd09",
+    "scripts/validate_q065f.py": "19b59588b17f406568e73278584a7bd018aa9f0539a23f31052ac52550f18c97",
+    "tests/test_q065f_storage.py": "8bb6090b4eaa37240ed54922592a3bdcb16328b2372064375fb49cea509a6266"
+  },
+  "platform": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.12.13"
+  },
+  "default_switched": false,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0
+}

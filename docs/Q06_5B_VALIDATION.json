@@ -1,0 +1,90 @@
+{
+  "schema": "chemqa-q065b-validation-v1",
+  "validated_utc": "2026-10-07T01:35:07.511633+00:00",
+  "status": "passed",
+  "regression_tests": {
+    "passed": 133,
+    "runner": "python -m unittest discover -s tests -q"
+  },
+  "ruff_check": "passed",
+  "ruff_format": "passed",
+  "live_smoke_passed": true,
+  "baseline_execution_counts": {
+    "success": 20,
+    "failed": 0,
+    "truncated": 0,
+    "no_evidence": 0
+  },
+  "baseline_generation_requests": 20,
+  "structured_smoke_generation_requests": 3,
+  "preliminary_non_literature_generation_requests": 2,
+  "total_generation_requests_this_task": 25,
+  "baseline_report": "docs/Q06_5B_BASELINE.json",
+  "baseline_artifact": "/Users/zemaochen/projects/ChemQA/output/q065b_generation/20261007T012936-a687bf4db8644c9f9ab47883b4e00f0a",
+  "smoke_report": "docs/Q06_5B_SMOKE.json",
+  "preview_report": "docs/Q06_5B_PREVIEW.json",
+  "preview_protocol_sha256": "5cc4426657702261e6479ca203b7e2d410eedce0efa3bad69a276f13952d93e7",
+  "exact_approved_preview_inputs_and_profile_used": true,
+  "consent": "User explicitly approved the 20 previewed development questions and retrieved excerpts from 83 PDFs to llmapi.paratera.com; no complete PDFs, gold annotations or reserve questions sent.",
+  "request_parameters": {
+    "protocol": "chat_completions",
+    "body": {
+      "model": "DeepSeek-V4-Flash",
+      "thinking": {
+        "type": "disabled"
+      },
+      "max_tokens": 4096,
+      "stream": false,
+      "temperature": 0.3
+    },
+    "connect_timeout_seconds": 10.0,
+    "read_timeout_seconds": 120.0,
+    "max_attempts": 1,
+    "retry_policy": "transient_only_exponential_1_2_4_8_seconds"
+  },
+  "returned_models": [
+    "DeepSeek-V4-Flash"
+  ],
+  "baseline_usage_totals_provider_reported": {
+    "prompt_tokens": 81120,
+    "completion_tokens": 24252,
+    "total_tokens": 105372
+  },
+  "usage_complete_for_all_baseline_requests": true,
+  "baseline_reported_reasoning_tokens": 0,
+  "cost": null,
+  "cost_status": "No verified price for this provider alias; token totals do not attest billing.",
+  "elapsed_seconds": {
+    "sum_of_baseline_requests": 275.24367133685155,
+    "mean_per_request": 13.762183566842577
+  },
+  "empty_evidence_request_count": 0,
+  "forced_truncation_status": "truncated",
+  "reserve_queries_executed": 0,
+  "scientific_answer_quality_measured": false,
+  "domain_annotation_review": "pending",
+  "current_source_secret_audit": "passed",
+  "original_data_sha256_unchanged": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "implementation_sha256": {
+    "scripts/validate_q065b.py": "8391c6d2aaace4bb6d833fc3094697ba33ad4e25221d47defbd85e7a8ff75987",
+    "src/api_integration/api_handler.py": "debce4f6157b5e8e0235efa44dad45df190b9e7f3a792e88614473a524f31a27",
+    "src/api_integration/result.py": "15910dfd0ab39bd63a0d5b357fe26e0eb621a57ec98976d662670a855c2760cf",
+    "src/api_integration/api_generator.py": "5f3482debe284ae0961c06fbea4a1b7743cb803aa90623cccef66a661c6067a7",
+    "config/settings.py": "b3a2cdba2b682abc4ece3a573d4be52021474ab702bf574567e1ed29a383489b",
+    "config/prompts.py": "24da4ae47c583a26b4339752d6770b1cb0c336a9b7efff1329b1b64496ed88e5",
+    "src/utils/artifacts.py": "188859f6710bba6b21ed0526a57a1cd378ca9865156a9709c747382f6e840aa4"
+  },
+  "public_document_fetches": {
+    "text": "b1ec5dd7e51eea5ac1dad0c29888566e86fdb1a50c95115d7b06422c5f27dfb2",
+    "useApi": "16642b2a4327898732b1a46499f25a5814ea1e78be800c95015e4e42bdedbd42"
+  },
+  "limitations": [
+    "Supplier alias and returned reasoning/usage metadata do not attest underlying weight version.",
+    "Operational success is not scientific correctness.",
+    "One development run per question, not a repeated or blinded quality comparison."
+  ],
+  "next_task": "Q06.5-C"
+}

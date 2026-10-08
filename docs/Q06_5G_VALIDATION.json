@@ -1,0 +1,100 @@
+{
+  "schema": "chemqa-q065g-validation-v1",
+  "status": "passed",
+  "regression": {
+    "passed": 199,
+    "new_tests": 21,
+    "seconds": 21.36
+  },
+  "ruff_check": "passed",
+  "ruff_format_check": {
+    "status": "passed",
+    "python_files": 74
+  },
+  "git_diff_check": "passed",
+  "locked_offline_environment_sync": "passed",
+  "dependency_and_default_setting_files_unchanged": {
+    "pyproject.toml": true,
+    "uv.lock": true,
+    "requirements.txt": true,
+    "config/settings.py": true
+  },
+  "fixed_source_inputs_verified": {
+    "data/vector_db/vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "data/processed/processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/run.json": "ad51a22eabd94ad30dda856706cc8d3b70f8bc1c675c9baff48148f92d2ed2f3",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/storage.json": "e0191d136b1d23c8e8e8ea493963643a64d3cc047a2256180265695a78c0b363",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/vectors.npy": "5ad771af5ce6e5dd1a734835795811cd5e343a4cc9abff199fbfe94ae609f1e6",
+    "output/indexes/20261007T050945-4456434906334000aac1efefcb869097/metadata.sqlite3": "e1060d5ea2e3f7ac401f09120aa98bd9e0bfbfb196f8a3101297d051b90d171c",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/query_vectors.npy": "b2df365d69c5b00a5f903604bfcf8614b6b2d1c82e9a45f14820246989f51e01",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/retrieval.json": "70e9db1e1de8834cc12dd6159377c51cf867b627c9c4a14b0eb6418dcce01739",
+    "output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b/evaluation.json": "4ad46210debfd58b70ca98a22034e0192823a7c92e7d9b1fd60e073f5a658286"
+  },
+  "published_artifact_checksums_verified": {
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/retrieval_profile.json": true,
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/rankings.json": true,
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/benchmark.json": true,
+    "output/lexical_indexes/20261007T145201-bd5a8cf7b6b94e999d02f1b47d5c88e9/lexical.json": true,
+    "output/lexical_indexes/20261007T145201-bd5a8cf7b6b94e999d02f1b47d5c88e9/vocabulary.json": true,
+    "output/lexical_indexes/20261007T145201-bd5a8cf7b6b94e999d02f1b47d5c88e9/postings.npz": true
+  },
+  "generated_indexes_and_rankings_ignored": {
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/rankings.json": true,
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/retrieval_profile.json": true,
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/benchmark.json": true,
+    "output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c/run.json": true,
+    "output/lexical_indexes/20261007T145201-bd5a8cf7b6b94e999d02f1b47d5c88e9/postings.npz": true,
+    "output/lexical_indexes/20261007T145201-bd5a8cf7b6b94e999d02f1b47d5c88e9/lexical.json": true,
+    "output/lexical_indexes/20261007T145201-bd5a8cf7b6b94e999d02f1b47d5c88e9/vocabulary.json": true,
+    "output/lexical_indexes/20261007T145201-bd5a8cf7b6b94e999d02f1b47d5c88e9/run.json": true
+  },
+  "scored_questions": 18,
+  "dev_queries_executed": 20,
+  "selected_mode_matches_frozen_gate": true,
+  "route_windows_at_most_50": true,
+  "route_chunk_identity_unique": true,
+  "stable_score_row_sort_verified": true,
+  "positive_only_bm25_hits_verified": true,
+  "rrf_per_route_contributions_verified": true,
+  "all_route_replay_exact": true,
+  "public_selected_profile_replay_passed": true,
+  "real_model_smoke": {
+    "status": "passed",
+    "mode": "hybrid",
+    "candidate_directory": "/Users/zemaochen/projects/ChemQA/output/hybrid_runs/20261007T145204-4e966c7c1ded4930a77f4e417934880c",
+    "actual_encoder_device": "mps:0",
+    "actual_parameter_dtype": "torch.float16",
+    "queries": [
+      {
+        "question_id": "D01",
+        "top10_equal": true,
+        "score_kinds": [
+          "rrf"
+        ]
+      },
+      {
+        "question_id": "D03",
+        "top10_equal": true,
+        "score_kinds": [
+          "rrf"
+        ]
+      }
+    ],
+    "query_reencoding_count": 2,
+    "generation_requests": 0,
+    "reserve_queries_executed": 0,
+    "immutable_inputs_unchanged": true
+  },
+  "current_secret_pattern_audit_clean": true,
+  "source_code_sha256": {
+    "src/knowledge_base/lexical_index.py": "e84bf5aa849e11f17a6727fe5046941f3049f1f3a313bb1f5e638f6956fa1689",
+    "src/knowledge_base/hybrid_search.py": "bdb8b5fce66b9294d700040321cd8bf77d6afb262ec47632ac3528f7ccb42ef8",
+    "src/knowledge_base/retriever.py": "1472875d70357e09cd74de42b16f6bd00fbf8d4befd0e6d9fabbbfc9c292575e",
+    "scripts/validate_q065g.py": "7fca38789419520bdea6ca853fde04ea3bca1e88a9ce863cc6d13ad7f0c324f0",
+    "tests/test_q065g_hybrid.py": "08eb829aa2d24b3ef907603b92074150b13dffd88da4d5eb167934b5d22a5f93"
+  },
+  "production_default_switched": false,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0,
+  "annotation_quality": "AI draft; domain review pending"
+}

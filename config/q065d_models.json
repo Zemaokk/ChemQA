@@ -1,0 +1,21 @@
+[
+  {
+    "repo_id": "docling-project/docling-layout-heron",
+    "revision": "8f39ad3c0b4c58e9c2d2c84a38465abf757272d8",
+    "requested_revision": "main",
+    "allow_patterns": [
+      "*.json",
+      "*.safetensors",
+      "*.bin",
+      "*.yaml"
+    ]
+  },
+  {
+    "repo_id": "docling-project/docling-models",
+    "revision": "fc0f2d45e2218ea24bce5045f58a389aed16dc23",
+    "requested_revision": "v2.3.0",
+    "allow_patterns": [
+      "model_artifacts/tableformer/accurate/*"
+    ]
+  }
+]

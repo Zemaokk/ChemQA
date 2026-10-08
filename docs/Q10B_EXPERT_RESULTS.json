@@ -1,0 +1,286 @@
+{
+  "schema": "chemqa-q10b-assistant-review-summary-v1",
+  "status": "assistant_expert_review_complete",
+  "reviewer": {
+    "id": "Codex (AI assistant)",
+    "kind": "ai_assistant_expert_review",
+    "date": "2026-10-08",
+    "independent_human_review": false,
+    "blind_review": false,
+    "authorization": "用户明确要求：对于Q10-B，你作为专家进行一下评审即可。",
+    "method": "助手逐份阅读冻结回答、所引证据与原文锚点，人工式判断后记录；计算仅作汇总，不使用关键词判分或另一个远程 judge。"
+  },
+  "counts": {
+    "annotations": 40,
+    "frozen_generated_answers": 90,
+    "reserve_questions": 6,
+    "repetitions_per_question_per_arm": 3
+  },
+  "dataset_validation": {
+    "status": "passed",
+    "version": "q10b-v1",
+    "split_counts": {
+      "dev": 34,
+      "reserve": 6
+    },
+    "source_pdfs_verified": 17,
+    "exact_evidence_intervals": 51,
+    "article_groups": {
+      "dev": 11,
+      "reserve": 6
+    },
+    "article_group_overlap": 0,
+    "domain_review_states": {
+      "pending": 40
+    },
+    "source_verification_enabled": true,
+    "reserve_ranked_or_generated": false
+  },
+  "arms": {
+    "direct": {
+      "answers": 18,
+      "independent_question_groups": 6,
+      "point_score_macro": 0.15277777777777776,
+      "point_scores_by_question": {
+        "R01": 0.0,
+        "R02": 0.0,
+        "R03": 0.9166666666666666,
+        "R04": 0.0,
+        "R05": 0.0,
+        "R06": 0.0
+      },
+      "point_score_macro_excluding_ambiguous_R05": 0.18333333333333332,
+      "dimensions": {
+        "conditions_units": {
+          "mean_0_to_2": null,
+          "rated_answers": 0,
+          "not_applicable": 18
+        },
+        "system_boundary": {
+          "mean_0_to_2": 1.8333333333333333,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "evidence_support": {
+          "mean_0_to_2": null,
+          "rated_answers": 0,
+          "not_applicable": 18
+        },
+        "citation_correspondence": {
+          "mean_0_to_2": null,
+          "rated_answers": 0,
+          "not_applicable": 18
+        }
+      },
+      "answers_with_recorded_issue": 3,
+      "issue_kind_counts": {
+        "terminology_error": 2,
+        "partial_answer": 1
+      }
+    },
+    "bm25": {
+      "answers": 18,
+      "independent_question_groups": 6,
+      "point_score_macro": 0.7777777777777778,
+      "point_scores_by_question": {
+        "R01": 1.0,
+        "R02": 1.0,
+        "R03": 0.0,
+        "R04": 1.0,
+        "R05": 0.6666666666666666,
+        "R06": 1.0
+      },
+      "point_score_macro_excluding_ambiguous_R05": 0.8,
+      "dimensions": {
+        "conditions_units": {
+          "mean_0_to_2": 1.9333333333333333,
+          "rated_answers": 15,
+          "not_applicable": 3
+        },
+        "system_boundary": {
+          "mean_0_to_2": 2,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "evidence_support": {
+          "mean_0_to_2": 1.8888888888888888,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "citation_correspondence": {
+          "mean_0_to_2": 1.875,
+          "rated_answers": 16,
+          "not_applicable": 2
+        }
+      },
+      "answers_with_recorded_issue": 7,
+      "issue_kind_counts": {
+        "condition_conflation": 1,
+        "unit_conflation": 1,
+        "retrieval_failure": 3,
+        "point_omission": 3,
+        "overstated_evidence_absence": 1
+      }
+    },
+    "dense": {
+      "answers": 18,
+      "independent_question_groups": 6,
+      "point_score_macro": 1.0,
+      "point_scores_by_question": {
+        "R01": 1.0,
+        "R02": 1.0,
+        "R03": 1.0,
+        "R04": 1.0,
+        "R05": 1.0,
+        "R06": 1.0
+      },
+      "point_score_macro_excluding_ambiguous_R05": 1.0,
+      "dimensions": {
+        "conditions_units": {
+          "mean_0_to_2": 1.7222222222222223,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "system_boundary": {
+          "mean_0_to_2": 1.7777777777777777,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "evidence_support": {
+          "mean_0_to_2": 1.6111111111111112,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "citation_correspondence": {
+          "mean_0_to_2": 1.6666666666666667,
+          "rated_answers": 18,
+          "not_applicable": 0
+        }
+      },
+      "answers_with_recorded_issue": 8,
+      "issue_kind_counts": {
+        "condition_conflation": 1,
+        "formula_reconstruction_error": 3,
+        "lost_potential_sign": 3,
+        "overgeneralization": 1,
+        "evidence_inventory_error": 1,
+        "unflagged_source_anomaly": 1,
+        "overstated_evidence_absence": 1
+      }
+    },
+    "hybrid_rerank": {
+      "answers": 18,
+      "independent_question_groups": 6,
+      "point_score_macro": 1.0,
+      "point_scores_by_question": {
+        "R01": 1.0,
+        "R02": 1.0,
+        "R03": 1.0,
+        "R04": 1.0,
+        "R05": 1.0,
+        "R06": 1.0
+      },
+      "point_score_macro_excluding_ambiguous_R05": 1.0,
+      "dimensions": {
+        "conditions_units": {
+          "mean_0_to_2": 1.6111111111111112,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "system_boundary": {
+          "mean_0_to_2": 1.8333333333333333,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "evidence_support": {
+          "mean_0_to_2": 1.5,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "citation_correspondence": {
+          "mean_0_to_2": 1.5,
+          "rated_answers": 18,
+          "not_applicable": 0
+        }
+      },
+      "answers_with_recorded_issue": 10,
+      "issue_kind_counts": {
+        "condition_conflation": 5,
+        "formula_reconstruction_error": 3,
+        "lost_potential_sign": 1,
+        "overstated_evidence_absence": 1,
+        "ambiguous_condition_scope": 1
+      }
+    },
+    "hybrid_rerank_diverse": {
+      "answers": 18,
+      "independent_question_groups": 6,
+      "point_score_macro": 1.0,
+      "point_scores_by_question": {
+        "R01": 1.0,
+        "R02": 1.0,
+        "R03": 1.0,
+        "R04": 1.0,
+        "R05": 1.0,
+        "R06": 1.0
+      },
+      "point_score_macro_excluding_ambiguous_R05": 1.0,
+      "dimensions": {
+        "conditions_units": {
+          "mean_0_to_2": 1.7777777777777777,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "system_boundary": {
+          "mean_0_to_2": 1.7777777777777777,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "evidence_support": {
+          "mean_0_to_2": 1.7222222222222223,
+          "rated_answers": 18,
+          "not_applicable": 0
+        },
+        "citation_correspondence": {
+          "mean_0_to_2": 1.7222222222222223,
+          "rated_answers": 18,
+          "not_applicable": 0
+        }
+      },
+      "answers_with_recorded_issue": 6,
+      "issue_kind_counts": {
+        "formula_reconstruction_error": 2,
+        "lost_potential_sign": 2,
+        "overgeneralization": 2,
+        "source_anomaly_handled": 1,
+        "unflagged_source_anomaly": 2,
+        "overstated_evidence_absence": 1
+      }
+    }
+  },
+  "review_files_sha256": {
+    "docs/Q10B_EXPERT_ANNOTATIONS.json": "23a11658d22119a5c9ebf3acb155ff7d7f63f1eb2ec04b68c4e1e39d57b2d889",
+    "docs/Q10B_EXPERT_ANSWERS.json": "a1d84330c07571bf659425c012e7e2c8d11031d35e03de5f799bd9416400b75a"
+  },
+  "decision": {
+    "default_switch": false,
+    "scientific_winner": null,
+    "retain_runtime_default": "legacy",
+    "reason": "本次小规模样本未显示重排/多样性对核心要点的稳定优势，且各方案有扩展错误；Q10-B dense是Qwen候选，并非legacy MiniLM。无候选对旧默认的同条件生成比较，不推断旧默认更好。",
+    "candidate_role": "保留现有显式候选用于受监督核查；不自动升级默认。",
+    "independent_human_approval": false,
+    "review_mode_authorized_by_user": true,
+    "next_development": "单列公式符号/工况归属/证据不足表述修订；本轮不调参，之后以新未用问题验收。"
+  },
+  "limitations": [
+    "单个AI助手，非独立研究者、非盲评，存在作者自评和主观评分偏差。",
+    "6篇预留论文/6题，3次重复不变成18个独立问题；14个开发派生题不增加论文数。",
+    "全部6题可回答，不能评价整体拒答识别；R03 BM25只作上下文内拒答诊断。",
+    "R05题目接受范围有歧义，R03按冻结直接C–H功能化要点计分，不另加必须逐字说“无需OH”的事后门槛。",
+    "未穷举所有事实性主张，不报告claim support precision或claim citation recall。",
+    "API耗时不是端到端耗时，平台价格未知，别名不能冻结第三方权重。"
+  ],
+  "new_api_requests": 0,
+  "new_reserve_retrievals": 0,
+  "frozen_dataset_or_raw_answers_modified": false
+}

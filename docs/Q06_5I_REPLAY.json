@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "artifact_directory": "output/context_runs/20261008T001055-cfdb8360e22c4f99a07c2b093fa8f099",
+  "requests_selections_metrics_exact": true,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0
+}

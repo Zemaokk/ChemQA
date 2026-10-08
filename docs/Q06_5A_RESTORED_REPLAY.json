@@ -1,0 +1,8 @@
+{
+  "bundle_integrity": "passed",
+  "reencoded_queries": 7,
+  "ranks_evidence_scores_context_match": true,
+  "stored_query_vector_replay": "passed",
+  "external_api_requests": 0,
+  "root": "/Users/zemaochen/projects/ChemQA/output/q065a_restore_20261007"
+}

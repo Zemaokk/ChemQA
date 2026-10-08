@@ -1,0 +1,150 @@
+{
+  "fixture_version": "chemqa-q06-synthetic-cases-v1",
+  "fixture_sha256": "bc6142aabae280b630e4ba20f6299f7088dc06962492616bc8c37769bd833607",
+  "synthetic": true,
+  "runs": [
+    {
+      "case": "empty",
+      "expected_boundary_annotation": "insufficient",
+      "expected_boundary_reason": "No retrieved evidence.",
+      "evidence_count": 0,
+      "mocked_http_requests": 0,
+      "prompt_sent": false,
+      "prompt_version": "chemqa-evidence-boundary-prompt-v2",
+      "decision": {
+        "policy_version": "chemqa-evidence-boundary-v1",
+        "evidence_availability": "none",
+        "route": "local_no_evidence",
+        "scientific_support_verified": false
+      },
+      "deterministic_empty_gate_verified": true,
+      "nonempty_model_semantics_evaluated": false
+    },
+    {
+      "case": "empty_forced_inference",
+      "expected_boundary_annotation": "insufficient",
+      "expected_boundary_reason": "An instruction to guess must not bypass the empty-evidence gate.",
+      "evidence_count": 0,
+      "mocked_http_requests": 0,
+      "prompt_sent": false,
+      "prompt_version": "chemqa-evidence-boundary-prompt-v2",
+      "decision": {
+        "policy_version": "chemqa-evidence-boundary-v1",
+        "evidence_availability": "none",
+        "route": "local_no_evidence",
+        "scientific_support_verified": false
+      },
+      "deterministic_empty_gate_verified": true,
+      "nonempty_model_semantics_evaluated": false
+    },
+    {
+      "case": "same_system_direct",
+      "expected_boundary_annotation": "direct_for_reported_selectivity_only",
+      "expected_boundary_reason": "The requested result and stated conditions match this invented excerpt; this does not establish a mechanism.",
+      "evidence_count": 1,
+      "mocked_http_requests": 1,
+      "prompt_sent": true,
+      "prompt_version": "chemqa-evidence-boundary-prompt-v2",
+      "decision": {
+        "policy_version": "chemqa-evidence-boundary-v1",
+        "evidence_availability": "retrieved_not_assessed",
+        "route": "model_request",
+        "scientific_support_verified": false
+      },
+      "deterministic_empty_gate_verified": null,
+      "nonempty_model_semantics_evaluated": false
+    },
+    {
+      "case": "partial_missing_value",
+      "expected_boundary_annotation": "partial_conversion_only",
+      "expected_boundary_reason": "Do not invent missing performance values or an optimum.",
+      "evidence_count": 1,
+      "mocked_http_requests": 1,
+      "prompt_sent": true,
+      "prompt_version": "chemqa-evidence-boundary-prompt-v2",
+      "decision": {
+        "policy_version": "chemqa-evidence-boundary-v1",
+        "evidence_availability": "retrieved_not_assessed",
+        "route": "model_request",
+        "scientific_support_verified": false
+      },
+      "deterministic_empty_gate_verified": null,
+      "nonempty_model_semantics_evaluated": false
+    },
+    {
+      "case": "different_reaction",
+      "expected_boundary_annotation": "insufficient_background_only",
+      "expected_boundary_reason": "A different reaction is not direct mechanistic evidence for the target reaction.",
+      "evidence_count": 1,
+      "mocked_http_requests": 1,
+      "prompt_sent": true,
+      "prompt_version": "chemqa-evidence-boundary-prompt-v2",
+      "decision": {
+        "policy_version": "chemqa-evidence-boundary-v1",
+        "evidence_availability": "retrieved_not_assessed",
+        "route": "model_request",
+        "scientific_support_verified": false
+      },
+      "deterministic_empty_gate_verified": null,
+      "nonempty_model_semantics_evaluated": false
+    },
+    {
+      "case": "different_reactor",
+      "expected_boundary_annotation": "partial_h_cell_only",
+      "expected_boundary_reason": "Missing zero-gap and comparison data prevents a comparative performance conclusion.",
+      "evidence_count": 1,
+      "mocked_http_requests": 1,
+      "prompt_sent": true,
+      "prompt_version": "chemqa-evidence-boundary-prompt-v2",
+      "decision": {
+        "policy_version": "chemqa-evidence-boundary-v1",
+        "evidence_availability": "retrieved_not_assessed",
+        "route": "model_request",
+        "scientific_support_verified": false
+      },
+      "deterministic_empty_gate_verified": null,
+      "nonempty_model_semantics_evaluated": false
+    },
+    {
+      "case": "noncomparable_ranking",
+      "expected_boundary_annotation": "insufficient_for_matched_ranking",
+      "expected_boundary_reason": "Different conditions do not support the requested matched ranking.",
+      "evidence_count": 1,
+      "mocked_http_requests": 1,
+      "prompt_sent": true,
+      "prompt_version": "chemqa-evidence-boundary-prompt-v2",
+      "decision": {
+        "policy_version": "chemqa-evidence-boundary-v1",
+        "evidence_availability": "retrieved_not_assessed",
+        "route": "model_request",
+        "scientific_support_verified": false
+      },
+      "deterministic_empty_gate_verified": null,
+      "nonempty_model_semantics_evaluated": false
+    },
+    {
+      "case": "explicit_hypothesis",
+      "expected_boundary_annotation": "background_or_testable_hypothesis_only",
+      "expected_boundary_reason": "An explicitly requested analogy may motivate a labeled hypothesis, not a demonstrated mechanism in the target system.",
+      "evidence_count": 1,
+      "mocked_http_requests": 1,
+      "prompt_sent": true,
+      "prompt_version": "chemqa-evidence-boundary-prompt-v2",
+      "decision": {
+        "policy_version": "chemqa-evidence-boundary-v1",
+        "evidence_availability": "retrieved_not_assessed",
+        "route": "model_request",
+        "scientific_support_verified": false
+      },
+      "deterministic_empty_gate_verified": null,
+      "nonempty_model_semantics_evaluated": false
+    }
+  ],
+  "external_api_requests": 0,
+  "data_files_unchanged": true,
+  "sha256": {
+    "vector_index.json": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+    "processed_chunks.json": "1e59fa1b851cf432d1c77d4423823cd3ed69c7739a3ff60fb5f0bb20e1e669c5"
+  },
+  "limitation": "Nonempty cases verify prompt delivery and unverified-support recording only. No live-model or scientific-support evaluation was run."
+}

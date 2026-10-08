@@ -1,0 +1,19 @@
+{
+  "schema": "chemqa-eval-manifest-v1",
+  "version": "q10a-v1",
+  "frozen_utc": "2026-10-07T01:18:27.621398+00:00",
+  "files_sha256": {
+    "dev.json": "54ced054e23c305c59e57ba432c515b6e7f6cb624949ade6c47de5ea514dfa41",
+    "reserve.json": "6db8a975a53626ee5ac8782d10ee15cf5940232502c06a1e637888859a9f0f4d",
+    "documents.json": "889917f7397a1377a30f068beb313c3154e11f74dd8b180378fec411c79003da",
+    "RUBRIC.md": "073fd72614baf68d0a2b4bffe0174928d7aa70a63ce656bbc43fb368a7fe62f6"
+  },
+  "split_counts": {
+    "dev": 20,
+    "reserve": 6
+  },
+  "split_policy": "Disjoint annotated DOI/article groups; reserve never ranked/generated in Q10-A. Author-visible reserve candidates, not a blinded test.",
+  "annotation_status": "AI draft; source offsets checked; domain review pending",
+  "baseline_index_sha256": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+  "manual_review_required": true
+}

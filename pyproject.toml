@@ -1,0 +1,33 @@
+[project]
+name = "chemqa"
+version = "0.1.0"
+description = "Evidence-grounded QA for electrochemistry literature"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=1.26.4,<3",
+    "matplotlib>=3.8.3,<4",
+    "seaborn>=0.13.2,<0.14",
+    "pymupdf>=1.24,<2",
+    "sentence-transformers>=6.1.0,<6.2",
+    "httpx[socks]>=0.28.1,<1",
+    "requests>=2.32.3,<3",
+    "python-dotenv>=1.0,<2",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.10,<0.17",
+]
+
+[tool.ruff]
+target-version = "py312"
+# Limit code checks and formatting to Python sources, not archived answer Markdown.
+include = ["*.py", "*.pyi", "*.ipynb", "**/pyproject.toml"]
+
+[tool.ruff.lint]
+# Recognize the project's shared logging.Logger instance at exception boundaries.
+logger-objects = ["src.utils.logger.logger"]

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/rerank_runs/20261007T235201-2192dcdcee6346d3855ff0ef7431e0c9",
+  "all_scores_rankings_metrics_equal": true,
+  "candidate_ids_and_order_preserved": true,
+  "immutable_inputs_unchanged": true,
+  "model_inference_repeated": false,
+  "reserve_queries_executed": 0,
+  "generation_requests": 0
+}

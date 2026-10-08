@@ -1,0 +1,18 @@
+{
+  "schema": "chemqa-q065c-legacy-compatibility-v1",
+  "passed": true,
+  "query_count": 20,
+  "embedding_max_absolute_difference": 0.0,
+  "embeddings_allclose_atol_rtol_1e5": true,
+  "all_top10_rankings_equal": true,
+  "embedding_manifest": {
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "max_sequence_tokens": 128,
+    "special_tokens": 2,
+    "token_count_includes_special_tokens": true
+  },
+  "index_sha256": "2d5452736fc396b28340fae3447c7bee8e0e46791bdc45e680535f9fb21b23c3",
+  "generation_requests": 0,
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/q065c_legacy/20261007T014124-0901d9ef24f347a585b99f459acab527"
+}

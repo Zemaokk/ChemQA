@@ -1,0 +1,15 @@
+{
+  "fixture_version": "chemqa-q06-synthetic-cases-v1",
+  "synthetic": true,
+  "note": "These are invented text fixtures, not scientific results or a labeled real-literature benchmark. expected_boundary is an authoring expectation, not an automated verdict.",
+  "cases": [
+    {"id": "empty", "question": "体系 A 的最优催化剂是什么？", "texts": [], "expected_boundary": "insufficient", "reason": "No retrieved evidence."},
+    {"id": "empty_forced_inference", "question": "即使没有证据，也请用其他反应的机理推断体系 A 的准确最优条件。", "texts": [], "expected_boundary": "insufficient", "reason": "An instruction to guess must not bypass the empty-evidence gate."},
+    {"id": "same_system_direct", "question": "在水系电解液、H 型池、催化剂 C、1.5 V vs. RHE 下，A 氧化为 B 的选择性是多少？", "texts": ["Synthetic fixture: A oxidation to B over catalyst C in aqueous electrolyte using an H-cell at 1.5 V vs. RHE gave 90% selectivity."], "expected_boundary": "direct_for_reported_selectivity_only", "reason": "The requested result and stated conditions match this invented excerpt; this does not establish a mechanism."},
+    {"id": "partial_missing_value", "question": "催化剂 C 将 A 氧化为 B 的选择性和最佳电位是多少？", "texts": ["Synthetic fixture: catalyst C produces B from A. This excerpt provides neither selectivity nor an optimum potential."], "expected_boundary": "partial_conversion_only", "reason": "Do not invent missing performance values or an optimum."},
+    {"id": "different_reaction", "question": "A 氧化为 B 的反应机理是什么？", "texts": ["Synthetic fixture: the study investigates nitrate reduction to ammonia on catalyst C; it provides no A oxidation measurements."], "expected_boundary": "insufficient_background_only", "reason": "A different reaction is not direct mechanistic evidence for the target reaction."},
+    {"id": "different_reactor", "question": "A 到 B 的零间隙反应器性能是否优于 H 型池？", "texts": ["Synthetic fixture: A to B was measured only in an H-cell. No zero-gap reactor or matched comparison was tested."], "expected_boundary": "partial_h_cell_only", "reason": "Missing zero-gap and comparison data prevents a comparative performance conclusion."},
+    {"id": "noncomparable_ranking", "question": "催化剂 C 与 D 谁在同一条件下更好？", "texts": ["Synthetic fixture: C was measured at condition X; D was measured at condition Y. A matched-condition comparison was not reported."], "expected_boundary": "insufficient_for_matched_ranking", "reason": "Different conditions do not support the requested matched ranking."},
+    {"id": "explicit_hypothesis", "question": "请用另一个体系的观察对 A 到 B 提出待验证假设，并说明差异和检验办法。", "texts": ["Synthetic fixture: a different reaction showed a correlation between a surface signal and a rate change; causality was not established."], "expected_boundary": "background_or_testable_hypothesis_only", "reason": "An explicitly requested analogy may motivate a labeled hypothesis, not a demonstrated mechanism in the target system."}
+  ]
+}

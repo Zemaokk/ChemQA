@@ -1,0 +1,17 @@
+{
+  "schema": "chemqa-q065e-experiment-v1",
+  "pilot_additional_distractors": 9,
+  "pilot_selection": "All dev-evidence documents plus nine lexicographically smallest non-dev, non-reserve doc IDs; restricted-pool metrics only",
+  "variants": [
+    {"name": "qwen-old-chunks", "strategy": "legacy-frozen"},
+    {"name": "qwen-window512-overlap64", "strategy": "page-window", "target_tokens": 512, "overlap_tokens": 64},
+    {"name": "qwen-block256-overlap32", "strategy": "page-block", "target_tokens": 256, "overlap_tokens": 32},
+    {"name": "qwen-block512-overlap64", "strategy": "page-block", "target_tokens": 512, "overlap_tokens": 64}
+  ],
+  "selection_rule": "Among new chunking variants, maximize dev complete_anchor_recall@10, then mean_anchor_character_coverage@5, then fewer chunks. Do not publish a full candidate unless selected pilot recall@10 and coverage@10 are at least the same-pool frozen MiniLM baseline.",
+  "metric_cutoffs": [1, 5, 10],
+  "query_similarity_threshold": null,
+  "reserve_queries_executed": 0,
+  "generation_requests": 0,
+  "default_switch": "No; candidate remains explicit opt-in until Q06.5-J"
+}

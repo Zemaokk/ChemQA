@@ -1,0 +1,48 @@
+{
+  "schema": "chemqa-q065d-validation-v1",
+  "unit_tests": {
+    "passed": 144,
+    "failed": 0,
+    "command": "HF_HUB_OFFLINE=1 MPLBACKEND=Agg MPLCONFIGDIR=/private/tmp/chemqa-matplotlib .venv/bin/python -m unittest discover -s tests -v",
+    "log": "output/q065d_candidate/regression.log"
+  },
+  "ruff_check": "passed",
+  "ruff_format_check": {
+    "passed": true,
+    "files": 63
+  },
+  "git_diff_check": "passed",
+  "source_secret_audit": "docs/Q06_5D_SECRET_AUDIT.json",
+  "current_key_pattern_matches": 0,
+  "unchanged_against_head": {
+    "pyproject.toml": true,
+    "uv.lock": true,
+    "requirements.txt": true,
+    "config/settings.py": true,
+    "data/vector_db/vector_index.json": true,
+    "data/processed/processed_chunks.json": true
+  },
+  "native_markdown_equal_between_two_local_runs": {
+    "paper-4-p2": true,
+    "paper-24-p2": true,
+    "paper-25-p5": true,
+    "paper-35-p2": true,
+    "paper-37-p3": true,
+    "paper-40-p2": true,
+    "paper-144-p4": true,
+    "paper-147-p2": true,
+    "paper-159-p2": true,
+    "paper-166-p2": true
+  },
+  "native_conversion_successes": 10,
+  "native_structured_tables": 3,
+  "native_text_items": 76,
+  "native_exact_unique_raw_text_items": 14,
+  "researcher_review_status": "pending",
+  "decision": "retain_pymupdf",
+  "generation_requests": 0,
+  "raw_literature_uploaded": false,
+  "existing_index_hashes_unchanged": true,
+  "runtime_report": "docs/Q06_5D_RUNTIME.json",
+  "review_report": "docs/Q06_5D_REVIEW.json"
+}

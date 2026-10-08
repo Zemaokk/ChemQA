@@ -1,0 +1,16 @@
+{
+  "schema": "chemqa-q065e-replay-v1",
+  "passed": true,
+  "artifact_directory": "/Users/zemaochen/projects/ChemQA/output/indexes/20261007T041905-a5b35ed389b84d0ca8ca268607b09f8b",
+  "checksums_verified": true,
+  "query_vectors_allclose_atol_rtol_1e3": true,
+  "query_vector_max_absolute_difference": 0.0,
+  "stored_query_rankings_and_metrics_equal": true,
+  "reencoded_query_rankings_and_metrics_equal": true,
+  "public_vector_store_single_query_top10_equal": true,
+  "query_encoding_seconds": 0.7525454579736106,
+  "actual_device": "mps:0",
+  "baseline_unchanged": true,
+  "generation_requests": 0,
+  "reserve_queries_executed": 0
+}

@@ -1,0 +1,732 @@
+{
+  "schema": "chemqa-q065g-failures-v1",
+  "annotation_quality": "AI draft; domain review pending",
+  "selected_mode": "hybrid",
+  "improved_questions": [
+    {
+      "question_id": "D03",
+      "category": "single_fact",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 1.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 1.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 0,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:In",
+        "chem:Lu",
+        "n:2025",
+        "w:additional",
+        "w:alkyl",
+        "w:electrolytes",
+        "w:lu",
+        "w:oxidants",
+        "w:primary",
+        "w:radicals",
+        "w:reagent",
+        "w:required",
+        "w:supplies",
+        "w:supporting"
+      ]
+    },
+    {
+      "question_id": "D18",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.5,
+        "hybrid": 0.5
+      },
+      "hybrid_minus_dense": 0.5,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0,
+        "e3": 0.0,
+        "e4": 0.0
+      },
+      "cjk_terms": 60,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:fan",
+        "w:han",
+        "w:pet"
+      ]
+    }
+  ],
+  "regressed_questions": [],
+  "selected_incomplete_questions": [
+    {
+      "question_id": "D08",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.5,
+        "bm25": 1.0,
+        "hybrid": 0.5
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 0.0
+      },
+      "cjk_terms": 45,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:1000",
+        "n:2025",
+        "n:500",
+        "w:2",
+        "w:cm",
+        "w:cm-2",
+        "w:liu",
+        "w:ma",
+        "w:nife",
+        "w:nife-sc-pba",
+        "w:pba",
+        "w:sc"
+      ]
+    },
+    {
+      "question_id": "D10",
+      "category": "mechanism",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.0,
+        "hybrid": 0.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0
+      },
+      "cjk_terms": 51,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:liu",
+        "w:nife",
+        "w:nife-sc-pba",
+        "w:pba",
+        "w:sc"
+      ]
+    },
+    {
+      "question_id": "D11",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.0,
+        "hybrid": 0.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0
+      },
+      "cjk_terms": 61,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:mi"
+      ]
+    },
+    {
+      "question_id": "D15",
+      "category": "system_boundary",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.0,
+        "hybrid": 0.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 0.0
+      },
+      "cjk_terms": 54,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:CO2",
+        "chem:Li",
+        "n:190",
+        "n:2025",
+        "w:co2",
+        "w:fe",
+        "w:li"
+      ]
+    },
+    {
+      "question_id": "D16",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.3333333333333333,
+        "bm25": 0.3333333333333333,
+        "hybrid": 0.3333333333333333
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 0.0,
+        "e3": 1.0
+      },
+      "cjk_terms": 37,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:II",
+        "chem:Ni",
+        "chem:NiOOH",
+        "n:2025",
+        "w:ii",
+        "w:jiang",
+        "w:liu",
+        "w:ni",
+        "w:niooh",
+        "w:pba"
+      ]
+    },
+    {
+      "question_id": "D17",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.3333333333333333,
+        "bm25": 0.3333333333333333,
+        "hybrid": 0.3333333333333333
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 0.0,
+        "e3": 0.0
+      },
+      "cjk_terms": 0,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:alcohol",
+        "w:benzyl",
+        "w:benzylic",
+        "w:c",
+        "w:c-h",
+        "w:compare",
+        "w:feedstocks",
+        "w:h",
+        "w:hat",
+        "w:kawajiri",
+        "w:mediators",
+        "w:mi",
+        "w:organic",
+        "w:oxidation"
+      ]
+    },
+    {
+      "question_id": "D18",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.5,
+        "hybrid": 0.5
+      },
+      "hybrid_minus_dense": 0.5,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0,
+        "e3": 0.0,
+        "e4": 0.0
+      },
+      "cjk_terms": 60,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:fan",
+        "w:han",
+        "w:pet"
+      ]
+    }
+  ],
+  "per_question_comparison": [
+    {
+      "question_id": "D01",
+      "category": "single_fact",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 0.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 43,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:kawajiri",
+        "w:tfe"
+      ]
+    },
+    {
+      "question_id": "D02",
+      "category": "conditions",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 0.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 58,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "n:4",
+        "w:kawajiri"
+      ]
+    },
+    {
+      "question_id": "D03",
+      "category": "single_fact",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 1.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 1.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 0,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:In",
+        "chem:Lu",
+        "n:2025",
+        "w:additional",
+        "w:alkyl",
+        "w:electrolytes",
+        "w:lu",
+        "w:oxidants",
+        "w:primary",
+        "w:radicals",
+        "w:reagent",
+        "w:required",
+        "w:supplies",
+        "w:supporting"
+      ]
+    },
+    {
+      "question_id": "D04",
+      "category": "mechanism",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 0.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 61,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:Lu",
+        "n:2025",
+        "w:lu"
+      ]
+    },
+    {
+      "question_id": "D05",
+      "category": "mechanism",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 1.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0
+      },
+      "cjk_terms": 0,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:control",
+        "w:formation",
+        "w:h",
+        "w:ni",
+        "w:ni-h",
+        "w:play",
+        "w:promote",
+        "w:proposed",
+        "w:proton",
+        "w:roles",
+        "w:selectivity",
+        "w:song",
+        "w:source"
+      ]
+    },
+    {
+      "question_id": "D06",
+      "category": "single_fact",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 1.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 0,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:+1",
+        "n:2025",
+        "n:5",
+        "w:annulation",
+        "w:catalyzed",
+        "w:cathodic",
+        "w:classes",
+        "w:enabled",
+        "w:heterocycle",
+        "w:huang",
+        "w:involved",
+        "w:material",
+        "w:oxygen",
+        "w:reduction",
+        "w:rh",
+        "w:rh-catalyzed",
+        "w:starting"
+      ]
+    },
+    {
+      "question_id": "D07",
+      "category": "system_boundary",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 0.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 54,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:Rh",
+        "n:2025",
+        "w:huang",
+        "w:rh"
+      ]
+    },
+    {
+      "question_id": "D08",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.5,
+        "bm25": 1.0,
+        "hybrid": 0.5
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 0.0
+      },
+      "cjk_terms": 45,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:1000",
+        "n:2025",
+        "n:500",
+        "w:2",
+        "w:cm",
+        "w:cm-2",
+        "w:liu",
+        "w:ma",
+        "w:nife",
+        "w:nife-sc-pba",
+        "w:pba",
+        "w:sc"
+      ]
+    },
+    {
+      "question_id": "D09",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 1.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 0,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:continuous",
+        "w:coupled",
+        "w:current",
+        "w:densities",
+        "w:duration",
+        "w:electrolysis",
+        "w:flow",
+        "w:liu",
+        "w:nife",
+        "w:nife-sc-pba",
+        "w:operating",
+        "w:pba",
+        "w:reported",
+        "w:sc",
+        "w:switching"
+      ]
+    },
+    {
+      "question_id": "D10",
+      "category": "mechanism",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.0,
+        "hybrid": 0.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0
+      },
+      "cjk_terms": 51,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:liu",
+        "w:nife",
+        "w:nife-sc-pba",
+        "w:pba",
+        "w:sc"
+      ]
+    },
+    {
+      "question_id": "D11",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.0,
+        "hybrid": 0.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0
+      },
+      "cjk_terms": 61,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:mi"
+      ]
+    },
+    {
+      "question_id": "D12",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 1.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 0,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:Ag",
+        "chem:In",
+        "chem:V",
+        "n:2025",
+        "w:ag",
+        "w:duration",
+        "w:free",
+        "w:lin",
+        "w:liquid",
+        "w:liquid-free",
+        "w:mea",
+        "w:oxide",
+        "w:production",
+        "w:propylene",
+        "w:rate",
+        "w:reported",
+        "w:stability",
+        "w:v"
+      ]
+    },
+    {
+      "question_id": "D13",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 1.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 51,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:fe",
+        "w:han",
+        "w:lm",
+        "w:lm-pdcu",
+        "w:pdcu",
+        "w:pet"
+      ]
+    },
+    {
+      "question_id": "D14",
+      "category": "numeric",
+      "complete_anchor_recall_at_10": {
+        "dense": 1.0,
+        "bm25": 1.0,
+        "hybrid": 1.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0
+      },
+      "cjk_terms": 46,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:H2",
+        "chem:Ni12P5",
+        "n:2025",
+        "w:fan",
+        "w:h2",
+        "w:mo",
+        "w:mo-ni2p",
+        "w:ni12p5",
+        "w:ni2p"
+      ]
+    },
+    {
+      "question_id": "D15",
+      "category": "system_boundary",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.0,
+        "hybrid": 0.0
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 0.0
+      },
+      "cjk_terms": 54,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:CO2",
+        "chem:Li",
+        "n:190",
+        "n:2025",
+        "w:co2",
+        "w:fe",
+        "w:li"
+      ]
+    },
+    {
+      "question_id": "D16",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.3333333333333333,
+        "bm25": 0.3333333333333333,
+        "hybrid": 0.3333333333333333
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 0.0,
+        "e2": 0.0,
+        "e3": 1.0
+      },
+      "cjk_terms": 37,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "chem:II",
+        "chem:Ni",
+        "chem:NiOOH",
+        "n:2025",
+        "w:ii",
+        "w:jiang",
+        "w:liu",
+        "w:ni",
+        "w:niooh",
+        "w:pba"
+      ]
+    },
+    {
+      "question_id": "D17",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.3333333333333333,
+        "bm25": 0.3333333333333333,
+        "hybrid": 0.3333333333333333
+      },
+      "hybrid_minus_dense": 0.0,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 0.0,
+        "e3": 0.0
+      },
+      "cjk_terms": 0,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:alcohol",
+        "w:benzyl",
+        "w:benzylic",
+        "w:c",
+        "w:c-h",
+        "w:compare",
+        "w:feedstocks",
+        "w:h",
+        "w:hat",
+        "w:kawajiri",
+        "w:mediators",
+        "w:mi",
+        "w:organic",
+        "w:oxidation"
+      ]
+    },
+    {
+      "question_id": "D18",
+      "category": "comparison",
+      "complete_anchor_recall_at_10": {
+        "dense": 0.0,
+        "bm25": 0.5,
+        "hybrid": 0.5
+      },
+      "hybrid_minus_dense": 0.5,
+      "selected_anchor_coverage": {
+        "e1": 1.0,
+        "e2": 1.0,
+        "e3": 0.0,
+        "e4": 0.0
+      },
+      "cjk_terms": 60,
+      "matched_cjk_terms": 0,
+      "matched_corpus_terms": [
+        "n:2025",
+        "w:fan",
+        "w:han",
+        "w:pet"
+      ]
+    }
+  ],
+  "interpretation": "Annotated spans only; unjudged hits are not negatives. No scientific-answer quality assessment or synonym/translation tuning from these errors."
+}
