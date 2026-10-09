@@ -202,7 +202,9 @@ def preview(device):
             lines.append(
                 f"| {r['question_id']} | {r['arm']} | {len(r['evidence'])} | {b['input_estimate']} | `{b['payload_sha256']}` |"
             )
-        (ROOT / "docs/Q10B_SEND_SCOPE.md").write_text("\n".join(lines) + "\n")
+        scope_note = ROOT / "output/Q10B_SEND_SCOPE.md"
+        scope_note.parent.mkdir(parents=True, exist_ok=True)
+        scope_note.write_text("\n".join(lines) + "\n")
         print(json.dumps(scope))
     finally:
         store.storage.close()

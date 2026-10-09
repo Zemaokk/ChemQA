@@ -1,0 +1,1296 @@
+{
+  "schema": "chemqa-p3-questions-v1",
+  "version": "p3-v1",
+  "questions": [
+    {
+      "question_id": "P3-01",
+      "article_group": "10.1021/jacs.5c02250",
+      "category": "numeric",
+      "question": "Bouwens等（2025，Semiartificial photoelectrochemistry for CO2 -mediated enantioselective organic synthesis）：摘要中电极催化乙酰苯还原时，使用的阴极电位与参比是什么？1-苯乙醇的对映体过量和转化率分别是多少？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "0",
+          "doc_id": "doc_704e8f8af7694b9081b87c924c5c8c3fa8e5bcce9911a76cadecd5a6e4d7e350",
+          "page_number": 1,
+          "char_start": 927,
+          "char_end": 1465,
+          "quote": "When applying a mild cathodic potential (−0.25 V vs the\nreversible hydrogen electrode (RHE)), CO2 is reduced to HCOO−using a W-formate dehydrogenase (FDHNvH) from\nNitratidesulfovibrio vulgaris Hildenborough, which then enables the reduction of NAD+ to NADH by an NAD+-cofactor-dependent\nformate dehydrogenase from Candida boidinii (FDHCB). Subsequently, an alcohol dehydrogenase (ADH) uses NADH generated\nfrom CO2/HCOO−cycling to reduce acetophenone to chiral 1-phenylethanol in good enantiomeric excess (93%) and conversion\nyields (38%)."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "−0.25 V，相对于RHE；不能与PEC平台的+0.8 V混同。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "1-苯乙醇ee为93%，转化率38%；两者不是法拉第效率。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把ee当收率，也不能把+0.8 V归入同一电催化条件。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-02",
+      "article_group": "10.1038/s41467-025-57708-7",
+      "category": "numeric",
+      "question": "Dai等（2025，Surface engineering on bulk Cu2O for efficient electrosynthesis of urea）：摘要报告的尿素生成速率、法拉第效率与对应电位分别是多少？请保留质量归一化单位和参比。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "3",
+          "doc_id": "doc_f849f680d2ce1c78969207bc85e951cc0d59d07c105aeb772cc144bbca9d2e6b",
+          "page_number": 1,
+          "char_start": 675,
+          "char_end": 829,
+          "quote": "We achieve urea production\nrate of 632.1 μg h−1mgcat.\n−1 with a corresponding Faradaic efﬁciency of 42.3% at\n−0.3 V (versus RHE) under ambient conditions."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "尿素生成速率632.1 μg h−1 mgcat.−1。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "对应FE 42.3%，−0.3 V vs RHE，环境条件。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能改写为氨产率或把质量归一化当面积归一化。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-03",
+      "article_group": "10.1038/s41467-025-60043-6",
+      "category": "mechanism",
+      "question": "Fan等（2025，Boosted charge and proton transfer over ternary coCo3O4CoB for electrochemical nitric oxide reduction to ammonia）：作者如何解释三元Co/Co3O4/CoB中不同位点对水解离与NO吸附的分工？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "4",
+          "doc_id": "doc_7a0ab116f44356a6eb1df11f1427e18ac55ad028cbbc5f4334ced04417aba209",
+          "page_number": 1,
+          "char_start": 989,
+          "char_end": 1412,
+          "quote": "The charge transfer between\nCoB and Co/Co3O4 yields electron-deﬁcient Co and electron-rich Co3O4. The\nelectron-deﬁcient Co sites boost H2O dissociation to generate *H while the\nelectron-rich low-coordination Co3O4 sites promote NO adsorption. The *H\nformed on electron-deﬁcient Co sites is more favorable to transfer to electron-\nrich Co3O4 sites adsorbed with NO, facilitating the selective hydrogenation of\nNO. This study"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "电荷转移形成缺电子Co和富电子Co3O4；缺电子Co促进水解离生成活性氢。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "富电子低配位Co3O4促进NO吸附，Co位点生成的活性氢向其转移以促进NO氢化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把水解离与NO吸附的两类位点反置。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-04",
+      "article_group": "10.1021/jacs.5c04863",
+      "category": "mechanism",
+      "question": "Guo等（2025，Lattice hydrogen involved electrocatalytic nitrate reduction to hydroxylamine）：为什么这项硝酸盐制羟胺研究选择晶格氢而不是单纯增加水解离产生的活性氢？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "5",
+          "doc_id": "doc_d60aa9928313e72bc11952953f4084e13ca36926d89e7bc04e67a104ff87c14b",
+          "page_number": 1,
+          "char_start": 590,
+          "char_end": 933,
+          "quote": "On the one hand,\ninsufficient *H would lead to the accumulation of nitrite. On the\nother hand, sufficient *H with high reduction ability would induce\nover-hydrogenation of hydroxylamine to ammonia. To overcome this\nchallenge, herein, we propose to utilize lattice hydrogen (Hlat) with\nan appropriate reduction ability as the H-source for ENRH."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "活性氢不足会积累亚硝酸盐，过多且还原性强会使羟胺过度氢化为氨。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "选用还原能力适当的晶格氢作为选择性制羟胺的氢源。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把目标产物写成氨，也不能认为越多活性氢总越好。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-05",
+      "article_group": "10.1038/s41467-025-60413-0",
+      "category": "numeric",
+      "question": "He等（2025，Hexafluorophosphate additive enables durable seawater oxidation at ampere-level current density）：摘要中NiFe LDH海水氧化阳极在两档安培级电流密度下分别运行了多久？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "6",
+          "doc_id": "doc_4784c21172e5cce2a7b9f7b475cf4e6d4ee990b79958f19c9d22bb686b423b1d",
+          "page_number": 1,
+          "char_start": 671,
+          "char_end": 812,
+          "quote": "achieving prolonged operation for over\n5,000 hours at 1 A cm−2 and 2300 hours at 2 A cm−2 using NiFe layered double\nhydroxide (LDH) as anode."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "1 A cm−2下运行超过5000小时。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "2 A cm−2下运行2300小时；二者对应不同工况。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能交换电流密度和时间，也不能声称两档都超过5000小时。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-06",
+      "article_group": "10.1002/anie.202419550",
+      "category": "numeric",
+      "question": "Kang等（2025，Interfacial asymmetrically coordinated Zn−MOF for high‐efficiency electrosynthetic oxime）：在摘要给定的含界面桥联结构与无该桥联对照中，1-甲基-4-哌啶酮肟的FE和收率各是多少？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "7",
+          "doc_id": "doc_3247efbb3ff33901ec46cf8b450df3f8afc192f342f9276529374abd407ae5d5",
+          "page_number": 1,
+          "char_start": 1097,
+          "char_end": 1313,
+          "quote": "Specially, ZIF-7/CGF delivers a\nFaraday efficiency (FE) of 75.9% with yield up to\n73.1% for 1-methyl-4-piperidone oxime, which is far\nsuperior to the catalyst without Zn\u0000 O bridges (a FE of\n10.7% and yield of 10.3%)."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "ZIF-7/CGF的FE为75.9%，收率73.1%。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "无桥联对照FE10.7%，收率10.3%；必须对应到各自组别。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能交换FE与收率，不能把对照值当优化性能。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-07",
+      "article_group": "10.1038/s41929-025-01342-5",
+      "category": "mechanism",
+      "question": "Kuai等（2025，Dissolved fe species enable a cooperative solid–molecular mechanism for the oxygen evolution reaction on NiFe-based catalysts）：这项NiFe基OER研究提出的固体–分子协同机理是什么？溶解出的Fe物种参与哪一步？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "8",
+          "doc_id": "doc_b42bac6cc744467b39e43ee65bd858504d75d9a9b02765e9185f92231b18eef6",
+          "page_number": 1,
+          "char_start": 834,
+          "char_end": 1291,
+          "quote": "By identifying the critical interfacial species and \nunderstanding their dynamics, we find that molecular FeO4\n2− species, \nderived from the dissolution of Fe from the solid catalyst, act as molecular \nco-catalysts that participate in the critical O–O bond-formation step \nalong with solid sites. This synergistic mechanism, involving both solid \nand molecular active species, circumvents the typical scaling limitations \nobserved for solid catalysts alone."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "由固体催化剂中Fe溶解形成的分子FeO4²−物种作为分子共催化剂。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "分子物种与固体位点共同参与关键O–O键形成，从而绕过单一固体位点的通常标度限制。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把溶解Fe仅说成无用失活产物，也不能改写为没有固体位点参与。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-08",
+      "article_group": "10.1021/jacs.4c18550",
+      "category": "mechanism",
+      "question": "Liu等（2025，Spin-state effect of tetrahedron-coordinated single-atom catalysts on CO2 electroreduction）：四面体配位单原子CO2电还原研究中，作者报告磁矩与限制电位是什么关系，哪种自旋态更有利？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "9",
+          "doc_id": "doc_1ac1fcb7021355f5d5c74f42181baf8e6eecc2575ab40515968a866366225e1c",
+          "page_number": 1,
+          "char_start": 940,
+          "char_end": 1223,
+          "quote": "A volcano relationship is found\nbetween the transition metal (TM) magnetic moments and the limiting potential\n(UL) of the CO2 reduction reaction. Spin-state analysis indicates that the\nintermediate spin state of TMs is more favorable for the adsorption and conversion\nof CO2. Optimal"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "过渡金属磁矩与CO2还原限制电位呈火山关系。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "中间自旋态更有利于CO2吸附与转化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把火山关系写成单调增加，也不能把高自旋说成统一最优。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-09",
+      "article_group": "10.1021/jacs.4c16636",
+      "category": "system_boundary",
+      "question": "Niemann等（2025，In situ neutron reflectometry reveals the interfacial microenvironment driving electrochemical ammonia synthesis）：LiBF4电解液下，低电流循环与增大或持续电流循环得到的SEI层结构有什么不同？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "10",
+          "doc_id": "doc_3e8437709515be3b361e48d3f613a328d07835814d31d574579fdb858c243841",
+          "page_number": 1,
+          "char_start": 1225,
+          "char_end": 1596,
+          "quote": "Using in situ NR, we found that the LiBF4-derived SEI\nunder Li−N2R conditions comprises a thick, diffuse outer layer and a thin, compact inner layer at low current cycling (<2 mA/cm2),\nrevealing a structure which ex situ studies have not been able to probe. Increased current cycling and sustained current cycling led to\nthe merging of the layers into a single-layer SEI."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "低电流循环<2 mA/cm2下有厚而弥散外层与薄而致密内层。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "增大电流或持续电流循环使两层合并为单层SEI；不能混作同一条件下并存。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把层结构反置，不能将低电流层结构当作所有电流下恒定结构。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-10",
+      "article_group": "10.1002/adfm.202504872",
+      "category": "single_fact",
+      "question": "Niu等（2025，Chloride‐mediated electron buffering on Ni‐Fe anodes for ampere‐level alkaline seawater electrolysis）：Ni–Fe海水电解阳极上的小有机分子如何作用于氯离子和Fe溶解？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "11",
+          "doc_id": "doc_7efd29ab5b0fcb3d437be95598c3c2e9e340a7a42d594c7a28cab759b6e07080",
+          "page_number": 1,
+          "char_start": 826,
+          "char_end": 1086,
+          "quote": "It is found that preferential adsorption of\nCl−onto SOMs prevents its direct interaction with metal active sites.\nFurthermore, SOM-Cl serving as an electron buﬀering group signiﬁcantly\nreduces the dissolution of Fe sites under the highly oxidative environment."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Cl−优先吸附在小有机分子上，避免与金属活性位点直接作用。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "SOM–Cl作为电子缓冲基团，在强氧化环境下降低Fe位点溶解。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把Cl−简单描述为只会腐蚀且在该策略中毫无协同作用。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-11",
+      "article_group": "10.1038/s41467-025-59180-9",
+      "category": "numeric",
+      "question": "Papangelakis等（2025，Scaled CO electroreduction to alcohols）：摘要中的放大CO制醇电解池面积和每日醇产量分别是多少？产品回收比例与浓度是多少？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "12",
+          "doc_id": "doc_f082002beb27e547b771c3e29f4c3fc9f9bc4dd96b470bf505bfb77df6fb58a8",
+          "page_number": 1,
+          "char_start": 866,
+          "char_end": 1254,
+          "quote": "Here, we reverse the electroosmotic drag of water using a cation\nexchange membrane assembly, enabling the recovery of over 85% of alcohol\nproducts at a concentration of 6 wt.%. We develop a multi-step condenser\nstrategy to separate the produced alcohols from the efﬂuent gas stream\nwithout dilution. Scaling up this approach to an 800 cm2 cell resulted in an\noutput of 200 mL alcohol/day."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "放大电解池面积800 cm2，每天200 mL醇。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "回收超过85%的醇产品，浓度6 wt.%；回收率不是FE。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把回收率写成FE，不能把6 wt.%写成6 mol%。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-12",
+      "article_group": "10.1038/s41560-025-01745-5",
+      "category": "system_boundary",
+      "question": "Pelzer等（2025，Scaling and heating will drive low-temperature CO2 electrolysers to operate at higher temperatures）：该Perspective对放大CO2电解堆的运行温度提出什么范围，依据是什么？这是单个电解池的已验证最优值吗？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "13",
+          "doc_id": "doc_c5e9d790ce92654838c835958e4fb8999647dccf002c64c0eb10180cb843f420",
+          "page_number": 1,
+          "char_start": 798,
+          "char_end": 1024,
+          "quote": "In this Perspective \nwe argue that, owing to the energy inefficiency of electrolysers, heat \ngeneration in CO2E stacks will favour operating temperatures of between \n40 and 70 °C, far from the ambient temperatures used so far."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "作者论证电解器能量效率不足引起的放热，会使电解堆倾向40–70 °C运行。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "这是Perspective对放大堆热管理的论证，不能称所有单池已验证的普适最优温度。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把观点预测写成新实验测得的普适最优工况。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-13",
+      "article_group": "10.1002/anie.202507569",
+      "category": "mechanism",
+      "question": "Song等（2025，A heterodimeric cluster‐based pair catalyst for electrochemical synthesis of cyclohexanone oxime）：异二聚簇催化环己酮肟合成时，硝酸盐、亚硝酸盐和羟胺分别经历怎样的位点分工及偶联？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "14",
+          "doc_id": "doc_78552baed2f7d8bc8c93afcf6942fdee2307fc965f5867c98f0290ffe3803941",
+          "page_number": 1,
+          "char_start": 1008,
+          "char_end": 1371,
+          "quote": "The nitrate is favorably deoxy-\ngenated on the metal sites to generate nitrite, followed\nby the ﬂipping of nitrite at the Ti─S─metal interface\nand the stepwise reduction of nitrite on the Ti site\nto produce hydroxylamine. Sequentially, a spontaneous\ncoupling from hydroxylamine and cyclohexanone pro-\nceeds to construct the C═N bond for cyclohexanone\noxime. Using"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "硝酸盐先在金属位点脱氧为亚硝酸盐，后者在Ti–S–金属界面翻转并在Ti位点逐步还原为羟胺。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "羟胺与环己酮自发偶联生成环己酮肟的C=N键。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把羟胺形成位点改为只在Ag/Pd金属位，也不能把偶联写成羟胺与硝酸盐。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-14",
+      "article_group": "10.1038/s41467-025-59740-z",
+      "category": "system_boundary",
+      "question": "Townsend等（2025，The role of carbon catalyst coatings in the electrochemical water splitting reaction）：作者怎样限制封装金属氧化物与电解液接触，什么结果支持OER发生在碳表面？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "15",
+          "doc_id": "doc_9a7329cb35c5db0374abb5f8ef5ff4681da42b1a139a0cd60cd1d7b13a33241a",
+          "page_number": 1,
+          "char_start": 925,
+          "char_end": 1369,
+          "quote": "Electrolyte access to the encapsulated metal oxides is shut off by\nplugging the SWNT ends with size-matched fullerenes. Our results reveal that\nthe catalytic activity of the composite rivals that of the metal oxide, despite the\nfact that the metal oxides cannot access the bulk electrolyte. Moreover, the\nrate-determining step (RDS) of the OER matches that measured at empty\nSWNTs, indicating that electrocatalysis occurs on the carbon surface."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "用尺寸匹配的富勒烯封堵单壁碳纳米管端部，使封装氧化物不能直接接触体相电解液。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "复合物仍有接近氧化物的活性，且OER决速步骤与空SWNT匹配，作者据此指出反应发生在碳表面。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能声称是裸露金属氧化物直接接触体相电解液后反应。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-15",
+      "article_group": "10.1039/d5ee00597c",
+      "category": "mechanism",
+      "question": "Wan等（2025，Interfacial hydrogen-bond modulation of dynamic catalysts for nitrate electroreduction to ammonia）：Cr掺杂Co动态催化剂研究中，重构后的两相是什么，界面氢键如何促进硝酸盐还原？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "16",
+          "doc_id": "doc_d46f16cb1c9fd5853c53a278cd706516bb2f1a987c7f8bf315fd720491638ec2",
+          "page_number": 1,
+          "char_start": 866,
+          "char_end": 1495,
+          "quote": "In situ XRD, in situ Raman spectroscopy and theoretical calculations indicated that Cr doping could\nmodulate the reconstruction process of Co-based materials, achieving a dynamic balance between Co(OH)2\nand Co. Moreover, molecular dynamics simulations and density functional theory calculations, combined\nwith in situ infrared spectroscopy, revealed that the strong hydrogen-bonding interactions between\ninterfacial H2O and the Cr-doped Co(OH)2 surface could drag more free H2O from the rigid H2O network\nand facilitate H2O dissociation, forming active hydrogen to accelerate the NO3\n\u0002RR pathway on metallic Co\nsites. As a result"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Cr调节重构，使Co(OH)2与Co达到动态平衡。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "Cr掺杂Co(OH)2与界面水的强氢键促进自由水募集/水解离生成活性氢，随后促进金属Co位点的硝酸盐还原。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把动态相平衡写成无重构，也不能交换水活化与金属Co上的还原分工。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-16",
+      "article_group": "10.1002/anie.202423889",
+      "category": "numeric",
+      "question": "Wang等（2025，Retained oxygen regulation in oxide‐derived copper for promoted CO2 electroreduction toward multicarbon products）：摘要中1.6 nm CuO前催化剂对应的C2+ FE平台与峰值分别是多少，各对应哪个电流密度范围或点？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "17",
+          "doc_id": "doc_6b34d1e133dbd92791861758c89ef8eca448e5fc8bb9b50240cc06e1ecdf6202",
+          "page_number": 1,
+          "char_start": 924,
+          "char_end": 1214,
+          "quote": "When the thickness of CuO precatalyst\ndecreased to 1.6 nm, the enhancement of the ability to retain oxygen are achieved, leading to selective C2+ production\nwith Faradaic efﬁciency of around 80% over a wide current density range of 300–700 mA cm−2 with a peak value of 84.6%\nat 700 mA cm−2."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "1.6 nm CuO前催化剂，在300–700 mA cm−2范围C2+ FE约80%。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "峰值FE84.6%出现在700 mA cm−2；不是整个范围都84.6%。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把前催化剂厚度直接称为工作态厚度，不能把峰值覆盖全范围。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-17",
+      "article_group": "10.1002/anie.202504174",
+      "category": "system_boundary",
+      "question": "Xu等（2025，High‐performance FeP catalyst for electrochemical ammonia production and recovery via joule‐stripping）：Joule-stripping方案利用了什么能量来源，最终回收什么物种，报告的回收收率是多少？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "18",
+          "doc_id": "doc_9f0cf48cbb90b9b06d3f1cbfdeb8a58865ec660ed42bad51b69450bc0a77a379",
+          "page_number": 2,
+          "char_start": 1513,
+          "char_end": 1756,
+          "quote": "We demonstrate that the Joule heating \nresulting from the operation of the electrolyzer at high current density \ncan be exploited to induce the volatilization of ammonia, which can \nthen be recovered as solid ammonium chloride with >95% yield."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "利用高电流密度运行电解器时产生的焦耳热使氨挥发。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "氨回收为固体氯化铵，收率>95%；这是回收收率而不是电合成FE。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能将>95%回收收率当作FE，也不能说最终固体是氨气。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-18",
+      "article_group": "10.1016/j.scib.2025.05.032",
+      "category": "single_fact",
+      "question": "Yang等（2025，Adsorption configuration control on Pt-Bi2O3 for the oriented conversion of glycerol to glyceric acid via terminal hydroxyl oxidation）：Pt–Bi2O3甘油氧化研究中，电子转移与吸附构型分别如何促进保留C3产物？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "19",
+          "doc_id": "doc_a9231f178cfe5d2fa6ce49383892c10e5ced1fc75882014e37f04831dafe01a7",
+          "page_number": 1,
+          "char_start": 1543,
+          "char_end": 1815,
+          "quote": "The superior performance stems from two key factors: (1) electron transfer from Bi2O3 to Pt creates\nelectron-rich Pt sites that suppress C–C bond cleavage and (2) Bi2O3 facilitates favorable glycerol adsorp-\ntion conﬁgurations through multiple hydroxyl group interactions."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Bi2O3向Pt转移电子，富电子Pt位点抑制C–C键断裂。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "Bi2O3通过多个羟基的相互作用促进有利的甘油吸附构型。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能将电子转移方向反置，也不能说促进C–C裂解以保留C3。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-19",
+      "article_group": "10.1002/anie.202504423",
+      "category": "numeric",
+      "question": "Yang等（2025，Electronic structure tuning in Cu–Co dual single atom catalysts for enhanced COOH spillover and electrocalytic CO2 reduction activity）：CuCo双单原子催化剂的摘要中，峰值CO FE和对应电流密度是多少，稳定性陈述又是什么？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "20",
+          "doc_id": "doc_23d2e55d03c2b6d41c280baf37b24434b44305660d4359bad4a0b48f2a300606",
+          "page_number": 1,
+          "char_start": 665,
+          "char_end": 878,
+          "quote": "The catalyst achieves 98.5% CO Faradaic efﬁciency at 500 mA cm−2,\nmaintaining > 95% selectivity across a 400 mV window with < 6% decay over 48 h, which is superior to the corresponding\nsingle-atom control samples."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "500 mA cm−2下CO FE98.5%。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "400 mV窗口内选择性>95%，48小时衰减<6%；不能合并成所有窗口点均为98.5%。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把电压窗口400 mV写成500 mA cm−2的唯一电位，不能把衰减率当FE。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-20",
+      "article_group": "10.1021/jacs.5c02954",
+      "category": "mechanism",
+      "question": "Yoo等（2025，Excess cations alter CO intermediate configuration and product selectivity of Cu in acidic electrochemical CO2 reduction reaction）：过量Cs+对酸性Cu表面CO吸附构型及产物分布有什么影响？聚合物黏结剂如何缓解？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "21",
+          "doc_id": "doc_a3dd80362be0c389e56f97c4a619ee77e2b76123c3623faef696c3fd26ea23b6",
+          "page_number": 1,
+          "char_start": 631,
+          "char_end": 1755,
+          "quote": "Operando attenuated total reflectance\nsurface-enhanced infrared absorption spectroscopy (ATR-SEIRAS) reveals that\nincreasing the Cs+ concentration shifts the preference of the *CO intermediate on\nthe Cu surface from the atop (*COatop) to the bridge (*CObridge) configuration.\nThis transition leads to a sharp decline in C−C coupling and an increase in the\nhydrogen evolution reaction at high Cs+ concentrations (0.7 and 1.0 M) under\nacidic conditions. Time-resolved SEIRAS scans show that *COatop is kinetically\ndominant and the proportion of *CObridge increases gradually only at high cation concentrations. Density functional theory\nsimulations confirm that Cs+ on the Cu surface can interact electrostatically with *CO and stabilize *CObridge over *COatop on the\nCu surface. The evolution of *CObridge is also observed on Ag catalysts, indicating that the effect at high concentrations is not limited\nto Cu. Furthermore, polymeric binders on the Cu surface mitigate these detrimental effects on the CO2RR and restore C2H4\nproduction by preventing the cation from altering the *CO adsorption sites on the catalyst surface."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "高Cs+使CO吸附由顶位偏向桥位，降低C–C偶联并增强析氢。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "聚合物黏结剂阻止阳离子改变CO吸附位点，减轻不利影响并恢复C2H4生成。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能将增加Cs+一概描述为持续提高C2选择性。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-21",
+      "article_group": "10.1021/jacs.5c02250",
+      "category": "single_fact",
+      "question": "Bouwens等（2025，Semiartificial photoelectrochemistry for CO2 -mediated enantioselective organic synthesis）：在三酶体系中，CO2/甲酸根循环如何连接到NADH再生和手性醇生成？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "0",
+          "doc_id": "doc_704e8f8af7694b9081b87c924c5c8c3fa8e5bcce9911a76cadecd5a6e4d7e350",
+          "page_number": 1,
+          "char_start": 1021,
+          "char_end": 1465,
+          "quote": "CO2 is reduced to HCOO−using a W-formate dehydrogenase (FDHNvH) from\nNitratidesulfovibrio vulgaris Hildenborough, which then enables the reduction of NAD+ to NADH by an NAD+-cofactor-dependent\nformate dehydrogenase from Candida boidinii (FDHCB). Subsequently, an alcohol dehydrogenase (ADH) uses NADH generated\nfrom CO2/HCOO−cycling to reduce acetophenone to chiral 1-phenylethanol in good enantiomeric excess (93%) and conversion\nyields (38%)."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "W-甲酸脱氢酶把CO2还原为甲酸根，NAD+依赖的甲酸脱氢酶利用该循环将NAD+还原为NADH。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "ADH利用再生NADH将乙酰苯还原为手性1-苯乙醇。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能声称ADH直接电还原CO2，也不能把甲酸根当最终手性产物。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-22",
+      "article_group": "10.1038/s41467-025-57708-7",
+      "category": "single_fact",
+      "question": "Dai等（2025，Surface engineering on bulk Cu2O for efficient electrosynthesis of urea）：该尿素电合成研究共还原哪两种原料，作者提出哪些中间体在什么界面偶联？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "3",
+          "doc_id": "doc_f849f680d2ce1c78969207bc85e951cc0d59d07c105aeb772cc144bbca9d2e6b",
+          "page_number": 1,
+          "char_start": 452,
+          "char_end": 1065,
+          "quote": "Herein, we realize an\nenergy-favorable electrochemical C-N coupling path through CO2 and NO3\n−co-\nreduction at the heterointerfaces of Cu/Cu2O microparticles, generated by in-\nsitu electrochemical engineering on bulk Cu2O. We achieve urea production\nrate of 632.1 μg h−1mgcat.\n−1 with a corresponding Faradaic efﬁciency of 42.3% at\n−0.3 V (versus RHE) under ambient conditions. Operando synchrotron\nradiation-Fourier transform infrared spectroscopy, along with theoretical\ncalculations, reveals the coupling of intermediates NOH* and CO* at the het-\nerointerfaces, beneﬁting from the modiﬁed electronic structure."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "CO2与NO3−共还原，在原位电化学工程形成的Cu/Cu2O异质界面实现C–N偶联。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "operando红外及计算支持NOH*与CO*在异质界面偶联的解释。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把氮源写成N2，也不能写成CO与氨在气相热催化。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-23",
+      "article_group": "10.1038/s41467-025-60043-6",
+      "category": "numeric",
+      "question": "Fan等（2025，Boosted charge and proton transfer over ternary coCo3O4CoB for electrochemical nitric oxide reduction to ammonia）：Co/Co3O4/CoB还原NO的摘要中，NH3的FE、面积归一化产率及对应电位是多少？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "4",
+          "doc_id": "doc_7a0ab116f44356a6eb1df11f1427e18ac55ad028cbbc5f4334ced04417aba209",
+          "page_number": 1,
+          "char_start": 622,
+          "char_end": 854,
+          "quote": "a high NH3 Faradaic\nefﬁciency of 98.8% in NORR with an NH3 yield rate of 462.18 µmol cm−2 h−1\n(2.31 mol h−1 gcat\n−1) at −0.5 V versus reversible hydrogen electrode, out-\nperforming most of the reported NORR electrocatalysts to date."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "NH3 FE98.8%，面积归一化产率462.18 μmol cm−2 h−1。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "对应−0.5 V vs RHE；氮源是NO。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把产率单位改为mmol，不能误作硝酸盐还原。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-24",
+      "article_group": "10.1021/jacs.5c04863",
+      "category": "single_fact",
+      "question": "Guo等（2025，Lattice hydrogen involved electrocatalytic nitrate reduction to hydroxylamine）：Cu–MnO2Hx体系中，Cu怎样改变晶格氢数量？作者用哪两类证据支持晶格氢的富集和缓冲作用？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "5",
+          "doc_id": "doc_d60aa9928313e72bc11952953f4084e13ca36926d89e7bc04e67a104ff87c14b",
+          "page_number": 1,
+          "char_start": 934,
+          "char_end": 1494,
+          "quote": "We\ndesign and construct a Cu-MnO2Hx electrocatalyst, in which the Cu-\ntriggered Jahn−Teller distortion of [MnO6] octahedron significantly\nincreases the number of Hlat. The Faradaic efficiency and yield of\nNH2OH are as high as 91.1% and 396.6 mmol gcat.\n−1 h−1 over Cu-MnO2Hx, outperforming most of the reported catalysts. The\ncombined results of isotopic tracking experiments and theoretical calculations prove the enrichment and buffer functions of Hlat,\nwhich can provide an abundant H-source for nitrate’s selective reduction to hydroxylamine.\n■INTRODUCTION"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Cu触发MnO6八面体的Jahn–Teller畸变，增加晶格氢数量。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "同位素追踪实验结合理论计算支持晶格氢的富集与缓冲功能。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把证据说成只由最终FE数值证明机理，也不能将晶格氢等同游离质子浓度。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-25",
+      "article_group": "10.1038/s41467-025-60413-0",
+      "category": "mechanism",
+      "question": "He等（2025，Hexafluorophosphate additive enables durable seawater oxidation at ampere-level current density）：PF6−添加剂通过哪两种空间位置作用保护NiFe LDH海水氧化阳极？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "6",
+          "doc_id": "doc_4784c21172e5cce2a7b9f7b475cf4e6d4ee990b79958f19c9d22bb686b423b1d",
+          "page_number": 1,
+          "char_start": 813,
+          "char_end": 1226,
+          "quote": "Together with the experimental ﬁndings, PF₆⁻ can\nintercalate into LDH interlayers and adsorb onto the electrode surface under\nan applied electric ﬁeld, blocking Cl⁻ and stabilizing Fe to prevent segregation.\nThe constant-potential molecular dynamics simulations further reveal the\naccumulation of high surface concentrations of PF6\n−on the electrode surface\nthat can effectively exclude Cl−, mitigating corrosion."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "PF6−进入LDH层间并在施加电场下吸附到电极表面，阻挡Cl−、稳定Fe防止偏析。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "恒电位MD进一步支持表面高PF6−浓度排斥Cl−以减轻腐蚀的解释。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能说该结论仅是无电场吸附，也不能反称PF6−促进Cl−到达表面。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-26",
+      "article_group": "10.1002/anie.202419550",
+      "category": "single_fact",
+      "question": "Kang等（2025，Interfacial asymmetrically coordinated Zn−MOF for high‐efficiency electrosynthetic oxime）：作者将界面配位引起的Zn位点配位模式改变描述为什么，进而影响什么过程？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "7",
+          "doc_id": "doc_3247efbb3ff33901ec46cf8b450df3f8afc192f342f9276529374abd407ae5d5",
+          "page_number": 1,
+          "char_start": 1314,
+          "char_end": 1577,
+          "quote": "In-depth mechanism study\nshows that the introducing Zn\u0000 O bridges can promote\nthe electron transfer and induce Zn sites transforming\ninto distorted tetrahedron (Zn-N3O) coordination mode,\nwhich benefits for intermediates adsorption and con-\nversion. The developed"
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Zn位点变为畸变四面体Zn–N3O配位模式。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "这种界面变化促进电子转移以及中间体吸附和转化。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能称Zn位点配位完全不变；桥联符号抽取损坏时不自行补反应方程。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-27",
+      "article_group": "10.1021/jacs.4c18550",
+      "category": "numeric",
+      "question": "Liu等（2025，Spin-state effect of tetrahedron-coordinated single-atom catalysts on CO2 electroreduction）：Fe四面体配位单原子催化剂的摘要中CO FE与对应电位、参比分别是什么？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "9",
+          "doc_id": "doc_1ac1fcb7021355f5d5c74f42181baf8e6eecc2575ab40515968a866366225e1c",
+          "page_number": 1,
+          "char_start": 1387,
+          "char_end": 1456,
+          "quote": "As a result, Fe-TCSAC achieves a high FECO of 91.6% at −0.9 V vs RHE."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Fe-TCSAC的CO FE91.6%。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "对应−0.9 V vs RHE。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能漏负号，也不能把CO FE当所有产物总收率。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-28",
+      "article_group": "10.1021/jacs.4c16636",
+      "category": "single_fact",
+      "question": "Niemann等（2025，In situ neutron reflectometry reveals the interfacial microenvironment driving electrochemical ammonia synthesis）：原位中子反射同位素对比中，质子供体与溶剂分别影响SEI哪一层？缺少质子供体时观察到什么？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "10",
+          "doc_id": "doc_3e8437709515be3b361e48d3f613a328d07835814d31d574579fdb858c243841",
+          "page_number": 1,
+          "char_start": 1597,
+          "char_end": 1890,
+          "quote": "We used isotope contrast methods with d6-EtOH and d8-THF to drive time-resolved\ntracking of SEI growth at low current cycling, revealing that the proton donor modifies the inner layer, and the solvent modifies the\nouter layer. Li dendritic growth was observed in the absence of a proton donor."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "d6-EtOH/d8-THF对比表明质子供体影响内层、溶剂影响外层。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "缺少质子供体时观察到Li枝晶生长。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把内外层归属反置，也不能称这些层结构由离位实验直接证明。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-29",
+      "article_group": "10.1038/s41467-025-59180-9",
+      "category": "single_fact",
+      "question": "Papangelakis等（2025，Scaled CO electroreduction to alcohols）：放大CO制醇研究如何减少醇跨膜和冷阱稀释问题？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "12",
+          "doc_id": "doc_f082002beb27e547b771c3e29f4c3fc9f9bc4dd96b470bf505bfb77df6fb58a8",
+          "page_number": 1,
+          "char_start": 866,
+          "char_end": 1165,
+          "quote": "Here, we reverse the electroosmotic drag of water using a cation\nexchange membrane assembly, enabling the recovery of over 85% of alcohol\nproducts at a concentration of 6 wt.%. We develop a multi-step condenser\nstrategy to separate the produced alcohols from the efﬂuent gas stream\nwithout dilution."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "用阳离子交换膜组件反转水的电渗拖曳，实现醇产物回收。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "采用多级冷凝策略从尾气分离醇，避免稀释。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把多级冷凝当作提高电催化FE的直接证据，也不能把膜写为阴离子交换膜。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    },
+    {
+      "question_id": "P3-30",
+      "article_group": "10.1002/anie.202504423",
+      "category": "mechanism",
+      "question": "Yang等（2025，Electronic structure tuning in Cu–Co dual single atom catalysts for enhanced COOH spillover and electrocalytic CO2 reduction activity）：CuCo双单原子催化剂中，Co和相邻Cu分别承担怎样的CO2还原中间体功能？",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "document_key": "20",
+          "doc_id": "doc_23d2e55d03c2b6d41c280baf37b24434b44305660d4359bad4a0b48f2a300606",
+          "page_number": 1,
+          "char_start": 879,
+          "char_end": 1224,
+          "quote": "In situ spectroscopy and DFT calculations reveal a synergistic mechanism: Co sites activate\nCO2 and stabilize *COOH intermediates, while adjacent Cu sites facilitate CO desorption by lowering the energy barrier\nthrough charge redistribution. This dynamic buffer system mitigates active-site blocking and suppresses HER by weakening\nH adsorption."
+        }
+      ],
+      "answer_points": [
+        {
+          "point_id": "p1",
+          "text": "Co活化CO2并稳定COOH中间体。",
+          "evidence_ids": [
+            "e1"
+          ]
+        },
+        {
+          "point_id": "p2",
+          "text": "相邻Cu通过电荷重分布降低CO脱附势垒；动态缓冲减轻活性位点堵塞并弱化H吸附抑制HER。",
+          "evidence_ids": [
+            "e1"
+          ]
+        }
+      ],
+      "must_not_claim": [
+        "不能把Co与Cu的功能反置，也不能说该设计增强HER。"
+      ],
+      "annotation": {
+        "author": "Codex (AI assistant)",
+        "status": "ai_draft_exact_source_checked",
+        "human_reviewer": null,
+        "review_status": "pending"
+      }
+    }
+  ]
+}

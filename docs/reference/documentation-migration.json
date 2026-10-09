@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-09",
+  "archive": "legacy-docs/2026-10-09",
+  "prose_replacements": {
+    "README.md": {
+      "replacement": "README.md",
+      "action": "Rewritten."
+    },
+    "data/README.md": {
+      "replacement": "data/README.md",
+      "action": "Rewritten."
+    },
+    "qa_testing/README_qa_testing.md": {
+      "replacement": "docs/how-to/batch-and-heatmaps.md",
+      "action": "Archived; content consolidated."
+    },
+    "doc/report.pdf": {
+      "replacement": "docs/explanation/architecture.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/DEMO.md": {
+      "replacement": "docs/how-to/inspect-evidence.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/EVALUATION_GUIDE.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/P3_EXPERIMENT_PLAN.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/P3_EXPERIMENT_RESULTS.md": {
+      "replacement": "docs/explanation/evaluation-results.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/P3_QUESTION_REVIEW.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/P3_REVIEW_DISPUTES.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/P3_SEND_SCOPE.md": {
+      "replacement": "docs/reference/experiment-records.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q01_IDENTITY.md": {
+      "replacement": "docs/reference/artifact-contracts.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q02_LOCATIONS.md": {
+      "replacement": "docs/reference/artifact-contracts.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q03_TEXT_PROCESSING.md": {
+      "replacement": "docs/reference/retrieval.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q04_SIMILARITY.md": {
+      "replacement": "docs/reference/retrieval.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q05_PROMPT_CONTRACT.md": {
+      "replacement": "docs/reference/artifact-contracts.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5A_REFERENCE.md": {
+      "replacement": "docs/reference/experiment-records.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5B_ANSWER_REVIEW.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5B_GENERATION.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5B_SEND_SCOPE.md": {
+      "replacement": "docs/reference/experiment-records.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5C_ENVIRONMENT.md": {
+      "replacement": "docs/reference/cli-and-configuration.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5D_PARSING.md": {
+      "replacement": "docs/decisions/0006-retain-pymupdf-extraction.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5E_EMBEDDING.md": {
+      "replacement": "docs/reference/retrieval.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5F_STORAGE.md": {
+      "replacement": "docs/decisions/0003-store-candidate-vectors-in-numpy-and-sqlite.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5G_HYBRID.md": {
+      "replacement": "docs/reference/retrieval.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5H_RERANKING.md": {
+      "replacement": "docs/reference/retrieval.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5I_CONTEXT.md": {
+      "replacement": "docs/reference/retrieval.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5J_FREEZE.md": {
+      "replacement": "docs/how-to/frozen-runtime.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_5_MODERNIZATION_PLAN.md": {
+      "replacement": "docs/explanation/project-status.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q06_EVIDENCE_BOUNDARIES.md": {
+      "replacement": "docs/explanation/answer-reliability.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q07_API_RESULTS.md": {
+      "replacement": "docs/reference/artifact-contracts.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q08_REPRODUCIBILITY.md": {
+      "replacement": "docs/reference/artifact-contracts.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q09_CREDENTIALS.md": {
+      "replacement": "docs/how-to/share-source.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q0_ENVIRONMENT.md": {
+      "replacement": "docs/reference/cli-and-configuration.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q10A_EVALUATION.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q10A_REVIEW.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q10B_EVALUATION.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q10B_EXPERT_REVIEW.md": {
+      "replacement": "docs/explanation/evaluation-results.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q10B_SEND_SCOPE.md": {
+      "replacement": "docs/reference/experiment-records.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/Q11_DOCUMENTATION.md": {
+      "replacement": "docs/explanation/project-status.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/R01_ANSWER_RELIABILITY.md": {
+      "replacement": "docs/explanation/answer-reliability.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/REFACTOR_PLAN.md": {
+      "replacement": "docs/explanation/project-status.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/REPOSITORY_POLICY.md": {
+      "replacement": "docs/reference/repository-policy.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/RUNBOOK.md": {
+      "replacement": "docs/how-to/README.md",
+      "action": "Archived; content consolidated."
+    },
+    "docs/TECHNICAL_REPORT.md": {
+      "replacement": "docs/explanation/architecture.md",
+      "action": "Archived; content consolidated."
+    },
+    "evaluation/RUBRIC.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Retained byte-for-byte as a frozen protocol input; current overview replaced."
+    },
+    "evaluation/p3/RUBRIC.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Retained byte-for-byte as a frozen protocol input; current overview replaced."
+    },
+    "evaluation/q10b/RUBRIC.md": {
+      "replacement": "docs/reference/evaluation.md",
+      "action": "Retained byte-for-byte as a frozen protocol input; current overview replaced."
+    }
+  }
+}

@@ -57,6 +57,9 @@ Thumbs.db
 /organic_electrocatalysis_heatmap.png
 *.log
 
+# Previous documentation snapshots are local-only.
+/legacy-docs/
+
 # Intentionally tracked: source/tests/scripts, dependency locks, .env.example,
-# config/, evaluation/, docs/ audit records and authored doc/report.pdf.
+# config/, frozen evaluation inputs, current docs/ and machine audit records.
 # Avoid blanket *.json / *.pdf / *.png rules: reviewed assets can be source.

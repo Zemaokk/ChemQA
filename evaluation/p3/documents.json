@@ -1,0 +1,185 @@
+{
+  "schema": "chemqa-eval-documents-v1",
+  "documents": {
+    "0": {
+      "doc_id": "doc_704e8f8af7694b9081b87c924c5c8c3fa8e5bcce9911a76cadecd5a6e4d7e350",
+      "article_id": "10.1021/jacs.5c02250",
+      "doi": "10.1021/jacs.5c02250",
+      "authors": "Bouwens et al. (2025)",
+      "title": "Semiartificial photoelectrochemistry for CO2 -mediated enantioselective organic synthesis",
+      "source": "data/raw_papers/Bouwens 等 - 2025 - Semiartificial photoelectrochemistry for CO2 -mediated enantioselective organic synthesis.pdf",
+      "pdf_pages": 6
+    },
+    "3": {
+      "doc_id": "doc_f849f680d2ce1c78969207bc85e951cc0d59d07c105aeb772cc144bbca9d2e6b",
+      "article_id": "10.1038/s41467-025-57708-7",
+      "doi": "10.1038/s41467-025-57708-7",
+      "authors": "Dai et al. (2025)",
+      "title": "Surface engineering on bulk Cu2O for efficient electrosynthesis of urea",
+      "source": "data/raw_papers/Dai 等 - 2025 - Surface engineering on bulk Cu2O for efficient electrosynthesis of urea.pdf",
+      "pdf_pages": 13
+    },
+    "4": {
+      "doc_id": "doc_7a0ab116f44356a6eb1df11f1427e18ac55ad028cbbc5f4334ced04417aba209",
+      "article_id": "10.1038/s41467-025-60043-6",
+      "doi": "10.1038/s41467-025-60043-6",
+      "authors": "Fan et al. (2025)",
+      "title": "Boosted charge and proton transfer over ternary coCo3O4CoB for electrochemical nitric oxide reduction to ammonia",
+      "source": "data/raw_papers/Fan 等 - 2025 - Boosted charge and proton transfer over ternary coCo3O4CoB for electrochemical nitric oxide reduction to ammonia.pdf",
+      "pdf_pages": 11
+    },
+    "5": {
+      "doc_id": "doc_d60aa9928313e72bc11952953f4084e13ca36926d89e7bc04e67a104ff87c14b",
+      "article_id": "10.1021/jacs.5c04863",
+      "doi": "10.1021/jacs.5c04863",
+      "authors": "Guo et al. (2025)",
+      "title": "Lattice hydrogen involved electrocatalytic nitrate reduction to hydroxylamine",
+      "source": "data/raw_papers/Guo 等 - 2025 - Lattice hydrogen involved electrocatalytic nitrate reduction to hydroxylamine.pdf",
+      "pdf_pages": 9
+    },
+    "6": {
+      "doc_id": "doc_4784c21172e5cce2a7b9f7b475cf4e6d4ee990b79958f19c9d22bb686b423b1d",
+      "article_id": "10.1038/s41467-025-60413-0",
+      "doi": "10.1038/s41467-025-60413-0",
+      "authors": "He et al. (2025)",
+      "title": "Hexafluorophosphate additive enables durable seawater oxidation at ampere-level current density",
+      "source": "data/raw_papers/He 等 - 2025 - Hexafluorophosphate additive enables durable seawater oxidation at ampere-level current density.pdf",
+      "pdf_pages": 10
+    },
+    "7": {
+      "doc_id": "doc_3247efbb3ff33901ec46cf8b450df3f8afc192f342f9276529374abd407ae5d5",
+      "article_id": "10.1002/anie.202419550",
+      "doi": "10.1002/anie.202419550",
+      "authors": "Kang et al. (2025)",
+      "title": "Interfacial asymmetrically coordinated Zn−MOF for high‐efficiency electrosynthetic oxime",
+      "source": "data/raw_papers/Kang 等 - 2025 - Interfacial asymmetrically coordinated Zn−MOF for high‐efficiency electrosynthetic oxime.pdf",
+      "pdf_pages": 9
+    },
+    "8": {
+      "doc_id": "doc_b42bac6cc744467b39e43ee65bd858504d75d9a9b02765e9185f92231b18eef6",
+      "article_id": "10.1038/s41929-025-01342-5",
+      "doi": "10.1038/s41929-025-01342-5",
+      "authors": "Kuai et al. (2025)",
+      "title": "Dissolved fe species enable a cooperative solid–molecular mechanism for the oxygen evolution reaction on NiFe-based catalysts",
+      "source": "data/raw_papers/Kuai 等 - 2025 - Dissolved fe species enable a cooperative solid–molecular mechanism for the oxygen evolution reaction on NiFe-based catalysts.pdf",
+      "pdf_pages": 13
+    },
+    "9": {
+      "doc_id": "doc_1ac1fcb7021355f5d5c74f42181baf8e6eecc2575ab40515968a866366225e1c",
+      "article_id": "10.1021/jacs.4c18550",
+      "doi": "10.1021/jacs.4c18550",
+      "authors": "Liu et al. (2025)",
+      "title": "Spin-state effect of tetrahedron-coordinated single-atom catalysts on CO2 electroreduction",
+      "source": "data/raw_papers/Liu 等 - 2025 - Spin-state effect of tetrahedron-coordinated single-atom catalysts on CO2 electroreduction.pdf",
+      "pdf_pages": 11
+    },
+    "10": {
+      "doc_id": "doc_3e8437709515be3b361e48d3f613a328d07835814d31d574579fdb858c243841",
+      "article_id": "10.1021/jacs.4c16636",
+      "doi": "10.1021/jacs.4c16636",
+      "authors": "Niemann et al. (2025)",
+      "title": "In situ neutron reflectometry reveals the interfacial microenvironment driving electrochemical ammonia synthesis",
+      "source": "data/raw_papers/Niemann 等 - 2025 - In situ neutron reflectometry reveals the interfacial microenvironment driving electrochemical ammonia synthesis.pdf",
+      "pdf_pages": 12
+    },
+    "11": {
+      "doc_id": "doc_7efd29ab5b0fcb3d437be95598c3c2e9e340a7a42d594c7a28cab759b6e07080",
+      "article_id": "10.1002/adfm.202504872",
+      "doi": "10.1002/adfm.202504872",
+      "authors": "Niu et al. (2025)",
+      "title": "Chloride‐mediated electron buffering on Ni‐Fe anodes for ampere‐level alkaline seawater electrolysis",
+      "source": "data/raw_papers/Niu 等 - 2025 - Chloride‐mediated electron buffering on Ni‐Fe anodes for ampere‐level alkaline seawater electrolysis.pdf",
+      "pdf_pages": 7
+    },
+    "12": {
+      "doc_id": "doc_f082002beb27e547b771c3e29f4c3fc9f9bc4dd96b470bf505bfb77df6fb58a8",
+      "article_id": "10.1038/s41467-025-59180-9",
+      "doi": "10.1038/s41467-025-59180-9",
+      "authors": "Papangelakis et al. (2025)",
+      "title": "Scaled CO electroreduction to alcohols",
+      "source": "data/raw_papers/Papangelakis 等 - 2025 - Scaled CO electroreduction to alcohols.pdf",
+      "pdf_pages": 9
+    },
+    "13": {
+      "doc_id": "doc_c5e9d790ce92654838c835958e4fb8999647dccf002c64c0eb10180cb843f420",
+      "article_id": "10.1038/s41560-025-01745-5",
+      "doi": "10.1038/s41560-025-01745-5",
+      "authors": "Pelzer et al. (2025)",
+      "title": "Scaling and heating will drive low-temperature CO2 electrolysers to operate at higher temperatures",
+      "source": "data/raw_papers/Pelzer 等 - 2025 - Scaling and heating will drive low-temperature CO2 electrolysers to operate at higher temperatures.pdf",
+      "pdf_pages": 8
+    },
+    "14": {
+      "doc_id": "doc_78552baed2f7d8bc8c93afcf6942fdee2307fc965f5867c98f0290ffe3803941",
+      "article_id": "10.1002/anie.202507569",
+      "doi": "10.1002/anie.202507569",
+      "authors": "Song et al. (2025)",
+      "title": "A heterodimeric cluster‐based pair catalyst for electrochemical synthesis of cyclohexanone oxime",
+      "source": "data/raw_papers/Song 等 - 2025 - A heterodimeric cluster‐based pair catalyst for electrochemical synthesis of cyclohexanone oxime.pdf",
+      "pdf_pages": 9
+    },
+    "15": {
+      "doc_id": "doc_9a7329cb35c5db0374abb5f8ef5ff4681da42b1a139a0cd60cd1d7b13a33241a",
+      "article_id": "10.1038/s41467-025-59740-z",
+      "doi": "10.1038/s41467-025-59740-z",
+      "authors": "Townsend et al. (2025)",
+      "title": "The role of carbon catalyst coatings in the electrochemical water splitting reaction",
+      "source": "data/raw_papers/Townsend 等 - 2025 - The role of carbon catalyst coatings in the electrochemical water splitting reaction.pdf",
+      "pdf_pages": 11
+    },
+    "16": {
+      "doc_id": "doc_d46f16cb1c9fd5853c53a278cd706516bb2f1a987c7f8bf315fd720491638ec2",
+      "article_id": "10.1039/d5ee00597c",
+      "doi": "10.1039/d5ee00597c",
+      "authors": "Wan et al. (2025)",
+      "title": "Interfacial hydrogen-bond modulation of dynamic catalysts for nitrate electroreduction to ammonia",
+      "source": "data/raw_papers/Wan 等 - 2025 - Interfacial hydrogen-bond modulation of dynamic catalysts for nitrate electroreduction to ammonia.pdf",
+      "pdf_pages": 10
+    },
+    "17": {
+      "doc_id": "doc_6b34d1e133dbd92791861758c89ef8eca448e5fc8bb9b50240cc06e1ecdf6202",
+      "article_id": "10.1002/anie.202423889",
+      "doi": "10.1002/anie.202423889",
+      "authors": "Wang et al. (2025)",
+      "title": "Retained oxygen regulation in oxide‐derived copper for promoted CO2 electroreduction toward multicarbon products",
+      "source": "data/raw_papers/Wang 等 - 2025 - Retained oxygen regulation in oxide‐derived copper for promoted CO2 electroreduction toward multicarbon products.pdf",
+      "pdf_pages": 8
+    },
+    "18": {
+      "doc_id": "doc_9f0cf48cbb90b9b06d3f1cbfdeb8a58865ec660ed42bad51b69450bc0a77a379",
+      "article_id": "10.1002/anie.202504174",
+      "doi": "10.1002/anie.202504174",
+      "authors": "Xu et al. (2025)",
+      "title": "High‐performance FeP catalyst for electrochemical ammonia production and recovery via joule‐stripping",
+      "source": "data/raw_papers/Xu 等 - 2025 - High‐performance FeP catalyst for electrochemical ammonia production and recovery via joule‐stripping.pdf",
+      "pdf_pages": 13
+    },
+    "19": {
+      "doc_id": "doc_a9231f178cfe5d2fa6ce49383892c10e5ced1fc75882014e37f04831dafe01a7",
+      "article_id": "10.1016/j.scib.2025.05.032",
+      "doi": "10.1016/j.scib.2025.05.032",
+      "authors": "Yang et al. (2025)",
+      "title": "Adsorption configuration control on Pt-Bi2O3 for the oriented conversion of glycerol to glyceric acid via terminal hydroxyl oxidation",
+      "source": "data/raw_papers/Yang 等 - 2025 - Adsorption configuration control on Pt-Bi2O3 for the oriented conversion of glycerol to glyceric acid via terminal hydroxyl oxidation.pdf",
+      "pdf_pages": 9
+    },
+    "20": {
+      "doc_id": "doc_23d2e55d03c2b6d41c280baf37b24434b44305660d4359bad4a0b48f2a300606",
+      "article_id": "10.1002/anie.202504423",
+      "doi": "10.1002/anie.202504423",
+      "authors": "Yang et al. (2025)",
+      "title": "Electronic structure tuning in Cu–Co dual single atom catalysts for enhanced COOH spillover and electrocalytic CO2 reduction activity",
+      "source": "data/raw_papers/Yang 等 - 2025 - Electronic structure tuning in Cu–Co dual single atom catalysts for enhanced COOH spillover and electrocalytic CO2 reduction activity.pdf",
+      "pdf_pages": 8
+    },
+    "21": {
+      "doc_id": "doc_a3dd80362be0c389e56f97c4a619ee77e2b76123c3623faef696c3fd26ea23b6",
+      "article_id": "10.1021/jacs.5c02954",
+      "doi": "10.1021/jacs.5c02954",
+      "authors": "Yoo et al. (2025)",
+      "title": "Excess cations alter CO intermediate configuration and product selectivity of Cu in acidic electrochemical CO2 reduction reaction",
+      "source": "data/raw_papers/Yoo 等 - 2025 - Excess cations alter CO intermediate configuration and product selectivity of Cu in acidic electrochemical CO2 reduction reaction.pdf",
+      "pdf_pages": 12
+    }
+  }
+}

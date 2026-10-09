@@ -1,0 +1,7 @@
+{
+  "schema": "chemqa-p3-input-source-integrity-v1",
+  "pdf_identities_verified": 44,
+  "unique_chunks_verified": 209,
+  "exact_original_page_spans_verified": 209,
+  "scientific_support_verified": false
+}

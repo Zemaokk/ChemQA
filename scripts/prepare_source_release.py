@@ -13,6 +13,8 @@ SOURCE_TREES = {"config", "src", "scripts", "tests", "docs", "evaluation"}
 TOP_LEVEL = {
     "main.py",
     "README.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
     "LICENSE",
     "LICENSE.md",
     "pyproject.toml",
@@ -26,12 +28,17 @@ TOP_LEVEL = {
 
 def include_source(path):
     path = Path(path)
-    if any(part in {".git", "__pycache__", ".venv", ".env"} for part in path.parts):
+    if any(
+        part in {".git", "__pycache__", ".venv", ".env", "legacy-docs"}
+        for part in path.parts
+    ):
         return False
     if path.name.startswith(".env"):
         return path.as_posix() == ".env.example"
     if len(path.parts) == 1:
         return path.name in TOP_LEVEL
+    if path.as_posix() == "data/README.md":
+        return True
     if path.parts[0] in SOURCE_TREES:
         return path.suffix.lower() in {
             ".py",

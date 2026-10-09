@@ -1,0 +1,58 @@
+{
+  "schema": "chemqa-p3-execution-validation-v1",
+  "status": "assistant_review_complete_human_adjudication_pending",
+  "responses": 180,
+  "intents": 180,
+  "single_attempt_requests": 180,
+  "successful_requests": 180,
+  "stopped_normally": 180,
+  "usage": {
+    "direct": {
+      "prompt_tokens": 14448,
+      "completion_tokens": 19596,
+      "total_tokens": 34044
+    },
+    "rag_r01": {
+      "prompt_tokens": 594966,
+      "completion_tokens": 83656,
+      "total_tokens": 678622
+    }
+  },
+  "api_latency": {
+    "direct": {
+      "median_seconds": 2.593668395973509,
+      "mean_seconds": 2.8624098916654477,
+      "total_seconds": 257.6168902498903
+    },
+    "rag_r01": {
+      "median_seconds": 5.3558144374983385,
+      "mean_seconds": 5.775510462925821,
+      "total_seconds": 519.7959416633239
+    }
+  },
+  "cost_currency_amount": null,
+  "cost_note": "平台未返回费用，未依据假定价格换算。",
+  "guard_finding_occurrences": {
+    "unrequested_quantity": 444,
+    "quantity_not_in_cited_excerpt": 176,
+    "unresolved_citation": 3,
+    "unverified_reaction_equation": 2
+  },
+  "raw_hash_and_review_matches": 180,
+  "review_citation_markers_present_in_answers": true,
+  "review_sources_within_frozen_question_evidence": true,
+  "protocol_sha256": "ea203897d8212cc754ea6a2c3b5e9a7081910f6c554faf18aa28b644a75e68b4",
+  "review_sha256": "4c111f7e33aff648341e3e09ed4322b54fc64f5e01c4254bca508516a6884284",
+  "preparation_checks": "P3_PREPARATION_VALIDATION.json (historical stage; 272 tests passed)",
+  "human_review_completed": false,
+  "committed": false,
+  "pushed": false,
+  "final_checks": {
+    "ruff_check": "passed",
+    "ruff_format_check": "passed",
+    "git_diff_check": "passed",
+    "report_local_links": "passed",
+    "worktree_secret_pattern_audit": "passed",
+    "review_json_sha256": "ba9a93be0904cdd7738d8c58e19717c2b2d02ba2836a6f8e9449acde0085b0bb"
+  }
+}

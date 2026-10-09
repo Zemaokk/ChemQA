@@ -1,0 +1,57 @@
+{
+  "schema": "chemqa-p3-protocol-v1",
+  "created_utc": "2026-10-08T11:00:45.331093+00:00",
+  "source_development_commit": "b469d83",
+  "questions": 30,
+  "article_groups": 20,
+  "arms": [
+    "direct",
+    "rag_r01"
+  ],
+  "repetitions": 3,
+  "maximum_requests": 180,
+  "schedule_seed": 20261008,
+  "bootstrap_resamples": 10000,
+  "runtime_profile": "hybrid_rerank",
+  "request_body": {
+    "model": "DeepSeek-V4-Flash",
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096,
+    "stream": false,
+    "temperature": 0.3
+  },
+  "endpoint": "https://llmapi.paratera.com/v1/chat/completions",
+  "max_attempts": 1,
+  "direct_template": "你是电化学文献问答助手，领域为{domain}。\n没有提供外部检索文献，请依据已有知识简短回答用户实际询问的内容。\n不确定论文特定事实时明确说明无法确认，不猜测数值、工况或反应式；\n不要把一般知识写成指定论文的实验结果，不编造参考文献或页码。\n逐项保留已知数值的单位、正负号、参比和工况；不添加未询问的性能数字。\n区分结果与机理解释，不将知识不足写成全文没有证据。\n问题：{question}\n",
+  "rag_prompt_version": "chemqa-conservative-answer-r01-v1",
+  "context_policy": {
+    "schema": "chemqa-context-selection-v1",
+    "candidate_window": 50,
+    "max_chunks": 10,
+    "max_chunks_per_document": 10,
+    "maximum_existing_span_overlap": 1.0,
+    "input_estimate_limit": 32000,
+    "output_token_limit": 4096,
+    "protocol_token_reserve": 1024,
+    "total_estimate_limit": 40000,
+    "counter": "complete-payload-utf8-bytes-v1",
+    "selection_order": "frozen_retrieval_rank",
+    "neighbor_expansion": false,
+    "production_default_switch": "Q06.5-J only"
+  },
+  "data_sha256": {
+    "RUBRIC.md": "fae998143173729c8ae4efe83f7ea71387162e9052d1137600844a4d80a5b9b0",
+    "documents.json": "d9b213c907bb3b38936bddbc41719cae4d8a16ee298d599930f16b53b557d8d5",
+    "exclusions.json": "a820da02bf561e405320426f63f826ef94df6859862e8eb7eac2a963442d0420",
+    "questions.json": "b85eab36e60790269377fc13d6b8a47b5ee0e839d5f836cc943e7dc5f69b73f7"
+  },
+  "implementation_sha256": {
+    "scripts/run_p3_experiment.py": "b7824dd3a8a53778636127dc7f04f3e4692ccc17cf61cde5e910ea9748b4b498",
+    "config/answer_policy.py": "6b5d9b37a1438b2eaf373e0c8ae8dade25d256707aa8ee374da9c212640cb41e",
+    "config/r01_runtime.json": "d04e9844158e6912db4454821e707a4b5db3f143f368bc9503b901bbee65e008"
+  },
+  "evaluation_identity": "assistant exploratory review; user adjudicates disputes",
+  "scientific_winner_predeclared": false
+}

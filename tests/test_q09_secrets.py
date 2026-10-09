@@ -102,6 +102,14 @@ class SecretAuditTests(unittest.TestCase):
         (self.root / ".env").write_text(self.key)
         for relative in [
             "main.py",
+            "README.md",
+            "CHANGELOG.md",
+            "CONTRIBUTING.md",
+            "data/README.md",
+            "docs/README.md",
+            "docs/how-to/build-index.md",
+            "docs/legacy-docs/old.md",
+            "legacy-docs/2026-10-09/README.md",
             ".env.example",
             "config/settings.py",
             "data/raw_papers/a.pdf",
@@ -119,10 +127,22 @@ class SecretAuditTests(unittest.TestCase):
         prepare(self.root, destination=target)
         self.assertFalse((target / ".git").exists())
         self.assertFalse((target / ".env").exists())
-        self.assertFalse((target / "data").exists())
+        self.assertTrue((target / "data/README.md").is_file())
+        self.assertFalse((target / "data/raw_papers").exists())
+        self.assertFalse((target / "data/vector_db").exists())
         self.assertFalse((target / "models").exists())
         self.assertFalse((target / "example_answers").exists())
         self.assertFalse((target / "qa_testing/old_answer.md").exists())
+        self.assertFalse((target / "legacy-docs").exists())
+        self.assertFalse((target / "docs/legacy-docs").exists())
+        for relative in (
+            "README.md",
+            "CHANGELOG.md",
+            "CONTRIBUTING.md",
+            "docs/README.md",
+            "docs/how-to/build-index.md",
+        ):
+            self.assertTrue((target / relative).is_file(), relative)
         manifest = json.loads((target / "SOURCE_RELEASE.json").read_text())
         self.assertTrue((target / "config/settings.py").is_file())
         for relative, digest in manifest["files_sha256"].items():

@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-09",
+  "scope": "Documentation migration; no new generation requests or scientific rescoring",
+  "documentation": {
+    "pages_checked": 37,
+    "local_links_and_anchors_checked": 328,
+    "errors": []
+  },
+  "archive": {
+    "path": "legacy-docs/2026-10-09",
+    "files_verified": 138,
+    "git_ignored": true
+  },
+  "preserved_protocol_inputs": {
+    "machine_records_and_rubrics_verified_unchanged": 93,
+    "runtime_manifests_changed": false
+  },
+  "checks": {
+    "ruff_check": "passed",
+    "ruff_format_check": "passed; 94 Python files",
+    "git_diff_check": "passed",
+    "unittest": {
+      "passed": 272,
+      "duration_seconds": 26.777
+    },
+    "runtime_profiles": {
+      "legacy": "passed",
+      "hybrid_rerank": "passed",
+      "hybrid_rerank_diverse": "passed"
+    }
+  },
+  "source_snapshot": {
+    "prepared_and_checked": true,
+    "documentation_pages_checked": 37,
+    "local_links_checked": 328,
+    "archive_excluded": true,
+    "old_pdf_report_excluded": true
+  },
+  "historical_records": "Stored document paths and hashes in frozen evidence refer to historical snapshots; resolve retired prose through documentation-migration.json."
+}

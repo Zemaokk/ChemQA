@@ -1,0 +1,12 @@
+{
+  "schema": "chemqa-p3-sending-approval-v1",
+  "approved_utc": "2026-10-08T11:09:06.856732+00:00",
+  "user_reply": "批准按预览范围发送",
+  "scope_document": "docs/P3_SEND_SCOPE.md",
+  "preview_run_sha256": "e1c2abcd3b733e8af241e0c8601d4a5d90a60a998cf8ff44446e9e4e82a08c4e",
+  "destination": "https://llmapi.paratera.com/v1/chat/completions",
+  "maximum_requests": 180,
+  "unique_pdf_identities": 44,
+  "unique_chunks": 209,
+  "maximum_output_tokens_per_request": 4096
+}

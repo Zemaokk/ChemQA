@@ -1,0 +1,10 @@
+{
+  "schema": "chemqa-p3-preview-restart-v1",
+  "interrupted_directory": "output/p3_previews/20261008T110055-1af5b69b9e0c4766a911d759020d31f4",
+  "completed_cpu_rankings": 3,
+  "reason": "Sandbox auto-device fell back to CPU; restart same frozen protocol under local MPS for practical preparation time. No rankings or scores inspected for tuning.",
+  "protocol_changed": false,
+  "generation_requests": 0,
+  "old_q10b_reserve_ranked": false,
+  "completed_new_rankings_will_repeat": true
+}

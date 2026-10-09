@@ -1,0 +1,83 @@
+{
+  "schema": "chemqa-p3-results-v1",
+  "status": "reviewed_exploratory",
+  "reviewers": [
+    [
+      "Codex (AI assistant)",
+      "ai_assistant"
+    ]
+  ],
+  "independent_blind_review": false,
+  "questions": 30,
+  "article_groups": 20,
+  "responses": 180,
+  "arms": {
+    "direct": {
+      "strict_point_score": 0.03333333333333333,
+      "penalized_point_score": 0.03333333333333333,
+      "delivered_score": 0.03333333333333333,
+      "major_error_rate": 0.05555555555555555,
+      "guard_block_rate": 0.0,
+      "statuses": {
+        "success": 90
+      },
+      "successful_only_penalized_score": 0.03333333333333333,
+      "successful_only_article_groups": 20,
+      "atomic_factual_claims": 103,
+      "atomic_supported_claims": 0,
+      "atomic_cited_claims": 0,
+      "citation_support_rate": null,
+      "factual_citation_coverage": null
+    },
+    "rag_r01": {
+      "strict_point_score": 0.9666666666666666,
+      "penalized_point_score": 0.9666666666666666,
+      "delivered_score": 0.09166666666666666,
+      "major_error_rate": 0.0,
+      "guard_block_rate": 0.8666666666666667,
+      "statuses": {
+        "success": 90
+      },
+      "successful_only_penalized_score": 0.9666666666666668,
+      "successful_only_article_groups": 20,
+      "atomic_factual_claims": 651,
+      "atomic_supported_claims": 601,
+      "atomic_cited_claims": 610,
+      "citation_support_rate": 0.9852459016393442,
+      "factual_citation_coverage": 0.9370199692780338
+    }
+  },
+  "paired_article_bootstrap": {
+    "strict_point_score": {
+      "difference_pp": 93.33333333333333,
+      "ci95_pp": [
+        86.66666666666666,
+        98.75
+      ],
+      "article_groups": 20
+    },
+    "penalized_point_score": {
+      "difference_pp": 93.33333333333333,
+      "ci95_pp": [
+        86.66666666666666,
+        98.75
+      ],
+      "article_groups": 20
+    },
+    "delivered_score": {
+      "difference_pp": 5.833333333333333,
+      "ci95_pp": [
+        -4.166666666666667,
+        16.25
+      ],
+      "article_groups": 20
+    }
+  },
+  "review_sha256": "4c111f7e33aff648341e3e09ed4322b54fc64f5e01c4254bca508516a6884284",
+  "protocol_sha256": "ea203897d8212cc754ea6a2c3b5e9a7081910f6c554faf18aa28b644a75e68b4",
+  "limitations": [
+    "Article-specific abstract questions, not general QA accuracy.",
+    "Assistant-created labels and non-independent review can bias results.",
+    "Different evidence prompts compare whole configurations, not pure retrieval causality."
+  ]
+}
